@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguagData>
+    <VPE.PsySetNext>Next Spellbook</VPE.PsySetNext>
+    <VPE.PsySetPrev>Previous Spellbook</VPE.PsySetPrev>
+    <VPE.PsySetDesc>Move to the next Spellbook. Right click to choose a specific one.\nCurrent: {0}, Next: {1}</VPE.PsySetDesc>
+    <VPE.NotEnoughHeat>Not enough magical capacity available.</VPE.NotEnoughHeat>
+    <VPE.PsylinkGained>Psylink level gained: {0}</VPE.PsylinkGained>
+    <VPE.PsylinkGained.Desc>{0} has gained a new level of psylink. Upon reaching that level, {1} raised psycasting-related stats slightly. {1} can now also allocate a point to either learn a new psycast, improve psycasting stats further or unlock a new meditation focus.\n\nPsycasting experience needed for next level is: {2}.</VPE.PsylinkGained.Desc>
+    <VPE.UnlockedByPoints>Unlocked via Mage points</VPE.UnlockedByPoints>
+    <VPE.NotPsycaster>Not a mage</VPE.NotPsycaster>
+    <VPE.AlreadyPsyring>Already wearing a magic ring</VPE.AlreadyPsyring>
+    <VPE.MustHavePsychicLevel>Target must have at least one mage level.</VPE.MustHavePsychicLevel>
+    <VPE.MustHaveHeatAmount>Must have at least {0} magical capacity.</VPE.MustHaveHeatAmount>
+    <VPE.MustBePsycaster>Must be a mage</VPE.MustBePsycaster>
+</LanguagData>

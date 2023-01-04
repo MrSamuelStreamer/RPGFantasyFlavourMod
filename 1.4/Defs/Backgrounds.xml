@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+    <VBE.BackgroundImageDef>
+        <label>FantasyWorld</label>
+        <description>A background for a fantasy world, wow.</description>
+        <defName>VBE_FantasyWorld</defName>
+        <path>FantasyWorld</path>
+        <iconPath>UI/VanillaExpandedLogo</iconPath>
+    </VBE.BackgroundImageDef>
+</Defs>

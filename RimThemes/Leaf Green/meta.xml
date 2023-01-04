@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RimThemes>
+  <description>Leaf Green</description>    		                    		
+  <category>recolour</category>			
+  <description>Leaf Green - Based on the original colour palette in "Subtle Variations for RimThemes by JcDentonQ"</description>
+  <dialogStacking>true</dialogStacking>
+  <disableMainRimthemesLogo>false</disableMainRimthemesLogo>	
+  <disableMainThemeSelector>false</disableMainThemeSelector>    
+  <menuAlignment>right</menuAlignment>						
+  <GenUI.MouseoverColor>(3,107,24)</GenUI.MouseoverColor>
+  <Widgets.TutorWindowBGFillColor>(3, 107, 24)</Widgets.TutorWindowBGFillColor>
+  <Widgets.TutorWindowBGBorderColor>(0, 124, 25)</Widgets.TutorWindowBGBorderColor>
+  <FloatMenuOption.ColorTextDisabled>(255,255,255)</FloatMenuOption.ColorTextDisabled>
+  <FloatMenuOption.ColorBGDisabled>(155,0,0)</FloatMenuOption.ColorBGDisabled>
+</RimThemes>

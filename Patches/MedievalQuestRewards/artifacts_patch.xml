@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  <Operation Class="PatchOperationFindMod">
+  <mods>
+	<li>Medieval Quest Rewards</li>
+  </mods>
+    <match Class="PatchOperationSequence">
+	  <operations>
+  
+		  <li Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[@Name = "MagicalGemBase"]/comps/li[@Class="CompProperties_UseEffect"]</xpath>
+			<value>
+			  <li Class="CompProperties_UseEffectDestroySelf" />
+			</value>
+		  </li>
+		  
+	  </operations>
+    </match>
+  </Operation>
+  
+</Patch>

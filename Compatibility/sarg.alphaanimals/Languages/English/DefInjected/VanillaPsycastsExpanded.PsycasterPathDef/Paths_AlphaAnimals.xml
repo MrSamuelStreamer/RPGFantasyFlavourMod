@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Herald of the Black Hive to Insect Herald-->
+  <AAVPE_HeraldOfTheBlackHive.label>Insect Summoner</AAVPE_HeraldOfTheBlackHive.label>
+  <AAVPE_HeraldOfTheBlackHive.description>An insectoid cultist that uses magic to manipulate insects.</AAVPE_HeraldOfTheBlackHive.description>
+  <AAVPE_HeraldOfTheBlackHive.tab>Arcane</AAVPE_HeraldOfTheBlackHive.tab>
+  <AAVPE_HeraldOfTheBlackHive.tooltip>Insect Summoner focus on using magic to control the suspectible minds of insects to do the casters bidding, usually driving them towards their enemies.</AAVPE_HeraldOfTheBlackHive.tooltip>
+  <!--Occultist to Warlock-->
+  <AAVPE_Oculist.label>Warlock</AAVPE_Oculist.label>
+  <AAVPE_Oculist.description>A warlock is a mage that has formed a pact with an eldritch entity.</AAVPE_Oculist.description>
+  <AAVPE_Oculist.tab>Arcane</AAVPE_Oculist.tab>
+  <AAVPE_Oculist.tooltip>By offering their soul to an eldritch being, Warlocks gain significant dark magic powers, but are viewed as grotesque abominations. They can summon eldrtich beings from beyond the spheres of normality.</AAVPE_Oculist.tooltip>
+  <!--Xenoseer to Wildspeaker-->
+  <AAVPE_Xenoseer.label>Shaman</AAVPE_Xenoseer.label>
+  <AAVPE_Xenoseer.description>Shaman are studious experts of natural life.</AAVPE_Xenoseer.description>
+  <AAVPE_Xenoseer.tab>Arcane</AAVPE_Xenoseer.tab>
+  <AAVPE_Xenoseer.tooltip>Shaman dedicate themselves to the study and understanding of creatures, and emulating their unique abilities. Wildspeakers can imbue their body with a range of naturally occuring defence powers.</AAVPE_Xenoseer.tooltip>
+  <!--Ravager to Wildspeaker-->
+  <AAVPE_Ravager.label>Wildspeaker</AAVPE_Ravager.label>
+  <AAVPE_Ravager.description>Wildspeakers are powerful fighters who use animalistic abilities to defeat their enemies.</AAVPE_Ravager.description>
+  <AAVPE_Ravager.tab>Martial</AAVPE_Ravager.tab>
+  <AAVPE_Ravager.tooltip>Wildspeakers can empower themselves with animalistic aspects and tap into more primitive combat styles, with powerful wildspeakers able to defeat their enemies in a single rage-fueled blow.</AAVPE_Ravager.tooltip>
+</LanguageData>
