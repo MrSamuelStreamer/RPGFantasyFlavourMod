@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <!-- Abilities -->
+  <CommandPsycastWouldExceedEntropy>Arcane load would overflow. Disable the arcane limiter to cast.</CommandPsycastWouldExceedEntropy>
+  <CommandPsycastNotEnoughPsyfocus>{PSYCASTNAME} consumes {0} mana but {CASTERNAME} only has {1}.</CommandPsycastNotEnoughPsyfocus>
+  <CommandPsycastNotEnoughPsyfocusForMentalBreak>{PSYCASTNAME} needs {0} mana to stop {1}'s mental break but {CASTERNAME} only has {2} psyfocus.</CommandPsycastNotEnoughPsyfocusForMentalBreak>
+  <CommandPsycastHigherLevelPsylinkRequired>level {0} magical attunement is required.</CommandPsycastHigherLevelPsylinkRequired>
+  <CommandPsycastZeroPsychicSensitivity>Zero magic sensitivity.</CommandPsycastZeroPsychicSensitivity>
+  <CommandPsycastLowPsyfocus>Need at least {0} mana to cast this.</CommandPsycastLowPsyfocus>
+  <NeuralHeatLetter>L</NeuralHeatLetter>
+  <PsyfocusLetter>M</PsyfocusLetter>
+</LanguageData>

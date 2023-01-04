@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <NeedMeditationSpotAlert>Need magical meditation spot</NeedMeditationSpotAlert>
+  <NeedMeditationSpotAlertDesc>These colonists have a mana need or are sceheduled to meditate, but don't have any meditation spots available for them.\n\n{0}\n\nPlace a meditation spot and ensure it is reachable and usable. Colonists will prefer the meditation spot near the best focus object they can use.</NeedMeditationSpotAlertDesc>
+</LanguageData>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <PsycastNeurotrainerLabel>spellbook ({0})</PsycastNeurotrainerLabel>
+  <PsycastNeurotrainerUseLabel>Use spellbook to learn {0} spell</PsycastNeurotrainerUseLabel>
+  <PsycastNeurotrainerDescription>A magical tome written by a powerful mage containing all things to know about a specific spell.\n\n{PSYCAST_label}\n\n{PSYCASTDESCRIPTION}</PsycastNeurotrainerDescription>
+  <AbilityNeurotrainerUsed>{USER_labelShort} used spellbook to learn the {1} spell.</AbilityNeurotrainerUsed>
+  <PsycastNeurotrainerNoPsylink>Requires attunement</PsycastNeurotrainerNoPsylink>
+  <Psyfocus>Mana</Psyfocus>
+  <PsyfocusLabelGizmo>Mana</PsyfocusLabelGizmo>
+  <PsyfocusDesc>Mana is the naturally occuring energy harnessed by mages that allows them to perform magical feats. Mages need to meditate and reflect on spellcasting to increase their mana.\n\nHigher levels of mana permit higher-level powers, but also increase the rate of mana dissipation</PsyfocusDesc>
+  <PsyfocusLevelInfoFallRate>Mana dissipates at {0} per day.</PsyfocusLevelInfoFallRate>
+  <PsyfocusPerDayOfMeditation>Mana accumulation rate: {0}/d</PsyfocusPerDayOfMeditation>
+  <DesiredPsyfocus>Desired Mana level</DesiredPsyfocus>
+  <DesiredPsyfocusDesc>Click to set desired mana level.</DesiredPsyfocusDesc>
+  <BeginLinkingRitualNeedFocus>Need {0} mana focus type</BeginLinkingRitualNeedFocus>
+  <BeginLinkingRitualMaxPsylinkLevel>Max attunement level</BeginLinkingRitualMaxPsylinkLevel>
+  <LetterTextLinkingRitualCompleted>{PAWN_labelShort} has completed the linking ritual with {LINKABLE_labelShort}.\n\n{PAWN_pronoun} now has an heightened mana level, permitting the use of new magical spells.</LetterTextLinkingRitualCompleted>
+  <RitualTargetAnimaTreeMustBeCapableOfNature>Must be a colonist with the natural meditation focus type who is below maximum attunement level.</RitualTargetAnimaTreeMustBeCapableOfNature>
+  <RitualTargetAnimaTreeMustBePsychicallySensitive>Must not be magically deaf.</RitualTargetAnimaTreeMustBePsychicallySensitive>
+  <AbilityNoEntropyToDump>no arcane load to dump.</AbilityNoEntropyToDump>
+  <PsychicEntropy>Arcane Load</PsychicEntropy>
+  <PsychicEntropyShort>Load</PsychicEntropyShort>
+  <LowPsyfocus>low mana</LowPsyfocus>
+  <PawnTooltipPsychicEntropyDesc>Arcane load increases after using a spell. Surpassing the normal limit may cause a mana overload lasting days.\n\nArcane load dissipates naturally over time. This process can be accelerated by wearing eltex apparel or being in pain.</PawnTooltipPsychicEntropyDesc>
+  <PawnTooltipPsychicEntropyPainFocus>Pain boost\n\nPain focuses the mind and speeds up arcane load dissipation.\n\nPain level: {0}\nBonus to arcane load reduction: {1}</PawnTooltipPsychicEntropyPainFocus>
+  <PawnTooltipPsychicEntropyLimit>Toggle arcane load limiter. Exceeding your arcane load limit may cause a mana overload lasting days. It won't cause permanent damage.</PawnTooltipPsychicEntropyLimit>
+  <PawnTooltipPsyfocus>Mana: {0}</PawnTooltipPsyfocus>  
+  <Reward_BestowingCeremony_Label>New attunement level</Reward_BestowingCeremony_Label>
+  <Reward_BestowingCeremony>{PAWNNAME} gains attunement</Reward_BestowingCeremony>
+</LanguageData>
