@@ -14,7 +14,7 @@
   <AAVPE_Xenoseer.label>Shaman</AAVPE_Xenoseer.label>
   <AAVPE_Xenoseer.description>Shaman are studious experts of natural life.</AAVPE_Xenoseer.description>
   <AAVPE_Xenoseer.tab>Arcane</AAVPE_Xenoseer.tab>
-  <AAVPE_Xenoseer.tooltip>Shaman dedicate themselves to the study and understanding of creatures, and emulating their unique abilities. Wildspeakers can imbue their body with a range of naturally occuring defence powers.</AAVPE_Xenoseer.tooltip>
+  <AAVPE_Xenoseer.tooltip>Shaman dedicate themselves to the study and understanding of creatures, and emulating their unique abilities. Shaman can imbue their body with a range of naturally occuring defence powers.</AAVPE_Xenoseer.tooltip>
   <!--Ravager to Wildspeaker-->
   <AAVPE_Ravager.label>Wildspeaker</AAVPE_Ravager.label>
   <AAVPE_Ravager.description>Wildspeakers are powerful fighters who use animalistic abilities to defeat their enemies.</AAVPE_Ravager.description>
