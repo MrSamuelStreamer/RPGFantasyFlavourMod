@@ -6,5 +6,7 @@
     <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE</li>
     <li IfModActive="sarg.alphaanimals">Compatibility/sarg.alphaanimals</li>
     <li IfModActive="Edern.CombatPsycasts">Compatibility/Edern.CombatPsycasts</li>
+    <li IfModActive="oken.medievalquestrewards">Compatibility/oken.medievalquestrewards</li>
+    <li IfModActive="sargoskar.witcherhunt">Compatibility/sargoskar.witcherhunt</li>
   </v1.4>
 </loadFolders>
