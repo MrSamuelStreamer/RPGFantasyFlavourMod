@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="mqr_SkillPotion"]/comps/li[@Class="CompProperties_UseEffect" and compClass="CompUseEffect_DestroySelf"]</xpath>
+        <value>
+            <li Class="CompProperties_UseEffectDestroySelf" />
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="mqr_SkillPotion"]/graphicData/texPath</xpath>
+        <value>
+            <texPath>Textures\Things\Item\Special\MechSerumNeurotrainer.png</texPath>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="mqr_SkillPotion"]/description</xpath>
+        <value>
+            <description>A valuable tome that contains knowledge of the world and its workings.</description>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionShooting"]/label</xpath>
+        <value>
+            <label>Tome of Archery</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionShooting"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Archery</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionMelee"]/label</xpath>
+        <value>
+            <label>Tome of Melee</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionMelee"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Melee</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionConstruction"]/label</xpath>
+        <value>
+            <label>Tome of Construction</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionConstruction"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Construction</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionMining"]/label</xpath>
+        <value>
+            <label>Tome of Mining</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionMining"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Mining</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionCooking"]/label</xpath>
+        <value>
+            <label>Tome of Cooking</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionCooking"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Cooking</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionPlants"]/label</xpath>
+        <value>
+            <label>Tome of Herblore</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionPlants"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Herblore</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionAnimals"]/label</xpath>
+        <value>
+            <label>Tome of Animals</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionAnimals"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Animals</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionCrafting"]/label</xpath>
+        <value>
+            <label>Tome of Crafting</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionCrafting"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Crafting</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionArtistic"]/label</xpath>
+        <value>
+            <label>Tome of Art</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionArtistic"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Art</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionMedicine"]/label</xpath>
+        <value>
+            <label>Tome of Healing</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionMedicine"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Healing</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionSocial"]/label</xpath>
+        <value>
+            <label>Tome of Persuasion</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionSocial"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Persuasion</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionIntellectual"]/label</xpath>
+        <value>
+            <label>Tome of Intelligence</label>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[defName="SkillPotionIntellectual"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
+        <value>
+            <useLabel>Read Tome of Intelligence</useLabel>
+        </value>
+    </Operation>
+
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@ParentName="mqr_SkillPotion"]/comps/li[@Class="CompProperties_Neurotrainer"]/useJob</xpath>
+        <value>
+            <useJob>UseNeurotrainer</useJob>
+        </value>
+    </Operation>
+
+</Patch>
