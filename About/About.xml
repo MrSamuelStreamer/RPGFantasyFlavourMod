@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <ModMetaData>
-  <name>RPG Adventure Flavour Pack</name>
-  <author>MrSamuelStreamer, Feldoh, Skullywag</author>
-  <supportedVersions>
-	  <li>1.4</li>
-  </supportedVersions>
-  <packageId>MrSamuelStreamer.RPGAdventureFlavour</packageId>
-<description>Patches, retextures, RimThemes, and thematic changes for the RPG Adventure Pack!</description>
-<loadAfter>
-    <li>VanillaExpanded.VPsycastsE</li>
-    <li>aRandomKiwi.RimThemes</li>
-    <li>sarg.alphagenes</li>
-  </loadAfter>
+    <name>RPG Adventure Flavour Pack</name>
+    <author>MrSamuelStreamer, Feldoh, Skullywag</author>
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+    <packageId>MrSamuelStreamer.RPGAdventureFlavour</packageId>
+    <description>Patches, retextures, RimThemes, and thematic changes for the RPG Adventure Pack!</description>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>VanillaExpanded.VPsycastsE</li>
+        <li>aRandomKiwi.RimThemes</li>
+        <li>sarg.alphagenes</li>
+        <li>sarg.alphaanimals</li>
+        <li>Edern.CombatPsycasts</li>
+        <li>oken.medievalquestrewards</li>
+        <li>sargoskar.witcherhunt</li>
+    </loadAfter>
 </ModMetaData>
