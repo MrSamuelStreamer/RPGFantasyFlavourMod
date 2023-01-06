@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <Shooting.description>Ranged combat, with any type of coward's weapon.</Shooting.description>
+    <Shooting.skillLabel>archery</Shooting.skillLabel>
+    <Plants.skillLabel>herblore</Plants.skillLabel>
+    <Animals.skillLabel>animal handling</Animals.skillLabel>
+    <Medicine.skillLabel>healing</Medicine.skillLabel>
+    <Social.skillLabel>persuasion</Social.skillLabel>
+    <Social.description>Deception, intimidation, performance and persuasion.</Social.description>
+</LanguageData>

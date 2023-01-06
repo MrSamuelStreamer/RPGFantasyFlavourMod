@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <RangedWeapon_Cooldown.description>How long it takes to recover after loosing a shot.</RangedWeapon_Cooldown.description>
+    <RangedWeapon_DamageMultiplier.description>A damage multiplier applied to projectiles loosed from this weapon.</RangedWeapon_DamageMultiplier.description>
+</LanguageData>

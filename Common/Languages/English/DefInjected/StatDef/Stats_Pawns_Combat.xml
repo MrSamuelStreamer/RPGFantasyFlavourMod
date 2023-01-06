@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <ShootingAccuracyPawn.label>archery accuracy</ShootingAccuracyPawn.label>
+    <ShootingAccuracyPawn.labelForFullStatList>archery accuracy (people)</ShootingAccuracyPawn.labelForFullStatList>
+    <ShootingAccuracyPawn.description>Base chance to not miss per cell of shot distance.\n\nChance to hit is also affected by many other factors.\n\nA hit chance explanation for any shot can be seen by selecting an archer and mousing over a target.</ShootingAccuracyPawn.description>
+    
+    <AimingDelayFactor.description>How long it takes to loose after choosing a target.</AimingDelayFactor.description>
+
+    <MortarMissRadiusFactor.label>Trebuchet miss radius multiplier</MortarMissRadiusFactor.label>
+    <MortarMissRadiusFactor.labelForFullStatList>Trebuchet miss radius multiplier</MortarMissRadiusFactor.labelForFullStatList>
+    <MortarMissRadiusFactor.description>A multiplier on the miss radius of a trebuchet used by this person. Smaller numbers means more accurate trebuchet missiles.</MortarMissRadiusFactor.description>
+</LanguageData>

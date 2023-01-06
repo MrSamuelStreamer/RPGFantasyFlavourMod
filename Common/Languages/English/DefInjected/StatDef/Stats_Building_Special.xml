@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <MedicalTendQualityOffset.label>healer tend quality offset</MedicalTendQualityOffset.label>
+    <MedicalTendQualityOffset.description>Healer tend quality is offset by this value.</MedicalTendQualityOffset.description>
+
+    <SurgerySuccessChanceFactor.description>A multiplier to the chance that a surgery will succeed when performed here.\n\nSurgery success chances are also affected by many other factors, including the healer's ability and medicine used.</SurgerySuccessChanceFactor.description>
+</LanguageData>

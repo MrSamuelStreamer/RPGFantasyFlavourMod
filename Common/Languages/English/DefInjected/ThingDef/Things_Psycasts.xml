@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <PsychicAmplifier.label>tome of magical attunement</PsychicAmplifier.label>
+    <PsychicAmplifier.description>A consumable mystical tome that attunes a user to magic or upgrades their magical ability.\n\nUpon starting to read the user enters a trance, the symbols streaming off the pages and directly into their very being. Afterwards, the now empty tome disintegrates into worthless ash.</PsychicAmplifier.description>
+    <PsychicAmplifier.comps.0.useLabel>Use attunement tome to increase magical ability</PsychicAmplifier.comps.0.useLabel>
+</LanguageData>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <Ability_RequiredPsylink.label>magical attunement level</Ability_RequiredPsylink.label>
+    <Ability_RequiredPsylink.description>The minimum maical attunement level required to use this ability.</Ability_RequiredPsylink.description>
+
+    <Ability_EntropyGain.label>arcane load gain</Ability_EntropyGain.label>
+    <Ability_EntropyGain.description>How much arcane load will be added as a result of performing this ability.</Ability_EntropyGain.description>
+
+    <Ability_PsyfocusCost.label>mana cost</Ability_PsyfocusCost.label>
+    <Ability_PsyfocusCost.description>How much mana must be spent to perform this ability.</Ability_PsyfocusCost.description>
+
+    <Ability_DetectChancePerEntropy.description>The likelihood of this spell being detected when it is used.\n\nSome factions try to enforce laws which restrict some powers to those holding specific titles. When you use a spell, there is a chance that the magical signature will be detected at a distance, which leads to diplomatic consequences.</Ability_DetectChancePerEntropy.description>
+</LanguageData>
