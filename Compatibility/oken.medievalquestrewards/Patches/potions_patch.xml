@@ -12,7 +12,7 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="mqr_SkillPotion"]/graphicData/texPath</xpath>
         <value>
-            <texPath>Textures\Things\Item\Special\MechSerumNeurotrainer.png</texPath>
+            <texPath>Things/Item/Special/MechSerumNeurotrainer.png</texPath>
         </value>
     </Operation>
 
@@ -110,14 +110,14 @@
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SkillPotionAnimals"]/label</xpath>
         <value>
-            <label>Tome of Animals</label>
+            <label>Tome of Animal Handling</label>
         </value>
     </Operation>
 
     <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[defName="SkillPotionAnimals"]/comps/li[@Class="CompProperties_Neurotrainer"]/useLabel</xpath>
         <value>
-            <useLabel>Read Tome of Animals</useLabel>
+            <useLabel>Read Tome of Animal Handling</useLabel>
         </value>
     </Operation>
 

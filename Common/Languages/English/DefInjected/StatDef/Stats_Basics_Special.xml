@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <MedicalPotency.label>healing potency</MedicalPotency.label>
+    <MedicalPotency.description>How effective this is when used to tend wounds and diseases, or do surgery.\n\nHigher healing potency improves the quality of tending, and acts as a multiplier on the chance of success during surgery.\nHealing potency is just one factor in medical outcomes, among many others, including healer ability, equipment, cleanliness, and luck.</MedicalPotency.description>
+
+    <MedicalQualityMax.label>healer tend quality maximum</MedicalQualityMax.label>
+    <MedicalQualityMax.description>The maximum quality of healer tending that can be achieved while using this.\n\nBetter tend quality allows skilled healers to treat wounds better, as well as more reliably.</MedicalQualityMax.description>
+
+    <MeditationFocusStrength.label>meditation mana bonus</MeditationFocusStrength.label>
+    <MeditationFocusStrength.description>The amount of extra mana someone gains by focusing on this object during meditation, in addition to their own base rate of meditation mana gain.\n\nFor some objects, this number can change depending on the surroundings and the person doing the meditating.</MeditationFocusStrength.description>
+
+    <PsychicSensitivityOffset.label>Magical sensitivity offset</PsychicSensitivityOffset.label>
+    <PsychicSensitivityOffset.description>An offset applied to the user's magical sensitivity.</PsychicSensitivityOffset.description>
+</LanguageData>

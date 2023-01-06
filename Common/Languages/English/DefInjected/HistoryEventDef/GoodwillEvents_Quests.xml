@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <QuestPawnLost.label>member lost at the inn</QuestPawnLost.label>
+    <ShuttleCommanderMissedShuttle.label>carriage commander missed carriage</ShuttleCommanderMissedShuttle.label>
+    <ShuttleGuardsMissedShuttle.label>carriage guards missed carriage</ShuttleGuardsMissedShuttle.label>
+    <MemberMissedShuttle.label>member missed shuttle</MemberMissedShuttle.label>
+</LanguageData>
