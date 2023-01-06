@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <VPE_PsyfocusCostFactor.label>mana cost factor</VPE_PsyfocusCostFactor.label>
+    <VPE_PsyfocusCostFactor.description>A multiplier on the mana cost of spells.</VPE_PsyfocusCostFactor.description>
+
+    <VPE_PsychicEntropyMinimum.label>minimum arcane load</VPE_PsychicEntropyMinimum.label>
+    <VPE_PsychicEntropyMinimum.description>The minimum amount of arcane load. This is increased by maintaining certain spells, which require a constant level of arcane load from the mage that never fades whilst the spell remains active.</VPE_PsychicEntropyMinimum.description>
+</LanguageData>

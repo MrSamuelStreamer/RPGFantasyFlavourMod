@@ -10,13 +10,6 @@
     </Operation>
 
     <Operation Class="PatchOperationReplace">
-        <xpath>Defs/ThingDef[@Name="mqr_SkillPotion"]/graphicData/texPath</xpath>
-        <value>
-            <texPath>Things/Item/Special/MechSerumNeurotrainer.png</texPath>
-        </value>
-    </Operation>
-
-    <Operation Class="PatchOperationReplace">
         <xpath>Defs/ThingDef[@Name="mqr_SkillPotion"]/description</xpath>
         <value>
             <description>A valuable tome that contains knowledge of the world and its workings.</description>

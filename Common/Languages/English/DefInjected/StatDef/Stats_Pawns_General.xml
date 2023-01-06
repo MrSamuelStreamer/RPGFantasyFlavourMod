@@ -10,9 +10,9 @@
     <MeditationFocusGain.label>meditation mana gain</MeditationFocusGain.label>
     <MeditationFocusGain.description>The amount of mana a person gains per day of meditation, ignoring bonuses from focus objects.</MeditationFocusGain.description>
 
-    <PsychicEntropyMax.label>neural heat limit</PsychicEntropyMax.label>
-    <PsychicEntropyMax.description>The maximum amount of neural heat individual can tolerate safely.</PsychicEntropyMax.description>
+    <PsychicEntropyMax.label>arcane load limit</PsychicEntropyMax.label>
+    <PsychicEntropyMax.description>The maximum amount of arcane load an individual can tolerate safely.</PsychicEntropyMax.description>
 
     <PsychicEntropyRecoveryRate.label>arcane load recovery rate</PsychicEntropyRecoveryRate.label>
-    <PsychicEntropyRecoveryRate.description>The rate at which this person reduces arcane load.</PsychicEntropyRecoveryRate.description>
+    <PsychicEntropyRecoveryRate.description>The rate at which this person dissipates arcane load.</PsychicEntropyRecoveryRate.description>
 </LanguageData>
