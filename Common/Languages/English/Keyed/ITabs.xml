@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <DoctorsCare>Healer care</DoctorsCare>
+    <GetsMedicine>Gets medicine</GetsMedicine>
+    <ShatteredBodyPart>Smashed</ShatteredBodyPart>
+    <MedicalOperations>Healer operations</MedicalOperations>
+
+    <DismissQuest>Refuse this quest and move it to the historical ledger.\n\nYou can move it back onto the board at any time. Its effects and expiry times will proceed as normal. You won't recieve notifications about refued quests.</DismissQuest>
+    <UnDismissQuest>Reconsider this quest.\n\nThe quest will be returned to the available or active board, and notifications will be re-enabled.</UnDismissQuest>
+    <QuestDismissed>This quest is here because it was refused.\n\nYou can reconsider it until it expires.</QuestDismissed>
+    <DeleteQuest>Banish this quest from the ledger and remove it from the quest list forever.</DeleteQuest>
+</LanguageData>

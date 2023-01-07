@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <RansomDemand>{1} has sent a message. They are holding former colonist {PAWN_labelShort} for ransom.\n\nThey're willing to release {PAWN_objective} back to you in exchange for {2} silver.</RansomDemand>
+</LanguageData>

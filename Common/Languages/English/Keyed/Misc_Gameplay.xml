@@ -27,4 +27,25 @@
   <PawnTooltipPsyfocus>Mana: {0}</PawnTooltipPsyfocus>  
   <Reward_BestowingCeremony_Label>New attunement level</Reward_BestowingCeremony_Label>
   <Reward_BestowingCeremony>{PAWNNAME} gains attunement</Reward_BestowingCeremony>
+  
+  <ForColonistUse>For party use</ForColonistUse>
+  <MedicalBed>Healing</MedicalBed>
+  <RenounceTitleWillKeepPsylinkLevels>{PAWN_pronoun} will keep all {PAWN_possessive} magical attunement levels and spells.</RenounceTitleWillKeepPsylinkLevels>
+  <ShellLoaded>Projectile loaded: {1_label}</ShellLoaded>
+  <LordReportGivingSpeech>Giving bardic inspiration</LordReportGivingSpeech>
+  
+  <!-- Neurotrainer -->
+  <SkillNeurotrainerLabel>skill tome ({0})</SkillNeurotrainerLabel>
+  <SkillNeurotrainerUseLabel>Use skill tome to learn {0}</SkillNeurotrainerUseLabel>
+  <SkillNeurotrainerDescription>An enchanted tome which when read allows the reader to practice a skill in their own mind, setting up a perfect training room and dialating time. This allows them to spend many days practicing this skill from their perspective despite only appearing to take a moment to any on-lookers.\n\nAs the power of the tome fades it crumbles into useless dust.</SkillNeurotrainerDescription>
+  <SkillNeurotrainerUsed>{USER_labelShort} used {1} skill tome to go from level {2} to level {3}.</SkillNeurotrainerUsed>
+
+  <ActivityIconMedicalRest>Rest, healer's orders</ActivityIconMedicalRest>
+  
+  <OutfitSoldier>Warrior</OutfitSoldier>
+
+  <!-- Biocoded weapons -->
+  <Biocoded>bloodlinked {0}</Biocoded>
+  <CodedFor>Bloodlink: {0}</CodedFor>
+  <BiocodedCodedForSomeoneElse>bloodlinked</BiocodedCodedForSomeoneElse>
 </LanguageData>

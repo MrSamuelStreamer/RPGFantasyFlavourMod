@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <Patient.description>Go to a healer bed for treatment if you have an immediately life-threatening health condition.</Patient.description>
+
+    <Doctor.labelShort>healer</Doctor.labelShort>
+    <Doctor.pawnLabel>Healer</Doctor.pawnLabel>
+    <Doctor.gerundLabel>healing</Doctor.gerundLabel>
+    <Doctor.description>Treat the sick, bring them food, cheer them up, and perform assigned surgeries. Healers will care for both colonists and prisoners.</Doctor.description>
+
+    <BasicWorker.description>Unskilled and easy tasks. Release prisoners and pull levers.</BasicWorker.description>
+</LanguageData>

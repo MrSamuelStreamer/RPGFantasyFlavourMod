@@ -1,9 +1,60 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <LanguageData>
-  <ApparelRequirementAnyPsycasterApparel>Any mage apparel</ApparelRequirementAnyPsycasterApparel>
-  <ApparelRequirementOrAnyPsycasterOrPrestigeApparel>or any mage or prestige apparel</ApparelRequirementOrAnyPsycasterOrPrestigeApparel>
-  <AbilityTargetPsychicallyDeaf>Target is magically deaf.</AbilityTargetPsychicallyDeaf>
-  <CannotSkipTargetPsychicResistant>Magic resistance</CannotSkipTargetPsychicResistant>
-  <RoyalWithTraitAffectingPsylinkNegatively>Since {PAWN_labelShort} is {2}, the mana attuner might not be useful for {PAWN_objective}.</RoyalWithTraitAffectingPsylinkNegatively>
-  <PsylinkTooLowForGainAbility>{PAWN_labelShort}'s magical attunement level is not at a high enough level to use {ABILITY}.\n\nGain this power anyways?</PsylinkTooLowForGainAbility>
+    <ApparelRequirementAnyPsycasterApparel>Any mage apparel</ApparelRequirementAnyPsycasterApparel>
+    <ApparelRequirementOrAnyPsycasterOrPrestigeApparel>or any mage or prestige apparel</ApparelRequirementOrAnyPsycasterOrPrestigeApparel>
+    <AbilityTargetPsychicallyDeaf>Target is magically deaf.</AbilityTargetPsychicallyDeaf>
+    <CannotSkipTargetPsychicResistant>Magic resistance</CannotSkipTargetPsychicResistant>
+    <RoyalWithTraitAffectingPsylinkNegatively>Since {PAWN_labelShort} is {2}, the mana attuner might not be useful for {PAWN_objective}.</RoyalWithTraitAffectingPsylinkNegatively>
+    <PsylinkTooLowForGainAbility>{PAWN_labelShort}'s magical attunement level is not at a high enough level to use {ABILITY}.\n\nGain this power anyways?</PsylinkTooLowForGainAbility>
+
+    <!-- Long events -->
+    <InitializingInterface>Setting up dungeons</InitializingInterface>
+    <UnloadingUnusedAssets>Abandoning worthless loot</UnloadingUnusedAssets>
+    <LoadingAllActiveMods>Expanding the setting</LoadingAllActiveMods>
+    <LoadingDefs>Reading up on monster types</LoadingDefs>
+    <LoadingAssets>Finding new glamours</LoadingAssets>
+    <Initializing>Planning an adventure</Initializing>
+    <LoadingWorld>Getting ready to face the world</LoadingWorld>
+    <LoadingMap>It helps to have a map</LoadingMap>
+    <InitializingGame>Getting ready to quest</InitializingGame>
+    <SpawningAllThings>Hiding all the loot</SpawningAllThings>
+    <SpawningColonists>Tweaking character sheets</SpawningColonists>
+
+    <!-- Save/load -->
+    <SaveGameButton>Hire Bard</SaveGameButton>
+    <LoadGameButton>Resume quest</LoadGameButton>
+    <OverwriteButton>Replace tale</OverwriteButton>
+    <ConfirmDelete>Really delete {0}?</ConfirmDelete>
+    <DeleteThisSavegame>Delete this tale.</DeleteThisSavegame>
+    <SavedAs>Bards will sing of {0}.</SavedAs>
+    <LoadingLongEvent>The bard spins their tale</LoadingLongEvent>
+    <SavingLongEvent>Making sure the bard got it right</SavingLongEvent>
+
+    <CoverEffectivenessExplanation>How effective this is when used as cover from projectiles.\n\nHigher percentages will block more shots.</CoverEffectivenessExplanation>
+
+    <MeditationFocusesPawnDesc>The types of meditation focus this person can use. When meditating, a person can focus on an object to boost their mana gain - but only if that object offers a focus type they can use. Each person's meditation types are determined by their background, traits, social position, and so on.</MeditationFocusesPawnDesc>
+    <MeditationFocusesDesc>The types of meditation focus this object offers. A meditating person can focus on this object to boost their mana gain, but only if they are able to use one of its meditation types. Each person can use different meditation types depending on their background, traits, social position, and so on.</MeditationFocusesDesc>
+
+    <YourTradeableSilverTip>You can only trade with silver that is in a trade zone and not under a roof.</YourTradeableSilverTip>
+
+    <CaravanMustHaveAtLeastOneColonist>You must assign at least one non-downed party member.</CaravanMustHaveAtLeastOneColonist>
+    <CaravanRoamerCannotReachSpots>{1_labelShort} is unable to reach the packing spot or the exit location when led by any of the assigned party members.</CaravanRoamerCannotReachSpots>
+    <CaravanItemIsUnreachableSingle>None of the assigned party members are able to reach the {0}.</CaravanItemIsUnreachableSingle>
+    <CaravanItemIsUnreachableMulti>None of the assigned party members are able to reach {0}x {1}.</CaravanItemIsUnreachableMulti>
+    <TooBigCaravanMassUsage>The caravan is over-encumbered.</TooBigCaravanMassUsage>
+    <ColonistsSection>Party Memmbers</ColonistsSection>
+
+    <SourceCaravanMustHaveAtLeastOneColonist>You must leave at least one non-downed party member.</SourceCaravanMustHaveAtLeastOneColonist>
+
+    <SocialSkillIs>Persuasion skill: {0}</SocialSkillIs>
+
+    <MedGroupColonist>Party</MedGroupColonist>
+    <MedGroupImprisonedColonist>Imprisoned colonist</MedGroupImprisonedColonist>
+
+    <!-- Abilities -->
+    <AbilityEntropyGain>arcane load increase</AbilityEntropyGain>
+    <AbilityPsyfocusCost>Mana cost</AbilityPsyfocusCost>
+    <PsychicLoveInduceIn>Magically induce love in</PsychicLoveInduceIn>
+    <PsychicLoveFor>Magically enforced love for</PsychicLoveFor>
 </LanguageData>

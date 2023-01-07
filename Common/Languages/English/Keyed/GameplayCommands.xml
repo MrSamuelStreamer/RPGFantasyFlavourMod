@@ -1,12 +1,27 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <LanguageData>
-  <!-- Abilities -->
-  <CommandPsycastWouldExceedEntropy>Arcane load would overflow. Disable the arcane limiter to cast.</CommandPsycastWouldExceedEntropy>
-  <CommandPsycastNotEnoughPsyfocus>{PSYCASTNAME} consumes {0} mana but {CASTERNAME} only has {1}.</CommandPsycastNotEnoughPsyfocus>
-  <CommandPsycastNotEnoughPsyfocusForMentalBreak>{PSYCASTNAME} needs {0} mana to stop {1}'s mental break but {CASTERNAME} only has {2} psyfocus.</CommandPsycastNotEnoughPsyfocusForMentalBreak>
-  <CommandPsycastHigherLevelPsylinkRequired>level {0} magical attunement is required.</CommandPsycastHigherLevelPsylinkRequired>
-  <CommandPsycastZeroPsychicSensitivity>Zero magic sensitivity.</CommandPsycastZeroPsychicSensitivity>
-  <CommandPsycastLowPsyfocus>Need at least {0} mana to cast this.</CommandPsycastLowPsyfocus>
-  <NeuralHeatLetter>L</NeuralHeatLetter>
-  <PsyfocusLetter>M</PsyfocusLetter>
+    <!-- Abilities -->
+    <CommandPsycastWouldExceedEntropy>Arcane load would overflow. Disable the arcane limiter to cast.</CommandPsycastWouldExceedEntropy>
+    <CommandPsycastNotEnoughPsyfocus>{PSYCASTNAME} consumes {0} mana but {CASTERNAME} only has {1}.</CommandPsycastNotEnoughPsyfocus>
+    <CommandPsycastNotEnoughPsyfocusForMentalBreak>{PSYCASTNAME} needs {0} mana to stop {1}'s mental break but {CASTERNAME} only has {2} psyfocus.</CommandPsycastNotEnoughPsyfocusForMentalBreak>
+    <CommandPsycastHigherLevelPsylinkRequired>level {0} magical attunement is required.</CommandPsycastHigherLevelPsylinkRequired>
+    <CommandPsycastZeroPsychicSensitivity>Zero magic sensitivity.</CommandPsycastZeroPsychicSensitivity>
+    <CommandPsycastLowPsyfocus>Need at least {0} mana to cast this.</CommandPsycastLowPsyfocus>
+    <NeuralHeatLetter>L</NeuralHeatLetter>
+    <PsyfocusLetter>M</PsyfocusLetter>
+
+    <CommandForbiddenDesc>Forbidden: Your party is not allowed to interact with this. Click to allow.</CommandForbiddenDesc>
+    <CommandNotForbiddenDesc>Allowed: Your party is allowed to interact with this. Click to forbid.</CommandNotForbiddenDesc>
+
+    <CommandBedSetAsMedicalLabel>Healer</CommandBedSetAsMedicalLabel>
+    <CommandBedSetAsMedicalDesc>Whether this bed is for use by patients awaiting healing.</CommandBedSetAsMedicalDesc>
+    <ChangingOwnerTypeBedWarning>Changing bed use affects the whole room (since prisoners, slaves, party members and colonists cannot sleep in the same room).\n\nThese people will lose ownership of their beds:</ChangingOwnerTypeBedWarning>
+
+    <CommandExtractShell>Extract projectile</CommandExtractShell>
+    <CommandExtractShellDesc>Unloads the current projectile so it can be replaced with different ammunition.</CommandExtractShellDesc>
+    <MessageTurretWontFireBecauseHoldFire>Warning: The trebuchet won't fire because it's set to "Hold fire".</MessageTurretWontFireBecauseHoldFire>
+
+    <!-- Trade beacon -->
+    <CommandMakeBeaconStockpileDesc>Create a stockpile around this building exactly matching the shape of the trade area radius.</CommandMakeBeaconStockpileDesc>
 </LanguageData>

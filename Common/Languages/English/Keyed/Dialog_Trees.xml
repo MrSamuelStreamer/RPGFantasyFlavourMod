@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <FactionGreetingHostile>{0} says your mother was a hampster and your father smells of elderberries.</FactionGreetingHostile>
+    <FactionGreetingHostileAppreciative>{0} demands that you make a gesture of goodwill, like bringing gifts to one of {0_possessive} settlements or releasing {0_possessive} faction's prisoners unharmed. Until then, {0_pronoun} is unwilling to talk and {0_pronoun} signs off with an insult.</FactionGreetingHostileAppreciative>
+
+    <Disconnect>End talk</Disconnect>
+
+    <NeedSilverLaunchable>need {0} silver in a trade zone</NeedSilverLaunchable>
+    <CantSendMilitaryAidInTime>{0} apologizes and says they won't be able to arrive in time.\n\n(Catapulting warriors has yet to leave them in any condition to fight)</CantSendMilitaryAidInTime>
+
+</LanguageData>

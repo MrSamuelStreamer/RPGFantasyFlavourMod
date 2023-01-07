@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <CallOnRadio>Send message to {0}</CallOnRadio>
+    <NotSurgeryReady>not ready for the healers</NotSurgeryReady>
+    <NoDoctor>no healer</NoDoctor>
+    <NotForSlaves>healer bed not for slaves</NotForSlaves><!-- text_todo -->
+    <NoCommsTarget>Nobody to send a message to</NoCommsTarget>
+</LanguageData>
