@@ -8,6 +8,6 @@
     <li IfModActive="sarg.alphaanimals">Compatibility/sarg.alphaanimals</li>
     <li IfModActive="Edern.CombatPsycasts">Compatibility/Edern.CombatPsycasts</li>
     <li IfModActive="oken.medievalquestrewards">Compatibility/oken.medievalquestrewards</li>
-    <li IfModActive="sargoskar.witcherhunt">Compatibility/sargoskar.witcherhunt</li>
+    <li IfModActive="mlie.rimquest">Compatibility/mlie.rimquest/1.4</li>
   </v1.4>
 </loadFolders>

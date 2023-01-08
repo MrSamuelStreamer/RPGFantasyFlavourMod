@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <OutputType>Library</OutputType>
+        <ProjectGuid>{BD120E50-005E-43ED-9FBF-5A93B178C49C}</ProjectGuid>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest</RootNamespace>
+        <AssemblyName>RPGAdventureFlavourPack.RimQuest</AssemblyName>
+        <LangVersion>latest</LangVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <TargetFramework>net4.8</TargetFramework>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>none</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>../../Compatibility/mlie.rimquest/1.4/Assemblies</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>../../Compatibility/mlie.rimquest/1.4/Assemblies</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral">
+            <HintPath Condition="!Exists('..\..\..\2009463077\Current\Assemblies\0Harmony.dll')">..\..\packages\Lib.Harmony.2.2.2\lib\net48\0Harmony.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\2009463077\Current\Assemblies\0Harmony.dll')">..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+            <HintPath Condition="!Exists('..\..\..\..\RimWorldWin64_Data')">..\..\packages\Krafs.Rimworld.Ref.1.4.3580\ref\net48\Assembly-CSharp.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="RimQuest">
+            <HintPath>..\..\..\2263331727\1.4\Assemblies\RimQuest.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath Condition="!Exists('..\..\..\..\RimWorldWin64_Data')">..\..\packages\Krafs.Rimworld.Ref.1.4.3580\ref\net48\UnityEngine.CoreModule.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <Compile Include="HarmonyPatches\WitcherMonsterHuntRimQuestPatch.cs" />
+        <Compile Include="RPGAdventureFlavourPackForRimquest.cs" />
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Condition="!Exists('..\..\..\..\RimWorldWin64_Data')" Include="Krafs.Rimworld.Ref" Version="1.4.3580" targetFramework="net48" ExcludeAssets="runtime" />
+        <PackageReference Condition="!Exists('..\..\..\2009463077\Current\Assemblies\0Harmony.dll')" Include="Lib.Harmony" version="2.2.2" targetFramework="net48" ExcludeAssets="runtime" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+    <PropertyGroup>
+        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+        <ProjectGuid>{A7885D8B-AB91-4E18-B00A-5CF7ED895455}</ProjectGuid>
+        <OutputType>Library</OutputType>
+        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <RootNamespace>MrSamuelStreamer.RPGAdventureFlavourPack</RootNamespace>
+        <AssemblyName>RPGAdventureFlavourPack</AssemblyName>
+        <LangVersion>latest</LangVersion>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <TargetFramework>net4.8</TargetFramework>
+        <FileAlignment>512</FileAlignment>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>none</DebugType>
+        <Optimize>false</Optimize>
+        <OutputPath>../Assemblies</OutputPath>
+        <DefineConstants>DEBUG;TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <PlatformTarget>AnyCPU</PlatformTarget>
+        <DebugType>none</DebugType>
+        <Optimize>true</Optimize>
+        <OutputPath>../Assemblies</OutputPath>
+        <DefineConstants>TRACE</DefineConstants>
+        <ErrorReport>prompt</ErrorReport>
+        <WarningLevel>4</WarningLevel>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Compile Include="Properties\AssemblyInfo.cs" />
+    </ItemGroup>
+    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+    <ItemGroup>
+        <Content Include="..\..\..\..\Data\**\*">
+            <Link>AttachedDefs\Rimworld\%(RecursiveDir)\%(FileName)%(Extension)</Link>
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
+    <PropertyGroup>
+        <StartAction>Program</StartAction>
+        <StartProgram>$(SolutionDir)..\..\..\..\RimWorldWin64.exe</StartProgram>
+        <StartArguments>-quicktest</StartArguments>
+    </PropertyGroup>
+    <ItemGroup>
+        <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Source\**" />
+        <AboutFiles Include="..\..\About\**" />
+        <CommonFiles Include="..\..\Common\**" />
+        <CompatibilityFiles Include="..\..\Compatibility\**" />
+        <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md" />
+        <None Include="..\..\.gitattributes;..\..\.gitignore" />
+    </ItemGroup>
+    <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
+        <RemoveDir Directories="obj;bin" />
+    </Target>
+    <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+        <RemoveDir Directories="..\..\Release" />
+        <Delete Files="..\..\RPGAdventureFlavourPack.zip;..\Assemblies\*.pdb" />
+        <Copy SourceFiles="@(AboutFiles)" DestinationFiles="@(AboutFiles->'..\..\Release\RPGAdventureFlavourPack\About\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CommonFiles)" DestinationFiles="@(CommonFiles->'..\..\Release\RPGAdventureFlavourPack\Common\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CompatibilityFiles)" DestinationFiles="@(CompatibilityFiles->'..\..\Release\RPGAdventureFlavourPack\Compatibility\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'..\..\Release\RPGAdventureFlavourPack\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" />
+        <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="..\..\Release\RPGAdventureFlavourPack\" SkipUnchangedFiles="false" />
+        <ZipDirectory DestinationFile="..\..\RPGAdventureFlavourPack.zip" SourceDirectory="..\..\Release" />
+        <RemoveDir Directories="obj;bin" />
+    </Target>
+</Project>
