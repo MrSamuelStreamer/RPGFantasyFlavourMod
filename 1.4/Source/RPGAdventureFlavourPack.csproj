@@ -18,7 +18,7 @@
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
         <DebugSymbols>true</DebugSymbols>
-        <DebugType>none</DebugType>
+        <DebugType>portable</DebugType>
         <Optimize>false</Optimize>
         <OutputPath>../Assemblies</OutputPath>
         <DefineConstants>DEBUG;TRACE</DefineConstants>
@@ -51,13 +51,16 @@
         <StartArguments>-quicktest</StartArguments>
     </PropertyGroup>
     <ItemGroup>
-        <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Source\**" />
+        <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Source\**;..\..\1.*\Assemblies\*.pdb" />
         <AboutFiles Include="..\..\About\**" />
         <CommonFiles Include="..\..\Common\**" />
         <CompatibilityFiles Include="..\..\Compatibility\**" />
         <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md" />
-        <None Include="..\..\.gitattributes;..\..\.gitignore" />
+        <None Include="..\..\.gitattributes;..\..\.gitignore;..\..\CONTRIBUTING.md" />
     </ItemGroup>
+    <Target Name="PreBuild" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+        <Delete Files="../Assemblies/RPGAdventureFlavourPack.pdb" />
+    </Target>
     <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
         <RemoveDir Directories="obj;bin" />
     </Target>
