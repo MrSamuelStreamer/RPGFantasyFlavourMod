@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <!-- Magical ability -->
+    <PsychicAbility_Deaf.label>cut off from magic</PsychicAbility_Deaf.label>
+    <PsychicAbility.labelShortAdj>squib</PsychicAbility.labelShortAdj>
+    <PsychicAbility.description>Carriers of this gene have no magical connection to the ambient mana. They cannot be affected by magical influence, nor can they ever hope to become a mage.</PsychicAbility.description>
+
+    <PsychicAbility_Dull.label>magically dull</PsychicAbility_Dull.label>
+    <PsychicAbility_Dull.labelShortAdj>poor-mage</PsychicAbility_Dull.labelShortAdj>
+    <PsychicAbility_Dull.description>Carriers of this gene are less magically-sensitive than others.</PsychicAbility_Dull.description>
+
+    <PsychicAbility_Enhanced.label>magically-sensitive</PsychicAbility_Enhanced.label>
+    <PsychicAbility_Enhanced.labelShortAdj>gifted-mage</PsychicAbility_Enhanced.labelShortAdj>
+    <PsychicAbility_Enhanced.description>Carriers of this gene are more magically-sensitive than average.</PsychicAbility_Enhanced.description>
+
+    <PsychicAbility_Extreme.label>super magically-sensitive</PsychicAbility_Extreme.label>
+    <PsychicAbility_Extreme.labelShortAdj>mage-prodigy</PsychicAbility_Extreme.labelShortAdj>
+    <PsychicAbility_Extreme.description>Carriers of this gene are much more magically-sensitive than most.</PsychicAbility_Extreme.description>
+</LanguageData>

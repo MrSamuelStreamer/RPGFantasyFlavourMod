@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<LanguageData>
-  <LetterPsylinkLevelGained_First>{USER_labelShort} has gained {USER_possessive} first level of magical attunement! {USER_pronoun} is now a mage.\n\nTo use magical powers, {USER_labelShort} must build up mana through meditation. The effectiveness of this meditation is increased if the person can focus on a specific object while meditating.\n\nDifferent people are able to focus on different objects. These depend on the person's backstories, traits, and titles. For example:\n\n- Mages with royal titles meditate on their thrones.\n- Mages with tribal childhoods meditate to anima trees and nature shrines.\n- Ascetic mages meditate to blank walls.\n- Psychopathic mages meditate to graves, ideally with a loved one inside.\n\nYou can see someone's meditation focus types by looking at their info card with the 'i' button.</LetterPsylinkLevelGained_First>
-</LanguageData>

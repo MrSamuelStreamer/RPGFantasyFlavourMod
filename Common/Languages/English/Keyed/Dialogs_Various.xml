@@ -62,4 +62,7 @@
     <AbilityPsyfocusCost>Mana cost</AbilityPsyfocusCost>
     <PsychicLoveInduceIn>Magically induce love in</PsychicLoveInduceIn>
     <PsychicLoveFor>Magically enforced love for</PsychicLoveFor>
+    
+    <ApparelRequirementOrAnyPsycasterOrPrestigeApparelOrMechlord>or any mage, prestige, or mechlord apparel</ApparelRequirementOrAnyPsycasterOrPrestigeApparelOrMechlord>
+
 </LanguageData>
