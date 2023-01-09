@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RR_PawnBadge.BadgeDef>
+		<defName>BERSERKER</defName>
+		<label>Berserker</label>
+		<description>Berserker</description>
+		<icon>PawnBadge/berserker</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>ARTIFICER</defName>
+		<label>Artificer</label>
+		<description>Artificer</description>
+		<icon>PawnBadge/artificer</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>PALADIN</defName>
+		<label>Paladin</label>
+		<description>Paladin</description>
+		<icon>PawnBadge/paladin</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>ROGUE</defName>
+		<label>Rogue</label>
+		<description>Rogue</description>
+		<icon>PawnBadge/rogue</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>BARD</defName>
+		<label>Bard</label>
+		<description>Bard</description>
+		<icon>PawnBadge/bard</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>DRUID</defName>
+		<label>Druid</label>
+		<description>Druid</description>
+		<icon>PawnBadge/druid</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>CHRONOMANCER</defName>
+		<label>Chronomancer</label>
+		<description>Chronomancer</description>
+		<icon>PawnBadge/chronomancer</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>ELECTROMANCER</defName>
+		<label>Electromancer</label>
+		<description>Electromancer</description>
+		<icon>PawnBadge/electromancer</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>FROSTMANCER</defName>
+		<label>Frostmancer</label>
+		<description>Frostmancer</description>
+		<icon>PawnBadge/frostmancer</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>PYROMANCER</defName>
+		<label>Pyromancer</label>
+		<description>Pyromancer</description>
+		<icon>PawnBadge/pyromancer</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>WARLOCK</defName>
+		<label>Warlock</label>
+		<description>Warlock</description>
+		<icon>PawnBadge/warlock</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>INSECTSUMMONER</defName>
+		<label>Insectsummoner</label>
+		<description>Insect Summoner</description>
+		<icon>PawnBadge/insectsummoner</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Necromancer</defName>
+		<label>Necromancer</label>
+		<description>Necromancer</description>
+		<icon>PawnBadge/necromancer</icon>
+	</RR_PawnBadge.BadgeDef>
+</Defs>
