@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+
+    <!-- Psychic Sensitivity -->
+
+    <PsychicSensitivityUpMajor.label>arcane hypersensitizer</PsychicSensitivityUpMajor.label>
+    <PsychicSensitivityUpMajor.description>This weapon amplifies the wielder's magical sensitivity by 40%. This only applies while the weapon is held.</PsychicSensitivityUpMajor.description>
+
+    <PsychicSensitivityUpMinor.label>arcane sensitizer</PsychicSensitivityUpMinor.label>
+    <PsychicSensitivityUpMinor.description>This weapon amplifies the wielder's magical sensitivity by 20%. This only applies while the weapon is held.</PsychicSensitivityUpMinor.description>
+
+    <PsychicSensitivityDownMinor.label>arcane dampener</PsychicSensitivityDownMinor.label>
+    <PsychicSensitivityDownMinor.description>This weapon suppresses the wielder's magical sensitivity by 15%. This only applies while the weapon is held.</PsychicSensitivityDownMinor.description>
+
+    <PsychicSensitivityDownMajor.label>arcane fog</PsychicSensitivityDownMajor.label>
+    <PsychicSensitivityDownMajor.description>This weapon suppresses the wielder's magical sensitivity by 30%. This only applies while the weapon is held.</PsychicSensitivityDownMajor.description>
+
+    <OnKill_PsyfocusGain.description>This weapon's persona focuses on deaths. If the weapon kills someone, the wielder will instantly gain 20% mana.</OnKill_PsyfocusGain.description>
+
+
+    <PsyfocusMeditationBonus.label>arcane-meditative</PsyfocusMeditationBonus.label>
+    <PsyfocusMeditationBonus.description>This weapon's persona is naturally meditative and helps its wielder focus in psychic meditation. The wielder gains an extra 10% mana per day of meditation, as long as the weapon is held.</PsyfocusMeditationBonus.description>
+
+    <NoPain.description>This weapon's persona is expert at channeling and absorbing the pain of it's weilder via it's extensive mana pathways. The one holding the weapon will feel no pain of any kind.</NoPain.description>
+
+    <SpeedBoost.label>arcane speed</SpeedBoost.label>
+
+    <HungerMaker.label>arcane hunger</HungerMaker.label>
+
+    <NeuralHeatRecoveryGain.label>arcane load sink</NeuralHeatRecoveryGain.label>
+    <NeuralHeatRecoveryGain.description>This weapon's persona has the ability to help dissipate the wielder's arcane load. The wielder's arcane load dissipation is improved by 0.15 per second.</NeuralHeatRecoveryGain.description>
+</LanguageData>

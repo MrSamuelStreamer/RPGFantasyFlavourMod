@@ -6,4 +6,5 @@
     <LetterPsylinkLevelGained_NotFirst>{USER_labelShort} has gained a new level of magical attunement! {USER_pronoun} can now use magic spells of that higher level, but {USER_pronoun} needs to learn them first.</LetterPsylinkLevelGained_NotFirst>
     <LetterPsylinkLevelGained_PsycastLearned>Upon gaining the new magical attunement level, {USER_labelShort} automatically learned these spells: {2}</LetterPsylinkLevelGained_PsycastLearned>
     <LetterPsychicInspiration>Thanks to {CASTER_nameIndef}'s magical suggestion, {PAWN_nameIndef} has experienced an inspiration!</LetterPsychicInspiration>
+    <LetterTextBestowingCeremonyTitleUpdated>{TARGET_definite} has gained new title since the bestowing ceremony was scheduled. In order for bestowing to match the new title, another ceremony will be scheduled soon.\n\nThe new bestowing ceremony will include the arcane rewards for all titles which were not yet awarded.</LetterTextBestowingCeremonyTitleUpdated>
 </LanguageData>

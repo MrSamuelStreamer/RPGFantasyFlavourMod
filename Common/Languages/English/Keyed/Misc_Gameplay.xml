@@ -16,7 +16,7 @@
   <BeginLinkingRitualMaxPsylinkLevel>Max attunement level</BeginLinkingRitualMaxPsylinkLevel>
   <LetterTextLinkingRitualCompleted>{PAWN_labelShort} has completed the linking ritual with {LINKABLE_labelShort}.\n\n{PAWN_pronoun} now has an heightened mana level, permitting the use of new magical spells.</LetterTextLinkingRitualCompleted>
   <RitualTargetAnimaTreeMustBeCapableOfNature>Must be a colonist with the natural meditation focus type who is below maximum attunement level.</RitualTargetAnimaTreeMustBeCapableOfNature>
-  <RitualTargetAnimaTreeMustBePsychicallySensitive>Must not be magically deaf.</RitualTargetAnimaTreeMustBePsychicallySensitive>
+  <RitualTargetAnimaTreeMustBePsychicallySensitive>Must not be cut off from magic.</RitualTargetAnimaTreeMustBePsychicallySensitive>
   <AbilityNoEntropyToDump>no arcane load to dump.</AbilityNoEntropyToDump>
   <PsychicEntropy>Arcane Load</PsychicEntropy>
   <PsychicEntropyShort>Load</PsychicEntropyShort>

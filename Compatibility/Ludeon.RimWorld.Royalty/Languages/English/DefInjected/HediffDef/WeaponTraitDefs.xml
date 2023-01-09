@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <NoPain.label>wielded painlessness</NoPain.label>
+    <NoPain.description>Pain is disabled by the magical influence of the mana from a wielded weapon.</NoPain.description>
+
+    <SpeedBoost.label>wielded speed</SpeedBoost.label>
+    <SpeedBoost.description>Movement is sped up by the magical influence of the mana from a wielded weapon.</SpeedBoost.description>
+
+    <HungerMaker.label>wielded hunger</HungerMaker.label>
+    <HungerMaker.description>Hunger is increased by the magical influence of the mana from a bonded weapon.</HungerMaker.description>
+
+    <NeuralHeatRecoveryGain.label>wielded arcane load sink</NeuralHeatRecoveryGain.label>
+    <NeuralHeatRecoveryGain.description>Neural heat dissipation is improved by the magical influence of the mana from a bonded weapon.</NeuralHeatRecoveryGain.description>
+</LanguageData>

@@ -2,4 +2,64 @@
 
 <LanguageData>
     <AnimaTreeLinking.description>Start the anima tree linking ceremony. The linking person will meditate near the tree to gain a magical attunement level. Other magically-sensitive colonists can also help enhance the connection to the ambient mana field. More participants will accelerate the ceremony and cause some of the anima grass to re-grow as the ritual completes.</AnimaTreeLinking.description>
+
+    <Painblock.description>Magically suppress any pain the target might feel for a short time. This can allow a person to move and act even with grievous injuries which would normally incapacitate them.</Painblock.description>
+
+    <Stun.description>A simple stun spell, locks the target in-place unable to move.</Stun.description>
+
+    <Burden.description>Slow the target for a short time by enveloping them in a personal gravity field dragging down their every step.</Burden.description>
+
+    <BlindingPulse.description>A simple blind spell centered on a point, obscuring vision of everyone nearby.</BlindingPulse.description>
+
+    <EntropyDump.label>Arcane load transfer.</EntropyDump.label>
+    <EntropyDump.description>Instantly transfer all your arcane load into someone else. As a side-effect, the target will fall into a debilitating but non-damaging coma for about a day. The target must actively accept the arcane link, so only conscious allies can be targeted.</EntropyDump.description>
+
+    <Beckon.description>Mind control the target to approach the caster.</Beckon.description>
+
+    <ChaosSkip.label>chaotic teleport</ChaosSkip.label>
+
+    <Skip.label>minor teleport</Skip.label>
+
+    <Wallraise.description>Form a temporary wall by transmuting the air directly into soil and rock.</Wallraise.description>
+
+    <Smokepop.label>summon smoke</Smokepop.label>
+    <Smokepop.description>Transmute the air into a thick cloud of heavy smoke. This reduces the accuracy of any shot fired through it, and makes it almost impossible for constructs to aquire a target.</Smokepop.description>
+
+    <Focus.description>Magically enhance the target's basic facilities, boosting their sight, hearing and moving capacities.</Focus.description>
+
+    <Berserk.description>Magically supress all emotion and dominate their mind, filling it with an insatiable need to kill, causing them to attack anyone nearby.</Berserk.description>
+
+    <Invisibility.description>Magically bend light around the target, rendering others unable to perceive them for a short time.</Invisibility.description>
+
+    <ManhunterPulse.description>Drive nearby animals into a manhunting rage using an intense undirected magical blast.</ManhunterPulse.description>
+
+    <MassChaosSkip.label>scatter</MassChaosSkip.label>
+    <MassChaosSkip.description>Teleport everyone in an area to random positions nearby. Objects which are too large cannot be teleported. Due to the many targets it is not possible to control the destination.</MassChaosSkip.description>
+
+    <Waterskip.label>summon water</Waterskip.label>
+    <Waterskip.description>Transmute all of the air in an area into water, extinguishing fires and soaking anyone nearby.</Waterskip.description>
+
+    <Flashstorm.description>Use advanced weather magic to generate a localized flashstorm. The storm will strike the area with lightning for some time before dissipating.</Flashstorm.description>
+
+    <BulletShield.label>arcane shield</BulletShield.label>
+    <BulletShield.description>Generate a spherical bubble that disintegrates all incoming and outgoing ground-level projectiles to base atoms. The process is forceful enough to detonate explosive projectiles. People and items are not affected.</BulletShield.description>
+
+    <SolarPinhole.label>mage light</SolarPinhole.label>
+    <SolarPinhole.description>Generate a small ball of light. It will hover in place, illuminating and warming the surrounding area until it dissipates. The light is enough to work by, but not enough to grow plants.</SolarPinhole.description>
+
+    <WordOfLove.description>Magically dominate the target's mind, implanting romantic desire in the target. For days afterward, the target will feel magically-induced romantic attraction towards the other person. This greatly increases opinion and makes them much more likely to attempt romantic advances and marriage proposals if they get the chance. This power can be used to connect two other people, induce love for the caster, or force oneself to love another.</WordOfLove.description>
+
+    <WordOfSerenity.description>Magically soothe the roiling emotions of a person or animal having a mental break down. The target will fall into a short magically induced sleep. The mana cost depends on the intensity of the target's mental break.</WordOfSerenity.description>
+
+    <WordOfInspiration.description>Magically suppress all thoughts about any topic other than one. The mana coursing through their brain will hypercharge the target's mind with new ideas. The target will experience a random inspiration appropriate to them.</WordOfInspiration.description>
+
+    <Farskip.label>Major teleport</Farskip.label>
+    <Farskip.description>Connect to the planet's ley-lines to hypercharge a teleport spell, transporting the caster, along with anyone standing near them, to an ally at a distant location. This can send people far across the planet, but only works if there is a willing ally on the other side to use as a magical beacon. The transported people will always appear near a random ally on the target map.</Farskip.description>
+
+    <Neuroquake.label>mindquake</Neuroquake.label>
+    <Neuroquake.description>Draw in all the background mana in a wide area and blast it all back out in a huge tidal wave of discordant magical energy. Every creature in range but outside of the safe, inner, circle will be driven violently insane. Casting this takes 12 seconds of intense focus, and afterwards, the caster will go into a five-day mana-exhaustion coma rom channeling such an awesome amount of power. The disturbing mindquake echoes will inflict pain on everyone for many kilometers around, causing diplomatic consequences with all factions.</Neuroquake.description>
+    <Neuroquake.confirmationDialogText>If you use mindquake, everyone in this region will feel the mindquake echo, you will lose goodwill with every non-hostile faction.\n\nMindquake takes 12 seconds to cast, and cannot be interrupted. When complete, the caster will fall into a mana-exhaustion coma for 5 days.\n\nEveryone in range except those in a small circle around the caster will be affected.\n\nDo you really want to cast mindquake?</Neuroquake.confirmationDialogText>
+
+    <Chunkskip.label>summon chunks</Chunkskip.label>
+    <Chunkskip.description>Teleport the closest 5 chunks of rock or slag to scatter them near the target point. This is useful for producing cover during offensive operations.</Chunkskip.description>
 </LanguageData>

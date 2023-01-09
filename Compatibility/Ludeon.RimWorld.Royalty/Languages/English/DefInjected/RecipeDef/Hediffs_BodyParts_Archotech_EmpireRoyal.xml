@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <InstallPsychicSensitizer.label>install magical sensitizer</InstallPsychicSensitizer.label>
+    <InstallPsychicSensitizer.description>Install a magical sensitizer.</InstallPsychicSensitizer.description>
+    <InstallPsychicSensitizer.jobString>Installing magical sensitizer.</InstallPsychicSensitizer.jobString>
+
+    <RemovePsychicSensitizer.label>remove magical sensitizer</RemovePsychicSensitizer.label>
+    <RemovePsychicSensitizer.description>Remove magical sensitizer.</RemovePsychicSensitizer.description>
+    <RemovePsychicSensitizer.jobString>Removing magical sensitizer.</RemovePsychicSensitizer.jobString>
+</LanguageData>

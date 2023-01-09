@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+  <PsychicEntropyGain.label>arcane load gain</PsychicEntropyGain.label>
+  <PsychicEntropyGain.description>A multiplier on arcane load gained from any source.</PsychicEntropyGain.description>
+</LanguageData>

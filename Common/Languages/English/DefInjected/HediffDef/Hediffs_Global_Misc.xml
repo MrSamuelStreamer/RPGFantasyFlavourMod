@@ -4,8 +4,8 @@
     <PsychicShock.labelNoun>a mana shock</PsychicShock.labelNoun>
     <PsychicShock.description>A state of mana-induced chaos in the brain and mind. Caused by magical attacks or critical level of arcane load, this effect is debilitating until it wears off.</PsychicShock.description>
     
-    <PsychicComa.label>mana coma</PsychicComa.label>
-    <PsychicComa.labelNoun>a mana coma</PsychicComa.labelNoun>
+    <PsychicComa.label>mana exhaustion coma</PsychicComa.label>
+    <PsychicComa.labelNoun>a mana exhaustion coma</PsychicComa.labelNoun>
     <PsychicComa.description>A form of benign coma during which the brain recovers from an arcane overload.</PsychicComa.description>
     
     <PsychicHangover.label>mana hangover</PsychicHangover.label>

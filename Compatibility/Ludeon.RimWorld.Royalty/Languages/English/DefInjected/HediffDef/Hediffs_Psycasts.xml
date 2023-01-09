@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <PsychicEntropy.label>arcane load</PsychicEntropy.label>
+    <PsychicEntropy.description>Arcane load refers to a type of chaotic magical energy in the mind which builds up when using magical powers and dissipates over the course of a few seconds or minutes.\n\nIf arcane load is pushed past normal limits, the mage may lose control of their faculties while their body races to dissipate the lingering magical after-effects they may fall unconscious as their mind tries to protect itself from the magical onslaught. These conditions don't cause permanent damage.</PsychicEntropy.description>
+    <descriptionShort>Magical energy in the mind which builds up when using spells. If pushed past normal limits, it may cause unconsciousness and other incapacitating effects.</descriptionShort>
+
+
+    <PsychicBreakdown.label>arcane overload</PsychicBreakdown.label>
+    <PsychicBreakdown.description>Deep magical destabilization of the mind. Arcane overload lasts for days, causing mental disturbances of various kinds. It resolves itself with time.</PsychicBreakdown.description>
+
+    <PsychicAnesthesia.label>magical painlessness</PsychicAnesthesia.label>
+    <PsychicAnesthesia.description>Magically-induced pain insensitivity.</PsychicAnesthesia.description>
+
+    <PsychicBurden.label>arcane burden</PsychicBurden.label>
+    <PsychicBurden.description>Magically-induced difficulty in locomotion.</PsychicBurden.description>
+
+    <PsychicBlindness.label>arcane blindness</PsychicBlindness.label>
+    <PsychicBlindness.description>Magically-induced partial blindness.</PsychicBlindness.description>
+
+    <PsychicVertigo.label>arcane vertigo</PsychicVertigo.label>
+    <PsychicVertigo.description>Magically-induced loss of spatial orientation. This will cause flesh creatures to vomit.</PsychicVertigo.description>
+
+    <PsychicFocus.label>arcane focus</PsychicFocus.label>
+    <PsychicFocus.description>Magically-induced mental focus, increasing sight, hearing and movement capactities.</PsychicFocus.description>
+
+    <PsychicInvisibility.label>arcane invisibility</PsychicInvisibility.label>
+    <PsychicInvisibility.description>Magically-induced invisibility. This causes light to bend around this creature rendering them invisible to others around them.</PsychicInvisibility.description>
+
+    <EntropyLink.label>arcane load-share</EntropyLink.label>
+    <EntropyLink.description>A magical link with another individual. Gain or loss of arcane load incurred by one will be shared equally between both.</EntropyLink.description>
+
+    <Joyfuzz.label>arcane joy</Joyfuzz.label>
+    <Joyfuzz.description>Magically-induced feelings of warmth, comfort, and acceptance. This improves mood, but the lack of negative stimulation induces a mild stupor and reduces consciousness.</Joyfuzz.description>
+
+    <PsychicLove.label>magical infatuation</PsychicLove.label>
+    <PsychicLove.description>Magically-induced adoration. This increases an individual's opinion of someone else, and between adults increases the likelihood of romantic advances and marriage proposals, while reducing the chance of a breakup.</PsychicLove.description>
+</LanguageData>
