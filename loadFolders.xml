@@ -10,5 +10,7 @@
     <li IfModActive="Edern.CombatPsycasts">Compatibility/Edern.CombatPsycasts</li>
     <li IfModActive="oken.medievalquestrewards">Compatibility/oken.medievalquestrewards</li>
     <li IfModActive="mlie.rimquest">Compatibility/mlie.rimquest/1.4</li>
+    <li IfModActive="SaucyPigeon.PawnBadge">Compatibility/SaucyPigeon.PawnBadge/1.4</li>
+    <li IfModActive="aRandomKiwi.RimThemes">Compatibility/aRandomKiwi.RimThemes/RimThemes</li>
   </v1.4>
 </loadFolders>
