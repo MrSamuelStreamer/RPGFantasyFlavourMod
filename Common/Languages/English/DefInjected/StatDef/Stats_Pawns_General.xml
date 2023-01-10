@@ -1,18 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 
 <LanguageData>
     <PsychicSensitivity.label>magical sensitivity</PsychicSensitivity.label>
     <PsychicSensitivity.description>More sensitive people suffer more from negative arcane effects, and benefit more from positive ones. Higher magical sensitivity also increases arcane load limit.</PsychicSensitivity.description>
-
     <AnimalsLearningFactor.label>animal handling learning factor</AnimalsLearningFactor.label>
-    <AnimalsLearningFactordescription>A multiplier on the learning rate for animal handling skill.</AnimalsLearningFactordescription>
-
+    <AnimalsLearningFactor.description>A multiplier on the learning rate for animal handling skill.</AnimalsLearningFactordescription>
     <MeditationFocusGain.label>meditation mana gain</MeditationFocusGain.label>
     <MeditationFocusGain.description>The amount of mana a person gains per day of meditation, ignoring bonuses from focus objects.</MeditationFocusGain.description>
-
     <PsychicEntropyMax.label>arcane load limit</PsychicEntropyMax.label>
     <PsychicEntropyMax.description>The maximum amount of arcane load an individual can tolerate safely.</PsychicEntropyMax.description>
-
     <PsychicEntropyRecoveryRate.label>arcane load recovery rate</PsychicEntropyRecoveryRate.label>
     <PsychicEntropyRecoveryRate.description>The rate at which this person dissipates arcane load.</PsychicEntropyRecoveryRate.description>
 </LanguageData>
