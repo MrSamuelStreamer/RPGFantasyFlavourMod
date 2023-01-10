@@ -1,6 +1,8 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
+using System.Text.RegularExpressions;
 using HarmonyLib;
 using RimQuest;
 using RimWorld;
@@ -14,6 +16,8 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
         private static readonly MethodInfo ValidateQuestMethod = AccessTools.Method(typeof(Main), "IsAcceptableQuest",
             new[] { typeof(QuestScriptDef), typeof(bool) });
 
+        public static HashSet<string> SelectionFilters = new() { "VPE_EltexMeteor", "_MonsterEncounterQuest", "Hunt" };
+
         [HarmonyPostfix]
         public static void UpdateValidQuestsPostfix(bool saveVanilla)
         {
@@ -23,8 +27,8 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
             if (monsterHuntQuestGivers.Length == 0) return;
 
             foreach (QuestScriptDef questScriptDef in DefDatabase<QuestScriptDef>.AllDefsListForReading
-                         .OrderBy(Main.GetQuestReadableName).ToList().Where(questScriptDef =>
-                             questScriptDef.defName.Contains("_MonsterEncounterQuest")))
+                         .OrderBy(Main.GetQuestReadableName)
+                         .Where(questScriptDef => SelectionFilters.Any(f => questScriptDef.defName.Contains(f))))
             {
                 Main.Quests[questScriptDef] =
                     ValidateQuestMethod.Invoke(null, new object[] { questScriptDef, false }) as bool? ?? false;
@@ -33,7 +37,9 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
                         ValidateQuestMethod.Invoke(null, new object[] { questScriptDef, true }) as bool? ?? false;
 
                 // Pick quest commonality based of inverse challenge rating i.e. harder => less common
-                var commonality = Math.Abs(questScriptDef.defaultChallengeRating * -1 + 4);
+                var commonality = questScriptDef.defaultChallengeRating <= 0
+                    ? 2 // Default is -1 so when unsire we just pick 2 and hope that's fine
+                    : Math.Abs(questScriptDef.defaultChallengeRating * -1 + 4);
                 foreach (QuestGiverDef questGiver in monsterHuntQuestGivers)
                 {
                     if (questGiver.questsScripts.Exists(q => q.def == questScriptDef)) continue;
@@ -41,6 +47,18 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
                     Log.Message($"Added {questScriptDef.defName} to {questGiver.defName}");
                 }
             }
+        }
+    }
+    
+    [HarmonyPatch(typeof(Main), "GetQuestReadableName")]
+    public static class WitcherMonsterHuntAndRimQuestIntegrationNamingPatches
+    {
+        [HarmonyPostfix]
+        public static void GetQuestReadableName(ref string __result, QuestScriptDef questScriptDef)
+        {
+            __result = __result == "Opportunity Site"
+                ? Regex.Replace(questScriptDef.defName.Replace("_", " "), "(\\B[A-Z])", " $1")
+                : __result;
         }
     }
 }
