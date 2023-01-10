@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_Painblock.description>Magically suppress any pain the target might feel for a short time. This can allow a person to move and act even with grievous injuries which would normally incapacitate them.</VPE_Painblock.description>
+    <VPE_WordofHealing.description>Magically stimulates a person’s regenerative capabilities into overdrive, effectively tripling their natural healing factor for a few days.</VPE_WordofHealing.description>
+    <VPE_WordofImmunity.description>Magically stimulates a person’s immune system into overdrive, effectively tripling their immunity gain speed for a few days.</VPE_WordofImmunity.description>
+    <VPE_Overshield.description>Generate a resonant mana wall around the target that disintegrates all incoming ground-level projectiles to base atoms and the duration scaling with the target’s magical sensitivity. The process is forceful enough to detonate explosive projectiles. People and items are not affected.</VPE_Overshield.description>
+    <VPE_Focus.description>Magically enhance the target's basic facilities, boosting their sight, hearing and moving capacities.</VPE_Focus.description>
+    <VPE_Skipshield.label>skipshield</VPE_Skipshield.label>
+    <VPE_Skipshield.description>Generate a spherical bubble that disintegrates all incoming and outgoing ground-level projectiles to base atoms. People and items are not affected.</VPE_Skipshield.description>
+    <VPE_Invisibility.label>invisibility</VPE_Invisibility.label>
+    <VPE_Invisibility.description>Magically bend light around the target, rendering others unable to perceive them for a short time.</VPE_Invisibility.description>
+    <VPE_RegrowLimbs.description>Induces a complex form of magical limb regrowth. The effect is gradual over a full day’s time and often described as “wildly uncomfortable” as it overstimulates their phantom limb syndrome.</VPE_RegrowLimbs.description>
+    <VPE_GuardianSkipbarrier.description>Generate a spherical bubble that disintegrates all incoming and outgoing ground-level projectiles to base atoms. People and items are not affected. It lasts as long as they can manage the accumulating arcane load. People and items are not affected. It takes immense concentration to hold, as such the caster needs to be mindful of their steps.</VPE_GuardianSkipbarrier.description>
+</LanguageData>

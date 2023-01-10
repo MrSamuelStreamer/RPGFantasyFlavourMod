@@ -19,4 +19,7 @@
     <VPE.PsycasterRaidDescription>{0}
 
 Capturing Mages is a viable strategy and can be considered beneficial.</VPE.PsycasterRaidDescription>
+    
+    <VPE.SellingEltexWarning>Selling Arcanium is against Imperial law. This may or may not affect your relations with the Empire in the future.</VPE.SellingEltexWarning>
+    <VPE.GiftingEltexWarning>Gifting Arcanium is against Imperial law. This may or may not affect your relations with the Empire in the future.</VPE.GiftingEltexWarning>
 </LanguageData>

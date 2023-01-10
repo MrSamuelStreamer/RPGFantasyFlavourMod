@@ -53,7 +53,7 @@
 
     <WordOfInspiration.description>Magically suppress all thoughts about any topic other than one. The mana coursing through their brain will hypercharge the target's mind with new ideas. The target will experience a random inspiration appropriate to them.</WordOfInspiration.description>
 
-    <Farskip.label>Major teleport</Farskip.label>
+    <Farskip.label>major teleport</Farskip.label>
     <Farskip.description>Connect to the planet's ley-lines to hypercharge a teleport spell, transporting the caster, along with anyone standing near them, to an ally at a distant location. This can send people far across the planet, but only works if there is a willing ally on the other side to use as a magical beacon. The transported people will always appear near a random ally on the target map.</Farskip.description>
 
     <Neuroquake.label>mindquake</Neuroquake.label>

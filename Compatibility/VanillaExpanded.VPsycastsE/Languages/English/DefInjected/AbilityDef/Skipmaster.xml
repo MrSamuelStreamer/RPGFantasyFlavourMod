@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_SolarPinhole.label>mage light</VPE_SolarPinhole.label>
+    <VPE_SolarPinhole.description>Generate a small ball of light. It will hover in place, illuminating and warming the surrounding area until it dissipates. The light is enough to work by, but not enough to grow plants.</VPE_SolarPinhole.description>
+    <VPE_Chunkskip.label>summon chunks</VPE_Chunkskip.label>
+    <VPE_Chunkskip.description>Teleport the closest 5 chunks of rock or slag to scatter them near the target point. This is useful for producing cover during offensive operations.</VPE_Chunkskip.description>
+    <VPE_Waterskip.label>summon water</VPE_Waterskip.label>
+    <VPE_Waterskip.description>Transmute all of the air in an area into water, extinguishing fires and soaking anyone nearby.</VPE_Waterskip.description>
+    <VPE_ChaosSkip.label>chaotic teleport</VPE_ChaosSkip.label>
+    <VPE_Skip.label>minor teleport</VPE_Skip.label>
+    <VPE_Wallraise.description>Form a temporary wall by transmuting the air directly into soil and rock.</VPE_Wallraise.description>
+    <VPE_Smokepop.label>summon smoke</VPE_Smokepop.label>
+    <VPE_Smokepop.description>Transmute the air into a thick cloud of heavy smoke. This reduces the accuracy of any shot fired through it, and makes it almost impossible for constructs to aquire a target.</VPE_Smokepop.description>
+    <VPE_MassChaosSkip.label>scatter</VPE_MassChaosSkip.label>
+    <VPE_MassChaosSkip.description>Teleport everyone in an area to random positions nearby. Objects which are too large cannot be teleported. Due to the many targets it is not possible to control the destination.</VPE_MassChaosSkip.description>
+    <VPE_Skipdoor.label>portal</VPE_Skipdoor.label>
+    <VPE_Skipdoor.description>Creates an opening to a network of portals which can be placed in any location with a permanent presence. The network is tied to a group’s collective consciousness, allowing others to use it and different mages can add to it. However, the entry points are sensitive to physical disturbances which can cause them to collapse.</VPE_Skipdoor.description>
+    <VPE_Farskip.label>major teleport</VPE_Farskip.label>
+    <VPE_Farskip.description>Connect to the planet's ley-lines to hypercharge a teleport spell, transporting the caster, along with anyone standing near them, to an ally at a distant location. This can send people far across the planet, but only works if there is a willing ally on the other side to use as a magical beacon. The transported people will always appear near a random ally on the target map.</VPE_Farskip.description>
+</LanguageData>

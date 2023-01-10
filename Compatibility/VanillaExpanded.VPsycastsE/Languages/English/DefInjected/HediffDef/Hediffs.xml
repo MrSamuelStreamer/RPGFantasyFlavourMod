@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_AgeSickness.description>Age-related magical sickness greatly reducing manipulation and consciousness.</VPE_AgeSickness.description>
+
+    <VPE_IceShield.description>A mana shield that protects from hypothermia and freezes enemies that interact with it.</VPE_IceShield.description>
+
+    <VPE_Haywire.description>Magically disrupts the IFF operations.</VPE_Haywire.description>
+    <VPE_Smartbuzz.description>Magically-induced feelings of clarity and curiosity. This improves research speed as well as skill gain speed.</VPE_Smartbuzz.description>
+
+    <VPE_Essence.description>Magically-split fragment of someone's personality imbued in this very being.</VPE_Essence.description>
+
+    <VPE_Darkvision.description>Magically-induced ability to see through the darkness and shadows.</VPE_Darkvision.description>
+    <VPE_Darkvision_Display.description>Magically-induced night vision.</VPE_Darkvision_Display.description>
+
+    <VPE_Productivity.label>arcane productivity</VPE_Productivity.label>
+    <VPE_Productivity.description>Magically-induced improvement to work speed.</VPE_Productivity.description>
+    <VPE_ArcaneSoothe.description>Magically-induced, self-satisfying perceptual distortions, giving a temporary mood boost.</VPE_ArcaneSoothe.description>
+    <VPE_GroupLink.description>Magically-induced link between several entities. Any 'word of' spell will resonate between all linked individuals.</VPE_GroupLink.description>
+
+    <VPE_ArcanePain.label>arcane pain</VPE_ArcanePain.label>
+    <VPE_ArcanePain.description>Magically-induced extreme physical pain.</VPE_ArcanePain.description>
+
+    <VPE_Protection.label>arcane protection</VPE_Protection.label>
+    <VPE_Protection.description>Magically-induced physical protection from incoming damage.</VPE_Protection.description>
+
+    <VPE_Hallucination.description>Strong arcane suggestion that reshapes reality in the eyes of the affected individuals, making them perceive their every day life as that of a luxury.</VPE_Hallucination.description>
+
+    <VPE_Liferot.description>Magically-induced mass necrosis, causing living and healthy limbs and organs to rot on the victim.</VPE_Liferot.description>
+
+    <VPE_GainedVitality.label>arcane vitality</VPE_GainedVitality.label>
+    <VPE_GainedVitality.description>Magically-induced vitality stolen from another person.</VPE_GainedVitality.description>
+
+    <VPE_LostVitality.label>arcane weakness</VPE_LostVitality.label>
+    <VPE_LostVitality.description>Magically-induced weakness caused by vitality being stolen by another person.</VPE_LostVitality.description>
+
+    <VPE_Ghostwalk.description>Magically-induced matter phasing.</VPE_Ghostwalk.description>
+    <VPE_CorpseTalk.description>Magically-induced link with a spirit of a deceased individual.</VPE_CorpseTalk.description>
+
+    <VPE_BodiesConsumed.description>The amount of bodies that were consumed using the Consume Bodies spell. Each body consumed increases a maximum arcane load by 1.</VPE_BodiesConsumed.description>
+
+    <VPE_DeathShield.description>Magically-induced immortality that lasts for one day.</VPE_DeathShield.description>
+
+    <VPE_Obscured.description>Magically-induced invisibility.</VPE_Obscured.description>
+
+    <VPE_Shadowfocus.description>Magically-induced increase to magical sensitivity based on the lack of light around the mage.</VPE_Shadowfocus.description>
+</LanguageData>

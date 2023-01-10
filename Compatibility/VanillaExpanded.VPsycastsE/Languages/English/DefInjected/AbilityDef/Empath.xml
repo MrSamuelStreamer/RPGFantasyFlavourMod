@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+    <VPE_WordofJoy.description>Speak happy, calming words to someone while using mental domination to implant a joyfuzz loop in his mind. The joyfuzz will suppress uncomfortable thoughts and sensations in the target to improve mood. This has the side-effect of dulling sensation and decision-making, which reduces consciousness.</VPE_WordofJoy.description>
+    <VPE_WordofLove.description>Magically dominate the target's mind, implanting romantic desire in the target. For days afterward, the target will feel magically-induced romantic attraction towards the other person. This greatly increases opinion and makes them much more likely to attempt romantic advances and marriage proposals if they get the chance. This power can be used to connect two other people, induce love for the caster, or force oneself to love another.</VPE_WordofLove.description>
+    <VPE_WordofSerenity.description>Magically soothe the roiling emotions of a person or animal having a mental break down. The target will fall into a short magically induced sleep. The mana cost depends on the intensity of the target's mental break.</VPE_WordofSerenity.description>
+    <VPE_WordofInspiration.description>Magically suppress all thoughts about any topic other than one. The mana coursing through their brain will hypercharge the target's mind with new ideas. The target will experience a random inspiration appropriate to them.</VPE_WordofInspiration.description>
+    <VPE_SootheMale.description>Carefully sets up a resonant mana wave which will resonate with the magical signatures of all males in a large area.</VPE_SootheMale.description>
+    <VPE_SootheFemale.description>Carefully sets up a resonant mana wave which will resonate with the magical signatures of all females in a large area.</VPE_SootheFemale.description>
+    <VPE_ReunionFarskip.label>summon blood-relation</VPE_ReunionFarskip.label>
+    <VPE_ReunionFarskip.description>After a short meditation period and followed by a 5-day coma, taps into a target’s bloodline to teleport all living family members to their proximity, knocked out through arcane overload. However, it does nothing to change their relationships and is considered rude by all other factions.</VPE_ReunionFarskip.description>
+</LanguageData>

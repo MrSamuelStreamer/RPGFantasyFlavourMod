@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_SelfExplosion.label>Fireball</VPE_SelfExplosion.label>
+    <VPE_SelfExplosion.description>Fires a large blast of fire centered on the caster and blasting outwards. Spreading rapidly, dealing little direct damage the flames will set almost everything it touches on fire</VPE_SelfExplosion.description>
+    <VPE_Explosion.description>Tranmutes a large volume of air into a volatile mix, quickly blasting it back out and sparking it alight, in the conflagration splashes of chemfuel spurt out uncontrollably.</VPE_Explosion.description>
+    <VPE_FireShield.description>Summon a flaming vortex surrounding the caster. Anyone that attempts to attack the target in melee will be set ablaze, with the additional benefit of overpowering any other fire effects.</VPE_FireShield.description>
+    <VPE_BreatheFlame.description>Jets of blazing flame streak forth from the caster's mouth setting everything on fire.</VPE_BreatheFlame.description>
+    <VPE_EyeBlast.description>The caster focuses their mana through their eyes. Targeting a location to prevent overshooting, the blinding energy shoots forth and sets a small area ablaze.</VPE_EyeBlast.description>
+    <VPE_QuenchFlames.description>Transmute the air around a blaze directly into a flame supressing foam. This transmutation is tricky on a small scale so the radius is quite impressive.</VPE_QuenchFlames.description>
+    <VPE_FireBeam.description>Attempts to recreate the power of a star inside a concentrated column of almost liquidized oxygen. The resulting emission of plasma is so powerful that only the most accomplished mages can hope to compare. The long, intense concentration ends with the caster falling into a 6-hour coma.</VPE_FireBeam.description>
+</LanguageData>

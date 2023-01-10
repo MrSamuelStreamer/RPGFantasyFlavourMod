@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_Recharge.description>Carefully and delicately tunes a stream of electricity to a touched battery to charge it with 100kW or the equivalent of 100 Wd/s. The duration of charge depends on the caster’s magical sensitivity.</VPE_Recharge.description>
+    <VPE_Vortex.description>Manifests a gaping vortex of high-voltage electricity at a target area with a large effect. Severely hampers movement and manipulating proportionately, with the strongest effect at the center.</VPE_Vortex.description>
+    <VPE_Hurricane.description>The caster forcibly changes the weather to a downpour with hurricane-force winds, which lasts as long as the caster can manage the arcane load accumulation and can instantly stop at-will. Those outdoors will experience progressively severe limitations to sight, moving and manipulation to the point they come to a complete stop.</VPE_Hurricane.description>
+    <VPE_Flashstorm.description>Use advanced weather magic to generate a localized flashstorm. The storm will strike the area with lightning for some time before dissipating.</VPE_Flashstorm.description>
+</LanguageData>

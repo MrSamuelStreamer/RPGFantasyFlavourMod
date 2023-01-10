@@ -199,3 +199,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+# Optimised Rimworld image format
+*.dds

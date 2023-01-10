@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_Burden.description>Slow the target for a short time by enveloping them in a personal gravity field dragging down their every step.</VPE_Burden.description>
+
+    <VPE_Stun.description>A simple stun spell, locks the target in-place unable to move.</VPE_Stun.description>
+
+    <VPE_PsychicShock.description>Magically redirects all current brain activity at random, blocking coherent perception and dropping them into a state of psychic shock. There is a risk of brain damage and is overtly hostile.</VPE_PsychicShock.description>
+
+    <VPE_NeuralHeatDump.label>arcane load transfer</VPE_NeuralHeatDump.label>
+    <VPE_NeuralHeatDump.description>Instantly transfer all your arcane load into someone else. As a side-effect, the target will fall into a debilitating but non-damaging coma for about a day. The target must actively accept the arcane link, so only conscious allies can be targeted.</VPE_NeuralHeatDump.description>
+
+    <VPE_Berserk.description>suppress all emotion and dominate their mind, filling it with an insatiable need to kill, causing them to attack anyone nearby. They regain rationality after 15 seconds, depending on their magical sensitivity.</VPE_Berserk.description>
+
+    <VPE_AggressiveHeatDump.label>arcane explosion</VPE_AggressiveHeatDump.label>
+    <VPE_AggressiveHeatDump.description>Instantly dump all of your arcane load into a target, causing them to explode with an area of effect relative to the arcane load pushed into them. A good declaration of war.</VPE_AggressiveHeatDump.description>
+
+    <VPE_BerserkPulse.description>Generate an overwhelming rush of undirected rage in everyone near the target point. Considered an overt act of aggression and lasts several seconds.</VPE_BerserkPulse.description>
+
+    <VPE_PsychicDrone.description>Creates a massive psychic drone aura around the caster tuned to hostiles, frequently driving them insane until they overcome the break. Duration scales with the caster’s magical sensitivity.</VPE_PsychicDrone.description>
+
+    <VPE_NeuralHeatDetonation.label>arcane detonation</VPE_NeuralHeatDetonation.label>
+    <VPE_NeuralHeatDetonation.description>Efficiently but indiscriminately dumps all of the caster’s arcane load into an explosion away from themselves, the size being relative to the arcane load lost.</VPE_NeuralHeatDetonation.description>
+
+    <VPE_Neuroquake.label>mindquake</VPE_Neuroquake.label>
+    <VPE_Neuroquake.description>Draw in all the background mana in a wide area and blast it all back out in a huge tidal wave of discordant magical energy. Every creature in range but outside of the safe, inner, circle will be driven violently insane. Casting this takes 12 seconds of intense focus, and afterwards, the caster will go into a five-day mana-exhaustion coma rom channeling such an awesome amount of power. The disturbing mindquake echoes will inflict pain on everyone for many kilometers around, causing diplomatic consequences with all factions.</VPE_Neuroquake.description>
+    <VPE_Neuroquake.modExtensions.0.message>If you use mindquake, everyone in this region will feel the mindquake echo, you will lose goodwill with every non-hostile faction.\n\nMindquake takes 12 seconds to cast, and cannot be interrupted. When complete, the caster will fall into a mana-exhaustion coma for 5 days.\n\nEveryone in range except those in a small circle around the caster will be affected.\n\nDo you really want to cast mindquake?</VPE_Neuroquake.modExtensions.0.message>
+</LanguageData>

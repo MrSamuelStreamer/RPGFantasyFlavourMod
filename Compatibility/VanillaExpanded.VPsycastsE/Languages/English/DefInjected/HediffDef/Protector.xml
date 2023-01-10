@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_Healing.label>arcane healing</VPE_Healing.label>
+    <VPE_Healing.description>Magically-induced healing boost.</VPE_Healing.description>
+
+    <VPE_BlockBleeding.label>arcane stabilization</VPE_BlockBleeding.label>
+    <VPE_BlockBleeding.description>Magically-induced stasis that stops any bleeding.</VPE_BlockBleeding.description>
+
+    <VPE_Immunity.label>arcane immunity</VPE_Immunity.label>
+    <VPE_Immunity.description>Magically-induced immunity boost.</VPE_Immunity.description>
+
+    <VPE_Overshield.label>arcane overshield</VPE_Overshield.label>
+    <VPE_Overshield.description>Magically-induced personal mana shield. Impenetrable by ranged projectiles.</VPE_Overshield.description>
+
+    <VPE_GuardianSkipBarrier.label>guardian skipbarrier</VPE_GuardianSkipBarrier.label>
+    <VPE_GuardianSkipBarrier.description>Magically crafted defensive barrier that generates large amounts of arcane load in order to sustain itself.</VPE_GuardianSkipBarrier.description>
+
+    <VPE_RegrowLimbs.label>arcane regeneration</VPE_RegrowLimbs.label>
+    <VPE_RegrowLimbs.description>Magically-induced tissue regeneration, which can close open wounds and regenerate missing body parts.</VPE_RegrowLimbs.description>
+</LanguageData>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <Apparel_ArmorReconPrestige.label>prestige outrider armor</Apparel_ArmorReconPrestige.label>
+    <Apparel_ArmorReconPrestige.description>A suit of light magically enhanced armor, designed to permit quick movement. Plasteel-weave plates block attacks without compromising mobility. An anti-gravity enchantment allows a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded arcanium threads also enhance the wearer's magical sensitivity.</Apparel_ArmorReconPrestige.description>
+    
+    <Apparel_ArmorHelmetReconPrestige.label>prestige outrider helmet</Apparel_ArmorHelmetReconPrestige.label>
+    <Apparel_ArmorHelmetReconPrestige.description>An armored helmet enchanted to provide combat assistance with a built-in protective plasteel-weave plate.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded arcanium threads also enhance the wearer's magical sensitivity.</Apparel_ArmorHelmetReconPrestige.description>
+    
+    <Apparel_ArmorMarinePrestige.label>prestige crusader armor</Apparel_ArmorMarinePrestige.label>
+    <Apparel_ArmorMarinePrestige.description>A suit of enchanted armor. Layered plasteel-weave plates are very effective at stopping attacks, with few vulnerable joint sections. An anti-gravity enchantment allows a human to wear the armor and still move easily.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded arcanium threads also enhance the wearer's magical sensitivity.</Apparel_ArmorMarinePrestige.description>
+
+    <Apparel_ArmorMarineHelmetPrestige.label>prestige crusader helmet</Apparel_ArmorMarineHelmetPrestige.label>
+    <Apparel_ArmorMarineHelmetPrestige.description>A crusader armor helmet, enchanted to provide combat assistance and layered plasteel-weave plates.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded arcanium threads also enhance the wearer's magical sensitivity.</Apparel_ArmorMarineHelmetPrestige.description>
+    
+    <Apparel_ArmorCataphractPrestige.label>prestige royal guard armor</Apparel_ArmorCataphractPrestige.label>
+    <Apparel_ArmorCataphractPrestige.description>A suit of heavy enchanted armor, built for maximum protection at the cost of mobility. Heavy layered plasteel-weave plates with solid ablative coatings stop all but the most well-aimed or powerful attacks. An anti-gravity enchantment prevents the suit's massive weight from immobilizing the wearer entirely, but the suit is still quite cumbersome.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded arcanium threads also enhance the wearer's magical sensitivity.</Apparel_ArmorCataphractPrestige.description>
+    
+    <Apparel_ArmorHelmetCataphractPrestige.label>prestige royal guard helmet</Apparel_ArmorHelmetCataphractPrestige.label>
+    <Apparel_ArmorHelmetCataphractPrestige.description>A heavily-armored enchanted helmet, with a solid plasteel-weave shell and magical visual system for non-frontal view angles. It protects against all but the most powerful or luckily-aimed shots.\n\nExpensive and beautiful, prestige armor like this is usually made for those of high status. Embedded arcanium threads also enhance the wearer's magical sensitivity.</Apparel_ArmorHelmetCataphractPrestige.description>
+</LanguageData>

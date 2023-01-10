@@ -44,6 +44,10 @@
             <Link>AttachedDefs\Rimworld\%(RecursiveDir)\%(FileName)%(Extension)</Link>
             <CopyToOutputDirectory>Never</CopyToOutputDirectory>
         </Content>
+        <Content Include="..\..\..\**\*.xml">
+            <Link>AttachedDefs\Mods\%(RecursiveDir)\%(FileName)%(Extension)</Link>
+            <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+        </Content>
     </ItemGroup>
     <PropertyGroup>
         <StartAction>Program</StartAction>

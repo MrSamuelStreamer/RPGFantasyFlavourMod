@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <VPE_MindControlled.label>mind control</VPE_MindControlled.label>
+    <VPE_MindControlled.description>Magically-induced mind control, giving absolute control to another person.</VPE_MindControlled.description>
+
+    <VPE_MindScramble.label>mind scramble</VPE_MindScramble.label>
+    <VPE_MindScramble.description>Magically-induced mind scramble, caused by attempting to be two people at once.</VPE_MindScramble.description>
+
+    <VPE_PsychicGuidance.label>arcane guidance</VPE_PsychicGuidance.label>
+    <VPE_PsychicGuidance.description>Magically-induced guidance from another person.</VPE_PsychicGuidance.description>
+
+    <VPE_PsychicGuide.label>arcane guide</VPE_PsychicGuide.label>
+    <VPE_PsychicGuide.description>Magically-induced absence of mind caused by giving guidance to another person.</VPE_PsychicGuide.description>
+
+    <VPE_Lucky.label>arcane luck</VPE_Lucky.label>
+    <VPE_Lucky.description>Magically-induced luck that allows this person to always hit their target, and never be hit by their enemy.</VPE_Lucky.description>
+
+    <VPE_UnLucky.label>arcane bad luck</VPE_UnLucky.label>
+    <VPE_UnLucky.description>Magically-induced bad luck that stops this person from ever hitting their target, whilst always being hit by the enemy.</VPE_UnLucky.description>
+</LanguageData>

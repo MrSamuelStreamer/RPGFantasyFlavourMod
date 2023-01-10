@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+      <VPE_SpeedBoost.label>arcane speed</VPE_SpeedBoost.label>
+      <VPE_SpeedBoost.description>Magically augments the muscle fibers, ligaments and joints in the caster’s legs, tripling their movement speed for roughly two minutes depending on their magical sensitivity.</VPE_SpeedBoost.description>
+      <VPE_BladeFocus.description>Magically augments the muscle fibers, ligaments and joints in the caster’s arms, doubling their melee attack speed for roughly two minutes depending on their magical sensitivity.</VPE_BladeFocus.description>
+      <VPE_FiringFocus.label>ranger focus</VPE_FiringFocus.label>
+      <VPE_FiringFocus.description>Magically augments the hands, eyes and reaction speed of the caster, reducing their ranged attack cooldown by 80% for roughly two minutes depending on their magical sensitivity.</VPE_FiringFocus.description>
+      <VPE_PowerLeap.description>Magically augments the caster’s legs, feet and spine to be able to leap great distances and land without injury, the distance improving with the user’s magical sensitivity.</VPE_PowerLeap.description>
+      <VPE_AdrenalineRush.description>Transmutes a small amount of blood directly into adrenaline in the caster, blocking all pain and augmenting their sight, hearing and movement. Lasts roughly thirty seconds depending on the user’s magical sensitivity.</VPE_AdrenalineRush.description>
+      <VPE_ControlledFrenzy.description>Magically augments the caster’s prowess and killing urges, doubling their damage output with all weapons. Each kill reduces the caster’s arcane load by 10 and resets the duration of the frenzy.</VPE_ControlledFrenzy.description>
+      <VPE_GuidedShot.label>guided arrow</VPE_GuidedShot.label>
+      <VPE_GuidedShot.description>Projects a psychic aura for 8 seconds that allows the caster to alter the path of any projectile they fire, effectively doubling their weapon range and guaranteeing hits for the duration.</VPE_GuidedShot.description>
+      <VPE_Beckon.description>Magically command the target to approach the caster.</VPE_Beckon.description>
+      <VPE_Killskip.label>chain-assasinate</VPE_Killskip.label>
+      <VPE_MassBeckon.description>Magically command the targets within an area to approach the caster.</VPE_MassBeckon.description>
+</LanguageData>

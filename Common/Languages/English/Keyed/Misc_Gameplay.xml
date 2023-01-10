@@ -21,7 +21,7 @@
   <PsychicEntropy>Arcane Load</PsychicEntropy>
   <PsychicEntropyShort>Load</PsychicEntropyShort>
   <LowPsyfocus>low mana</LowPsyfocus>
-  <PawnTooltipPsychicEntropyDesc>Arcane load increases after using a spell. Surpassing the normal limit may cause a mana overload lasting days.\n\nArcane load dissipates naturally over time. This process can be accelerated by wearing eltex apparel or being in pain.</PawnTooltipPsychicEntropyDesc>
+  <PawnTooltipPsychicEntropyDesc>Arcane load increases after using a spell. Surpassing the normal limit may cause a mana overload lasting days.\n\nArcane load dissipates naturally over time. This process can be accelerated by wearing arcanium apparel or being in pain.</PawnTooltipPsychicEntropyDesc>
   <PawnTooltipPsychicEntropyPainFocus>Pain boost\n\nPain focuses the mind and speeds up arcane load dissipation.\n\nPain level: {0}\nBonus to arcane load reduction: {1}</PawnTooltipPsychicEntropyPainFocus>
   <PawnTooltipPsychicEntropyLimit>Toggle arcane load limiter. Exceeding your arcane load limit may cause a mana overload lasting days. It won't cause permanent damage.</PawnTooltipPsychicEntropyLimit>
   <PawnTooltipPsyfocus>Mana: {0}</PawnTooltipPsyfocus>  

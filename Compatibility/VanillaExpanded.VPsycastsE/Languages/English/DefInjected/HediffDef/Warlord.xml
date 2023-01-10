@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+		<VPE_SpeedBoost.label>arcane agility</VPE_SpeedBoost.label>
+		<VPE_SpeedBoost.description>Magically induced agility boost, greatly increasing movement speed.</VPE_SpeedBoost.description>
+
+		<VPE_BladeFocus.description>Magically induced combat focus, greatly enhancing melee combat capabilities.</VPE_BladeFocus.description>
+
+		<VPE_FiringFocus.label>ranger focus</VPE_FiringFocus.label>
+		<VPE_FiringFocus.description>Magically induced combat focus, greatly enhancing ranged combat capabilities.</VPE_FiringFocus.description>
+
+		<VPE_AdrenalineRush.label>arcane rush</VPE_AdrenalineRush.label>
+		<VPE_AdrenalineRush.description>Magically induced adrenaline rush, increasing sight, hearing and movement capabilities.</VPE_AdrenalineRush.description>
+
+		<VPE_ControlledFrenzy.label>arcane frenzy</VPE_ControlledFrenzy.label>
+		<VPE_ControlledFrenzy.description>Temporary, magically induced frenzy. The energy restores itself with each consecutive kill.</VPE_ControlledFrenzy.description>
+
+		<VPE_GuidedShot.description>Magically induced deadeye accuracy.</VPE_GuidedShot.description>
+</LanguageData>
