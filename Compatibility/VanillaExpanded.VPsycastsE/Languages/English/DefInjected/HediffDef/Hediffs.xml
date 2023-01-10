@@ -15,11 +15,11 @@
 
     <VPE_Productivity.label>arcane productivity</VPE_Productivity.label>
     <VPE_Productivity.description>Magically-induced improvement to work speed.</VPE_Productivity.description>
-    <VPE_ArcaneSoothe.description>Magically-induced, self-satisfying perceptual distortions, giving a temporary mood boost.</VPE_ArcaneSoothe.description>
+    <VPE_PsychicSoothe.description>Magically-induced, self-satisfying perceptual distortions, giving a temporary mood boost.</VPE_PsychicSoothe.description>
     <VPE_GroupLink.description>Magically-induced link between several entities. Any 'word of' spell will resonate between all linked individuals.</VPE_GroupLink.description>
 
-    <VPE_ArcanePain.label>arcane pain</VPE_ArcanePain.label>
-    <VPE_ArcanePain.description>Magically-induced extreme physical pain.</VPE_ArcanePain.description>
+    <VPE_PsychicPain.label>arcane pain</VPE_PsychicPain.label>
+    <VPE_PsychicPain.description>Magically-induced extreme physical pain.</VPE_PsychicPain.description>
 
     <VPE_Protection.label>arcane protection</VPE_Protection.label>
     <VPE_Protection.description>Magically-induced physical protection from incoming damage.</VPE_Protection.description>

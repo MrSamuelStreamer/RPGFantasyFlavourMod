@@ -3,5 +3,5 @@
 <LanguageData>
     <VPE_EltexMeteor.questNameRules.rulesStrings.0>questName->Arcanium Meteor</VPE_EltexMeteor.questNameRules.rulesStrings.0>
     <VPE_EltexMeteor.questDescriptionRules.rulesStrings.0>questDescription->A large meteorite has struck ground nearby. It has left behind a lump of arcanium. Arcanium can be used to create magically-enhancing gear, or sold to the Empire to gain honor.\n\nYou can send a mining party to retrieve it, but chances are if you wait long enough, someone else will lay claim to it.</VPE_EltexMeteor.questDescriptionRules.rulesStrings.0>
-    <VPE_EltexMeteor.root.nodes.7.node.nodes.0.text>Others have mined the Arcanium meteor. The quest [resolvedQuestName] has expired.</VPE_EltexMeteor.root.nodes.7.node.nodes.0.text>
+    <VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Others have mined the Arcanium meteor. The quest [resolvedQuestName] has expired.</VPE_EltexMeteor.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
 </LanguageData>

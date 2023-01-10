@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <VPE_ImmediateAttack_Psycasters.label>arcanium meteorite</VPE_ImmediateAttack_Psycasters.label>
+    <VPE_ImmediateAttack_Psycasters.letterLabelEnemy>Raid (Mage)</VPE_ImmediateAttack_Psycasters.letterLabelEnemy>
+    <VPE_ImmediateAttack_Psycasters.letterLabelFriendly>Friendlies (Mage)</VPE_ImmediateAttack_Psycasters.letterLabelFriendly>
+    <VPE_ImmediateAttack_Psycasters.arrivalTextEnemy>These raiders seem to be led by a powerful mage. Mages can use magical powers to manipulate the battlefield and easily tip the scales of the conflict. You should watch out for them, and prioritise targeting them when you see that they are about to cast a spell.
+
+        Mages in this group:
+    </VPE_ImmediateAttack_Psycasters.arrivalTextEnemy>
+</LanguageData>

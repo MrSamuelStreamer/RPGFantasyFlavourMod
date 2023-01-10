@@ -4,12 +4,4 @@
     <VPE_EltexMeteorite.label>arcanium meteorite</VPE_EltexMeteorite.label>
     <VPE_EltexMeteorite.letterLabel>Arcanium Meteorite</VPE_EltexMeteorite.letterLabel>
     <VPE_EltexMeteorite.letterText>A large meteorite has struck ground in the area. It has left behind a lump of eltex. Eltex can be used to create psyfocus-enhancing gear, or sold to the Empire to gain honor.</VPE_EltexMeteorite.letterText>
-
-    <VPE_ImmediateAttack_Psycasters.label>arcanium meteorite</VPE_ImmediateAttack_Psycasters.label>
-    <VPE_ImmediateAttack_Psycasters.letterLabelEnemy>Raid (Mage)</VPE_ImmediateAttack_Psycasters.letterLabelEnemy>
-    <VPE_ImmediateAttack_Psycasters.letterLabelFriendly>Friendlies (Mage)</VPE_ImmediateAttack_Psycasters.letterLabelFriendly>
-    <VPE_ImmediateAttack_Psycasters.arrivalTextEnemy>These raiders seem to be led by a powerful mage. MAges can use magical powers to manipulate the battlefield and easily tip the scales of the conflict. You should watch out for them, and prioritise targeting them when you see that they are about to cast a spell.
-
-        Mages in this group:
-    </VPE_ImmediateAttack_Psycasters.arrivalTextEnemy>
 </LanguageData>

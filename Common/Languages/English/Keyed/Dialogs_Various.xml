@@ -4,13 +4,12 @@
     <ApparelRequirementAnyPsycasterApparel>Any mage apparel</ApparelRequirementAnyPsycasterApparel>
     <ApparelRequirementOrAnyPsycasterOrPrestigeApparel>or any mage or prestige apparel</ApparelRequirementOrAnyPsycasterOrPrestigeApparel>
     <AbilityTargetPsychicallyDeaf>Target is magically deaf.</AbilityTargetPsychicallyDeaf>
-    <CannotSkipTargetPsychicResistant>Magic resistance</CannotSkipTargetPsychicResistant>
     <RoyalWithTraitAffectingPsylinkNegatively>Since {PAWN_labelShort} is {2}, the mana attuner might not be useful for {PAWN_objective}.</RoyalWithTraitAffectingPsylinkNegatively>
     <PsylinkTooLowForGainAbility>{PAWN_labelShort}'s magical attunement level is not at a high enough level to use {ABILITY}.\n\nGain this power anyways?</PsylinkTooLowForGainAbility>
     
     <!-- Skip -->
     <CannotSkipTarget>Cannot teleport {PAWN_labelShort}</CannotSkipTarget>
-    <CannotSkipTargetPsychicResistant>Magical resistance</CannotSkipTargetPsychicResistant>
+    <CannotSkipTargetPsychicResistant>Magic resistance</CannotSkipTargetPsychicResistant>
 
 
     <!-- Long events -->
