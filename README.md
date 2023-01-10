@@ -29,7 +29,24 @@ While we appreciate you may be overflowing with ideas we need to follow a strict
 * We would like this mod to be accessible to as many people as possible so your suggestions must remain YouTube friendly, so no slurs or cursing.
 * All pull requests will be reviewed by a member of the team, please be patient, it may take a few days for your suggestion to be accepted and included. 
 
-For more details please see our [Contributing Guide](CONTRIBUTING.md) 
+For more details please see our [Contributing Guide](CONTRIBUTING.md)
+
+## Building and Releasing
+To build the release version of this project, download this project and place it in your mods folder.
+Once you have it locally, open the [solution file](1.4/Source/RPGAdventureFlavourPack.sln) in Visual Studio, Rider or your tool of choice and hit build.
+
+Assuming all the paths are right this will build the latest C# binaries and collate all the files you actually need into a separate folder named `RPGAdventureFlavourPack-Release` which will appear next to the folder where you have this mod checked out.
+It will also then zip that up for you into a zip file ready to be sent to someone or played in the game.
+For example if I have the project checked out in `D:\Epic\RimWorld\Mods\RPGAdventureFlavourPack` after I hit build I'll magically have `D:\Epic\RimWorld\Mods\RPGAdventureFlavourPack-Release` and `D:\Epic\RimWorld\Mods\RPGAdventureFlavourPack\RPGAdventureFlavourPack.zip`
+
+Note that to support this and make it easier to release to steam we have 2 About files a [dev one](About/About.xml) and a [release one](About/About-Release.xml).
+The release folder will only have the release one, renamed to `About.xml`. This allows you to have both the dev and release versions on your system without them interfering with each other.
+If you want to see the current unreleased version you will need to add the `.DEV` version of this mod rather than the normal one to your game.
+
+All of the magic that does this is in the main [csproj file](1.4/Source/RPGAdventureFlavourPack.csproj)
+
+Only the mod owner can release so this is mostly for our own documentation but anyone can build it.
+If you have build issues please make a ticket here, or ask in `#rimworld-mod-making` on the official discord.
 
 ## Disclaimer
 Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.

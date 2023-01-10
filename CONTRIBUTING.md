@@ -9,7 +9,7 @@ Please note we have a [code of conduct](#contributor-covenant---code-of-conduct)
 1. When adding compatibility with another mod, make sure it is appropriately isolated using `MayRequire`, `PatchOperationFindMod` or an entry in [loadFolders.xml](loadFolders.xml)
 2. Ensure your contribution is YouTube friendly and follows our code of conduct. 
 3. Update the README.md if necessary.
-4. Make sure you add any `loadAfter` entries in [About.xml](About/About.xml) 
+4. Make sure you add any `loadAfter` entries in [About.xml](About/About.xml) AND [About-Release.xml](About/About-Release.xml) 
 
 ## How to add translations
 Adding translations is mostly pretty easy, and a great first step for an aspiring modder.
