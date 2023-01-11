@@ -1,6 +1,6 @@
 <p>
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=???" alt="Steam Workshop Link">
-  <img src="https://img.shields.io/static/v1?label=Steam&message=Workshop&color=blue&logo=steam&link=https://steamcommunity.com/sharedfiles/filedetails/?id=???"/>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2916348220" alt="Steam Workshop Link">
+  <img src="https://img.shields.io/static/v1?label=Steam&message=Workshop&color=blue&logo=steam&link=https://steamcommunity.com/sharedfiles/filedetails/?id=2916348220"/>
   </a>
 </p>
 
@@ -32,6 +32,9 @@ While we appreciate you may be overflowing with ideas we need to follow a strict
 For more details please see our [Contributing Guide](CONTRIBUTING.md)
 
 ## Building and Releasing
+
+*Please Note that there is no need to build the project if you just want to use it, as long as it's in your mods folder it'll work fine. You just need to make sure you're using the _Dev_ version in your mod list.*
+
 To build the release version of this project, download this project and place it in your mods folder.
 Once you have it locally, open the [solution file](1.4/Source/RPGAdventureFlavourPack.sln) in Visual Studio, Rider or your tool of choice and hit build.
 
@@ -43,7 +46,7 @@ Note that to support this and make it easier to release to steam we have 2 About
 The release folder will only have the release one, renamed to `About.xml`. This allows you to have both the dev and release versions on your system without them interfering with each other.
 If you want to see the current unreleased version you will need to add the `.DEV` version of this mod rather than the normal one to your game.
 
-All of the magic that does this is in the main [csproj file](1.4/Source/RPGAdventureFlavourPack.csproj)
+All of the magic that does this is in the special [Files.csproj file](1.4/Source/Files.csproj)
 
 Only the mod owner can release so this is mostly for our own documentation but anyone can build it.
 If you have build issues please make a ticket here, or ask in `#rimworld-mod-making` on the official discord.
