@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <!--Empath to Bard-->
+  <VPE_Empath.label>Bard</VPE_Empath.label>
+  <VPE_Empath.description>Bards specialise in influencing the moods of others.</VPE_Empath.description>
+  <VPE_Empath.tab>Arcane</VPE_Empath.tab>
+  <VPE_Empath.tooltip>Bards are mages that inspire, serve, and guide their party with only a few words and some underlying magical suggestion.</VPE_Empath.tooltip>
+  <!--Skipmaster to Conjurer-->
+  <VPE_Skipmaster.label>Conjurer</VPE_Skipmaster.label>
+  <VPE_Skipmaster.description>Conjurers are mages that use their abilities to manipulate the physical location of items or creatures.</VPE_Skipmaster.description>
+  <VPE_Skipmaster.tab>Arcane</VPE_Skipmaster.tab>
+  <VPE_Skipmaster.tooltip>Conjurers are masters of manipulating the location, position, and trajectory of objects and living creatures. Their powers have applications ranging from daily life to heated battle.</VPE_Skipmaster.tooltip>
+  <!--Conflagrator to Pyromancer-->
+  <VPE_Conflagrator.label>Pyromancer</VPE_Conflagrator.label>
+  <VPE_Conflagrator.description>Pyromancers are powerful offensive mages with the ability to manipulate flames for a wide variety of battle situations.</VPE_Conflagrator.description>
+  <VPE_Conflagrator.tab>Arcane</VPE_Conflagrator.tab>
+  <VPE_Conflagrator.tooltip>Pyromancers are extremely dangerous, single-focus combat mages whose mere presence incites fear in enemies thanks to their mastery of brutal flame based spells.</VPE_Conflagrator.tooltip>
+  <!--Protector to Paladin-->
+  <VPE_Protector.label>Paladin</VPE_Protector.label>
+  <VPE_Protector.description>Paladins are noble warriors who defend and protect other party members.</VPE_Protector.description>
+  <VPE_Protector.tab>Martial</VPE_Protector.tab>
+  <VPE_Protector.tooltip>Paladins boast a wide variety of abilities focused on protection and saving the lives of their colleagues. Healing, defending, and drawing damage to themselves are all typical powers that Paladin possess.</VPE_Protector.tooltip>
+  <!--Warlord to Barbarian-->
+  <VPE_Warlord.label>Barbarian</VPE_Warlord.label>
+  <VPE_Warlord.description>Barbarians are masters of close-range, aggresive melee combat.</VPE_Warlord.description>
+  <VPE_Warlord.tab>Martial</VPE_Warlord.tab>
+  <VPE_Warlord.tooltip>Barbarians are powerful melee warriors who focus on self-empowerment to drive them beyond a typical melee fighters capabilities, and use their abilities to perform superhuman feats of martial prowess.</VPE_Warlord.tooltip>
+  <!--Chronopath to Chronomancer-->
+  <VPE_Chronopath.label>Chronomancer</VPE_Chronopath.label>
+  <VPE_Chronopath.description>Chronomancers have the rare ability to manipulate the very flow of time itself.</VPE_Chronopath.description>
+  <VPE_Chronopath.tab>Arcane</VPE_Chronopath.tab>
+  <VPE_Chronopath.tooltip>Chronomancers are uniquely gifted mages who are able to control time to their own benefits, whether it is altering the flow of a battle, or making party life more efficient.</VPE_Chronopath.tooltip>
+  <!--Archotechist to Legate-->
+  <VPE_Archotechist.label>Legate</VPE_Archotechist.label>
+  <VPE_Archotechist.description>Legates are a secretive cabal of mages who serve the Imperial government with closely guarded, mysterious spells.</VPE_Archotechist.description>
+  <VPE_Archotechist.tab>Arcane</VPE_Archotechist.tab>
+  <VPE_Archotechist.tooltip>Legates are a small group of mages, hand picked by the Emperor, to serve as guardians and defenders, and are expected to lay down their lives for the Empire. In exchange, they are taught forbidden knowledge and mighty spells unknown to standard mages.</VPE_Archotechist.tooltip>
+  <!--Necropath to Necromancer-->
+  <VPE_Necropath.label>Necromancer</VPE_Necropath.label>
+  <VPE_Necropath.description>Necromancers are mages that control all aspects of death, and the undead.</VPE_Necropath.description>
+  <VPE_Necropath.tab>Arcane</VPE_Necropath.tab>
+  <VPE_Necropath.tooltip>Necromancers are mages who have devoted themselves to the dark art of undeath, and matters of the body. Their powers range from the more typical resurrection of the dead, to controlling the bodies of their foes whilst still alive.</VPE_Necropath.tooltip>
+  <!--Staticlord to Electromancer-->
+  <VPE_Staticlord.label>Electromancer</VPE_Staticlord.label>
+  <VPE_Staticlord.description>Electromancer use their arcane arts to direct the flow of electricty to shocking effect.</VPE_Staticlord.description>
+  <VPE_Staticlord.tab>Arcane</VPE_Staticlord.tab>
+  <VPE_Staticlord.tooltip>Electromancers can both summon, and manipulate, the devistating powers of electricity, ranging from small scale lighting bolts, to massive all-encompassing storms.</VPE_Staticlord.tooltip>
+  <!--Frostshaper to Frostmancer(fucking horrible, please change)-->
+  <VPE_Frostshaper.label>Frostmancer</VPE_Frostshaper.label>
+  <VPE_Frostshaper.description>Frostmancer control the power of sheer cold, and can apply it offensively, or practically.</VPE_Frostshaper.description>
+  <VPE_Frostshaper.tab>Arcane</VPE_Frostshaper.tab>
+  <VPE_Frostshaper.tooltip>Frostmancers are masters of ice, snow, and bitter cold. Their abilities range from powerful, large scale, snow bombardment, to manipulating their enviroment with the use of solid ice walls, patches of frost, and chilling winds.</VPE_Frostshaper.tooltip>
+  <!--Wildspeaker to Druid-->
+  <VPE_Wildspeaker.label>Druid</VPE_Wildspeaker.label>
+  <VPE_Wildspeaker.description>Druids are masters of the wild, being both experts of flora and fauna, and how to control them.</VPE_Wildspeaker.description>
+  <VPE_Wildspeaker.tab>Arcane</VPE_Wildspeaker.tab>
+  <VPE_Wildspeaker.tooltip>Druids are unrivaled experts of all things natural. They naturally inspire trust from animals and can gain their help in combat, or instead manipulate the growth and appearance of wild plants to disarm their foes.</VPE_Wildspeaker.tooltip>
+  <!--Harmonist to Psion-->
+  <VPE_Harmonist.label>Psion</VPE_Harmonist.label>
+  <VPE_Harmonist.description>Psions are able to weave the very fabric of reality to their own design.</VPE_Harmonist.description>
+  <VPE_Harmonist.tab>Arcane</VPE_Harmonist.tab>
+  <VPE_Harmonist.tooltip>Psions go beyond traditional magic straight to the very source, and using their primal magical abilities, can influence reality itself into providing them with the outcome they seek. Psions can not only alter the physical reality around them, but also adjust the reality of their enemies.</VPE_Harmonist.tooltip>
+  <!--Techist to Artificer-->
+  <VPE_Technomancer.label>Artificer</VPE_Technomancer.label>
+  <VPE_Technomancer.description>Artificers possess enormous knowledge that they to forge powerful magical creations.</VPE_Technomancer.description>
+  <VPE_Technomancer.tab>Arcane</VPE_Technomancer.tab>
+  <VPE_Technomancer.tooltip>Artificers excel in the creation and empowerment of artifacts and utilities. Additionally, they can use their vast knowledge of creation and materials to discover how previously unseen items function.</VPE_Technomancer.tooltip>
+  <!--Nightstalker to Rogue -->
+  <VPE_Nightstalker.label>Rogue</VPE_Nightstalker.label>
+  <VPE_Nightstalker.description>Rogues are silent, lightfooted warriors who specialise in stealth and deception.</VPE_Nightstalker.description>
+  <VPE_Nightstalker.tab>Martial</VPE_Nightstalker.tab>
+  <VPE_Nightstalker.tooltip>Rogues are masters of using environment and shadow to conceal their movements. They make for deadly assassins and extremely deadly assets against enemy mages who might prove difficult for classes other than the stealthy rogue to deal with.</VPE_Nightstalker.tooltip>
+  <!--Archon to Commander -->
+  <VPE_Archon.label>Commander</VPE_Archon.label>
+  <VPE_Archon.description>Commanders are mages whose expertise is in emboldening their allies or diminishing their foes.</VPE_Archon.description>
+  <VPE_Archon.tab>Arcane</VPE_Archon.tab>
+  <VPE_Archon.tooltip>Commanders are experts in applying magic to the psyche of their allies for mental boons, improved performance or confidence, but can simultaneously break down the minds of their foes, demoralising and weakening them from across the battlefield.</VPE_Archon.tooltip>
+</LanguageData>

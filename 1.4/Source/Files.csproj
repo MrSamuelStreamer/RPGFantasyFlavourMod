@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <BaseIntermediateOutputPath>.vs\unused\</BaseIntermediateOutputPath>
+        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+        <ProjectGuid>{DE377B91-40EF-4D17-BAC0-D242C76BFAB7}</ProjectGuid>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+        <OutputPath>.\</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+        <OutputPath>.\</OutputPath>
+    </PropertyGroup>
+    <ItemGroup>
+        <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Source\**;..\..\1.*\Assemblies\*.pdb" />
+        <AboutFiles Include="..\..\About\**" Exclude="..\..\About\About.xml;..\..\About\About-*.xml" />
+        <CommonFiles Include="..\..\Common\**" />
+        <CompatibilityFiles Include="..\..\Compatibility\**" />
+        <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md" />
+        <None Include="..\..\.gitattributes;..\..\.gitignore;..\..\CONTRIBUTING.md;..\..\About\About.xml;..\..\About\About-*.xml" />
+    </ItemGroup>
+    <Target Name="Clean">
+        <RemoveDir Directories="..\..\..\RPGAdventureFlavourPack-Release" />
+        <Delete Files="..\..\RPGAdventureFlavourPack.zip;..\Assemblies\*.pdb" />
+    </Target>
+    <Target Name="Build" />
+    <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+        <RemoveDir Directories="..\..\..\RPGAdventureFlavourPack-Release" />
+        <Delete Files="..\..\RPGAdventureFlavourPack.zip;..\Assemblies\*.pdb" />
+        <Copy SourceFiles="@(AboutFiles)" DestinationFiles="@(AboutFiles->'..\..\..\RPGAdventureFlavourPack-Release\About\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="..\..\About\About-$(Configuration).xml" DestinationFiles="..\..\..\RPGAdventureFlavourPack-Release\About\About.xml" />
+        <Copy SourceFiles="@(CommonFiles)" DestinationFiles="@(CommonFiles->'..\..\..\RPGAdventureFlavourPack-Release\Common\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CompatibilityFiles)" DestinationFiles="@(CompatibilityFiles->'..\..\..\RPGAdventureFlavourPack-Release\Compatibility\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'..\..\..\RPGAdventureFlavourPack-Release\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" />
+        <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="..\..\..\RPGAdventureFlavourPack-Release\" SkipUnchangedFiles="false" />
+        <ZipDirectory DestinationFile="..\..\RPGAdventureFlavourPack.zip" SourceDirectory="..\..\..\RPGAdventureFlavourPack-Release" />
+        <RemoveDir Directories="obj;bin" />
+    </Target>
+</Project>

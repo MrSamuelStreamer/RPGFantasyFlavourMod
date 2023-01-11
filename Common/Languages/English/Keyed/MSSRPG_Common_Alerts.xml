@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <NeedMeditationSpotAlert>Need magical meditation spot</NeedMeditationSpotAlert>
+    <NeedMeditationSpotAlertDesc>These party members have a mana need or are sceheduled to meditate, but don't have any meditation spots available for them.\n\n{0}\n\nPlace a meditation spot and ensure it is reachable and usable. Colonists will prefer the meditation spot near the best focus object they can use.</NeedMeditationSpotAlertDesc>
+    
+    <AnimaLinkingReadyDesc>An anima tree has enough anima grass to carry out the linking ceremony and level up magical attunement for these colonists</AnimaLinkingReadyDesc>
+
+    <BreakRiskMinorDesc>These party members are in a poor mood and may have a minor mental break at any time:\n\n{0}</BreakRiskMinorDesc>
+    <BreakRiskMajorDesc>These party members are in a very poor mood and may have a major mental break at any time:\n\n{0}</BreakRiskMajorDesc>
+    <BreakRiskExtremeDesc>These party members are critically stressed and may have an extreme (and possibly violent) mental break at any moment:\n\n{0}</BreakRiskExtremeDesc>
+    <BreakRiskDescEnding>Check these party members' Needs tab to see what's bothering them.\n\nTo make party members feel better, you can do things like make them fancy meals, give them more recreation hours per day and nicer recreation objects, place them in beautiful environments, have them drink and smoke, and much more.</BreakRiskDescEnding>
+
+    <ColonistNeedsRescue>Party member needs rescue</ColonistNeedsRescue>
+    <ColonistsNeedRescue>Party members need rescue</ColonistsNeedRescue>
+    <ColonistsNeedRescueDesc>These party members are incapacitated on the ground:\n\n{0}\nSend another party member to rescue them and carry them back to bed.\n\n(To rescue, select another party member, then right click on the victim and select Rescue.)</ColonistsNeedRescueDesc>
+    <ColonistsNeedRescueDescController>These party members are incapacitated on the ground:\n\n{0}\nSend another party member to rescue them and carry them back to bed.\n\n(To rescue, select another party member, then press the left trigger button on the victim and select Rescue.)</ColonistsNeedRescueDescController>
+
+    <NeedDoctor>Need healer</NeedDoctor>
+    <NeedDoctorDesc>These party members need a healer, but you have no healthy party members assigned as healers.\n\n{0}\nAssign a healthy party member to the Doctor work type. If left untreated, wounds may never heal properly and may become permanent.</NeedDoctorDesc>
+
+    <AlertColonistLeftUnburied>Party member left unburied</AlertColonistLeftUnburied>
+    <AlertColonistLeftUnburiedDesc>A party member is left unburied.\n\nThis may negatively affect the mood of the rest of the party.</AlertColonistLeftUnburiedDesc>
+
+    <AlertTatteredApparelDesc>These party members are wearing tattered apparel, which is making them sad:\n\n{0}\nGet them some apparel that isn't so badly damaged.\n\nYou can tailor apparel at a crafting spot or tailoring table, or buy it from traders.</AlertTatteredApparelDesc>
+
+    <AlertUnhappyNudityDesc>These party members are nude and not happy about it:\n\n{0}\nGet them some clothes.\n\nYou can tailor apparel at a crafting spot or tailoring table, or buy it from traders.</AlertUnhappyNudityDesc>
+
+    <StarvationDesc>These party members are starving:\n\n{0}\nGet them some food.</StarvationDesc>
+
+    <StarvationAnimalsDesc>These animals are starving:\n\n{0}\nGet them some food.</StarvationAnimalsDesc>
+
+    <ExhaustionDesc>These party members are exhausted and need rest:\n\n{0}\nGet them some rest. They'll need a bed marked for party member use. Also, make sure they're not drafted.</ExhaustionDesc>
+
+    <NeedMealSourceDesc>You have no way of preparing proper meals from raw food.\n\nBuild a stove, campfire, or other cooking facility.\n\n(It cannot be in a prison cell, otherwise party members cannot use it.)</NeedMealSourceDesc>
+
+    <BrawlerHasRangedWeaponDesc>One of your party members loves to SMASH, but is carrying a ranged weapon. This will make them very unhappy.</BrawlerHasRangedWeaponDesc>
+
+    <ShieldUserHasRangedWeaponDesc>One of your party members has a shield and is carrying a ranged weapon. They will not be able to loose through the shield (except at targets who are already touching them).</ShieldUserHasRangedWeaponDesc>
+
+    <ColonistsIdle>{0} party members idle</ColonistsIdle>
+    <ColonistsIdleDesc>These party members are wandering idly:\n\n{0}\nYou should probably find them something productive to do.</ColonistsIdleDesc>
+
+    <CaravanIdle>Party idle</CaravanIdle>
+    <CaravanIdleDesc>These parties are having a long rest waiting for you to set their next destination:\n\n{0}</CaravanIdleDesc>
+
+    <ColonistNeedsTreatment>healing needed</ColonistNeedsTreatment>
+    <ColonistNeedsTreatmentDesc>These people need healing. Without it, they may die of their wounds, or their wounds may become permanent.\n\n{0}\nTreat them by sending them to a healer bed.\n\n(First, assign a healer bed by selecting it and toggling it into a healer bed. Then, select the wounded person and right-click on the healer bed to make them a patient.)</ColonistNeedsTreatmentDesc>
+    <ColonistNeedsTreatmentDescController>These people need healing. Without it, they may die of their wounds, or their wounds may become permanent.\n\n{0}\nTreat them by sending them to a healer bed.\n\n(First, assign a healer bed by selecting it and toggling it into a healer bed. Then, select the wounded person and press the left trigger button on the healer bed to make them a patient.)</ColonistNeedsTreatmentDescController>
+
+    <AlertHypothermiaDesc>These party members are suffering from hypothermia:\n\n{0}\nMake sure their clothing is appropriate for the season and that indoor spaces are properly heated.</AlertHypothermiaDesc>
+
+    <PatientsAwaitingMedicalOperation>{0} patients await the attention of a healer</PatientsAwaitingMedicalOperation>
+    <PatientsAwaitingMedicalOperationDesc>These patients await the attention of a healer:\n\n{0}\nMake sure you have all necessary medical tools and a free healer available.</PatientsAwaitingMedicalOperationDesc>
+
+    <PawnsWithLifeThreateningDisease>At death's door!</PawnsWithLifeThreateningDisease>
+    <PawnsWithLifeThreateningDiseaseDesc>People are at risk of death because of severe illness:\n\n{0}\nMake sure that they get the best healer care possible.</PawnsWithLifeThreateningDiseaseDesc>
+    <PawnsWithLifeThreateningDiseaseAmputationDesc>People are at risk for death because of severe illness:\n\n{0}\nIf possible, consider amputating or replacing infected limbs in order to keep party members alive.</PawnsWithLifeThreateningDiseaseAmputationDesc>
+
+    <BilliardsNeedsSpaceDesc>One of your billiards table is adjacent to an obstruction that will prevent party members from using it.\n\nA billiards table needs clear space around it on all sides to be usable.</BilliardsNeedsSpaceDesc>
+
+    <ChessTablesNeedChairsDesc>One of your chess tables does not have any adjacent chairs.\n\nBuild adjacent chairs or stools to allow your party members to use the chess table. Up to two people can use a chess table at once.</ChessTablesNeedChairsDesc>
+
+    <PokerTablesNeedChairsDesc>One of your poker tables does not have any adjacent chairs.\n\nBuild adjacent chairs or stools to allow your party members to use the poker table. Up to eight people can use a poker table at once.</PokerTablesNeedChairsDesc>
+
+    <HunterHasShieldAndRangedWeaponDesc>One of your hunters is using a ranged weapon and wearing a shield which prevents shooting at range.\n\nThey won't be able to hunt unless the shield is removed.</HunterHasShieldAndRangedWeaponDesc>
+
+    <NeedWarmClothesDesc1>At least {0} of your party members will lack warm clothes when the cold season comes.</NeedWarmClothesDesc1>
+    <NeedWarmClothesDesc1All>All of your party members will lack warm clothes when the cold season comes.</NeedWarmClothesDesc1All>
+
+    <ImmobileCaravan>Over-encumbered party</ImmobileCaravan>
+
+    <QuestPartShuttleLeaveDelay>Carriage leaving in {0}</QuestPartShuttleLeaveDelay>
+    <QuestPartShuttleLeaveDelayDesc>The carriage will leave in {1}. The quest {0} requires you to load the following people or items onto the carriage before it leaves:\n\n{2}</QuestPartShuttleLeaveDelayDesc>
+    <QuestPartShuttleLeaveDelayDescHidden>The carriage will leave in {0}.</QuestPartShuttleLeaveDelayDescHidden>
+
+    <QuestPartShuttleArriveDelay>Carriage arriving in {0}</QuestPartShuttleArriveDelay>
+    <QuestPartShuttleArriveDelayDesc>A carriage will arrive in {1}. The quest {0} requires you to load the following people or items onto the carriage before it leaves:\n\n{2}</QuestPartShuttleArriveDelayDesc>
+    <QuestPartShuttleArriveDelayDescHidden>A carriage will arrive in {0}.</QuestPartShuttleArriveDelayDescHidden>
+
+    <AlertMinifiedTreeAboutToDieDesc>{0} extracted trees are going to die is less than a day. This will make some party members unhappy because of their beliefs.\n\nYou can prevent this by replanting these trees.</AlertMinifiedTreeAboutToDieDesc>
+</LanguageData>

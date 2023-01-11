@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -16,19 +15,20 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
         private static readonly MethodInfo ValidateQuestMethod = AccessTools.Method(typeof(Main), "IsAcceptableQuest",
             new[] { typeof(QuestScriptDef), typeof(bool) });
 
-        public static HashSet<string> SelectionFilters = new() { "VPE_EltexMeteor", "_MonsterEncounterQuest", "Hunt" };
-
         [HarmonyPostfix]
         public static void UpdateValidQuestsPostfix(bool saveVanilla)
         {
-            var monsterHuntQuestGivers = new[] { "RQ_MedievalQuestGiver", "RQ_TribalQuestGiver" }
+            if (!RPGAdventureFlavourPack.Settings.AddExtraRimQuests) return;
+            var monsterHuntQuestGivers = RPGAdventureFlavourPack.Settings.ExtraRimQuestGivers
                 .Select(DefDatabase<QuestGiverDef>.GetNamedSilentFail)
                 .Where(q => q != null).ToArray();
             if (monsterHuntQuestGivers.Length == 0) return;
 
             foreach (QuestScriptDef questScriptDef in DefDatabase<QuestScriptDef>.AllDefsListForReading
                          .OrderBy(Main.GetQuestReadableName)
-                         .Where(questScriptDef => SelectionFilters.Any(f => questScriptDef.defName.Contains(f))))
+                         .Where(questScriptDef =>
+                             RPGAdventureFlavourPack.Settings.ExtraRimQuestsMatching.Any(f =>
+                                 questScriptDef.defName.Contains(f))))
             {
                 Main.Quests[questScriptDef] =
                     ValidateQuestMethod.Invoke(null, new object[] { questScriptDef, false }) as bool? ?? false;
@@ -38,7 +38,7 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
 
                 // Pick quest commonality based of inverse challenge rating i.e. harder => less common
                 var commonality = questScriptDef.defaultChallengeRating <= 0
-                    ? 2 // Default is -1 so when unsire we just pick 2 and hope that's fine
+                    ? 2 // Default is -1 so when unsure we just pick 2 and hope that's fine
                     : Math.Abs(questScriptDef.defaultChallengeRating * -1 + 4);
                 foreach (QuestGiverDef questGiver in monsterHuntQuestGivers)
                 {
@@ -49,7 +49,7 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
             }
         }
     }
-    
+
     [HarmonyPatch(typeof(Main), "GetQuestReadableName")]
     public static class WitcherMonsterHuntAndRimQuestIntegrationNamingPatches
     {

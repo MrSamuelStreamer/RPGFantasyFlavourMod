@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <!-- Witcher Monster Hunt -->
   <RimQuest_WMH_Basilisk_MonsterEncounterQuest>Hunt a Basilisk</RimQuest_WMH_Basilisk_MonsterEncounterQuest>
   <RimQuest_WMH_Bearofleet_MonsterEncounterQuest>Hunt a Bearofleet</RimQuest_WMH_Bearofleet_MonsterEncounterQuest>
   <RimQuest_WMH_Chort_MonsterEncounterQuest>Hunt a Chort</RimQuest_WMH_Chort_MonsterEncounterQuest>
@@ -18,4 +19,11 @@
   <RimQuest_WMH_Werewolf_MonsterEncounterQuest>Hunt a Werewolf</RimQuest_WMH_Werewolf_MonsterEncounterQuest>
   <RimQuest_WMH_Wraith_MonsterEncounterQuest>Hunt a Wraith</RimQuest_WMH_Wraith_MonsterEncounterQuest>
   <RimQuest_WMH_Wyvern_MonsterEncounterQuest>Hunt a Wyvern</RimQuest_WMH_Wyvern_MonsterEncounterQuest>
+  
+  <!-- VFE Vikings -->
+  <RimQuest_VFEV_FenrirHunt>Hunt a Fenrir</RimQuest_VFEV_FenrirHunt>
+  <RimQuest_VFEV_LothurrHunt>Hunt a Lothurr</RimQuest_VFEV_LothurrHunt>
+  <RimQuest_VFEV_NjorunHunt>Hunt a Njorun</RimQuest_VFEV_NjorunHunt>
+  <RimQuest_VFEV_ThrumboHunt>Hunt a Thrumbo</RimQuest_VFEV_ThrumboHunt>
+  <RimQuest_VFEV_OdinHunt>Hunt an Odin</RimQuest_VFEV_OdinHunt>
 </LanguageData>
