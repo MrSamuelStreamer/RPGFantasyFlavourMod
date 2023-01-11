@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<LanguageData>
-    <VPE.XPPerPercent>Mage XP per Mana % gained</VPE.XPPerPercent>
-    <VPE.PsycasterSpawnBaseChance>Basilicus Bestower Mage (psycaster) spawn chance</VPE.PsycasterSpawnBaseChance>
-    <VPE.PsycasterSpawnAdditional>Basilicus Bestower Mage (psycaster) strength factor</VPE.PsycasterSpawnAdditional>
-    <VPE.AllowShrink.Desc>Allow magic gizmos to be shrunken to half size when there are a lot of them.</VPE.AllowShrink.Desc>
-    <VPE.SmallMode.Desc>In small mode, the stats are moved to a tooltip and the spellbooks are moved to a separate dialog. If checked, this will force small mode. If X'ed, this will ban small mode. If partial (yellow line), this will allow default behavior (small mode will be active if your vertical resolution is less than 1080).</VPE.SmallMode.Desc>
-    <VPE.MuteSkipdoor>Mute portal Sound</VPE.MuteSkipdoor>
-</LanguageData>
