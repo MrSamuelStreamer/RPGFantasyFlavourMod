@@ -36,7 +36,36 @@
     </PropertyGroup>
     
     <ItemGroup>
+        <Reference Include="0Harmony, Version=2.2.2.0, Culture=neutral">
+            <HintPath Condition="!Exists('..\..\..\2009463077\Current\Assemblies\0Harmony.dll')">..\..\packages\Lib.Harmony.2.2.2\lib\net48\0Harmony.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\2009463077\Current\Assemblies\0Harmony.dll')">..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="Assembly-CSharp">
+            <HintPath Condition="!Exists('..\..\..\..\RimWorldWin64_Data')">..\..\packages\Krafs.Rimworld.Ref.1.4.3580\ref\net48\Assembly-CSharp.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="System" />
+        <Reference Include="System.Core" />
+        <Reference Include="System.Data" />
+        <Reference Include="System.Xml" />
+        <Reference Include="UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath Condition="!Exists('..\..\..\..\RimWorldWin64_Data')">..\..\packages\Krafs.Rimworld.Ref.1.4.3580\ref\net48\UnityEngine.CoreModule.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.TextRenderingModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath Condition="!Exists('..\..\..\..\RimWorldWin64_Data')">..\..\packages\Krafs.Rimworld.Ref.1.4.3580\ref\net48\UnityEngine.TextRenderingModule.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
         <Compile Include="Properties\AssemblyInfo.cs" />
+        <Compile Include="HarmonyPatches\CaravanPatches.cs" />
+        <Compile Include="RPGAdventureFlavourPack.cs" />
+        <Compile Include="RPGAdventureFlavourPackSettings.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <ItemGroup>
@@ -49,35 +78,19 @@
             <CopyToOutputDirectory>Never</CopyToOutputDirectory>
         </Content>
     </ItemGroup>
+    <ItemGroup>
+        <PackageReference Condition="!Exists('..\..\..\..\RimWorldWin64_Data')" Include="Krafs.Rimworld.Ref" Version="1.4.3580" targetFramework="net48" ExcludeAssets="runtime" />
+        <PackageReference Condition="!Exists('..\..\..\2009463077\Current\Assemblies\0Harmony.dll')" Include="Lib.Harmony" version="2.2.2" targetFramework="net48" ExcludeAssets="runtime" />
+    </ItemGroup>
     <PropertyGroup>
         <StartAction>Program</StartAction>
         <StartProgram>$(SolutionDir)..\..\..\..\RimWorldWin64.exe</StartProgram>
         <StartArguments>-quicktest</StartArguments>
     </PropertyGroup>
-    <ItemGroup>
-        <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Source\**;..\..\1.*\Assemblies\*.pdb" />
-        <AboutFiles Include="..\..\About\**" Exclude="..\..\About\About.xml;..\..\About\About-*.xml" />
-        <CommonFiles Include="..\..\Common\**" />
-        <CompatibilityFiles Include="..\..\Compatibility\**" />
-        <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md" />
-        <None Include="..\..\.gitattributes;..\..\.gitignore;..\..\CONTRIBUTING.md;..\..\About\About.xml;..\..\About\About-*.xml" />
-    </ItemGroup>
     <Target Name="PreBuild" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
         <Delete Files="../Assemblies/RPGAdventureFlavourPack.pdb" />
     </Target>
     <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Debug' ">
-        <RemoveDir Directories="obj;bin" />
-    </Target>
-    <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
-        <RemoveDir Directories="..\..\..\RPGAdventureFlavourPack-Release" />
-        <Delete Files="..\..\RPGAdventureFlavourPack.zip;..\Assemblies\*.pdb" />
-        <Copy SourceFiles="@(AboutFiles)" DestinationFiles="@(AboutFiles->'..\..\..\RPGAdventureFlavourPack-Release\About\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="..\..\About\About-$(Configuration).xml" DestinationFiles="..\..\..\RPGAdventureFlavourPack-Release\About\About.xml" />
-        <Copy SourceFiles="@(CommonFiles)" DestinationFiles="@(CommonFiles->'..\..\..\RPGAdventureFlavourPack-Release\Common\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(CompatibilityFiles)" DestinationFiles="@(CompatibilityFiles->'..\..\..\RPGAdventureFlavourPack-Release\Compatibility\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'..\..\..\RPGAdventureFlavourPack-Release\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" />
-        <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="..\..\..\RPGAdventureFlavourPack-Release\" SkipUnchangedFiles="false" />
-        <ZipDirectory DestinationFile="..\..\RPGAdventureFlavourPack.zip" SourceDirectory="..\..\..\RPGAdventureFlavourPack-Release" />
         <RemoveDir Directories="obj;bin" />
     </Target>
 </Project>
