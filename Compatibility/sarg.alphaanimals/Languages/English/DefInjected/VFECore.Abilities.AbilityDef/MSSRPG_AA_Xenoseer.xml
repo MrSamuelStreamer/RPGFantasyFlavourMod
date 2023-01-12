@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <AAVPE_ChemfuelNodules.label>explosive nodules</AAVPE_ChemfuelNodules.label>
+    <AAVPE_ChemfuelNodules.description>Teleports small amounts of an explosive potion inside the target's skin, carefully covering with a magical barrier to avoid the target suffering from pain and organ rejection. When the target dies, the chemfuel nodules will explode. This change in the target is permanent.</AAVPE_ChemfuelNodules.description>
+
+    <AAVPE_Hover.description>Confers the ability of limited magically assisted flight, allowing the target to hop and glide small distances over terrain. The target will ignore terrain movement costs for the duration of the ability.</AAVPE_Hover.description>
+
+    <AAVPE_WebSlinging.label>web slinging</AAVPE_WebSlinging.label>
+    <AAVPE_WebSlinging.description>Weaves strands of pure mana into the form of glowing mana webs. These webs will stun and burn the target.</AAVPE_WebSlinging.description>
+
+    <AAVPE_LightSustenance.description>Magically changes the target's skin to be part plant, eliminating almost entirely their need to eat, but requiring them to be constantly exposed to light for sustenance. This change in the target is permanent, and quite traumatic.</AAVPE_LightSustenance.description>
+
+    <AAVPE_Laser.description>Directly manipulate the ambient mana field, shifting it to redirect sunlight and concentrate it in a brutal laser blast.</AAVPE_Laser.description>
+
+    <AAVPE_Electrify.label>electrify</AAVPE_Electrify.label>
+    <AAVPE_Electrify.description>Creates an intense magical discharge that fills the target's blood with reverse entropy potential, allowing them to capture lightning merely by being close to containment units. This change in the target is permanent, and quite traumatic.</AAVPE_Electrify.description>
+
+    <AAVPE_Regeneration.label>regeneration</AAVPE_Regeneration.label>
+    <AAVPE_Regeneration.description>Directly link the target to the background mana field granting active regeneration, allowing them to heal their wounds much faster than usual.</AAVPE_Regeneration.description>
+</LanguageData>

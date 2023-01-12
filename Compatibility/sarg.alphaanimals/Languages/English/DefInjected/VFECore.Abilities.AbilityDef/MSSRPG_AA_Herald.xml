@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <AAVPE_VenomSpit.description>The caster bites their tongue filling their mouth with blood. Spitting it out, the latent power from the blood activates a blood spell converting the thick fluid to acid in flight with the excess energy accelerating the blob in the desired direction.</AAVPE_VenomSpit.description>
+
+    <AAVPE_SummonBlackScarab.label>summon black scarab</AAVPE_SummonBlackScarab.label>
+    <AAVPE_SummonBlackScarab.description>Teleports a black scarab to help defend the area. The black scarab will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonBlackScarab.description>
+
+    <AAVPE_SummonBlackSpelopede.label>summon black spelopede</AAVPE_SummonBlackSpelopede.label>
+    <AAVPE_SummonBlackSpelopede.description>Teleports a black spelopede to help defend the area. The black spelopede will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonBlackSpelopede.description>
+
+    <AAVPE_StrengthenInsect.description>Bind a Black Hive insect to the ambient mana field, making it instantly more proficient in combat.</AAVPE_StrengthenInsect.description>
+
+    <AAVPE_SummonBlackSpider.description>Teleports a black spider to help defend the area. The black spider will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonBlackSpider.description>
+
+    <AAVPE_SummonMammothWorm.description>Teleports a mammoth worm to help defend the area. The mammoth worm will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonMammothWorm.description>
+
+    <AAVPE_SummonBlackQueen.description>Teleports a black queen to help defend the area. The black queen will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonBlackQueen.description>
+
+    <AAVPE_SummonHive.description>Psychically forces a black hive insect to open a connection to the deep underground tunnels of the black hive. This hive entrance will produce black larva periodically, which will mature into random black hive insects. These are not temporary and the colonists can tame them as normal animals. Your colony can only have one hive entrance, and no more than four insects will be present at the same time.</AAVPE_SummonHive.description>
+</LanguageData>

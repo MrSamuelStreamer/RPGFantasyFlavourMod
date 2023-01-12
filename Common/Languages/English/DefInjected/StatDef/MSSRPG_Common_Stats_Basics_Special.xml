@@ -10,6 +10,6 @@
     <MeditationFocusStrength.label>meditation mana bonus</MeditationFocusStrength.label>
     <MeditationFocusStrength.description>The amount of extra mana someone gains by focusing on this object during meditation, in addition to their own base rate of meditation mana gain.\n\nFor some objects, this number can change depending on the surroundings and the person doing the meditating.</MeditationFocusStrength.description>
 
-    <PsychicSensitivityOffset.label>Magical sensitivity offset</PsychicSensitivityOffset.label>
-    <PsychicSensitivityOffset.description>An offset applied to the user's magical sensitivity.</PsychicSensitivityOffset.description>
+    <PsychicSensitivityOffset.label>magical aptitude offset</PsychicSensitivityOffset.label>
+    <PsychicSensitivityOffset.description>An offset applied to the user's magical aptitude.</PsychicSensitivityOffset.description>
 </LanguageData>

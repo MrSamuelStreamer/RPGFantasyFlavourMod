@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <Util_SendItemPods.questDescriptionRules.rulesStrings.0>rewardDescription->gliders with the following resources will arrive (total value [itemPodsTotalMarketValue_money]):
+        \n[itemPodsContents]</Util_SendItemPods.questDescriptionRules.rulesStrings.0>
+</LanguageData>

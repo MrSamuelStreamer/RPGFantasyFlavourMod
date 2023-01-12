@@ -8,13 +8,13 @@
 
     <PsychicAbility_Dull.label>magically dull</PsychicAbility_Dull.label>
     <PsychicAbility_Dull.labelShortAdj>poor-mage</PsychicAbility_Dull.labelShortAdj>
-    <PsychicAbility_Dull.description>Carriers of this gene are less magically-sensitive than others.</PsychicAbility_Dull.description>
+    <PsychicAbility_Dull.description>Carriers of this gene are less magically-adept than others.</PsychicAbility_Dull.description>
 
     <PsychicAbility_Enhanced.label>magically-sensitive</PsychicAbility_Enhanced.label>
     <PsychicAbility_Enhanced.labelShortAdj>gifted-mage</PsychicAbility_Enhanced.labelShortAdj>
-    <PsychicAbility_Enhanced.description>Carriers of this gene are more magically-sensitive than average.</PsychicAbility_Enhanced.description>
+    <PsychicAbility_Enhanced.description>Carriers of this gene are more magically-adept than average.</PsychicAbility_Enhanced.description>
 
     <PsychicAbility_Extreme.label>super magically-sensitive</PsychicAbility_Extreme.label>
     <PsychicAbility_Extreme.labelShortAdj>mage-prodigy</PsychicAbility_Extreme.labelShortAdj>
-    <PsychicAbility_Extreme.description>Carriers of this gene are much more magically-sensitive than most.</PsychicAbility_Extreme.description>
+    <PsychicAbility_Extreme.description>Carriers of this gene are much more magically-adept than most.</PsychicAbility_Extreme.description>
 </LanguageData>

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 
 <LanguageData>
-    <PsychicSensitivity.label>magical sensitivity</PsychicSensitivity.label>
-    <PsychicSensitivity.description>More sensitive people suffer more from negative arcane effects, and benefit more from positive ones. Higher magical sensitivity also increases arcane load limit.</PsychicSensitivity.description>
+    <PsychicSensitivity.label>magical aptitude</PsychicSensitivity.label>
+    <PsychicSensitivity.description>People with a higher magical aptitude suffer more from negative arcane effects, and benefit more from positive ones due to their deeper connection to the ambient mana field. Higher magical aptitude also increases arcane load limit.</PsychicSensitivity.description>
     <AnimalsLearningFactor.label>animal handling learning factor</AnimalsLearningFactor.label>
-    <AnimalsLearningFactor.description>A multiplier on the learning rate for animal handling skill.</AnimalsLearningFactordescription>
+    <AnimalsLearningFactor.description>A multiplier on the learning rate for animal handling skill.</AnimalsLearningFactor.description>
     <MeditationFocusGain.label>meditation mana gain</MeditationFocusGain.label>
     <MeditationFocusGain.description>The amount of mana a person gains per day of meditation, ignoring bonuses from focus objects.</MeditationFocusGain.description>
     <PsychicEntropyMax.label>arcane load limit</PsychicEntropyMax.label>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <LanguageData>
-    <VPE_Mindcontrol.description>Mentally dominate a target for a brief period, scaling with their magical sensitivity, giving the caster a second body. However, it’s difficult being two people at once.</VPE_Mindcontrol.description>
+    <VPE_Mindcontrol.description>Mentally dominate a target for a brief period, scaling with their magical aptitude, giving the caster a second body. However, it’s difficult being two people at once.</VPE_Mindcontrol.description>
 
     <VPE_PsychicGuidance.label>arcane guidance</VPE_PsychicGuidance.label>
 
@@ -10,11 +10,11 @@
     <VPE_HeatFocus.label>arcane focus</VPE_HeatFocus.label>
     <VPE_HeatFocus.description>Initiates harmonic meditation which converts all accumulated arcane load into mana after 10 seconds.</VPE_HeatFocus.description>
 
-    <VPE_LuckTransfer.description>Creates a rift in karmic balance by shifting the negative karma from the first target onto the second target, as well as receiving their positive karma. Only affects combat and the duration scales with the first target’s magical sensitivity.</VPE_LuckTransfer.description>
+    <VPE_LuckTransfer.description>Creates a rift in karmic balance by shifting the negative karma from the first target onto the second target, as well as receiving their positive karma. Only affects combat and the duration scales with the first target’s magical aptitude.</VPE_LuckTransfer.description>
 
     <VPE_BendProbability.description>Creates a ripple of cosmic scale that will force something to happen.</VPE_BendProbability.description>
 
     <VPE_LocationSwap.description>Instantly have the caster and the visible target teleport to each other's location trading places.</VPE_LocationSwap.description>
 
-    <VPE_SkillRoll.description>Initiates a shift in the target’s knowledge and accumulated skills, attempting to rebalance them somewhat chaotically with some beneficial guidance. The strain puts the caster in a coma for a day, but can be reduced with magical sensitivity.</VPE_SkillRoll.description>
+    <VPE_SkillRoll.description>Initiates a shift in the target’s knowledge and accumulated skills, attempting to rebalance them somewhat chaotically with some beneficial guidance. The strain puts the caster in a coma for a day, but can be reduced with magical aptitude.</VPE_SkillRoll.description>
 </LanguageData>

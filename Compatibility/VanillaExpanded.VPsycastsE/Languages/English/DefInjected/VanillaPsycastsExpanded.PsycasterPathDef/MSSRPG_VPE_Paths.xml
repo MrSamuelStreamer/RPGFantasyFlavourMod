@@ -45,11 +45,11 @@
   <VPE_Staticlord.description>Electromancer use their arcane arts to direct the flow of electricty to shocking effect.</VPE_Staticlord.description>
   <VPE_Staticlord.tab>Arcane</VPE_Staticlord.tab>
   <VPE_Staticlord.tooltip>Electromancers can both summon, and manipulate, the devistating powers of electricity, ranging from small scale lighting bolts, to massive all-encompassing storms.</VPE_Staticlord.tooltip>
-  <!--Frostshaper to Frostmancer(fucking horrible, please change)-->
-  <VPE_Frostshaper.label>Frostmancer</VPE_Frostshaper.label>
-  <VPE_Frostshaper.description>Frostmancer control the power of sheer cold, and can apply it offensively, or practically.</VPE_Frostshaper.description>
+  <!--Frostshaper to Cryomancer -->
+  <VPE_Frostshaper.label>Cryomancer</VPE_Frostshaper.label>
+  <VPE_Frostshaper.description>Cryomancer control the power of sheer cold, and can apply it offensively, or practically.</VPE_Frostshaper.description>
   <VPE_Frostshaper.tab>Arcane</VPE_Frostshaper.tab>
-  <VPE_Frostshaper.tooltip>Frostmancers are masters of ice, snow, and bitter cold. Their abilities range from powerful, large scale, snow bombardment, to manipulating their enviroment with the use of solid ice walls, patches of frost, and chilling winds.</VPE_Frostshaper.tooltip>
+  <VPE_Frostshaper.tooltip>Cryomancers are masters of ice, snow, and bitter cold. Their abilities range from powerful, large scale, snow bombardment, to manipulating their enviroment with the use of solid ice walls, patches of frost, and chilling winds.</VPE_Frostshaper.tooltip>
   <!--Wildspeaker to Druid-->
   <VPE_Wildspeaker.label>Druid</VPE_Wildspeaker.label>
   <VPE_Wildspeaker.description>Druids are masters of the wild, being both experts of flora and fauna, and how to control them.</VPE_Wildspeaker.description>

@@ -58,8 +58,8 @@
 
 	<RR_PawnBadge.BadgeDef>
 		<defName>Frostmancer</defName>
-		<label>Frostmancer</label>
-		<description>Frostmancer</description>
+		<label>Cryomancer</label>
+		<description>Cryomancer</description>
 		<icon>Abilities/Frostshaper/IceBreath</icon>
 	</RR_PawnBadge.BadgeDef>
 
@@ -114,8 +114,8 @@
 
 	<RR_PawnBadge.BadgeDef>
 		<defName>Kinectomancer</defName>
-		<label>Kinectomancer</label>
-		<description>Kinectomancer</description>
+		<label>Telekinetic</label>
+		<description>Telekinetic</description>
 		<icon>Psycasts/CP_PsychicHeavySlug</icon>
 	</RR_PawnBadge.BadgeDef>
 

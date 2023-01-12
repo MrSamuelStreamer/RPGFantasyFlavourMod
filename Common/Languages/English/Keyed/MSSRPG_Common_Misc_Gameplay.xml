@@ -27,6 +27,9 @@
   <PawnTooltipPsyfocus>Mana: {0}</PawnTooltipPsyfocus>  
   <Reward_BestowingCeremony_Label>New attunement level</Reward_BestowingCeremony_Label>
   <Reward_BestowingCeremony>{PAWNNAME} gains attunement</Reward_BestowingCeremony>
+
+  <Reward_Items>gliders with the following resources will arrive (total value {1}):
+    \n{0}</Reward_Items>
   
   <ForColonistUse>For party use</ForColonistUse>
   <MedicalBed>Healing</MedicalBed>

@@ -5,16 +5,16 @@
     <!-- Psychic Sensitivity -->
 
     <PsychicSensitivityUpMajor.label>arcane hypersensitizer</PsychicSensitivityUpMajor.label>
-    <PsychicSensitivityUpMajor.description>This weapon amplifies the wielder's magical sensitivity by 40%. This only applies while the weapon is held.</PsychicSensitivityUpMajor.description>
+    <PsychicSensitivityUpMajor.description>This weapon amplifies the wielder's magical aptitude by 40%. This only applies while the weapon is held.</PsychicSensitivityUpMajor.description>
 
     <PsychicSensitivityUpMinor.label>arcane sensitizer</PsychicSensitivityUpMinor.label>
-    <PsychicSensitivityUpMinor.description>This weapon amplifies the wielder's magical sensitivity by 20%. This only applies while the weapon is held.</PsychicSensitivityUpMinor.description>
+    <PsychicSensitivityUpMinor.description>This weapon amplifies the wielder's magical aptitude by 20%. This only applies while the weapon is held.</PsychicSensitivityUpMinor.description>
 
     <PsychicSensitivityDownMinor.label>arcane dampener</PsychicSensitivityDownMinor.label>
-    <PsychicSensitivityDownMinor.description>This weapon suppresses the wielder's magical sensitivity by 15%. This only applies while the weapon is held.</PsychicSensitivityDownMinor.description>
+    <PsychicSensitivityDownMinor.description>This weapon suppresses the wielder's magical aptitude by 15%. This only applies while the weapon is held.</PsychicSensitivityDownMinor.description>
 
     <PsychicSensitivityDownMajor.label>arcane fog</PsychicSensitivityDownMajor.label>
-    <PsychicSensitivityDownMajor.description>This weapon suppresses the wielder's magical sensitivity by 30%. This only applies while the weapon is held.</PsychicSensitivityDownMajor.description>
+    <PsychicSensitivityDownMajor.description>This weapon suppresses the wielder's magical aptitude by 30%. This only applies while the weapon is held.</PsychicSensitivityDownMajor.description>
 
     <OnKill_PsyfocusGain.description>This weapon's persona focuses on deaths. If the weapon kills someone, the wielder will instantly gain 20% mana.</OnKill_PsyfocusGain.description>
 

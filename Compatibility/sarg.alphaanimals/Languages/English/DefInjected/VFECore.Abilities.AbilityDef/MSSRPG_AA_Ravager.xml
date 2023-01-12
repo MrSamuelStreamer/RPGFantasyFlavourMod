@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <AAVPE_Slice.label>shadow slice</AAVPE_Slice.label>
+    <AAVPE_Slice.description>Slip into the shadows, travelling a short distance in an instant to appear next to a target slicing a random body part.</AAVPE_Slice.description>
+
+    <AAVPE_ClawFrenzy.description>Envelopes the caster's melee weapon on terrifyingly sharp mana claws, striking the target with three consecutive ferocious attacks. Only usable in melee.</AAVPE_ClawFrenzy.description>
+
+    <AAVPE_DisablingStrike.description>Enshrouds the caster's weapon in a roiling cloud of wild mana which, on contact, assaults the target's mind with the primal fear of the dark forest, often paralysing them in terror. Making them easy to drag into the underbrush. Being so primal this spell requires flesh contact and thus is ineffective against armour.</AAVPE_DisablingStrike.description>
+
+    <AAVPE_Skewer.description>Charges the caster's weapon with an obscene amount of primal mana, skewering the target straight through the torso and dealing immense damage.\n\nBeing so primal this spell won't work on animals, as they have an innate connection to the primal mana field as well which dissipates all the energy on contact.</AAVPE_Skewer.description>
+
+    <AAVPE_Charge.label>tiger assault</AAVPE_Charge.label>
+    <AAVPE_Charge.description>Connects to the primal mana field to channel the wild energy of felines, allowing the caster to perform a high velocity leap, barelling into the target, furiously striking it twice.</AAVPE_Charge.description>
+
+    <AAVPE_ChargeAndSkewer.label>skewering assault</AAVPE_ChargeAndSkewer.label>
+    <AAVPE_ChargeAndSkewer.description>Charges the caster's weapon with an obscene amount of energy, and then performs a tiger assault before skewering it straight through the torso, dealing immense damage.\n\nBeing so primal this spell won't work on animals, as they have an innate connection to the primal mana field as well which dissipates all the energy on contact.</AAVPE_ChargeAndSkewer.description>
+
+    <AAVPE_EmpBlow.label>static blow</AAVPE_EmpBlow.label>
+    <AAVPE_EmpBlow.description>Strike the target with such powerful primal energy that any cunning device powered by harnessed lighting is damaged. Powered constructs will adapt after one blow.</AAVPE_EmpBlow.description>
+
+    <AAVPE_SpinCut.label>spin cut</AAVPE_SpinCut.label>
+    <AAVPE_SpinCut.description>The caster slips into the shadows, travelling a short distance in an instant to appear, spinning their melee weapon around, cutting anyone adjacent to the original target.</AAVPE_SpinCut.description>
+
+    <AAVPE_LegSkip.label>severance</AAVPE_LegSkip.label>
+    <AAVPE_LegSkip.description>Charging their weapon with primal energy, the caster slips into the shadows, appearing besides the target and mercilessly striking at their legs, instantly destroying them. Likely -but not always- fatal.</AAVPE_LegSkip.description>
+
+    <AAVPE_KO.label>KO</AAVPE_KO.label>
+    <AAVPE_KO.description>Imbues the caster's melee weapon with an overcharged pulse of primal energy that, on contact, will knock the target unconscious with the goal of leaving no lasting damage.</AAVPE_KO.description>
+
+    <AAVPE_FatalBlow.label>primal assasin</AAVPE_FatalBlow.label>
+    <AAVPE_FatalBlow.description>Calling upon the latent magical connection to the primal mana field of wild animals, the caster analyzes their target to find their weakest point, striking it mercilessly and killing them on the spot.</AAVPE_FatalBlow.description>
+</LanguageData>

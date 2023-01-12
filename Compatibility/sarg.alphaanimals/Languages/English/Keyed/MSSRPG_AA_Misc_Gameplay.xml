@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <AA_LetterLabelAlphaCargoPodCrash>Alpha Animals Cargo Glider</AA_LetterLabelAlphaCargoPodCrash>
+    <AA_AlphaCargoPodCrash>You have spotted a cargo glider crashing nearby. Captive exotic animals seem to be inside.\n\nWho knows, but perhaps you'll find something useful in the wreckage.</AA_AlphaCargoPodCrash>
+    <LetterBumbledroneMigration>A small group of bumbledrones, led by a bumbledrone queen, has entered this area.\n\nBumbledrones are generally not aggressive, unless threatened.\n\nThey will probably leave this area after a while in search of a quieter place, since this place is too noisy for them.</LetterBumbledroneMigration>
+
+
+    <ManhuntingArcticLion>An arctic lion is stalking one of your colonists from the shadows.\n\nIt will be almost invisible until it decides to attack and is damaged by your colonists. Colonists that are drafted and alert and automatic defenses will be able to detect it, so you should prepare quickly! \n\nArctic lions are fearsome, magically altered creatures bred for combat in cold climates.</ManhuntingArcticLion>
+
+    <SummitCrab>The ground trembles as a massive hermit crab living inside a huge boulder drags itself across this region.\n\nThe gargantuan bouldermit isn't hostile, but it is almost impervious to arrows and it will lay waste to anything in its path if not stopped.</SummitCrab>
+
+    <LetterLabelCactipinePod>Strange glider</LetterLabelCactipinePod>
+    <CactipineDropPod>The air roars with the unmistakable sound of a high altitude glider coming in to land. There seems to be movement within, but there is something off, you can't work out if it is animal, plant life or something altogether more strange.</CactipineDropPod>
+
+    <LetterBlackHiveAttack>Insectoids in the rim are organisms, magically altered by the cult of the blackhive to fight the intimidating constructs sometimes encountered throughout the land. The Black Hive creatures are fearsome monstrosities, designed to be much more aggressive than usual, and capable of laying siege to impregnable construct fortresses. Existing insectoid species were improved and several new species were created and added to the Hive to increase its lethality.\n\nA group of Black Hive insectoids has tunneled to this location, and will attack your base immediately.</LetterBlackHiveAttack>
+
+    <AA_LetterLabelMechanoidSappers>Construct Sappers</AA_LetterLabelMechanoidSappers>
+    <AA_LetterMechanoidSappers>A previously cloaked ancient construct assembler has mysteriously appeared nearby.\n\nA swarm of constructs spews forth, quickly readying for an attack.\n\nOne of these is a dangerous Demolisher, so they'll probably go straight for the walls!</AA_LetterMechanoidSappers>
+
+    <AA_LetterLabelFungalHusk>Fungal Husks</AA_LetterLabelFungalHusk>
+    <AA_LetterFungalHusk>Bloating, shambling corpses animated by a terrible magically enhanced fungus have entered this territory!\n\nDon't let them attack your colonists, or they will be afflicted by a fast acting fungal infection that can kill quickly if untreated.</AA_LetterFungalHusk>
+
+    <AA_LetterLabelMime>Mimic revealed</AA_LetterLabelMime>
+    <AA_LetterMime>{0} was a Mimic all along! {0_possessive} extreme hunger was too much for {0_objective}, and {0_pronoun} will attack the rest of the colonists to try to satiate it.</AA_LetterMime>
+
+    <AA_Artillery>Trebuchet</AA_Artillery>
+
+    <AA_EMPShockTroop>Static Shock Troop</AA_EMPShockTroop>
+
+    <AA_UtilityPowerDesc>This animal is not suited for combat, being quite physically weak. It will however produce items that can be used to build devices that harness the power of lightning.</AA_UtilityPowerDesc>
+    <AA_UtilityRechargerDesc>This animal is not suited for combat, being quite physically weak. It will periodically recharge nearby lightning storage devices.</AA_UtilityRechargerDesc>
+
+    <!-- Psycasts -->
+
+    <AA_PsychicSlice>Shadow slice!</AA_PsychicSlice>
+    <AA_PsychicSliceFailed>Failed shadow slice</AA_PsychicSliceFailed>
+    <AA_EMPBlow>Static blow!</AA_EMPBlow>
+    <AA_EMPBlowFailed>Static blow failed</AA_EMPBlowFailed>
+    <AA_LegSkip>Severance!</AA_LegSkip>
+    <AA_LegSkipFailed>Severance failed</AA_LegSkipFailed>
+    <AA_KOFailed>KO failed</AA_KOFailed>
+</LanguageData>

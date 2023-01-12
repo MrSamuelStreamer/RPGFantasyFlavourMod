@@ -10,14 +10,14 @@
     <VPE_NeuralHeatDump.label>arcane load transfer</VPE_NeuralHeatDump.label>
     <VPE_NeuralHeatDump.description>Instantly transfer all your arcane load into someone else. As a side-effect, the target will fall into a debilitating but non-damaging coma for about a day. The target must actively accept the arcane link, so only conscious allies can be targeted.</VPE_NeuralHeatDump.description>
 
-    <VPE_Berserk.description>suppress all emotion and dominate their mind, filling it with an insatiable need to kill, causing them to attack anyone nearby. They regain rationality after 15 seconds, depending on their magical sensitivity.</VPE_Berserk.description>
+    <VPE_Berserk.description>suppress all emotion and dominate their mind, filling it with an insatiable need to kill, causing them to attack anyone nearby. They regain rationality after 15 seconds, depending on their magical aptitude.</VPE_Berserk.description>
 
     <VPE_AggressiveHeatDump.label>arcane explosion</VPE_AggressiveHeatDump.label>
     <VPE_AggressiveHeatDump.description>Instantly dump all of your arcane load into a target, causing them to explode with an area of effect relative to the arcane load pushed into them. A good declaration of war.</VPE_AggressiveHeatDump.description>
 
     <VPE_BerserkPulse.description>Generate an overwhelming rush of undirected rage in everyone near the target point. Considered an overt act of aggression and lasts several seconds.</VPE_BerserkPulse.description>
 
-    <VPE_PsychicDrone.description>Creates a massive psychic drone aura around the caster tuned to hostiles, frequently driving them insane until they overcome the break. Duration scales with the caster’s magical sensitivity.</VPE_PsychicDrone.description>
+    <VPE_PsychicDrone.description>Creates a massive psychic drone aura around the caster tuned to hostiles, frequently driving them insane until they overcome the break. Duration scales with the caster’s magical aptitude.</VPE_PsychicDrone.description>
 
     <VPE_NeuralHeatDetonation.label>arcane detonation</VPE_NeuralHeatDetonation.label>
     <VPE_NeuralHeatDetonation.description>Efficiently but indiscriminately dumps all of the caster’s arcane load into an explosion away from themselves, the size being relative to the arcane load lost.</VPE_NeuralHeatDetonation.description>

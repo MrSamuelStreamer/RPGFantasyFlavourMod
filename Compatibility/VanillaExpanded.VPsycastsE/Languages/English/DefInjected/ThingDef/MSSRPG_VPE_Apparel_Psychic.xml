@@ -2,17 +2,17 @@
 
 <LanguageData>
     <VPE_Apparel_EltexMask.label>arcane mask</VPE_Apparel_EltexMask.label>
-    <VPE_Apparel_EltexMask.description>An artistically impressive mask emanating arcane energy. Hides the face of the wearer but provides little physical protection. Its special materials enhance the wearer's magical sensitivity and dissipate arcane load.</VPE_Apparel_EltexMask.description>
+    <VPE_Apparel_EltexMask.description>An artistically impressive mask emanating arcane energy. Hides the face of the wearer but provides little physical protection. Its special materials enhance the wearer's magical aptitude and dissipate arcane load.</VPE_Apparel_EltexMask.description>
     <VPE_Apparel_EltexCape.label>arcane cape</VPE_Apparel_EltexCape.label>
-    <VPE_Apparel_EltexCape.description>A long cape of mystical design. It hangs over one side of the torso. Its special materials enhance the wearer's magical sensitivity and dissipate arcane load.</VPE_Apparel_EltexCape.description>
+    <VPE_Apparel_EltexCape.description>A long cape of mystical design. It hangs over one side of the torso. Its special materials enhance the wearer's magical aptitude and dissipate arcane load.</VPE_Apparel_EltexCape.description>
     <Apparel_PsyfocusHelmet.label>arcanium helmet</Apparel_PsyfocusHelmet.label>
-    <Apparel_PsyfocusHelmet.description>A lightweight helmet designed for magical focusing. While it provides little physical protection, its special materials enhance the wearer's magical sensitivity and dissipate arcane load.</Apparel_PsyfocusHelmet.description>
+    <Apparel_PsyfocusHelmet.description>A lightweight helmet designed for magical focusing. While it provides little physical protection, its special materials enhance the wearer's magical aptitude and dissipate arcane load.</Apparel_PsyfocusHelmet.description>
     <Apparel_EltexSkullcap.label>arcanium skullcap</Apparel_EltexSkullcap.label>
-    <Apparel_EltexSkullcap.description>A tight skullcap designed for magical focusing. It provides no physical protection, but its special materials enhance the wearer's magical sensitivity and dissipate arcane load.</Apparel_EltexSkullcap.description>
+    <Apparel_EltexSkullcap.description>A tight skullcap designed for magical focusing. It provides no physical protection, but its special materials enhance the wearer's magical aptitude and dissipate arcane load.</Apparel_EltexSkullcap.description>
     <Apparel_PsyfocusShirt.label>arcanium shirt</Apparel_PsyfocusShirt.label>
-    <Apparel_PsyfocusShirt.description>A shirt embedded with special magical focusing materials. These enhance magical sensitivity and help dissipate arcane load.</Apparel_PsyfocusShirt.description>
+    <Apparel_PsyfocusShirt.description>A shirt embedded with special magical focusing materials. These enhance magical aptitude and help dissipate arcane load.</Apparel_PsyfocusShirt.description>
     <Apparel_PsyfocusVest.label>arcanium vest</Apparel_PsyfocusVest.label>
-    <Apparel_PsyfocusVest.description>A thin vest embedded with special magical focusing materials. These enhance magical sensitivity and help dissipate arcane load.</Apparel_PsyfocusVest.description>
-    <Apparel_PsyfocusRobe.description>A long robe embedded with special magical focusing materials. These enhance magical sensitivity and help dissipate arcane load.</Apparel_PsyfocusRobe.description>
+    <Apparel_PsyfocusVest.description>A thin vest embedded with special magical focusing materials. These enhance magical aptitude and help dissipate arcane load.</Apparel_PsyfocusVest.description>
+    <Apparel_PsyfocusRobe.description>A long robe embedded with special magical focusing materials. These enhance magical aptitude and help dissipate arcane load.</Apparel_PsyfocusRobe.description>
     <Apparel_PsyfocusRobe.label>arcanium robe</Apparel_PsyfocusRobe.label>
 </LanguageData>

@@ -26,7 +26,7 @@
     <SpawningColonists>Tweaking character sheets</SpawningColonists>
 
     <!-- Save/load -->
-    <SaveGameButton>Hire Bard</SaveGameButton>
+    <SaveGameButton>Record quest</SaveGameButton>
     <LoadGameButton>Resume quest</LoadGameButton>
     <OverwriteButton>Replace tale</OverwriteButton>
     <ConfirmDelete>Really delete {0}?</ConfirmDelete>

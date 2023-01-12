@@ -4,14 +4,14 @@
     <VPE_CraftPsyRing.label>craft arcane ring</VPE_CraftPsyRing.label>
     <VPE_CraftPsyRing.description>Transmutes a piece of arcanium into the shape of a ring, imbued with the arcane knowledge of the caster. When worn by another mage, this temporarily allows them to use this knowledge to perform the stored spell without practice.</VPE_CraftPsyRing.description>
 
-    <VPE_Mend.description>The caster concentrates on an item and attempts to repair present damage by rebinding the material, with the effect scaling with their magical sensitivity.</VPE_Mend.description>
+    <VPE_Mend.description>The caster concentrates on an item and attempts to repair present damage by rebinding the material, with the effect scaling with their magical aptitude.</VPE_Mend.description>
 
     <VPE_ConjureHeatPearls.label>conjure arcane pearls</VPE_ConjureHeatPearls.label>
     <VPE_ConjureHeatPearls.description>Converts a minimum amount of the caster’s arcane load into arcane pearls. These can be thrown at other mages to induce massive amounts of arcane load on them, but are otherwise harmless.</VPE_ConjureHeatPearls.description>
 
-    <VPE_Haywire.description>Designates an area to experience magical interference, effectively scrambling arcane systems’ IFFs while identifying the caster’s people as allies. Duration scales with magical sensitivity.</VPE_Haywire.description>
+    <VPE_Haywire.description>Designates an area to experience magical interference, effectively scrambling arcane systems’ IFFs while identifying the caster’s people as allies. Duration scales with magical aptitude.</VPE_Haywire.description>
 
-    <VPE_Power.description>Creates a temporarily self sustaining energy loop that can power any device for a few days. Duration scales with magical sensitivity.</VPE_Power.description>
+    <VPE_Power.description>Creates a temporarily self sustaining energy loop that can power any device for a few days. Duration scales with magical aptitude.</VPE_Power.description>
 
     <VPE_RockConstruct.label>rock golem</VPE_RockConstruct.label>
     <VPE_RockConstruct.description>Allocates a minimal amount of the caster’s arcane load to create a crystal which can be implanted into a stone chunk. This new rock golem is capable of performing simple chores, and breaking the crystal allows the arcane load dissipate.</VPE_RockConstruct.description>
@@ -19,5 +19,5 @@
     <VPE_SteelConstruct.label>steel golem</VPE_SteelConstruct.label>
     <VPE_SteelConstruct.description>Allocates a minimal amount of the caster’s arcane load to create a crystal which can be implanted into a steel slag. This new steel golem will follow the caster and defend them from harm, and breaking the crystal allows the arcane load dissipate.</VPE_SteelConstruct.description>
 
-    <VPE_WordofProgress.description>Speak words encouraging problem solving capabilities while magically hypercharging the target’s mind with keen insight. The target will experience double research speed and intellectual skill gain for 5 days, scaling with their magical sensitivity.</VPE_WordofProgress.description>
+    <VPE_WordofProgress.description>Speak words encouraging problem solving capabilities while magically hypercharging the target’s mind with keen insight. The target will experience double research speed and intellectual skill gain for 5 days, scaling with their magical aptitude.</VPE_WordofProgress.description>
 </LanguageData>

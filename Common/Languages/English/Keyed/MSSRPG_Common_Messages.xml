@@ -11,6 +11,6 @@
     <MessageSelfTendUnsatisfied>To self-tend, {1_labelShort} must also be assigned to Healer work.</MessageSelfTendUnsatisfied>
     <MessageCannotSelfTendEver>{1_labelShort} is incapable of doing Healer work, and so cannot ever self-tend.</MessageCannotSelfTendEver>
     
-    <MessagePsylinkNoSensitivity>{PAWN_labelShort} won't be able to use the tome of magical attunement while {PAWN_pronoun} has zero magical sensitivity.</MessagePsylinkNoSensitivity>
+    <MessagePsylinkNoSensitivity>{PAWN_labelShort} won't be able to use the tome of magical attunement while {PAWN_pronoun} has zero magical aptitude.</MessagePsylinkNoSensitivity>
     <MessageWentOverPsychicEntropyLimit>{PAWN_labelShort} has exceeded the normal limit of arcane load.</MessageWentOverPsychicEntropyLimit>
 </LanguageData>

@@ -2,13 +2,13 @@
 
 <LanguageData>
     <VPE_IceBreath.description>Breathe forward a stream of super cooled air, the resulting cold cutting and inducing hypothermia scaling with the distance to the target.</VPE_IceBreath.description>
-    <VPE_IceSpike.description>Condenses vapor into an icicle launched at a target, the damage scaling with magical sensitivity.</VPE_IceSpike.description>
+    <VPE_IceSpike.description>Condenses vapor into an icicle launched at a target, the damage scaling with magical aptitude.</VPE_IceSpike.description>
     <VPE_IceShield.description>Creates an aura of freezing air around the target for several seconds, preventing them from experiencing cold and inducing hypothermia on any who try to attack them in melee.</VPE_IceShield.description>
-    <VPE_FrostRay.description>Push forth a concentrated stream of ice for a few seconds, rapidly inducing cuts and hypothermia. The duration scales with the caster’s magical sensitivity.</VPE_FrostRay.description>
+    <VPE_FrostRay.description>Push forth a concentrated stream of ice for a few seconds, rapidly inducing cuts and hypothermia. The duration scales with the caster’s magical aptitude.</VPE_FrostRay.description>
     <VPE_IceCrystal.description>Creates a giant shard of ice, sapping the heat from the room for the next 5 days.</VPE_IceCrystal.description>
     <VPE_ColdZone.description>Cause an area to manifest shards of ice for the next 24 hours, drastically lowering the temperature.</VPE_ColdZone.description>
     <VPE_IceBlock.description>Tranmute the air around a target into water and instantaneously freeze it into a large block of ice to form in the target location. Fragile and can melt if the temperature is above freezing.</VPE_IceBlock.description>
     <VPE_SnapFreeze.description>Tranmute the air around all the targets in a small area, encasing them in ice. Victims will experience hypothermia but the ice can melt prematurely if the temperature is above freezing.</VPE_SnapFreeze.description>
     <VPE_IceWall.description>Conjure a circular wall of ice around the caster. Fragile and can melt if the temperature is above freezing.</VPE_IceWall.description>
-    <VPE_Blizzard.description>Use a large amount of mana to manipulate the weather in a small area creating a swirling blizzard away from the caster. Those exposed to the tempest experience reduced sight, moving and manipulation, as well as hypothermia buildup and cutting cold. Duration scales with the caster’s magical sensitivity and puts them in a 5-day coma.</VPE_Blizzard.description>
+    <VPE_Blizzard.description>Use a large amount of mana to manipulate the weather in a small area creating a swirling blizzard away from the caster. Those exposed to the tempest experience reduced sight, moving and manipulation, as well as hypothermia buildup and cutting cold. Duration scales with the caster’s magical aptitude and puts them in a 5-day coma.</VPE_Blizzard.description>
 </LanguageData>

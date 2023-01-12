@@ -2,7 +2,7 @@
 
 <LanguageData>
     <PsychicSensitizer.label>magical sensitizer</PsychicSensitizer.label>
-    <PsychicSensitizer.description>This brain implant stimulates mana pathways in the brain, increasing magical sensitivity.</PsychicSensitizer.description>
+    <PsychicSensitizer.description>This brain implant stimulates mana pathways in the brain, increasing magical aptitude.</PsychicSensitizer.description>
 
-    <PsychicReader.description>Gives limited mind-reading ability, improving the user's ability to get the upper hand in negotiations and social situations. The effect is proportional to the user's magical sensitivity.</PsychicReader.description>
+    <PsychicReader.description>Gives limited mind-reading ability, improving the user's ability to get the upper hand in negotiations and social situations. The effect is proportional to the user's magical aptitude.</PsychicReader.description>
 </LanguageData>

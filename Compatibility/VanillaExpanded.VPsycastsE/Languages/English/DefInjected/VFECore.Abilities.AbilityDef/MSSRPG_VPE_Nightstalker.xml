@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <LanguageData>
-    <VPE_Darkvision.description>Magically enhance the target's eyes allowing them to see equally well in darkness and daytime. Duration scales with the target's magical sensitivity.</VPE_Darkvision.description>
-    <VPE_Darkness.description>Select a target area to generate an orb of completely obfuscating darkness, the duration scaling with the caster’s magical sensitivity. All vision is blocked and any attacks within or passing through will miss entirely.</VPE_Darkness.description>
-    <VPE_Decoy.description>Creates a localized field of optical disharmony to travel and remain in a desired location, with a duration scaling with magical sensitivity. The illusion will draw the ire of all enemies.</VPE_Decoy.description>
-    <VPE_ShadowFocus.description>Emitting particles of absorptive darkness allows the caster to augment their magical sensitivity, which scales inversely with the local light level.</VPE_ShadowFocus.description>
-    <VPE_IntensifyShadows.description>Links the caster’s shadow with the shade and infuses it with obfuscating darkness, plummeting all areas on the map with less than 50% light levels into pitch darkness. Duration scales with the caster’s magical sensitivity.</VPE_IntensifyShadows.description>
-    <VPE_Assassinate.description>Links the caster’s shadow to a target in dark areas, allowing them to teleport back and forth multiple times to attack in melee. The amount of hits depends on the caster’s magical sensitivity.</VPE_Assassinate.description>
+    <VPE_Darkvision.description>Magically enhance the target's eyes allowing them to see equally well in darkness and daytime. Duration scales with the target's magical aptitude.</VPE_Darkvision.description>
+    <VPE_Darkness.description>Select a target area to generate an orb of completely obfuscating darkness, the duration scaling with the caster’s magical aptitude. All vision is blocked and any attacks within or passing through will miss entirely.</VPE_Darkness.description>
+    <VPE_Decoy.description>Creates a localized field of optical disharmony to travel and remain in a desired location, with a duration scaling with magical aptitude. The illusion will draw the ire of all enemies.</VPE_Decoy.description>
+    <VPE_ShadowFocus.description>Emitting particles of absorptive darkness allows the caster to augment their magical aptitude, which scales inversely with the local light level.</VPE_ShadowFocus.description>
+    <VPE_IntensifyShadows.description>Links the caster’s shadow with the shade and infuses it with obfuscating darkness, plummeting all areas on the map with less than 50% light levels into pitch darkness. Duration scales with the caster’s magical aptitude.</VPE_IntensifyShadows.description>
+    <VPE_Assassinate.description>Links the caster’s shadow to a target in dark areas, allowing them to teleport back and forth multiple times to attack in melee. The amount of hits depends on the caster’s magical aptitude.</VPE_Assassinate.description>
 </LanguageData>

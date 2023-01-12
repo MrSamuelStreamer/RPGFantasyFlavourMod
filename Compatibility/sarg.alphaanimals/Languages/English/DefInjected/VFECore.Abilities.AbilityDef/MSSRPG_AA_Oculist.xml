@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <AAVPE_SummonEyeling.label>summon eyeling</AAVPE_SummonEyeling.label>
+    <AAVPE_SummonEyeling.description>Use a forbidden spell to invert the polarity of the ambient mana field rending a gaping hole between our reality and a trans-dimensional realm of pure madness, transporting one of its inhabitants into our universe. This eyeling will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonEyeling.description>
+
+    <AAVPE_OcularSprout.description>Use a forbidden spell to create a wound in reality drawing in several trees from a trans-dimensional realm of pure madness.</AAVPE_OcularSprout.description>
+
+    <AAVPE_EyeEruption.description>Channels a wave of eldrich power to rip the flesh of the target and connect it to an extra-dimensional realm of pure madness. Bloated, malevolent looking eyes will tear through the skin in random places, causing an extreme amount of pain and suffering.\nThese eyes will however provide the afflicted with extra sight, making using this spell on a friendly target a risky, but potentially very useful strategy, assuming they can be treated and removed afterwards.</AAVPE_EyeEruption.description>
+
+    <AAVPE_SummonOcularOriginator.description>Use a forbidden spell to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, transporting a terrifying ocular originator into our universe. The originator is not hostile, and will need to be penned by the colonists. Only one ocular originator can be on a single map. It will produce helpful eye implants every 40 days.</AAVPE_SummonOcularOriginator.description>
+
+    <AAVPE_SummonEyelingHorde.label>summon eyeling horde</AAVPE_SummonEyelingHorde.label>
+    <AAVPE_SummonEyelingHorde.description>Use a forbidden spell to rend a gaping hole between our reality and a trans-dimensional realm of pure madness, transporting several of its inhabitants into our universe. These eyelings will stay around for a day before vanishing, and will be hostile to any enemy from outside the colony.</AAVPE_SummonEyelingHorde.description>
+
+    <AAVPE_GreaterOcularSprout.label>greater ocular sprout</AAVPE_GreaterOcularSprout.label>
+    <AAVPE_GreaterOcularSprout.description>Use a forbidden spell to create a wound in reality to summon an elder ocular tree from a trans-dimensional realm of pure madness. This tree will convert the land into an ocular nightmare (if Alpha Biomes is installed, it will convert terrain, as well as flora, and 30% each day it will cause red fog weather).\n\n&lt;color=#b51509&gt;Warning:&lt;/color&gt; This is a cool but laggy thing, as much as defoliator gliders in the base game.</AAVPE_GreaterOcularSprout.description>
+</LanguageData>
