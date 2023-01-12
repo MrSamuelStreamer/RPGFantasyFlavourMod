@@ -51,5 +51,5 @@ All of the magic that does this is in the special [Files.csproj file](1.4/Source
 Only the mod owner can release so this is mostly for our own documentation but anyone can build it.
 If you have build issues please make a ticket here, or ask in `#rimworld-mod-making` on the official discord.
 
-## Disclaimer
+## Disclaimer 
 Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
