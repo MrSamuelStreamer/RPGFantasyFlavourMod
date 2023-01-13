@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="CryptosleepCasket"]/label</xpath>
+        <value>
+            <label>Time-Suspended Coffin</label>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="CryptosleepCasket"]/description</xpath>
+        <value>
+            <description>An ancient coffin enchanted with a time bubble by a powerful chronomancer to perfectly suspend whoever is contained within until the casket is opened.</description>
+        </value>
+    </Operation>
+     <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[@Name="CryptosleepCasket"]/texPath</xpath>
+        <value>
+            <texPath>Things/Building/Misc/EntosomnicCasket</texPath>
+        </value>
+    </Operation>
+</Patch>

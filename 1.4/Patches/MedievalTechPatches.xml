@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName ="PsychicApparelBase"/techLevel</xpath>
+				<value>
+				    <techLevel>Medieval</techLevel>
+			  </value>
+			</li>
+		</operations>	
+	</Operation>
+  <Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName ="PsychicApparelBase"/techLevel</xpath>
+				<value>
+				    <techLevel>Medieval</techLevel>
+			  </value>
+			</li>
+		</operations>	
+	</Operation>
+  <Operation Class="PatchOperationSequence">
+		<operations>
+			<li Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName ="PsylinkNeuroformer"/techLevel</xpath>
+				<value>
+				    <techLevel>Medieval</techLevel>
+			  </value>
+			</li>
+		</operations>	
+	</Operation>
+</Patch>
