@@ -5,6 +5,13 @@
 </p>
 
 # RPG Adventure Flavour Pack
+
+![Mod Version](https://img.shields.io/badge/Mod_Version-1.0.1-blue.svg)
+![RimWorld Version](https://img.shields.io/badge/Built_for_RimWorld-1.4-blue.svg)
+![Harmony Version](https://img.shields.io/badge/Powered_by_Harmony-2.2-blue.svg)\
+![Steam Downloads](https://img.shields.io/steam/downloads/2916348220?colorB=blue&label=Steam+Downloads)
+![GitHub Downloads](https://img.shields.io/github/downloads/Roll1D2Games/RPGFantasyFlavourMod/total?colorB=blue&label=GitHub+Downloads)
+
 This mod adds some Medieval RPG flavour to Rimworld and select other mods with the aim of making an RPG style playthrough feel more alive.
 This is mostly done via simple renames with a few extra patches and re-textures to make some mods gel with other supporting mods.
 
