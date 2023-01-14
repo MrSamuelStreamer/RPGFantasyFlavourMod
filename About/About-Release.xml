@@ -22,5 +22,11 @@
         <li>mlie.rimquest</li>
         <li>VanillaExpanded.VFESecurity</li>
         <li>Neronix17.Outland.Core</li>
+        <li>ogam.rimedieval</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
+        <li>DankPyon.Medieval.Overhaul</li>
+        <li>MrSamuelStreamer.MrSamuelStreamCustomFaction</li>
+        <li>OskarPotocki.VFE.Classical</li>
+        <li>jaxe.rimhud</li>
     </loadAfter>
 </ModMetaData>
