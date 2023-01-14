@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <AG_PetrifyingGaze.description>A simple petrification spell. Often used as a prank at magical universities. Breaking the spell while encased is almost impossible as even thought slows to naught.</AG_PetrifyingGaze.description>
+    <AG_InsanityBlast.description>Mentally assault the mind of other people, causing them to go berserk and attack everyone around them indiscriminately. This ability can be resisted by targets with low magical aptitude.</AG_InsanityBlast.description>
+    <AG_UnstableMind.description>Psychically blast the minds of other people, causing mental instability that makes them more prone to mental breaks, and greatly increases their magical aptitude. This effects lasts for three hours and can be used on both hostile and friendly targets.</AG_UnstableMind.description>
+    <AG_Regeneration.description>Carriers of this gene have an innate connection to the background mana field, heavily attuned to life energy. This allows them to autonomically draw in life energy that periodically tends to any internal wounds, regenerating them without any need for rest.</AG_Regeneration.description>
+    <AG_RegenerationMinor.description>Carriers of this gene have a minor innate connection to the background mana field, heavily attuned to life energy. This allows them to autonomically draw in life energy that periodically tends to any internal wounds, regenerating them without any need for rest.</AG_RegenerationMinor.description>
+    <AG_Fogger.description>Ancient water sprites are inexplicably drawn to the carrier, which hover around their head in silence. the prescence of these sprites upsets the local weather systems causing a deep, thick fog to coalesce around them as they hover in place.</AG_Fogger.description>
+    <AG_RainMaker.description>The carrier is inexplicably attractive to tiny water sprites which hover around their head, dancing and wheeling, causing a constant rain around them as they spin.</AG_RainMaker.description>
+    <AG_PassiveRegenerator.description>Carriers of this gene are bound to the background mana field. This bond is heavily attuned to life energy. This provides a conduit to attract life energy in a haze around them that periodically tends to any wounds on others nearby, regenerating them without any need for rest.</AG_PassiveRegenerator.description>
+
+    <AG_PsychicAbility_Masterful.label>master mage</AG_PsychicAbility_Masterful.label>
+    <AG_PsychicAbility_Masterful.description>Carriers of this gene have extraordinary magical abilities.</AG_PsychicAbility_Masterful.description>
+</LanguageData>

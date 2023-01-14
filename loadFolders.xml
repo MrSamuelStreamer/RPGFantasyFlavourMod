@@ -7,6 +7,7 @@
     <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
     <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE</li>
     <li IfModActive="sarg.alphaanimals">Compatibility/sarg.alphaanimals</li>
+    <li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>
     <li IfModActive="Edern.CombatPsycasts">Compatibility/Edern.CombatPsycasts</li>
     <li IfModActive="oken.medievalquestrewards">Compatibility/oken.medievalquestrewards</li>
     <li IfModActive="mlie.rimquest">Compatibility/mlie.rimquest/1.4</li>

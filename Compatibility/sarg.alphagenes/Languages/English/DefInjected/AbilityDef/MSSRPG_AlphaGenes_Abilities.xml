@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <AG_PetrifyingGaze.description>A simple petrification spell. Often used as a prank at magical universities. Breaking the spell while encased is almost impossible as even thought slows to naught.</AG_PetrifyingGaze.description>
+    <AG_InsanityBlast.description>Mentally assault the mind of other people, causing them to go berserk and attack everyone around them indiscriminately. This ability can be resisted by targets with low magical aptitude.</AG_InsanityBlast.description>
+    <AG_UnstableMind.description>Psychically blast the minds of other people, causing mental instability that makes them more prone to mental breaks, and greatly increases their magical aptitude. This effects lasts for three hours and can be used on both hostile and friendly targets.</AG_UnstableMind.description>
+</LanguageData>
