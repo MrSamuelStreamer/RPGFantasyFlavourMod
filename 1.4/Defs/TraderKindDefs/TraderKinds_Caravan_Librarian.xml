@@ -18,13 +18,10 @@
                 <thingDefCountRange>0~2</thingDefCountRange>
                 <countRange>5~15</countRange>
             </li>
-            <li Class="StockGenerator_Techprints">
-                <countChances>
-                    <li>
-                        <count>8</count>
-                        <chance>1</chance>
-                    </li>
-                </countChances>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>Techprint</tradeTag>
+                <thingDefCountRange>6~10</thingDefCountRange>
+                <countRange>1~3</countRange>
             </li>
             <li MayRequire="GwinnBleidd.ResearchTweaks" Class="StockGenerator_SingleDef">
                 <thingDef>TechnologyBlueprintNeolithic</thingDef>
@@ -41,6 +38,13 @@
             <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
                 <thingDef>DankPyon_Book_AncientCodex</thingDef>
                 <countRange>0~1</countRange>
+            </li>
+            <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_MultiDef">
+                <countRange>1~1</countRange>
+                <thingDefs>
+                    <li>MSSRPG_Book_LustySauridMaid_First</li>
+                    <li>MSSRPG_Book_LustySauridMaid_Second</li>
+                </thingDefs>
             </li>
             <li MayRequire="DankPyon.Medieval.Overhaul" Class="StockGenerator_SingleDef">
                 <thingDef>DankPyon_Book_IntoTheRuins</thingDef>
