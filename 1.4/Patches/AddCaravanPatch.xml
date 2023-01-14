@@ -1,40 +1,64 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
-  <Operation Class="PatchOperationSequence">
-    <success>Normal</success>
-    <operations>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/FactionDef[@Name = "VFEM_MedievalFactionBase"]/caravanTraderKinds</xpath>
-        <value>
-          <li>Caravan_ArcaneTrader</li>
-          <li>Caravan_AlchemistTrader</li>
-          <li>Caravan_LibrarianTrader</li>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/FactionDef[@Name = "DankPyon_NobleHouseFactionBase"]/caravanTraderKinds</xpath>
-        <value>
-          <li>Caravan_ArcaneTrader</li>
-          <li>Caravan_AlchemistTrader</li>
-          <li>Caravan_LibrarianTrader</li>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/FactionDef[@Name = "PatreonFactionBase"]/caravanTraderKinds</xpath>
-        <value>
-          <li>Caravan_ArcaneTrader</li>
-          <li>Caravan_AlchemistTrader</li>
-          <li>Caravan_LibrarianTrader</li>
-        </value>
-      </li>
-      <li Class="PatchOperationAdd">
-        <xpath>/Defs/FactionDef[@Name = "VFEC_RepublicBase"]/caravanTraderKinds</xpath>
-        <value>
-          <li>Caravan_ArcaneTrader</li>
-          <li>Caravan_AlchemistTrader</li>
-          <li>Caravan_LibrarianTrader</li>
-        </value>
-      </li>
-    </operations>
-  </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Factions Expanded - Medieval</li>
+        </mods>
+        <match>
+            <Operation Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name="VFEM_MedievalFactionBase"]/caravanTraderKinds</xpath>
+                <value>
+                    <li>Caravan_ArcaneTrader</li>
+                    <li>Caravan_AlchemistTrader</li>
+                    <li>Caravan_LibrarianTrader</li>
+                </value>
+            </Operation>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>DankPyon.Medieval.Overhaul</li>
+        </mods>
+        <match>
+            <Operation Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name="DankPyon_NobleHouseFactionBase"]/caravanTraderKinds</xpath>
+                <value>
+                    <li>Caravan_ArcaneTrader</li>
+                    <li>Caravan_AlchemistTrader</li>
+                    <li>Caravan_LibrarianTrader</li>
+                </value>
+            </Operation>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Mr Samuel Streamer's Custom Faction</li>
+        </mods>
+        <match>
+            <Operation Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name="PatreonFactionBase"]/caravanTraderKinds</xpath>
+                <value>
+                    <li>Caravan_ArcaneTrader</li>
+                    <li>Caravan_AlchemistTrader</li>
+                    <li>Caravan_LibrarianTrader</li>
+                </value>
+            </Operation>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>OskarPotocki.VFE.Classical</li>
+        </mods>
+        <match>
+            <Operation Class="PatchOperationAdd">
+                <xpath>/Defs/FactionDef[@Name="VFEC_RepublicBase"]/caravanTraderKinds</xpath>
+                <value>
+                    <li>Caravan_ArcaneTrader</li>
+                    <li>Caravan_AlchemistTrader</li>
+                    <li>Caravan_LibrarianTrader</li>
+                </value>
+            </Operation>
+        </match>
+    </Operation>
 </Patch>
