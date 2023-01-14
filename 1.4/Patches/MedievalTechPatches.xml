@@ -5,34 +5,27 @@
         <mods>
             <li>Royalty</li>
         </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[@Name="PsychicApparelBase"]/techLevel</xpath>
-            <value>
-                <techLevel>Medieval</techLevel>
-            </value>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="PsychicApparelBase"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[@Name="PsychicApparelBase"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="PsychicAmplifier"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+                </li>
+            </operations>
         </match>
     </Operation>
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Royalty</li>
-        </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[@Name="PsychicApparelBase"]/techLevel</xpath>
-            <value>
-                <techLevel>Medieval</techLevel>
-            </value>
-        </match>
-    </Operation>
-    <Operation Class="PatchOperationFindMod">
-        <mods>
-            <li>Royalty</li>
-        </mods>
-        <match Class="PatchOperationReplace">
-            <xpath>Defs/ThingDef[defName="PsychicAmplifier"]/techLevel</xpath>
-            <value>
-                <techLevel>Medieval</techLevel>
-            </value>
-        </match>
-    </Operation>
-
 </Patch>
