@@ -1,33 +1,38 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
+
 <Patch>
-	<Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName ="PsychicApparelBase"/techLevel</xpath>
-				<value>
-				    <techLevel>Medieval</techLevel>
-			  </value>
-			</li>
-		</operations>	
-	</Operation>
-  <Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName ="PsychicApparelBase"/techLevel</xpath>
-				<value>
-				    <techLevel>Medieval</techLevel>
-			  </value>
-			</li>
-		</operations>	
-	</Operation>
-  <Operation Class="PatchOperationSequence">
-		<operations>
-			<li Class="PatchOperationAdd">
-				<xpath>Defs/ThingDef[defName ="PsylinkNeuroformer"/techLevel</xpath>
-				<value>
-				    <techLevel>Medieval</techLevel>
-			  </value>
-			</li>
-		</operations>	
-	</Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="PsychicApparelBase"]/techLevel</xpath>
+            <value>
+                <techLevel>Medieval</techLevel>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[@Name="PsychicApparelBase"]/techLevel</xpath>
+            <value>
+                <techLevel>Medieval</techLevel>
+            </value>
+        </match>
+    </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Royalty</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+            <xpath>Defs/ThingDef[defName="PsychicAmplifier"]/techLevel</xpath>
+            <value>
+                <techLevel>Medieval</techLevel>
+            </value>
+        </match>
+    </Operation>
+
 </Patch>
