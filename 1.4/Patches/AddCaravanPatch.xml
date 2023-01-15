@@ -20,7 +20,7 @@
     </Operation>
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>DankPyon.Medieval.Overhaul</li>
+            <li>Medieval Overhaul</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
@@ -54,7 +54,7 @@
     </Operation>
     <Operation Class="PatchOperationFindMod">
         <mods>
-            <li>OskarPotocki.VFE.Classical</li>
+            <li>Vanilla Factions Expanded - Classical</li>
         </mods>
         <match Class="PatchOperationSequence">
             <operations>
