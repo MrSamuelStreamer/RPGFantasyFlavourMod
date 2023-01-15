@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <AG_TemporarySummon.description>This creature has been summoned via magical means, and will vanish after a period of 4 hours.</AG_TemporarySummon.description>
+    <AG_ArmourMedium.description>Skin strengthened by a metallic compounds threading through the skin, so fine as to be invisible to the naked eye. This confers a medium amount of natural armour.</AG_ArmourMedium.description>
+    <AG_ArmourMajor.description>Skin strengthened by a metallic compounds threading through the skin, so fine as to be invisible to the naked eye. This confers a medium amount of natural armour.</AG_ArmourMajor.description>
+    <AG_ArmourMajor.description>Skin strengthened by a metallic compounds threading through the skin, so fine as to be invisible to the naked eye. This confers a medium amount of natural armour.</AG_ArmourMajor.description>
+    <AG_ArmourMajor.label>mithril skin</AG_ArmourMajor.label>
+
+    <AG_DevouredShooting.label>devoured brain: archery</AG_DevouredShooting.label>
+    <AG_DevouredShooting.description>Devoured the brain of someone that was skilled in Archery. Buff lasts for 2 days</AG_DevouredShooting.description>
+
+    <AG_DevouredPlants.label>devoured brain: herblore</AG_DevouredPlants.label>
+    <AG_DevouredPlants.description>Devoured the brain of someone that was skilled in Herblore. Buff lasts for 2 days</AG_DevouredPlants.description>
+
+    <AG_DevouredAnimals.label>devoured brain: animal handling</AG_DevouredAnimals.label>
+    <AG_DevouredAnimals.description>Devoured the brain of someone that was skilled in animal handling. Buff lasts for 2 days</AG_DevouredAnimals.description>
+
+    <AG_DevouredSocial.label>devoured brain: persuasion</AG_DevouredSocial.label>
+    <AG_DevouredSocial.description>Devoured the brain of someone that was skilled in persuasion. Buff lasts for 2 days</AG_DevouredSocial.description>
+
+    <AG_UnstableMind.description>Mental instability that makes this person prone to mental breaks, and greatly increases their magical aptitude.</AG_UnstableMind.description>
+
+    <AG_Regeneration.description>An innate connection to the background mana field, heavily attuned to life energy. This allows them to autonomically draw in life energy that periodically tends to any internal wounds, regenerating them without any need for rest.</AG_Regeneration.description>
+    <AG_RegenerationMinor.description>A minor innate connection to the background mana field, heavily attuned to life energy. This allows them to autonomically draw in life energy that periodically tends to any internal wounds, regenerating them without any need for rest.</AG_RegenerationMinor.description>
+    <AG_PassiveRegenerator.description>A link to the background mana field. This bond is heavily attuned to life energy. This provides a conduit to attract life energy in a haze around them that periodically tends to any wounds on others nearby, regenerating them without any need for rest.</AG_PassiveRegenerator.description>
+
+    <AG_Fogger.description>Inexplicably draws ancient water sprites, which hover around their head in silence. the prescence of these sprites upsets the local weather systems causing a deep, thick fog to coalesce around them as they hover in place.</AG_Fogger.description>
+    <AG_RainMaker.description>Inexplicably attractive to tiny water sprites which hover around their head, dancing and wheeling, causing a constant rain around them as they spin only ever visible to the one they're attracted to in the corners of their vision.</AG_RainMaker.description>
+</LanguageData>

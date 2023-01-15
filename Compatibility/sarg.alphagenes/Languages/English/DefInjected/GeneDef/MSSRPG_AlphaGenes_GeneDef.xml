@@ -10,6 +10,11 @@
     <AG_RainMaker.description>The carrier is inexplicably attractive to tiny water sprites which hover around their head, dancing and wheeling, causing a constant rain around them as they spin.</AG_RainMaker.description>
     <AG_PassiveRegenerator.description>Carriers of this gene are bound to the background mana field. This bond is heavily attuned to life energy. This provides a conduit to attract life energy in a haze around them that periodically tends to any wounds on others nearby, regenerating them without any need for rest.</AG_PassiveRegenerator.description>
 
+    <AG_ArmourMedium.description>Carriers of this gene have their skin strengthened by tiny threads of metallic compounds. This confers a medium amount of natural armour.</AG_ArmourMedium.description>
+
+    <AG_ArmourMajor.label>mithril skin</AG_ArmourMajor.label>
+    <AG_ArmourMajor.description>Carriers of this gene have their skin strengthened by tiny threads of mithril permeating their skin. This confers a great amount of natural armour.</AG_ArmourMajor.description>
+
     <AG_PsychicAbility_Masterful.label>master mage</AG_PsychicAbility_Masterful.label>
     <AG_PsychicAbility_Masterful.description>Carriers of this gene have extraordinary magical abilities.</AG_PsychicAbility_Masterful.description>
 </LanguageData>
