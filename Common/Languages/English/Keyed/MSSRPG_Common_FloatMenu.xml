@@ -6,4 +6,6 @@
     <NoDoctor>no healer</NoDoctor>
     <NotForSlaves>healer bed not for slaves</NotForSlaves><!-- text_todo -->
     <NoCommsTarget>Nobody to send a message to</NoCommsTarget>
+    <EnterCryptosleepCasket>Enter time-suspended coffin</EnterCryptosleepCasket>
+    <OpenCryptosleepCasket>Open time-suspended coffin</OpenCryptosleepCasket>
 </LanguageData>
