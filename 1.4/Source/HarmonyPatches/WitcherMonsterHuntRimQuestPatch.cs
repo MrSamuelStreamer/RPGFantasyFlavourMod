@@ -19,7 +19,7 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
         public static void UpdateValidQuestsPostfix(bool saveVanilla)
         {
             if (!RPGAdventureFlavourPack.Settings.AddExtraRimQuests) return;
-            var monsterHuntQuestGivers = RPGAdventureFlavourPack.Settings.ExtraRimQuestGivers
+            var monsterHuntQuestGivers = RPGAdventureFlavourPack.Settings.ExtraRimQuestGivers()
                 .Select(DefDatabase<QuestGiverDef>.GetNamedSilentFail)
                 .Where(q => q != null).ToArray();
             if (monsterHuntQuestGivers.Length == 0) return;
@@ -27,7 +27,7 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
             foreach (QuestScriptDef questScriptDef in DefDatabase<QuestScriptDef>.AllDefsListForReading
                          .OrderBy(Main.GetQuestReadableName)
                          .Where(questScriptDef =>
-                             RPGAdventureFlavourPack.Settings.ExtraRimQuestsMatching.Any(f =>
+                             RPGAdventureFlavourPack.Settings.ExtraRimQuestsMatching().Any(f =>
                                  questScriptDef.defName.Contains(f))))
             {
                 Main.Quests[questScriptDef] =

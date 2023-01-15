@@ -11,8 +11,8 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public bool ShowCaravanLoot = true;
     public bool AddExtraRimQuests = true;
 
-    public HashSet<string> ExtraRimQuestsMatching = new();
-    public HashSet<string> ExtraRimQuestGivers = new();
+    private HashSet<string> _extraRimQuestsMatching = new();
+    private HashSet<string> _extraRimQuestGivers = new();
 
     private readonly bool _rimQuestActive = ModLister.GetActiveModWithIdentifier("mlie.rimquest", true) != null;
     private string _rimQuestTextEntry = "Some_RimQuestGiver or Filter";
@@ -21,6 +21,23 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     private const float Indent = 9f;
     private static Vector2 _scrollPosition;
     private readonly Listing_Standard _options = new();
+
+    public HashSet<string> ExtraRimQuestGivers() {
+        if (!AddExtraRimQuests || (_extraRimQuestGivers?.Count ?? 0) != 0) return _extraRimQuestGivers;
+        Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but no quest-givers chosen, defaulting");
+        _extraRimQuestGivers = new HashSet<string>(DefaultExtraRimQuestGivers);
+        Write();
+        return _extraRimQuestGivers;
+    }
+
+    public HashSet<string> ExtraRimQuestsMatching()
+    {
+        if (!AddExtraRimQuests || (_extraRimQuestsMatching?.Count ?? 0) != 0) return _extraRimQuestsMatching;
+        Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but inclusion list was empty, defaulting");
+        _extraRimQuestsMatching = new HashSet<string>(DefaultExtraRimQuestsMatching);
+        Write();
+        return _extraRimQuestsMatching;
+    }
 
     private enum Tab
     {
@@ -63,33 +80,33 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         _rimQuestTextEntry = _options.TextEntry(_rimQuestTextEntry);
         if (_options.ButtonText("RPGAdventureFlavourPackSettings_RimQuest_AddExtraQuestGiver".Translate()))
         {
-            ExtraRimQuestGivers.Add(_rimQuestTextEntry);
+            _extraRimQuestGivers.Add(_rimQuestTextEntry);
         }
 
         if (_options.ButtonText("RPGAdventureFlavourPackSettings_RimQuest_AddExtraQuestsMatching".Translate()))
         {
-            ExtraRimQuestsMatching.Add(_rimQuestTextEntry);
+            _extraRimQuestsMatching.Add(_rimQuestTextEntry);
         }
 
         Listing_Standard scrollableListing = MakeScrollableSubListing(viewPort);
         scrollableListing.Label("RPGAdventureFlavourPackSettings_RimQuest_ExtraQuestGivers".Translate());
         scrollableListing.Indent(Indent);
-        foreach (var rimQuestExtraQuestGiver in ExtraRimQuestGivers.Where(rimQuestExtraQuestGiver =>
+        foreach (var rimQuestExtraQuestGiver in _extraRimQuestGivers.Where(rimQuestExtraQuestGiver =>
                      scrollableListing.ButtonTextLabeled(rimQuestExtraQuestGiver,
                          "RPGAdventureFlavourPackSettings_Remove".Translate())))
         {
-            ExtraRimQuestGivers.Remove(rimQuestExtraQuestGiver);
+            _extraRimQuestGivers.Remove(rimQuestExtraQuestGiver);
         }
 
         scrollableListing.Outdent(Indent);
         scrollableListing.GapLine();
         scrollableListing.Label("RPGAdventureFlavourPackSettings_RimQuest_ExtraQuestsMatching".Translate());
         scrollableListing.Indent(Indent);
-        foreach (var rimQuestMatcher in ExtraRimQuestsMatching.Where(rimQuestMatcher =>
+        foreach (var rimQuestMatcher in _extraRimQuestsMatching.Where(rimQuestMatcher =>
                      scrollableListing.ButtonTextLabeled(rimQuestMatcher,
                          "RPGAdventureFlavourPackSettings_Remove".Translate())))
         {
-            ExtraRimQuestsMatching.Remove(rimQuestMatcher);
+            _extraRimQuestsMatching.Remove(rimQuestMatcher);
         }
 
         EndScrollableSubListing(scrollableListing);
@@ -140,13 +157,8 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         base.ExposeData();
         Scribe_Values.Look(ref ShowCaravanLoot, "ShowCaravanLoot", true);
         Scribe_Values.Look(ref AddExtraRimQuests, "AddExtraRimQuests", true);
-        Scribe_Collections.Look(ref ExtraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
-        Scribe_Collections.Look(ref ExtraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
-        
-        if (AddExtraRimQuests && (ExtraRimQuestGivers?.Count ?? 0) == 0)
-            ExtraRimQuestGivers = new HashSet<string>(DefaultExtraRimQuestGivers);
-        if (AddExtraRimQuests && (ExtraRimQuestsMatching?.Count ?? 0) == 0)
-            ExtraRimQuestsMatching = new HashSet<string>(DefaultExtraRimQuestsMatching);
+        Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
+        Scribe_Collections.Look(ref _extraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
     }
 
     private static readonly HashSet<string> DefaultExtraRimQuestGivers =
