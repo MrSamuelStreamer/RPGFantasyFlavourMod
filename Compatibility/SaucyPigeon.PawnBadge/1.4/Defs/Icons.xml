@@ -93,8 +93,8 @@
 
 	<RR_PawnBadge.BadgeDef>
 		<defName>Skinwalker</defName>
-		<label>Skinwalker</label>
-		<description>Skinwalker</description>
+		<label>Primal</label>
+		<description>Primal</description>
 		<icon>UI/Abilities/Ravager/AAVPE_ClawFrenzy</icon>
 	</RR_PawnBadge.BadgeDef>
 
