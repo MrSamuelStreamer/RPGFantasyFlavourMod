@@ -16,8 +16,8 @@
   <AAVPE_Xenoseer.tab>Arcane</AAVPE_Xenoseer.tab>
   <AAVPE_Xenoseer.tooltip>Shaman dedicate themselves to the study and understanding of creatures, and emulating their unique abilities. Shaman can imbue their body with a range of naturally occuring defence powers.</AAVPE_Xenoseer.tooltip>
   <!--Ravager to Wildspeaker-->
-  <AAVPE_Ravager.label>Skinwalker</AAVPE_Ravager.label>
-  <AAVPE_Ravager.description>Skinwalkers are powerful fighters who use animalistic abilities to defeat their enemies.</AAVPE_Ravager.description>
+  <AAVPE_Ravager.label>Primal</AAVPE_Ravager.label>
+  <AAVPE_Ravager.description>Primals are powerful fighters who use animalistic abilities to defeat their enemies.</AAVPE_Ravager.description>
   <AAVPE_Ravager.tab>Martial</AAVPE_Ravager.tab>
-  <AAVPE_Ravager.tooltip>Skinwalkers can empower themselves with animalistic aspects and tap into more primitive combat styles, with powerful wildspeakers able to defeat their enemies in a single rage-fueled blow.</AAVPE_Ravager.tooltip>
+  <AAVPE_Ravager.tooltip>Primal mages can empower themselves with animalistic aspects and tap into more primitive combat styles, when channeling a powerful animal primals can defeat their enemies in a single rage-fueled blow.</AAVPE_Ravager.tooltip>
 </LanguageData>
