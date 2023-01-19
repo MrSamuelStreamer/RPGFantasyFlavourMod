@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef/canMakeRandomly</xpath>
+        <match>
+            <Operation Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef/canMakeRandomly</xpath>
+                <value>
+                    <canMakeRandomly>false</canMakeRandomly>
+                </value>
+            </Operation>
+        </match>
+        <nomatch>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef</xpath>
+                <value>
+                    <canMakeRandomly>false</canMakeRandomly>
+                </value>
+            </Operation>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef/requiredCountAtGameStart</xpath>
+        <match>
+            <Operation Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef/requiredCountAtGameStart</xpath>
+                <value>
+                    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+                </value>
+            </Operation>
+        </match>
+        <nomatch>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef</xpath>
+                <value>
+                    <requiredCountAtGameStart>0</requiredCountAtGameStart>
+                </value>
+            </Operation>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef/maxCountAtGameStart</xpath>
+        <match>
+            <Operation Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef/maxCountAtGameStart</xpath>
+                <value>
+                    <maxCountAtGameStart>0</maxCountAtGameStart>
+                </value>
+            </Operation>
+        </match>
+        <nomatch>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef</xpath>
+                <value>
+                    <maxCountAtGameStart>0</maxCountAtGameStart>
+                </value>
+            </Operation>
+        </nomatch>
+    </Operation>
+
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef/mustStartOneEnemy</xpath>
+        <match>
+            <Operation Class="PatchOperationReplace">
+                <xpath>Defs/FactionDef/mustStartOneEnemy</xpath>
+                <value>
+                    <mustStartOneEnemy>false</mustStartOneEnemy>
+                </value>
+            </Operation>
+        </match>
+        <nomatch>
+            <Operation Class="PatchOperationAdd">
+                <xpath>Defs/FactionDef</xpath>
+                <value>
+                    <mustStartOneEnemy>false</mustStartOneEnemy>
+                </value>
+            </Operation>
+        </nomatch>
+    </Operation>
+</Patch>
