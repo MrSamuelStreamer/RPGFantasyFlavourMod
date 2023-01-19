@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<VanillaPsycastsExpanded.PsycasterPathDef>
+      <defName>Makai_Ranger</defName>
+      <label>Ranger</label>
+      <description>Ranger, a master of bow and arrow. capable of rain down arrows from distance to support ally in combat. a formidable unit that could play a big factor in battlefield</description>
+      <background>UI/Backgrounds/RangerBG</background>
+      <altBackground>UI/BackgroundsAlt/RangerBG</altBackground>
+      <tab>Martial</tab>
+      <tooltip>Ranger, a master of bow and arrow. capable of rain down arrows from distance to support ally in combat. a formidable unit that could play a big factor in battlefield</tooltip>
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+	
+</Defs>
