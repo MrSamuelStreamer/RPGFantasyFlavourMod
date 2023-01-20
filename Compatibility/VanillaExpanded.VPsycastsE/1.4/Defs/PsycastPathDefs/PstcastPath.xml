@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <VanillaPsycastsExpanded.PsycasterPathDef>
+        <defName>Makai_Ranger</defName>
+        <label>Ranger</label>
+        <description>Rangers are masters of the bow, capable of raining down arrows from a distance to support allies in combat. They are a formidable foe that can turn the tide of any battle.</description>
+
+        <background>UI/Backgrounds/RangerBG</background>
+        <altBackground>UI/BackgroundsAlt/RangerBG</altBackground>
+        <tab>Martial</tab>
+        <tooltip>Rangers are masters of the bow, capable of raining down arrows from a distance to support allies in combat. They are a formidable foe that can turn the tide of any battle.</tooltip>
+
+    </VanillaPsycastsExpanded.PsycasterPathDef>
+
+</Defs>
