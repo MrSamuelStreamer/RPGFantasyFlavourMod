@@ -5,7 +5,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Two</defName>
         <label>Arrow Rain</label>
-        <description>shoot a bundle of arrows up into the sky that then split and rain down on the target area</description>
+        <description>Shoot a bundle of arrows up into the sky that then split and rain down on the target area</description>
         <iconPath>Abilities/ArrowRain</iconPath>
         <abilityClass>VPE_Ranger.Ability_ArrowRain</abilityClass>
         <needsTicking>true</needsTicking>
@@ -38,7 +38,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_One</defName>
         <label>Split Shot</label>
-        <description>take aim with current weapon, then fire multiple shots up to the number of targets in the area.</description>
+        <description>Take aim with current weapon, then fire multiple shots up to the number of targets in the area.</description>
         <iconPath>Abilities/SplitShot</iconPath>
         <abilityClass>VPE_Ranger.Ability_SplitShot</abilityClass>
         <castTime>60</castTime>
@@ -66,7 +66,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Three</defName>
         <label>Double Tap</label>
-        <description>for the buff duration, whenever the user fires a projectile they will also fire an extra shot.</description>
+        <description>For the buff duration, whenever the user fires a projectile they will also fire an extra shot.</description>
         <iconPath>Abilities/DoubleTap</iconPath>
         <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
         <durationTime>2500</durationTime>
@@ -94,7 +94,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Four</defName>
         <label>Trapping Net</label>
-        <description>launch a binding arrow toward target. Then bind them to the nearest tree or building.</description>
+        <description>Launch a binding arrow toward target. Then bind them to the nearest tree or building.</description>
         <iconPath>Abilities/TrappingNet</iconPath>
         <abilityClass>VPE_Ranger.Ability_TrappingNet</abilityClass>
         <durationTime>2500</durationTime>
@@ -170,7 +170,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Six</defName>
         <label>Arcing Shot</label>
-        <description>prepare for an arcing shot. the next 5 shot that the user fires will be aimed above the target and split into multiple smaller projectile that then rain down.</description>
+        <description>Prepare for an arcing shot. the next 5 shot that the user fires will be aimed above the target and split into multiple smaller projectile that then rain down.</description>
         <iconPath>Abilities/ArcingShot</iconPath>
         <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
         <durationTime>60000</durationTime>
@@ -198,7 +198,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Seven</defName>
         <label>Arrow Gale</label>
-        <description>taking a steady aim, prepare for continuous focused fire. For the duration, the longer the user fires at the same target, the faster their attacks are, buff speed will be reset if the user changes target.</description>
+        <description>Taking a steady aim, prepare for continuous focused fire. For the duration, the longer the user fires at the same target, the faster their attacks are, buff speed will be reset if the user changes target.</description>
         <iconPath>Abilities/DoubleWind</iconPath>
         <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass>
         <durationTime>2500</durationTime>
@@ -227,7 +227,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Eight</defName>
         <label>Triple True Shot</label>
-        <description>target 3 spots, then fire 3 devastating shots that penetrate everything in their path until they reach the designated locations</description>
+        <description>Target 3 spots, then fire 3 devastating shots that penetrate everything in their path until they reach the designated locations</description>
         <iconPath>Abilities/TripleTrueShot</iconPath>
         <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
         <castTime>120</castTime>
@@ -283,7 +283,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Nine</defName>
         <label>Flaming Rain</label>
-        <description>fire a bundle of arrows with an explosive coating into the sky that then split falling back down as a rain of destruction</description>
+        <description>Fire a bundle of arrows with an explosive coating into the sky that then split falling back down as a rain of destruction</description>
         <iconPath>Abilities/FlamingRain</iconPath>
         <abilityClass>VPE_Ranger.Ability_ArrowRain</abilityClass>
         <needsTicking>true</needsTicking>
@@ -316,7 +316,7 @@
     <VFECore.Abilities.AbilityDef ParentName="VPE_PsycastBase">
         <defName>Makai_Ranger_Ten</defName>
         <label>True Shot</label>
-        <description>pull back on the bow, then release a penetrating shot that fly through flesh and wall alike.</description>
+        <description>Pull back on the bow, then release a penetrating shot that fly through flesh and wall alike.</description>
         <iconPath>Abilities/TrueShot</iconPath>
         <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
         <castTime>120</castTime>

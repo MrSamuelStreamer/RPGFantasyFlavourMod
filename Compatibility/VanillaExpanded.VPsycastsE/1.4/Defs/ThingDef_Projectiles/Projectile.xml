@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <Defs>
-
     <VFECore.ExpandableProjectileDef ParentName="BaseBullet">
         <defName>VPERanger_PenetratingShot</defName>
         <label>Super Arrow</label>
@@ -31,27 +30,6 @@
         <dealsDamageOnce>true</dealsDamageOnce>
         <disableVanillaDamageMethod>true</disableVanillaDamageMethod>
         <stopWhenHit>false</stopWhenHit>
-        <!-- <stopWhenHitAt> -->
-        <!-- <li>CollapsedRocks</li> -->
-        <!-- <li>MineableSteel</li> -->
-        <!-- <li>MineableSilver</li> -->
-        <!-- <li>MineableGold</li> -->
-        <!-- <li>MineableUranium</li> -->
-        <!-- <li>MineablePlasteel</li> -->
-        <!-- <li>MineableJade</li> -->
-        <!-- <li>MineableComponentsIndustrial</li> -->
-        <!-- <li>RaisedRocks</li> -->
-        <!-- <li>Sandstone</li> -->
-        <!-- <li>SmoothedSandstone</li> -->
-        <!-- <li>Granite</li> -->
-        <!-- <li>SmoothedGranite</li> -->
-        <!-- <li>Limestone</li> -->
-        <!-- <li>SmoothedLimestone</li> -->
-        <!-- <li>Slate</li> -->
-        <!-- <li>SmoothedSlate</li> -->
-        <!-- <li>Marble</li> -->
-        <!-- <li>SmoothedMarble</li> -->
-        <!-- </stopWhenHitAt> -->
     </VFECore.ExpandableProjectileDef>
 
     <ThingDef ParentName="BaseBullet">
@@ -109,9 +87,6 @@
         <defaultDamage>10</defaultDamage>
         <defaultArmorPenetration>0</defaultArmorPenetration>
         <explosionHeatEnergyPerCell>15</explosionHeatEnergyPerCell>
-        <!-- <explosionCellFleck>BlastFlame</explosionCellFleck> -->
-        <!-- <explosionColorCenter>(1, 0.7, 0.7,0)</explosionColorCenter> -->
-        <!-- <explosionColorEdge>(1, 1, 0.7,0)</explosionColorEdge> -->
         <soundExplosion>BulletImpact_Ground</soundExplosion>
         <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
     </DamageDef>
