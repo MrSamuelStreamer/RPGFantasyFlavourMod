@@ -40,5 +40,7 @@
         <li>orion.cashregister</li>
         <li>orion.hospitality</li>
         <li>syrchalis.setupcamp</li>
+        <li>VanillaExpanded.VTEXE</li>
+        <li>tidal.morevanilla.textures</li>
     </loadAfter>
 </ModMetaData>
