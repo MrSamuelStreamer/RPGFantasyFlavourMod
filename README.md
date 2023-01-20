@@ -23,6 +23,8 @@ This mod builds on many others including:
 * [Combat Psycasts](https://steamcommunity.com/sharedfiles/filedetails/?id=2679831053)
 * [Medieval Quest Rewards](https://steamcommunity.com/sharedfiles/filedetails/?id=2599672901)
 * [RimWorld - Witcher Monster Hunt](https://steamcommunity.com/sharedfiles/filedetails/?id=2008529522)
+* [RimQuest](https://steamcommunity.com/sharedfiles/filedetails/?id=2263331727)
+* [Pawn Badges](https://steamcommunity.com/workshop/filedetails/?id=2526040241)
 
 ## Contributing
 If you think you have a good idea for a fun translation to make the setting more cohesive or hilarious we are all ears!
@@ -60,3 +62,7 @@ If you have build issues please make a ticket here, or ask in `#rimworld-mod-mak
 
 ## Disclaimer
 Portions of the materials used to create this content/mod are trademarks and/or copyrighted works of Ludeon Studios Inc. All rights reserved by Ludeon. This content/mod is not official and is not endorsed by Ludeon.
+
+## Thanks
+* Thanks to Sandwish for providing the Ranger tree for [Vanilla Psycasts expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659)
+* Thanks to Skullywag for providing various patches for mod compatibility

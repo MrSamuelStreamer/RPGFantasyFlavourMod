@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>MakaiRanger_BuffOne</defName>
+        <label>Quick Draw</label>
+        <description>always fire one additional shot, with an additional boost to marksmanship ability</description>
+        <defaultLabelColor>(32, 197, 0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="VPE_Ranger.HediffCompProperties_DoubleTap">
+                <projectile>Arrow_Great</projectile>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <statFactors>
+                    <AimingDelayFactor>0.75</AimingDelayFactor>
+                    <VEF_VerbCooldownFactor>0.75</VEF_VerbCooldownFactor>
+                    <VEF_VerbRangeFactor>2</VEF_VerbRangeFactor>
+                    <VEF_RangeAttackSpeedFactor>2</VEF_RangeAttackSpeedFactor>
+                </statFactors>
+                <statOffsets>
+                </statOffsets>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>MakaiRanger_DebuffOne</defName>
+        <label>binded solid</label>
+        <description>This entity is completely tangled in a net, and will not be able to move until it is broken.</description>
+        <hediffClass>VPE_Ranger.Hediff_TreeNet</hediffClass>
+        <comps>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>true</becomeVisible>
+                <capMods>
+                    <li>
+                        <capacity>Moving</capacity>
+                        <setMax>0.1</setMax>
+                    </li>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>MakaiRanger_BuffTwo</defName>
+        <label>Ricochet Shot</label>
+        <description>shot ricochets between enemies, won't work if there only one enemy.</description>
+        <defaultLabelColor>(32, 197, 0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="VPE_Ranger.HediffCompProperties_RicochetArrow">
+                <bounceCount>5</bounceCount>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>true</becomeVisible>
+                <capMods>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>MakaiRanger_BuffThree</defName>
+        <label>Arcing Shot</label>
+        <description>shot that arcs upward before splitting into several smaller projectiles.</description>
+        <defaultLabelColor>(32, 197, 0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="VPE_Ranger.HediffCompProperties_ArcingShot">
+                <shotCount>5</shotCount>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>true</becomeVisible>
+                <capMods>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="PsycastHediffBase">
+        <defName>MakaiRanger_BuffFour</defName>
+        <label>Rapid Fire</label>
+        <description>this pawn is hyper-focused on their shooting speed so each subsequent shot at the same target will be faster.</description>
+        <defaultLabelColor>(32, 197, 0)</defaultLabelColor>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+        </comps>
+        <stages>
+            <li>
+                <becomeVisible>true</becomeVisible>
+                <capMods>
+                </capMods>
+            </li>
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>MakaiRanger_BuffFour_Speed</defName>
+        <label>Wind Frenzy</label>
+        <description>attacking the same target continuously making this pawn attack faster.</description>
+        <isBad>false</isBad>
+        <initialSeverity>0.1</initialSeverity>
+        <maxSeverity>10</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>625</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+            <li Class="HediffCompProperties_SeverityPerDay">
+                <severityPerDay>-48</severityPerDay>
+                <showHoursToRecover>false</showHoursToRecover>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>1</label>
+                <minSeverity>0.1</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.1</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.1</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>2</label>
+                <minSeverity>2</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.2</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.2</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>3</label>
+                <minSeverity>3</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.3</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.3</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>4</label>
+                <minSeverity>4</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.4</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.4</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>5</label>
+                <minSeverity>5</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.5</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.5</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>6</label>
+                <minSeverity>6</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.6</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.6</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>7</label>
+                <minSeverity>7</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.7</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.7</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>8</label>
+                <minSeverity>8</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.8</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.8</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <li>
+                <label>9</label>
+                <minSeverity>9</minSeverity>
+                <statOffsets>
+                    <VEF_VerbCooldownFactor>-0.9</VEF_VerbCooldownFactor>
+                    <AimingDelayFactor>-0.9</AimingDelayFactor>
+                </statOffsets>
+                <hediffGivers>
+                    <li Class="HediffGiver_AddSeverity">
+                        <hediff>MakaiRanger_BuffFour_Speed</hediff>
+                        <severityAmount>-1</severityAmount>
+                        <mtbHours>0.5</mtbHours>
+                    </li>
+                </hediffGivers>
+            </li>
+            <!-- <li> -->
+            <!-- <label>10</label> -->
+            <!-- <minSeverity>10</minSeverity> -->
+            <!-- <statOffsets> -->
+            <!-- <VEF_VerbCooldownFactor>-0.99</VEF_VerbCooldownFactor> -->
+            <!-- <AimingDelayFactor>-0.99</AimingDelayFactor> -->
+            <!-- </statOffsets> -->
+            <!-- <hediffGivers> -->
+            <!-- <li Class="HediffGiver_AddSeverity"> -->
+            <!-- <hediff>MakaiRanger_BuffFour_Speed</hediff> -->
+            <!-- <severityAmount>-1</severityAmount> -->
+            <!-- <mtbHours>0.5</mtbHours> -->
+            <!-- </li> -->
+            <!-- </hediffGivers> -->
+            <!-- </li> -->
+        </stages>
+    </HediffDef>
+
+    <HediffDef ParentName="DiseaseBase">
+        <defName>MakaiRanger_BuffFour_Mark</defName>
+        <label>Marked</label>
+        <description>Marked by Ranger</description>
+        <isBad>false</isBad>
+        <initialSeverity>1</initialSeverity>
+        <maxSeverity>1</maxSeverity>
+        <comps>
+            <li Class="HediffCompProperties_Disappears">
+                <disappearsAfterTicks>625</disappearsAfterTicks>
+                <showRemainingTime>True</showRemainingTime>
+            </li>
+        </comps>
+        <stages>
+            <li>
+                <label>Marked</label>
+                <minSeverity>1</minSeverity>
+            </li>
+        </stages>
+    </HediffDef>
+
+</Defs>

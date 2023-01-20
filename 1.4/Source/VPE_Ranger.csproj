@@ -14,25 +14,26 @@
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>false</DebugSymbols>
-    <DebugType>none</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\..\VPE - Ranger\Assemblies\</OutputPath>
+    <OutputPath>../../Compatibility/VanillaExpanded.VPsycastsE/1.4/Assemblies</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
+    <DebugType>none</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>../../Compatibility/VanillaExpanded.VPsycastsE/1.4/Assemblies</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="0Harmony">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\..\..\..\workshop\content\294100\2009463077')">..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\2009463077')">..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="Assembly-CSharp">
@@ -52,11 +53,13 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="VanillaPsycastsExpanded">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2842502659\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\..\..\..\workshop\content\294100\2842502659')">..\..\..\..\..\..\workshop\content\294100\2842502659\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\2842502659')">..\..\..\2842502659\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="VFECore">
-      <HintPath>..\..\..\..\..\..\workshop\content\294100\2023507013\1.4\Assemblies\VFECore.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\..\..\..\workshop\content\294100\2023507013')">..\..\..\..\..\..\workshop\content\294100\2023507013\1.4\Assemblies\VFECore.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\2023507013')">..\..\..\2023507013\1.4\Assemblies\VFECore.dll</HintPath>
       <Private>False</Private>
     </Reference>
   </ItemGroup>
@@ -82,4 +85,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PreBuild" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+    <Delete Files="../../Compatibility/VanillaExpanded.VPsycastsE/1.4/Assemblies/VPE_Ranger.pdb" />
+  </Target>
 </Project>

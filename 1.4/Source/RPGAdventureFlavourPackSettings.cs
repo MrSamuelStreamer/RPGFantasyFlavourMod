@@ -11,6 +11,13 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public bool ShowCaravanLoot = true;
     public bool AddExtraRimQuests = true;
 
+    /**
+     * A special setting that if you've downloaded the configs off the workshop will already be true
+     * If false a message box will pop up at game start warning you you should get the configs
+     * People not playing along can just tick it in settings.
+     */
+    public bool ConfigsApplied = false;
+
     private HashSet<string> _extraRimQuestsMatching = new();
     private HashSet<string> _extraRimQuestGivers = new();
 
@@ -69,6 +76,9 @@ public class RPGAdventureFlavourPackSettings : ModSettings
 
     private void DrawCoreSettings(Rect viewPort)
     {
+        _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_Core_ConfigsApplied".Translate(),
+            ref ConfigsApplied);
+
         _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_Core_ShowCaravanLoot".Translate(),
             ref ShowCaravanLoot);
     }
@@ -155,6 +165,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public override void ExposeData()
     {
         base.ExposeData();
+        Scribe_Values.Look(ref ConfigsApplied, "ConfigsApplied", false);
         Scribe_Values.Look(ref ShowCaravanLoot, "ShowCaravanLoot", true);
         Scribe_Values.Look(ref AddExtraRimQuests, "AddExtraRimQuests", true);
         Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);

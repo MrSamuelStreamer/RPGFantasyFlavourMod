@@ -5,7 +5,8 @@
     <li>1.4</li>
     <li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
-    <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE</li>
+    <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE/1.4</li>
+    <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE/Common</li>
     <li IfModActive="sarg.alphaanimals">Compatibility/sarg.alphaanimals</li>
     <li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>
     <li IfModActive="Edern.CombatPsycasts">Compatibility/Edern.CombatPsycasts</li>
