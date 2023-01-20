@@ -3,8 +3,10 @@
 
 	<HediffDef ParentName="DiseaseBase">
     <defName>MakaiRanger_BuffOne</defName>
-    <label>Qucik Draw</label>
-    <description>always fire one additional shot, with additional boost to marksmanship ability</description>
+    <label>Quick Draw</label>
+
+    <description>always fire one additional shot, with an additional boost to marksmanship ability</description>
+
 	<defaultLabelColor>(32, 197, 0)</defaultLabelColor>
     <isBad>false</isBad>
 	<initialSeverity>1</initialSeverity>
@@ -34,7 +36,8 @@
 	<HediffDef ParentName="PsycastHediffBase">
 		<defName>MakaiRanger_DebuffOne</defName>
 		<label>binded solid</label>
-		<description>This entity is completely binded in a net, and will not be able to move until it break.</description>
+		<description>This entity is completely tangled in a net, and will not be able to move until it is broken.</description>
+
 		<hediffClass>VPE_Ranger.Hediff_TreeNet</hediffClass>
 		<comps>
 		</comps>
@@ -54,7 +57,8 @@
 	<HediffDef ParentName="PsycastHediffBase">
 		<defName>MakaiRanger_BuffTwo</defName>
 		<label>Ricochet Shot</label>
-		<description>shot ricochet between enemies, won't work if there only one enemy.</description>
+		<description>shot ricochets between enemies, won't work if there only one enemy.</description>
+
 		<defaultLabelColor>(32, 197, 0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<initialSeverity>1</initialSeverity>
@@ -76,7 +80,8 @@
 	<HediffDef ParentName="PsycastHediffBase">
 		<defName>MakaiRanger_BuffThree</defName>
 		<label>Arcing Shot</label>
-		<description>shot arcing upward before spliting into several smaller shot.</description>
+		<description>shot that arcs upward before splitting into several smaller projectiles.</description>
+
 		<defaultLabelColor>(32, 197, 0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<initialSeverity>1</initialSeverity>
@@ -97,8 +102,9 @@
 	
 	<HediffDef ParentName="PsycastHediffBase">
 		<defName>MakaiRanger_BuffFour</defName>
-		<label>Double Wind</label>
-		<description>the nature is providing this pawn with a favor of speed.</description>
+		<label>Rapid Fire</label>
+		<description>this pawn is hyper-focused on their shooting speed so each subsequent shot at the same target will be faster.</description>
+
 		<defaultLabelColor>(32, 197, 0)</defaultLabelColor>
 		<isBad>false</isBad>
 		<initialSeverity>1</initialSeverity>
