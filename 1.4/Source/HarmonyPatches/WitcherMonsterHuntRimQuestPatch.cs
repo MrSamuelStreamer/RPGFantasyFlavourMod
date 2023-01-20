@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using System.Text.RegularExpressions;
@@ -24,6 +25,7 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
                 .Where(q => q != null).ToArray();
             if (monsterHuntQuestGivers.Length == 0) return;
 
+            List<string> logMessage = new List<string>();
             foreach (QuestScriptDef questScriptDef in DefDatabase<QuestScriptDef>.AllDefsListForReading
                          .OrderBy(Main.GetQuestReadableName)
                          .Where(questScriptDef =>
@@ -44,9 +46,11 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest.HarmonyPatches
                 {
                     if (questGiver.questsScripts.Exists(q => q.def == questScriptDef)) continue;
                     questGiver.questsScripts.Add(new QuestGenOption(questScriptDef, commonality));
-                    Log.Message($"Added {questScriptDef.defName} to {questGiver.defName}");
+                    logMessage.Add($"Added {questScriptDef.defName} to {questGiver.defName}");
                 }
             }
+
+            if (logMessage.Count > 0) Log.Message(string.Join(", ", logMessage.ToStringSafeEnumerable()));
         }
     }
 

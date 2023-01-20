@@ -28,5 +28,8 @@
         <li>MrSamuelStreamer.MrSamuelStreamCustomFaction</li>
         <li>OskarPotocki.VFE.Classical</li>
         <li>jaxe.rimhud</li>
+        <li>orion.cashregister</li>
+        <li>orion.hospitality</li>
+        <li>syrchalis.setupcamp</li>
     </loadAfter>
 </ModMetaData>
