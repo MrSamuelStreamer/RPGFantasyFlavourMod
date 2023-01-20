@@ -27,7 +27,7 @@
         <healthAffectsPrice>false</healthAffectsPrice>
     </ThingDef>
 
-  <ThingDef ParentName="DankPyon_LootBase">
+  <ThingDef ParentName="DankPyon_LootBase" MayRequire="DankPyon.Medieval.Overhaul">
         <defName>MSSRPG_Book_LustySauridMaid_Second</defName>
         <label>the Lusty Saurid Maid Vol 2</label>
         <description>The second in a popular series. A well thumbed book on cheap paper chronicling the life and times of a saurid maid whose master notices them whilst carrying out their duties one dark and dreary eve.\n\nThe Lusty Saurid Maid\n\nVolume 2\n\nBy: Vulgario Von Voluptuouso\n\n\nAct V, Scene I, continued\n\n.Vulgariotto: Yes, my dear, work those well muscled arms, thrust forward with passion. It is the only way to finish before me.\n\nSome time later...\n\nGlitter Scale: Oh sir, you let me finish first I know it! I tried my best to be faster than you, but you were polishing your spearhead far quicker than I could possibly wax the shaft. My claws do get in the way so. I must take such care not to nick the shaft.\n\nVulgariotto: Worry not m'dear, that shaft has seen much worse than a simple scratch. You do so engage my interests.\n\nGlitter Scale: I am but a simple saurid maid sir, you should not be so familiar with me.\n\nVulgariotto: Worry not, I shall not get in trouble, and neither shall you.\n\n\nEND OF ACT V, Scene I</description>
