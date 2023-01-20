@@ -231,7 +231,7 @@
         <iconPath>Abilities/TripleTrueShot</iconPath>
         <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
         <castTime>120</castTime>
-        <!-- <requireLineOfSight>false</requireLineOfSight> -->
+        <requireLineOfSight>false</requireLineOfSight>
         <targetCount>3</targetCount>
         <targetModes>
             <li>Pawn</li>
