@@ -35,6 +35,7 @@ namespace VPE_Ranger
                     }
                     bufferedInstructions[instructionIndex].opcode = OpCodes.Nop;
                     edited = true;
+                    Log.Message("Patched PsyCaster pawn spawning to not require Basilicus Bestower");
                     break;
                 }
             }
