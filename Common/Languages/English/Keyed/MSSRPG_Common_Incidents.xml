@@ -2,4 +2,8 @@
 
 <LanguageData>
     <RansomDemand>{1} has sent a message. They are holding former colonist {PAWN_labelShort} for ransom.\n\nThey're willing to release {PAWN_objective} back to you in exchange for {2} silver.</RansomDemand>
+    <LetterLabelRefugeePodCrash>Manned glider crash</LetterLabelRefugeePodCrash>
+    <RefugeePodCrash>{PAWN_titleIndef} named {PAWN_nameDef} is crashing in a glider nearby. If {PAWN_pronoun} survives the impact, {PAWN_pronoun} will be badly wounded.</RefugeePodCrash>
+    <LetterLabelCargoPodCrash>Glider crash</LetterLabelCargoPodCrash>
+    <CargoPodCrash>You have seen a group of gliders crashing nearby.\n\nPerhaps you'll find something useful in the wreckage.</CargoPodCrash>
 </LanguageData>
