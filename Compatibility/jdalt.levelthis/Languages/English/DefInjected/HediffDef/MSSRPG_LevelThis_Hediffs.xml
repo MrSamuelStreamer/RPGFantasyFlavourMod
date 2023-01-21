@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+    <HealthLevel.label>character</HealthLevel.label>
+    <HealthLevel.description>This character's level, hard won through trials and tribulations. The higher this is the more of a pounding they'll be able to take.</HealthLevel.description>
+</LanguageData>
