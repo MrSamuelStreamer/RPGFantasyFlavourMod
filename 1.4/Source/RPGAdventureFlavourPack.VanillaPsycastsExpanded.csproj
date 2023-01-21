@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33A83AA6-4122-4077-B60A-A5069E5DF7E9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VPE_Ranger</RootNamespace>
+    <AssemblyName>VPE_Ranger</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>../../Compatibility/VanillaExpanded.VPsycastsE/1.4/Assemblies</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>../../Compatibility/VanillaExpanded.VPsycastsE/1.4/Assemblies</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="0Harmony">
+      <HintPath Condition="Exists('..\..\..\..\..\..\workshop\content\294100\2009463077')">..\..\..\..\..\..\workshop\content\294100\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\2009463077')">..\..\..\2009463077\Current\Assemblies\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Assembly-CSharp">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VanillaPsycastsExpanded">
+      <HintPath Condition="Exists('..\..\..\..\..\..\workshop\content\294100\2842502659')">..\..\..\..\..\..\workshop\content\294100\2842502659\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\2842502659')">..\..\..\2842502659\1.4\Assemblies\VanillaPsycastsExpanded.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="VFECore">
+      <HintPath Condition="Exists('..\..\..\..\..\..\workshop\content\294100\2023507013')">..\..\..\..\..\..\workshop\content\294100\2023507013\1.4\Assemblies\VFECore.dll</HintPath>
+      <HintPath Condition="Exists('..\..\..\2023507013')">..\..\..\2023507013\1.4\Assemblies\VFECore.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ability_SplitShot.cs" />
+    <Compile Include="Ability_ArrowRain.cs" />
+    <Compile Include="Ability_TrappingNet.cs" />
+    <Compile Include="Ability_RicochetShot.cs" />
+    <Compile Include="HarmonyPatches\BasilicusHarmonyPatch.cs" />
+    <Compile Include="HarmonyPatches\Bullet_Impact_DoubleWind.cs" />
+    <Compile Include="HarmonyPatches\Bullet_Impact_RicochetArrowPatch.cs" />
+    <Compile Include="HarmonyPatches\Bullet_Impact_Spread.cs" />
+    <Compile Include="HarmonyPatches\Projectile_Launch_PatchVPERanger.cs" />
+    <Compile Include="HediffCompProperties_ArcingShot.cs" />
+    <Compile Include="HediffComp_ArcingShot.cs" />
+    <Compile Include="VPERanger_DefOf.cs" />
+    <Compile Include="HediffComp_RicochetArrow.cs" />
+    <Compile Include="HediffCompProperties_RicochetArrow.cs" />
+    <Compile Include="Hediff_TreeNet.cs" />
+    <Compile Include="HediffComp_DoubleTap.cs" />
+    <Compile Include="HediffCompProperties_DoubleTap.cs" />
+    <Compile Include="VPERangerUtility.cs" />
+    <Compile Include="VPE_RangerStartPatch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="PreBuild" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+    <Delete Files="../../Compatibility/VanillaExpanded.VPsycastsE/1.4/Assemblies/VPE_Ranger.pdb" />
+  </Target>
+</Project>

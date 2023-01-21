@@ -10,19 +10,22 @@ namespace VPE_Ranger
         public override void Notify_PawnUsedVerb(Verb verb, LocalTargetInfo target)
         {
             base.Notify_PawnUsedVerb(verb, target);
-            if(!Pawn.equipment.Primary.def.IsRangedWeapon || verb.IsMeleeAttack)
+            if (!Pawn.equipment.Primary.def.IsRangedWeapon || verb.IsMeleeAttack)
             {
                 return;
             }
-            Projectile projectile = (Projectile)GenSpawn.Spawn(verb.GetProjectile() ?? Props.projectile, Pawn.Position, Pawn.Map);
+
+            Projectile projectile =
+                (Projectile)GenSpawn.Spawn(verb.GetProjectile() ?? Props.projectile, Pawn.Position, Pawn.Map);
             float rand = Rand.Value;
-            if(rand <= Pawn.GetStatValue(StatDefOf.ShootingAccuracyPawn))
+            if (rand <= Pawn.GetStatValue(StatDefOf.ShootingAccuracyPawn))
             {
                 projectile.Launch(Pawn, target, target, ProjectileHitFlags.IntendedTarget);
-            } 
+            }
             else
             {
-                projectile.Launch(Pawn, target.Thing.Position.RandomAdjacentCell8Way(), target, ProjectileHitFlags.IntendedTarget);
+                projectile.Launch(Pawn, target.Thing.Position.RandomAdjacentCell8Way(), target,
+                    ProjectileHitFlags.IntendedTarget);
             }
         }
     }

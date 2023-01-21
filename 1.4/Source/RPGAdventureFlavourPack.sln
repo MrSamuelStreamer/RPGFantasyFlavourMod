@@ -14,7 +14,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Files", "Files.csproj", "{D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGAdventureFlavourPack.RimMedieval", "RPGAdventureFlavourPack.RimMedieval.csproj", "{A0845FDC-D0D9-4BC3-B79E-C91ECCE96668}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VPE_Ranger", "VPE_Ranger.csproj", "{33A83AA6-4122-4077-B60A-A5069E5DF7E9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPGAdventureFlavourPack.VanillaPsycastsExpanded", "RPGAdventureFlavourPack.VanillaPsycastsExpanded.csproj", "{33A83AA6-4122-4077-B60A-A5069E5DF7E9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

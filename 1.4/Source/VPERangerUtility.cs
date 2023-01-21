@@ -1,12 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using HarmonyLib;
-using System.Text;
-using RimWorld;
-using UnityEngine;
+﻿using System.Collections.Generic;
 using Verse;
-using VanillaPsycastsExpanded;
 
 namespace VPE_Ranger
 {
@@ -18,6 +11,7 @@ namespace VPE_Ranger
             cell.z += Rand.RangeInclusive(min, max);
             return cell;
         }
+
         public static List<Pawn> GetNearbyPawnFriendAndFoe(IntVec3 center, Map map, float radius)
         {
             List<Pawn> list = new List<Pawn>();
@@ -33,6 +27,7 @@ namespace VPE_Ranger
                     }
                 }
             }
+
             return list;
         }
     }
