@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <ScenarioDef>
+    <defName>AdventuresinFantasyWorld</defName>
+    <label>Adventures in Fantasy World</label>
+	<description>Three colonsits set out from their cozy home to find adventure out in the world! No crafting or research allowed, everything you use or earn must be gathered from out there in the wide world!</description>
+	<scenario>
+		<summary>Three colonists, starting a cozy inn, set out into the world to find wealth and rewards beyond measure.</summary>
+		<playerFaction>
+			<def>PlayerFaction</def>
+			<factionDef>PlayerLostTechnology</factionDef>
+		</playerFaction>
+		<parts>
+			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+				<def>ConfigPage_ConfigureStartingPawns</def>
+				<pawnCount>3</pawnCount>
+				<pawnChoiceCount>8</pawnChoiceCount>
+			</li>
+			<li Class="ScenPart_GameStartDialog">
+				<def>GameStartDialog</def>
+				<text>Three colonsits set out from their cozy home to find adventure out in the world! No crafting or research allowed, everything you use or earn must be gathered from out there from your many adventures.</text>
+				<textKey>GameStartDialog</textKey>
+				<closeSound>GameStartSting</closeSound>
+			</li>
+			<li Class="ScenPart_PlayerPawnsArriveMethod">
+				<def>PlayerPawnsArriveMethod</def>
+			</li>
+			<li Class="ScenPart_StartingThing_Defined">
+				<def>StartingThing_Defined</def>
+				<thingDef>VikingTent</thingDef>
+				<stuff>Cloth</stuff>
+				<count>3</count>
+			</li>
+			<li Class="ScenPart_DisableMapGen">
+				<def>DisableExostriderRemains</def>
+			</li>
+			<li Class="ScenPart_CreateIncident">
+				<def>CreateIncident</def>
+				<incident>TravelerGroup</incident>
+				<intervalDays>3</intervalDays>
+				<repeat>True</repeat>
+				<occurTick>4086313</occurTick>
+			</li>
+			<li Class="ScenPart_CreateIncident">
+				<def>CreateIncident</def>
+				<incident>GiveQuest_Random</incident>
+				<intervalDays>3</intervalDays>
+				<repeat>True</repeat>
+				<occurTick>4026313</occurTick>
+			</li>
+			<li Class="ScenPart_CreateIncident">
+				<def>CreateIncident</def>
+				<incident>VisitorGroup</incident>
+				<intervalDays>4</intervalDays>
+				<repeat>True</repeat>
+				<occurTick>4146313</occurTick>
+			</li>
+			<li Class="ScenPart_StatFactor">
+				<def>StatFactor</def>
+				<stat>SocialImpact</stat>
+				<factor>1.25</factor>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>RaidEnemyGoesWrong</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>DND_DungeonMonsterRaid</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>VFEV_PillageRaid</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>VFEV_SlaverRaid</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>VFEM_PursuitParty</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>CAMechRaidMixed</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>ManhunterPack</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>RaidEnemy</incident>
+			</li>
+		</parts>
+	</scenario>
+  </ScenarioDef>
+</Defs>
