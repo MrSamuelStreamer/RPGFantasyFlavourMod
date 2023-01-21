@@ -14,5 +14,6 @@
     <li IfModActive="mlie.rimquest">Compatibility/mlie.rimquest/1.4</li>
     <li IfModActive="SaucyPigeon.PawnBadge">Compatibility/SaucyPigeon.PawnBadge/1.4</li>
     <li IfModActive="ogam.rimedieval">Compatibility/ogam.rimedieval/1.4</li>
+    <li IfModActive="jdalt.levelthis">Compatibility/jdalt.levelthis</li>
   </v1.4>
 </loadFolders>
