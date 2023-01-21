@@ -23,8 +23,8 @@
                 <path>Makai_Ranger</path>
                 <level>1</level>
                 <order>1</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>10</entropyGain>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>25</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_One</li>
                 </prerequisites>
@@ -57,8 +57,8 @@
                 <path>Makai_Ranger</path>
                 <level>1</level>
                 <order>2</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>10</entropyGain>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>35</entropyGain>
             </li>
         </modExtensions>
     </VFECore.Abilities.AbilityDef>
@@ -79,7 +79,7 @@
                 <path>Makai_Ranger</path>
                 <level>1</level>
                 <order>3</order>
-                <psyfocusCost>0.1</psyfocusCost>
+                <psyfocusCost>0.15</psyfocusCost>
                 <entropyGain>20</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_One</li>
@@ -150,8 +150,8 @@
                 <path>Makai_Ranger</path>
                 <level>3</level>
                 <order>1</order>
-                <psyfocusCost>0.2</psyfocusCost>
-                <entropyGain>10</entropyGain>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>55</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_Eight</li>
                     <li>Makai_Ranger_Nine</li>
@@ -183,8 +183,8 @@
                 <path>Makai_Ranger</path>
                 <level>3</level>
                 <order>2</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>20</entropyGain>
+                <psyfocusCost>0.2</psyfocusCost>
+                <entropyGain>0</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_Four</li>
                 </prerequisites>
@@ -211,8 +211,8 @@
                 <path>Makai_Ranger</path>
                 <level>3</level>
                 <order>3</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>25</entropyGain>
+                <psyfocusCost>0.2</psyfocusCost>
+                <entropyGain>0</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_Nine</li>
                     <li>Makai_Ranger_Eight</li>
@@ -231,7 +231,7 @@
         <iconPath>Abilities/TripleTrueShot</iconPath>
         <abilityClass>VFECore.Abilities.Ability_ShootProjectile</abilityClass>
         <castTime>120</castTime>
-        <requireLineOfSight>false</requireLineOfSight>
+        <!-- <requireLineOfSight>false</requireLineOfSight> -->
         <targetCount>3</targetCount>
         <targetModes>
             <li>Pawn</li>
@@ -268,8 +268,8 @@
                 <path>Makai_Ranger</path>
                 <level>4</level>
                 <order>1</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>30</entropyGain>
+                <psyfocusCost>0.01</psyfocusCost>
+                <entropyGain>75</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_Ten</li>
                 </prerequisites>
@@ -301,8 +301,8 @@
                 <path>Makai_Ranger</path>
                 <level>4</level>
                 <order>2</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>25</entropyGain>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>55</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_Ten</li>
                 </prerequisites>
@@ -338,8 +338,8 @@
                 <path>Makai_Ranger</path>
                 <level>5</level>
                 <order>1</order>
-                <psyfocusCost>0.1</psyfocusCost>
-                <entropyGain>20</entropyGain>
+                <psyfocusCost>0.05</psyfocusCost>
+                <entropyGain>25</entropyGain>
                 <prerequisites>
                     <li>Makai_Ranger_Six</li>
                 </prerequisites>
