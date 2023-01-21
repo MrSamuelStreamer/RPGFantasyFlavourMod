@@ -18,6 +18,11 @@
 
     <OnKill_PsyfocusGain.description>This weapon's persona focuses on deaths. If the weapon kills someone, the wielder will instantly gain 20% mana.</OnKill_PsyfocusGain.description>
 
+    <OnKill_ThoughtGood.description>This weapon's persona loves to kill. If this weapon kills someone, its joy will emit a magical aura, making them happier for a few days.</OnKill_ThoughtGood.description>
+
+    <OnKill_ThoughtBad.description>This weapon's persona hates killing. If this weapon kills someone, its sorrow will emit a magical aura, reducing their mood for a few days.</OnKill_ThoughtBad.description>
+
+    <NeedKill.description>This weapon's persona find purpose in bloodshed. If it does not kill for 20 days, it will become angry and magically diminish the mood of whoever is bonded to it.</NeedKill.description>
 
     <PsyfocusMeditationBonus.label>arcane-meditative</PsyfocusMeditationBonus.label>
     <PsyfocusMeditationBonus.description>This weapon's persona is naturally meditative and helps improve it's its wielder connection to the background mana field while meditating. The wielder gains an extra 10% mana per day of meditation, as long as the weapon is held.</PsyfocusMeditationBonus.description>
