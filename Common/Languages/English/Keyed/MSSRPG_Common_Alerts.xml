@@ -50,7 +50,7 @@
     <CaravanIdle>Party idle</CaravanIdle>
     <CaravanIdleDesc>These parties are having a long rest waiting for you to set their next destination:\n\n{0}</CaravanIdleDesc>
 
-    <ColonistNeedsTreatment>healing needed</ColonistNeedsTreatment>
+    <ColonistNeedsTreatment>Healing needed</ColonistNeedsTreatment>
     <ColonistNeedsTreatmentDesc>These people need healing. Without it, they may die of their wounds, or their wounds may become permanent.\n\n{0}\nTreat them by sending them to a healer bed.\n\n(First, assign a healer bed by selecting it and toggling it into a healer bed. Then, select the wounded person and right-click on the healer bed to make them a patient.)</ColonistNeedsTreatmentDesc>
     <ColonistNeedsTreatmentDescController>These people need healing. Without it, they may die of their wounds, or their wounds may become permanent.\n\n{0}\nTreat them by sending them to a healer bed.\n\n(First, assign a healer bed by selecting it and toggling it into a healer bed. Then, select the wounded person and press the left trigger button on the healer bed to make them a patient.)</ColonistNeedsTreatmentDescController>
 
