@@ -62,9 +62,12 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="CreatureSelectionExtension.cs" />
+        <Compile Include="GenStep_SlayerEncounter.cs" />
         <Compile Include="HarmonyPatches\ConfigChecker.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="HarmonyPatches\CaravanPatches.cs" />
+        <Compile Include="QuestNode_GiveRelicInfoRewards.cs" />
         <Compile Include="RPGAdventureFlavourPack.cs" />
         <Compile Include="RPGAdventureFlavourPackSettings.cs" />
     </ItemGroup>
