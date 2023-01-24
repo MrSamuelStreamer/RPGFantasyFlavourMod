@@ -150,12 +150,8 @@
             <li Class="MrSamuelStreamer.RPGAdventureFlavourPack.CreatureSelectionExtension">
                 <possiblePawnKinds>
                     <li MayRequire="onyxae.dragonsdescent">True_Dragon</li>
-                    <li MayRequire="onyxae.dragonsdescent">Jade_Dragon</li>
-                    <li MayRequire="onyxae.dragonsdescent">Silver_Dragon</li>
-                    <li MayRequire="onyxae.dragonsdescent">Gold_Dragon</li>
                     <li MayRequire="onyxae.dragonsdescent">Black_Dragon</li>
                     <li MayRequire="onyxae.dragonsdescent">Red_Dragon</li>
-                    <li MayRequire="onyxae.dragonsdescent">White_Dragon</li>
                 </possiblePawnKinds>
             </li>
         </modExtensions>
@@ -183,7 +179,7 @@
         </questNameRules>
         <questDescriptionRules>
             <rulesStrings>
-                <li>questDescription->The [asker_faction_leaderTitle] of [asker_faction_name], is making a plea for any brave dragon slayers to lend their aid. Their settlements are being terrorised nightly by an ancient dragon, once thought a mere myth.\n\nTerrified villagers have reported that they have seen it returning to its lair nearby, where a brave party might be able to face it down, and stop its reign of terror. This is a dangerous quest not to be accepted ligtly.\n\nDesperate to recruit anyone to aid, [asker_nameFull] has let it be known that any group to succeed will be granted [allRewardsDescriptions]. Whispers persist that they know of the [relic_name] and may be willing to share what they know with any slayer able to aid them in their time of need. Take up the quest quickly or lose it to another brave dragon slayer.</li>
+                <li>questDescription->The [asker_faction_leaderTitle] of [asker_faction_name], is making a plea for any brave dragon slayers to lend their aid. Their settlements are being terrorised nightly by an ancient dragon, once thought a mere myth.\n\nTerrified villagers have reported that they have seen it returning to its lair nearby, where a brave party might be able to face it down, and stop its reign of terror. This is a dangerous quest not to be accepted ligtly.\n\nDesperate to recruit anyone to aid, [asker_nameFull] has let it be known that any group to succeed will be granted [allRewardsDescriptions]. Whispers persist that they know of the [relic_name] and may be willing to share what they know with any slayer able to aid them in their time of need. Take up the quest quickly or lose it to another brave dragon slayer.\n\nThe monster is said to be a [monsterLabel]\n\n[monsterDescription]</li>
             </rulesStrings>
         </questDescriptionRules>
         <root Class="QuestNode_Sequence">
@@ -194,6 +190,40 @@
                     <storeAs>asker</storeAs>
                     <mustBeFactionLeader>true</mustBeFactionLeader>
                     <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+                </li>
+
+                <li Class="QuestNode_GetPawnKind">
+                    <storeAs>monsterPawnKind</storeAs>
+                    <options>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>True_Dragon</kindDef>
+                            <weight>0.8</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Jade_Dragon</kindDef>
+                            <weight>0.2</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Silver_Dragon</kindDef>
+                            <weight>0.3</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Gold_Dragon</kindDef>
+                            <weight>0.3</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Black_Dragon</kindDef>
+                            <weight>1</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Red_Dragon</kindDef>
+                            <weight>1</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>White_Dragon</kindDef>
+                            <weight>0.4</weight>
+                        </li>
+                    </options>
                 </li>
 
                 <li Class="QuestNode_GetSiteTile">
@@ -231,6 +261,11 @@
                     </parms>
                 </li>
 
+                <li Class="MrSamuelStreamer.RPGAdventureFlavourPack.QuestNode_SaveMonsterDetails">
+                    <monsterKind>$monsterPawnKind</monsterKind>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+
                 <li Class="QuestNode_SubScript">
                     <def>Util_GenerateSite</def>
                 </li>
@@ -242,7 +277,7 @@
                 <li Class="QuestNode_Letter">
                     <inSignal>site.MapGenerated</inSignal>
                     <label>An Epic Battle: [resolvedQuestName]</label>
-                    <text>A dragon is coming for you with obvious malice. To Arms!.</text>
+                    <text>A [monsterLabel] is coming for you with obvious malice.\n\n[monsterDescription]\n\nTo Arms!.</text>
                 </li>
 
                 <li Class="QuestNode_WorldObjectTimeout">

@@ -16,4 +16,7 @@
     <RPGAdventureFlavourPackSettings_Core_ConfigsApplied>Don't warn about missing pack config</RPGAdventureFlavourPackSettings_Core_ConfigsApplied>
     <RPGAdventureFlavourPack_Config_Warning_Label>Config Warning</RPGAdventureFlavourPack_Config_Warning_Label>
     <RPGAdventureFlavourPack_Config_Warning_Message>If you are seeing this message while trying to play along with Mr Samuel Streamer's RPG modpack it means you probably haven't downloaded or correctly applied the recommended configs. Please make sure you have followed the mod configs section of the pack setup instructions available on the steam collection page for Rimworld: RPG Medieval Adventure\n\nIf you are not playing along with the modpack and have just downloaded the RPG flavour mod for your own RPG style playthrough, that's great! Sorry for the inconvenience!\n\nIf you'd like to permenantly disable this warning without downloading the configs for the pack simply tick the box marked "Don't warn about missing pack config" in the RPG Flavour Mod settings.</RPGAdventureFlavourPack_Config_Warning_Message>
+
+    <RPGAdventureFlavourPack_FallbackMonsterLabel>Monster</RPGAdventureFlavourPack_FallbackMonsterLabel>
+    <RPGAdventureFlavourPack_FallbackMonsterDescription>Unfortunately no information is available about this monster. Any witnesses are either dead or when asked they break down gibbering in terror, providing no useful information.</RPGAdventureFlavourPack_FallbackMonsterDescription>
 </LanguageData>

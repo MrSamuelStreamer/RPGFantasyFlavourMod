@@ -14,7 +14,7 @@ public class GenStep_SlayerEncounter : GenStep
                     cell.GetRoom(map).CellCount >= 10, map, out IntVec3 result))
             return;
 
-        PawnKindDef monsterKind = parms.sitePart?.parms?.animalKind ?? base.def
+        PawnKindDef monsterKind = parms.sitePart?.parms?.animalKind ?? def
             .GetModExtension<CreatureSelectionExtension>().possiblePawnKinds
             .RandomElementByWeight(c => c.RaceProps?.wildness ?? 0.1f);
 
