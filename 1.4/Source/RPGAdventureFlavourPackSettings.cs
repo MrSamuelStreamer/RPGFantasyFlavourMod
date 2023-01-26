@@ -8,8 +8,13 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack;
 
 public class RPGAdventureFlavourPackSettings : ModSettings
 {
+    public bool DragonsInRelicSites = true;
     public bool ShowCaravanLoot = true;
     public bool AddExtraRimQuests = true;
+    public bool AllowExtraMedievalItems = true;
+
+    private List<Action> _settingsUpdatedActions = new();
+    public void RegisterSettingsUpdatedAction(Action action) => _settingsUpdatedActions.Add(action);
 
     /**
      * A special setting that if you've downloaded the configs off the workshop will already be true
@@ -20,9 +25,12 @@ public class RPGAdventureFlavourPackSettings : ModSettings
 
     private HashSet<string> _extraRimQuestsMatching = new();
     private HashSet<string> _extraRimQuestGivers = new();
+    private HashSet<string> _extraMedievalItems = new();
 
     private readonly bool _rimQuestActive = ModLister.GetActiveModWithIdentifier("mlie.rimquest", true) != null;
+    private readonly bool _rimMedievalActive = ModLister.GetActiveModWithIdentifier("Ogam.Rimedieval", true) != null;
     private string _rimQuestTextEntry = "Some_RimQuestGiver or Filter";
+    private string _rimMedievalTextEntry = "DefName of extra item to allow e.g. Genepack";
 
     private const float RowHeight = 32f;
     private const float Indent = 9f;
@@ -33,7 +41,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         if (!AddExtraRimQuests || (_extraRimQuestGivers?.Count ?? 0) != 0) return _extraRimQuestGivers;
         Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but no quest-givers chosen, defaulting");
         _extraRimQuestGivers = new HashSet<string>(DefaultExtraRimQuestGivers);
-        Write();
+        NotifySettingsUpdate();
         return _extraRimQuestGivers;
     }
 
@@ -42,14 +50,32 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         if (!AddExtraRimQuests || (_extraRimQuestsMatching?.Count ?? 0) != 0) return _extraRimQuestsMatching;
         Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but inclusion list was empty, defaulting");
         _extraRimQuestsMatching = new HashSet<string>(DefaultExtraRimQuestsMatching);
-        Write();
+        NotifySettingsUpdate(true);
         return _extraRimQuestsMatching;
+    }
+    public HashSet<string> ExtraMedievalDefs()
+    {
+        if (!AllowExtraMedievalItems || (_extraMedievalItems?.Count ?? 0) != 0) return _extraMedievalItems;
+        Log.Message("RPGAdventureFlavourPack Extra Medieval Items is enabled but inclusion list was empty, defaulting");
+        _extraMedievalItems = new HashSet<string>(DefaultExtraMedievalItems);
+        NotifySettingsUpdate(true);
+        return _extraMedievalItems;
+    }
+
+    private void NotifySettingsUpdate(bool forceWrite = false)
+    {
+        foreach (Action action in _settingsUpdatedActions)
+        {
+            action();
+        }
+        if (forceWrite) Write();
     }
 
     private enum Tab
     {
         Core,
-        RimQuest
+        RimQuest,
+        RimMedieval
     }
 
     private static Tab _tab = Tab.Core;
@@ -67,6 +93,9 @@ public class RPGAdventureFlavourPackSettings : ModSettings
             case Tab.RimQuest:
                 DrawRimQuestSettings(viewPort);
                 break;
+            case Tab.RimMedieval:
+                DrawRimMedievalSettings(viewPort);
+                break;
             default:
                 throw new ArgumentException($"Unknown tab selected: {_tab.ToString()}");
         }
@@ -76,6 +105,9 @@ public class RPGAdventureFlavourPackSettings : ModSettings
 
     private void DrawCoreSettings(Rect viewPort)
     {
+        _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_Core_DragonsInRelicSites".Translate(),
+            ref DragonsInRelicSites);
+
         _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_Core_ConfigsApplied".Translate(),
             ref ConfigsApplied);
 
@@ -122,6 +154,32 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         EndScrollableSubListing(scrollableListing);
     }
 
+private void DrawRimMedievalSettings(Rect viewPort)
+    {
+        _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItems".Translate(),
+            ref AllowExtraMedievalItems);
+        _rimMedievalTextEntry = _options.TextEntry(_rimMedievalTextEntry);
+        if (_options.ButtonText("RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItem".Translate()))
+        {
+            _extraMedievalItems.Add(_rimMedievalTextEntry);
+        }
+
+        Listing_Standard scrollableListing = MakeScrollableSubListing(viewPort);
+        scrollableListing.Label("RPGAdventureFlavourPackSettings_RimMedieval_AllowedExtraMedievalItems".Translate());
+        scrollableListing.Indent(Indent);
+        foreach (var extraMedievalItem in _extraMedievalItems.Where(extraMedievalItem =>
+                     scrollableListing.ButtonTextLabeled(extraMedievalItem,
+                         "RPGAdventureFlavourPackSettings_Remove".Translate())))
+        {
+            _extraMedievalItems.Remove(extraMedievalItem);
+        }
+
+        scrollableListing.Outdent(Indent);
+        scrollableListing.GapLine();
+
+        EndScrollableSubListing(scrollableListing);
+    }
+
 
     private Rect DrawTabs(Rect rect)
     {
@@ -136,6 +194,13 @@ public class RPGAdventureFlavourPackSettings : ModSettings
             tabsList.Add(new TabRecord("RPGAdventureFlavourPackSettings_Tab_RimQuest".Translate(),
                 () => _tab = Tab.RimQuest,
                 _tab == Tab.RimQuest));
+        }
+
+        if (_rimMedievalActive)
+        {
+            tabsList.Add(new TabRecord("RPGAdventureFlavourPackSettings_Tab_RimMedieval".Translate(),
+                () => _tab = Tab.RimMedieval,
+                _tab == Tab.RimMedieval));
         }
 
         Rect tabRect = rect.ContractedBy(0, RowHeight);
@@ -165,12 +230,21 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public override void ExposeData()
     {
         base.ExposeData();
+        Scribe_Values.Look(ref DragonsInRelicSites, "ExtraFunRelics", true);
         Scribe_Values.Look(ref ConfigsApplied, "ConfigsApplied", false);
         Scribe_Values.Look(ref ShowCaravanLoot, "ShowCaravanLoot", true);
         Scribe_Values.Look(ref AddExtraRimQuests, "AddExtraRimQuests", true);
+        Scribe_Values.Look(ref AllowExtraMedievalItems, "AllowExtraMedievalItems", true);
         Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
         Scribe_Collections.Look(ref _extraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
+        Scribe_Collections.Look(ref _extraMedievalItems, "ExtraMedievalItems", LookMode.Value);
+
+        if (Scribe.mode == LoadSaveMode.Saving)
+            NotifySettingsUpdate();
     }
+
+    private static readonly HashSet<string> DefaultExtraMedievalItems =
+        new() { "Genepack" };
 
     private static readonly HashSet<string> DefaultExtraRimQuestGivers =
         new() { "RQ_MedievalQuestGiver", "RQ_TribalQuestGiver" };

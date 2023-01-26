@@ -19,4 +19,7 @@
 
     <RPGAdventureFlavourPack_FallbackMonsterLabel>Monster</RPGAdventureFlavourPack_FallbackMonsterLabel>
     <RPGAdventureFlavourPack_FallbackMonsterDescription>Unfortunately no information is available about this monster. Any witnesses are either dead or when asked they break down gibbering in terror, providing no useful information.</RPGAdventureFlavourPack_FallbackMonsterDescription>
+
+    <!-- Relic hunt -->
+    <LetterTextRelicFoundSecurityThreats>The relic is housed in an ancient structure. Being an artifact of great significance, it may be guarded. You may choose to face the final challenge head on before taking the relic, or try to grab it and flee before you become yet another pile of bones in the surrounding area.\n\nIt may be possible to sneak around unnoticed for {0}, good luck.</LetterTextRelicFoundSecurityThreats>
 </LanguageData>

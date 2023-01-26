@@ -10,4 +10,9 @@
     <RPGAdventureFlavourPackSettings_RimQuest_ExtraQuestsMatching>Add extra quests matching</RPGAdventureFlavourPackSettings_RimQuest_ExtraQuestsMatching>
     <RPGAdventureFlavourPackSettings_Tab_Core>Core</RPGAdventureFlavourPackSettings_Tab_Core>
     <RPGAdventureFlavourPackSettings_Tab_RimQuest>RimQuest</RPGAdventureFlavourPackSettings_Tab_RimQuest>
+    <RPGAdventureFlavourPackSettings_Tab_RimMedieval>RimMedieval</RPGAdventureFlavourPackSettings_Tab_RimMedieval>
+    <RPGAdventureFlavourPackSettings_Core_DragonsInRelicSites>Allow dragons in relic sites</RPGAdventureFlavourPackSettings_Core_DragonsInRelicSites>
+    <RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItems>Add extra medieval items</RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItems>
+    <RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItem>Allow Def</RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItem>
+    <RPGAdventureFlavourPackSettings_RimMedieval_AllowedExtraMedievalItems>Allowed extra medieval items</RPGAdventureFlavourPackSettings_RimMedieval_AllowedExtraMedievalItems>
 </LanguageData>
