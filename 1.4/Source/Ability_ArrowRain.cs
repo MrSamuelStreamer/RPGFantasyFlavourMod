@@ -1,4 +1,5 @@
-﻿using RimWorld;
+﻿using System.Linq;
+using RimWorld;
 using RimWorld.Planet;
 using Verse;
 using VFECore.Abilities;
@@ -48,7 +49,7 @@ namespace VPE_Ranger
 
         public void DoShot(GlobalTargetInfo globalTargetInfo)
         {
-            IntVec3 spawnPosition = VPERangerUtility.RandomCellAroundCellBase(globalTargetInfo.Cell, -3, 3);
+            IntVec3 spawnPosition = VPERangerUtility.RandomCellAroundCellBase(globalTargetInfo.Cell, -3, 3).ClampInsideMap(pawn.Map);
             IntVec3 spawnPositionOffset = spawnPosition;
             spawnPositionOffset.z += 20;
             spawnPositionOffset.x -= 1;
@@ -63,23 +64,24 @@ namespace VPE_Ranger
             }
             else
             {
-                projectile.Launch(pawn, spawnPositionOffset.ToVector3Shifted(), spawnPosition, spawnPosition,
+                projectile.Launch(pawn, spawnPositionOffset.ToVector3Shifted(), spawnPosition.ClampInsideMap(pawn.Map), spawnPosition.ClampInsideMap(pawn.Map),
                     ProjectileHitFlags.All);
             }
         }
 
         public override void Cast(params GlobalTargetInfo[] targets)
         {
-            base.Cast(targets);
+            var targetsInMap = targets.Where(t => t.Cell.IsValid && t.Cell.Equals(t.Cell.ClampInsideMap(pawn.Map))).ToArray();
+            base.Cast(targetsInMap);
             Projectile projectile =
                 (Projectile)GenSpawn.Spawn(def.GetModExtension<AbilityExtension_Projectile>().projectile, pawn.Position,
                     pawn.Map);
-            projectile.Launch(pawn, new IntVec3(targets[0].Cell.x, targets[0].Cell.y, targets[0].Cell.z + 50),
-                targets[0].Cell, ProjectileHitFlags.All);
+            projectile.Launch(pawn, new IntVec3(targetsInMap[0].Cell.x, targetsInMap[0].Cell.y, targetsInMap[0].Cell.z + 50).ClampInsideMap(pawn.Map),
+                targetsInMap[0].Cell.ClampInsideMap(pawn.Map), ProjectileHitFlags.All);
             tickUntilNextShot = 5;
             shotLeft = 80;
             delay = 120;
-            targetInfo = targets[0];
+            targetInfo = targetsInMap[0];
         }
     }
 }
