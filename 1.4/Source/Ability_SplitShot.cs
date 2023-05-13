@@ -11,8 +11,9 @@ namespace VPE_Ranger
 
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
-            if (pawn.equipment.Primary.def.IsRangedWeapon) return base.ValidateTarget(target, showMessages);
-            Messages.Message("main weapon must be ranged weapon", MessageTypeDefOf.NeutralEvent, false);
+            if (pawn.equipment?.Primary?.def?.IsRangedWeapon ?? false)
+                return base.ValidateTarget(target, showMessages);
+            Messages.Message("Main weapon must be ranged weapon", MessageTypeDefOf.NeutralEvent, false);
             return false;
         }
 
@@ -25,19 +26,19 @@ namespace VPE_Ranger
         public override void Cast(params GlobalTargetInfo[] targets)
         {
             base.Cast(targets);
-            int count = 0;
+            var count = 0;
             foreach (GlobalTargetInfo target in targets)
             {
                 if (!(target.Thing is Pawn targetPawn)) continue;
 
                 if (targetPawn.HostileTo(pawn)
-                    || targetPawn.Faction.HostileTo(pawn.Faction)
-                    || (targetPawn.RaceProps.Animal &&
-                        (targetPawn.mindState.mentalStateHandler.CurState.def == MentalStateDefOf.Manhunter ||
-                         targetPawn.mindState.mentalStateHandler.CurState.def == MentalStateDefOf.Berserk)))
+                    || (targetPawn.Faction?.HostileTo(pawn.Faction) ?? true)
+                    || ((targetPawn.RaceProps?.Animal ?? false) &&
+                        (targetPawn.mindState?.mentalStateHandler?.CurState?.def == MentalStateDefOf.Manhunter ||
+                         targetPawn.mindState?.mentalStateHandler?.CurState?.def == MentalStateDefOf.Berserk)))
                 {
                     Projectile projectile =
-                        (Projectile)GenSpawn.Spawn(pawn.equipment.Primary.def.Verbs[0].defaultProjectile, pawn.Position,
+                        (Projectile)GenSpawn.Spawn(pawn.equipment.PrimaryEq.PrimaryVerb.GetProjectile(), pawn.Position,
                             pawn.Map);
                     projectile.Launch(pawn, targetPawn, targetPawn, ProjectileHitFlags.IntendedTarget,
                         equipment: pawn.equipment.Primary);

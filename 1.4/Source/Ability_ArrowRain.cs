@@ -29,7 +29,7 @@ namespace VPE_Ranger
 
             tickUntilNextShot--;
             if (tickUntilNextShot > 0) return;
-            for (int i = 2; i > 0; i--)
+            for (var i = 2; i > 0; i--)
             {
                 DoShot(targetInfo);
             }
@@ -40,13 +40,10 @@ namespace VPE_Ranger
 
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
-            if (!pawn.equipment.Primary.def.IsRangedWeapon)
-            {
-                Messages.Message("Main weapon must be ranged weapon", MessageTypeDefOf.NeutralEvent, false);
-                return false;
-            }
-
-            return base.ValidateTarget(target, showMessages);
+            if (pawn.equipment?.Primary?.def?.IsRangedWeapon ?? false)
+                return base.ValidateTarget(target, showMessages);
+            Messages.Message("Main weapon must be ranged weapon", MessageTypeDefOf.NeutralEvent, false);
+            return false;
         }
 
         public void DoShot(GlobalTargetInfo globalTargetInfo)

@@ -10,13 +10,10 @@ namespace VPE_Ranger
     {
         public override bool ValidateTarget(LocalTargetInfo target, bool showMessages = true)
         {
-            if (!pawn.equipment.Primary.def.IsRangedWeapon)
-            {
-                Messages.Message("main weapon must be ranged weapon", MessageTypeDefOf.NeutralEvent, false);
-                return false;
-            }
-
-            return base.ValidateTarget(target, showMessages);
+            if (pawn.equipment?.Primary?.def?.IsRangedWeapon ?? false)
+                return base.ValidateTarget(target, showMessages);
+            Messages.Message("Main weapon must be ranged weapon", MessageTypeDefOf.NeutralEvent, false);
+            return false;
         }
 
         public override void Cast(params GlobalTargetInfo[] targets)
