@@ -29,7 +29,7 @@
                 <thingDefCountRange>3~6</thingDefCountRange>
                 <countRange>3~6</countRange> <!-- doesnt' work -->
             </li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Eltex</thingDef>
                 <countRange>2~6</countRange>
             </li>
@@ -50,27 +50,27 @@
                 <countRange>2~4</countRange>   <!-- doesnt' work -->
             </li>
             <!-- Fallback, just in case they're not defined in trade tags -->
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_MeleeWeapon_EltexDagger</thingDef>
                 <countRange>2~4</countRange>   <!-- doesnt' work -->
             </li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_MeleeWeapon_EltexMace</thingDef>
                 <countRange>2~4</countRange>
             </li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_MeleeWeapon_EltexSword</thingDef>
                 <countRange>2~4</countRange>
             </li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Apparel_PlateArmorPrestige</thingDef>
                 <countRange>2~4</countRange>
             </li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Apparel_EltexCape</thingDef>
                 <countRange>1~2</countRange>   <!-- doesnt' work -->
             </li>
-            <li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="StockGenerator_SingleDef">
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Apparel_EltexMask</thingDef>
                 <countRange>2~4</countRange>   <!-- doesnt' work -->
             </li>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+	  <mods>
+		<li>Lost Technology 2</li>
+	  </mods>
+	  <match Class="PatchOperationAdd">
+		<xpath>Defs/ScenarioDef[defName="AdventuresinFantasyWorld"]/scenario/parts</xpath>
+		<value>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>VFEV_PillageRaid</incident>
+			</li>
+			<li Class="ScenPart_DisableIncident">
+				<def>DisableIncident</def>
+				<incident>VFEV_SlaverRaid</incident>
+			</li>
+		</value>
+	  </match>
+	</Operation>
+</Patch>
