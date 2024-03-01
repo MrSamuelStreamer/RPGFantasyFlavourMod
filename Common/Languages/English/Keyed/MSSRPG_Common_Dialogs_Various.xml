@@ -26,11 +26,6 @@
     <SpawningColonists>Tweaking character sheets</SpawningColonists>
 
     <!-- Save/load -->
-    <SaveGameButton>Record quest</SaveGameButton>
-    <LoadGameButton>Resume quest</LoadGameButton>
-    <OverwriteButton>Replace tale</OverwriteButton>
-    <ConfirmDelete>Really delete {0}?</ConfirmDelete>
-    <DeleteThisSavegame>Delete this tale.</DeleteThisSavegame>
     <SavedAs>Bards will sing of {0}.</SavedAs>
     <LoadingLongEvent>The bard spins their tale</LoadingLongEvent>
     <SavingLongEvent>Making sure the bard got it right</SavingLongEvent>
