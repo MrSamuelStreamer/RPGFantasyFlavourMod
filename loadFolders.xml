@@ -17,11 +17,5 @@
     <li IfModActive="jdalt.levelthis">Compatibility/jdalt.levelthis</li>
 	<li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul/1.4</li>
     <li IfModActive="com.yayo.lostTechCore.2">Compatibility/com.yayo.lostTechCore.2/1.4</li>
-	<li IfModActive="OskarPotocki.VFE.Vikings">Compatibility/OskarPotocki.VFE.Vikings/1.4</li>
-    <li IfModActive="mooloh.dndmenagerie">Compatibility/mooloh.dndmenagerie/1.4</li>
-    <li IfModActive="iforgotmysocks.CaravanAdventures">Compatibility/iforgotmysocks.CaravanAdventures/1.4</li>
-    <li IfModActive="marvinkosh.sometimesraidsgowrong">Compatibility/marvinkosh.sometimesraidsgowrong/1.4</li>
-    <li IfModActive="Aoba.Tent">Compatibility/Aoba.Tent/1.4</li>
-    <li IfModActive="OskarPotocki.VanillaFactionsExpanded.MedievalModule">Compatibility/OskarPotocki.VanillaFactionsExpanded.MedievalModule/1.4</li>
   </v1.4>
 </loadFolders>

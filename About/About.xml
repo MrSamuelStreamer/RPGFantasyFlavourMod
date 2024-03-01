@@ -43,11 +43,13 @@
         <li>VanillaExpanded.VTEXE</li>
         <li>tidal.morevanilla.textures</li>
         <li>jdalt.levelthis</li>
-		<li>com.yayo.lostTechCore.2</li>
-		<li>OskarPotocki.VFE.Vikings</li>
-		<li>mooloh.dndmenagerie</li>
-		<li>iforgotmysocks.CaravanAdventures</li>
-		<li>marvinkosh.sometimesraidsgowrong</li>
-		<li>Aoba.Tent</li>
+        <li>com.yayo.lostTechCore.2</li>
+        <li>OskarPotocki.VFE.Vikings</li>
+        <li>mooloh.dndmenagerie</li>
+        <li>iforgotmysocks.CaravanAdventures</li>
+        <li>marvinkosh.sometimesraidsgowrong</li>
+        <li>Aoba.Tent</li>
+        <li>redmattis.bigsmall.core</li>
+        <li>vanillaracesexpanded.archon</li>
     </loadAfter>
 </ModMetaData>

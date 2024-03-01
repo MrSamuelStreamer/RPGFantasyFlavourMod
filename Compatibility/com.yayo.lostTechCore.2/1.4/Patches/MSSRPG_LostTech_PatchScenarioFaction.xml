@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationConditional">
+        <xpath>Defs/FactionDef[defName="PlayerLostTechnology"]</xpath>
+        <match Class="PatchOperationReplace">
+            <xpath>/Defs/ScenarioDef[defName="AdventuresinFantasyWorld"]/scenario/playerFaction/factionDef</xpath>
+            <value>
+                <factionDef>PlayerLostTechnology</factionDef>
+            </value>
+        </match>
+    </Operation>
+</Patch>
