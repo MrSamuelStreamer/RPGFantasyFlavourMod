@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <Turn_Gene_FastNeuralHeat.label>arcane dispersal</Turn_Gene_FastNeuralHeat.label>
+    <Turn_Gene_FastNeuralHeat.description>Carriers of this gene develop more organized arcane pathways in certain areas of their magical network, improving their arcane load recovery rate.</Turn_Gene_FastNeuralHeat.description>
+
+    <Turn_Gene_VeryFastNeuralHeat.label>super arcane dispersal</Turn_Gene_VeryFastNeuralHeat.label>
+    <Turn_Gene_VeryFastNeuralHeat.description>Carriers of this gene develop denser, more organized arcane pathways in certain areas of their magical network, significantly improving their arcane load recovery rate.</Turn_Gene_VeryFastNeuralHeat.description>
+
+    <Turn_Gene_SlowNeuralHeat.label>arcane retention</Turn_Gene_SlowNeuralHeat.label>
+    <Turn_Gene_SlowNeuralHeat.description>Carriers of this gene have more ambient arcane load than usual, which slows their arcane load recovery rate.</Turn_Gene_SlowNeuralHeat.description>
+
+    <Turn_Gene_VerySlowNeuralHeat.label>super arcane retention</Turn_Gene_VerySlowNeuralHeat.label>
+    <Turn_Gene_VerySlowNeuralHeat.description>Carriers of this gene have a large amount of ambient arcane load, which significantly slows their arcane load recovery rate.</Turn_Gene_VerySlowNeuralHeat.description>
+
+    <Turn_Gene_ExtremeAttunement.label>extreme magical attunement</Turn_Gene_ExtremeAttunement.label>
+    <Turn_Gene_ExtremeAttunement.description>Carriers of this gene have an extreme magical attunement, naturally maintaining and improving their magical abilities beyond any normal mortal magic user..</Turn_Gene_ExtremeAttunement.description>
+</LanguageData>

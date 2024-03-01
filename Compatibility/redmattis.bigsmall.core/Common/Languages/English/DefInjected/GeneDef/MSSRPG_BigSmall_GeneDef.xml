@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <BS_NaturalPsychic.label>nature attuned</BS_NaturalPsychic.label>
+    <BS_NaturalPsychic.description>Carriers of this gene are highly attuned to the natural magics and highly capable of dispelling arcane load. They are noticeably worse at utilizing magical-enhancing gear and implants however.</BS_NaturalPsychic.description>
+    <BS_NaturalPsychic.customEffectDescriptions>
+        <li>x0.8 + 120% offsets magical aptitude = ~+75% Magical aptitude for average pawns</li>
+    </BS_NaturalPsychic.customEffectDescriptions>
+</LanguageData>

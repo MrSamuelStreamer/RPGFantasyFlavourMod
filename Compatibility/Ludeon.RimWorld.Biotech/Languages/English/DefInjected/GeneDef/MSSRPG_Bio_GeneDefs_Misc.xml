@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <PsychicBonding.label>magic bonding</PsychicBonding.label>
+    <PsychicBonding.description>Carriers of this gene have a special soul aspect that makes them magically bond with a lover for life. As long as the lovers are together, they will be happy. If they are physically separated, they will be disturbed by the distance. If one dies, the other's mind will be badly disrupted.</PsychicBonding.description>
+    <PsychicBonding.customEffectDescriptions.0>Romance attempts always succeed.</PsychicBonding.customEffectDescriptions.0>
+    <PsychicBonding.customEffectDescriptions.1>Gains magic bond with first romantic partner.</PsychicBonding.customEffectDescriptions.1>
+</LanguageData>

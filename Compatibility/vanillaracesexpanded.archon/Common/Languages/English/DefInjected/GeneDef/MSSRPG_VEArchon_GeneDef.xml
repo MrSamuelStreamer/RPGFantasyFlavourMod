@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <Turn_Gene_FastNeuralHeat.label>arcane dispersal</Turn_Gene_FastNeuralHeat.label>
+    <Turn_Gene_FastNeuralHeat.description>Carriers of this gene develop more organized arcane pathways in certain areas of their magical network, improving their arcane load recovery rate.</Turn_Gene_FastNeuralHeat.description>
+
+    <Turn_Gene_VeryFastNeuralHeat.label>super arcane dispersal</Turn_Gene_VeryFastNeuralHeat.label>
+    <Turn_Gene_VeryFastNeuralHeat.description>Carriers of this gene develop denser, more organized arcane pathways in certain areas of their magical network, significantly improving their arcane load recovery rate.</Turn_Gene_VeryFastNeuralHeat.description>
+
+    <Turn_Gene_SlowNeuralHeat.label>arcane retention</Turn_Gene_SlowNeuralHeat.label>
+    <Turn_Gene_SlowNeuralHeat.description>Carriers of this gene have more ambient arcane load than usual, which slows their arcane load recovery rate.</Turn_Gene_SlowNeuralHeat.description>
+
+    <Turn_Gene_VerySlowNeuralHeat.label>super arcane retention</Turn_Gene_VerySlowNeuralHeat.label>
+    <Turn_Gene_VerySlowNeuralHeat.description>Carriers of this gene have a large amount of ambient arcane load, which significantly slows their arcane load recovery rate.</Turn_Gene_VerySlowNeuralHeat.description>
+
+    <Turn_Gene_ExtremeAttunement.label>extreme magical attunement</Turn_Gene_ExtremeAttunement.label>
+    <Turn_Gene_ExtremeAttunement.description>Carriers of this gene have an extreme magical attunement, naturally maintaining and improving their magical abilities beyond any normal mortal magic user..</Turn_Gene_ExtremeAttunement.description>
+
+    <!-- Weak Entropic Capacity (VE Archon) - Weak Magical Capacity -->
+    <!-- High Entropic Capacity (VE Archon) - High Magical Capacity -->
+    <!-- Extreme Entropic Capacity (VE Archon) - Extreme Magical Capacity -->
+
+    <VRE_InnatePsylink.label>innate magic</VRE_InnatePsylink.label>
+    <VRE_InnatePsylink.description>Carriers of this gene have an innate ability to use magical powers.</VRE_InnatePsylink.description>
+
+    <VRE_PsychicAbility_MoreExtreme.label>extremely magic-sensitive</VRE_PsychicAbility_MoreExtreme.label>
+    <VRE_PsychicAbility_MoreExtreme.description>Carriers of this gene have enhanced connection to the magical. They have greatly enhanced magical sensitivity and gain significantly more mana from meditation.</VRE_PsychicAbility_MoreExtreme.description>
+
+    <VRE_Transcendent.label>interdimensional magic</VRE_Transcendent.label>
+    <VRE_Transcendent.description>Carriers of this gene have a direct link to a distant arcane entity, and part of their essence exists outside our dimension. They are capable of using archon equipment, and in the event of death, they will skip back to another dimension only to return unscathed after some time has passed.</VRE_Transcendent.description>
+
+    <VRE_ExtremeMeditation.description>Carriers of this gene are capable of having much more impactful meditation sessions. They will regenerate mana significantly quicker.</VRE_ExtremeMeditation.description>
+
+    <VRE_SwiftMeditation.description>Carriers of this gene are capable of having a faster meditation sessions. They will regenerate mana slightly faster than usual.</VRE_SwiftMeditation.description>
+
+    <VRE_SlowMeditation.description>Carriers of this gene are finding it difficult to focus during meditation sessions. They will regenerate mana significantly slower than usual.</VRE_SlowMeditation.description>
+
+    <VRE_WeakEntropyCapacity.label>weak magical capacity</VRE_WeakEntropyCapacity.label>
+    <VRE_WeakEntropyCapacity.description>Carriers of this gene have a much lower capacity to withstand the chaotic magical energy accumulated via magical powers they use.</VRE_WeakEntropyCapacity.description>
+
+    <VRE_HighEntropyCapacity.label>high magical capacity</VRE_HighEntropyCapacity.label>
+    <VRE_HighEntropyCapacity.description>Carriers of this gene have a higher capacity to withstand the chaotic magical energy accumulated via magical powers they use.</VRE_HighEntropyCapacity.description>
+
+    <VRE_ExtremeEntropyCapacity.label>extreme magical capacity</VRE_ExtremeEntropyCapacity.label>
+    <VRE_ExtremeEntropyCapacity.description>Carriers of this gene have an extreme capacity to withstand the chaotic magical energy accumulated via magical powers they use.</VRE_ExtremeEntropyCapacity.description>
+</LanguageData>

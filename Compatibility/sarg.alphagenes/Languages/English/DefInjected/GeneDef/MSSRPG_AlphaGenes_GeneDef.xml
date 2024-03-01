@@ -17,4 +17,20 @@
 
     <AG_PsychicAbility_Masterful.label>master mage</AG_PsychicAbility_Masterful.label>
     <AG_PsychicAbility_Masterful.description>Carriers of this gene have extraordinary magical abilities.</AG_PsychicAbility_Masterful.description>
+
+    <AG_InnatePsylink.label>innate magic</AG_InnatePsylink.label>
+    <AG_InnatePsylink.description>Carriers of this gene have an innate ability to use magical powers.</AG_InnatePsylink.description>
+
+    <AG_PsychicCamoflage.label>magical camoflage</AG_PsychicCamoflage.label>
+    <AG_PsychicCamoflage.description>Carriers have the innate ability to manipulate the local magic field to warp around them, rendering them invisible to the naked eye.</AG_PsychicCamoflage.description>
+
+    <AG_PsychicRemapping.label>magical inversion</AG_PsychicRemapping.label>
+    <AG_PsychicRemapping.description>The carrier's innate magic interferes with psychic bombardments resulting in inverted effects from psychic drones.</AG_PsychicRemapping.description>
+
+    <AG_PsychicInsanity.label>magical insanity</AG_PsychicInsanity.label>
+    <AG_PsychicInsanity.description>Carriers of this gene have magical powers that depend on their mood. With low moods, and thus higher break risk, they'll have magical bonuses. With a Catharsis, these bonuses will be even higher (even if the mood is increased during Catharsis).</AG_PsychicInsanity.description>
+
+    <AG_PsychicSight.label>magical sight</AG_PsychicSight.label>
+    <AG_PsychicSight.description>Carriers of this gene are almost completely blind... until they gain magical powers. They can direct their inner psychic sight and gain even better insight the more power they acquire.</AG_PsychicSight.description>
+
 </LanguageData>
