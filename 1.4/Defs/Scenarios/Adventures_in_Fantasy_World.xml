@@ -9,7 +9,7 @@
 		<summary>Three colonists, starting a cozy inn, set out into the world to find wealth and rewards beyond measure.</summary>
 		<playerFaction>
 			<def>PlayerFaction</def>
-			<factionDef>PlayerLostTechnology</factionDef>
+			<factionDef>PlayerColony</factionDef>
 		</playerFaction>
 		<parts>
 			<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
@@ -19,14 +19,14 @@
 			</li>
 			<li Class="ScenPart_GameStartDialog">
 				<def>GameStartDialog</def>
-				<text>Three colonsits set out from their cozy home to find adventure out in the world! No crafting or research allowed, everything you use or earn must be gathered from out there from your many adventures.</text>
+				<text>Three colonists set out from their cozy home to find adventure out in the world! No crafting or research allowed, everything you use or earn must be gathered from out there from your many adventures.</text>
 				<textKey>GameStartDialog</textKey>
 				<closeSound>GameStartSting</closeSound>
 			</li>
 			<li Class="ScenPart_PlayerPawnsArriveMethod">
 				<def>PlayerPawnsArriveMethod</def>
 			</li>
-			<li Class="ScenPart_StartingThing_Defined">
+			<li Class="ScenPart_StartingThing_Defined" MayRequire="Aoba.Tent">
 				<def>StartingThing_Defined</def>
 				<thingDef>VikingTent</thingDef>
 				<stuff>Cloth</stuff>
@@ -61,27 +61,27 @@
 				<stat>SocialImpact</stat>
 				<factor>1.25</factor>
 			</li>
-			<li Class="ScenPart_DisableIncident">
+			<li Class="ScenPart_DisableIncident" MayRequire="marvinkosh.sometimesraidsgowrong">
 				<def>DisableIncident</def>
 				<incident>RaidEnemyGoesWrong</incident>
 			</li>
-			<li Class="ScenPart_DisableIncident">
+			<li Class="ScenPart_DisableIncident" MayRequire="mooloh.dndmenagerie">
 				<def>DisableIncident</def>
 				<incident>DND_DungeonMonsterRaid</incident>
 			</li>
-			<li Class="ScenPart_DisableIncident">
+			<li Class="ScenPart_DisableIncident" MayRequire="OskarPotocki.VFE.Vikings">
 				<def>DisableIncident</def>
 				<incident>VFEV_PillageRaid</incident>
 			</li>
-			<li Class="ScenPart_DisableIncident">
+			<li Class="ScenPart_DisableIncident" MayRequire="OskarPotocki.VFE.Vikings">
 				<def>DisableIncident</def>
 				<incident>VFEV_SlaverRaid</incident>
 			</li>
-			<li Class="ScenPart_DisableIncident">
+			<li Class="ScenPart_DisableIncident" MayRequire="OskarPotocki.VanillaFactionsExpanded.MedievalModule">
 				<def>DisableIncident</def>
 				<incident>VFEM_PursuitParty</incident>
 			</li>
-			<li Class="ScenPart_DisableIncident">
+			<li Class="ScenPart_DisableIncident" MayRequire="iforgotmysocks.CaravanAdventures">
 				<def>DisableIncident</def>
 				<incident>CAMechRaidMixed</incident>
 			</li>

@@ -1,6 +1,6 @@
 <p>
-  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2916348220" alt="Steam Workshop Link">
-  <img src="https://img.shields.io/static/v1?label=Steam&message=Workshop&color=blue&logo=steam&link=https://steamcommunity.com/sharedfiles/filedetails/?id=2916348220"/>
+  <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=2916348220">
+  <img src="https://img.shields.io/static/v1?label=Steam&message=Workshop&color=blue&logo=steam&link=https://steamcommunity.com/sharedfiles/filedetails/?id=2916348220" alt="Workshop link"/>
   </a>
 </p>
 
@@ -55,7 +55,7 @@ Note that to support this and make it easier to release to steam we have 2 About
 The release folder will only have the release one, renamed to `About.xml`. This allows you to have both the dev and release versions on your system without them interfering with each other.
 If you want to see the current unreleased version you will need to add the `.DEV` version of this mod rather than the normal one to your game.
 
-All of the magic that does this is in the special [Files.csproj file](1.4/Source/Files.csproj)
+All the magic that does this is in the special [Files.csproj file](1.4/Source/Files.csproj)
 
 Only the mod owner can release so this is mostly for our own documentation but anyone can build it.
 If you have build issues please make a ticket here, or ask in `#rimworld-mod-making` on the official discord.
@@ -66,3 +66,4 @@ Portions of the materials used to create this content/mod are trademarks and/or 
 ## Thanks
 * Thanks to Sandwish for providing the Ranger tree for [Vanilla Psycasts expanded](https://steamcommunity.com/sharedfiles/filedetails/?id=2842502659)
 * Thanks to Skullywag for providing various patches for mod compatibility
+* Thanks to Telov for adding extra patches for compatibility when lacking sub mods
