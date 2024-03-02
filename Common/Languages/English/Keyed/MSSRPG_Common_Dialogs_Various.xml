@@ -59,4 +59,8 @@
     
     <ApparelRequirementOrAnyPsycasterOrPrestigeApparelOrMechlord>or any mage, prestige, or mechlord apparel</ApparelRequirementOrAnyPsycasterOrPrestigeApparelOrMechlord>
 
+    <!-- View genes -->
+    <Endogenes>Bloodlines</Endogenes>
+    <Xenogenes>Rare Mutations</Xenogenes>
+    
 </LanguageData>
