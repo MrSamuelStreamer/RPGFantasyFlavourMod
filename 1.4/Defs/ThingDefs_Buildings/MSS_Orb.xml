@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- ORB -->
+  <ThingDef ParentName="BuildingBase">
+    <defName>MSS_PonderingOrb</defName>
+    <label>Pondering Orb</label>
+    <description>An orb for magically inclined folk to ponder, an average source of joy for wizardfolk.</description>
+    <graphicData>
+      <texPath>MSSOrb/MSSOrb</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.5, 0.3, 0.4)</volume>
+      </shadowData>
+    </graphicData>
+    <altitudeLayer>Building</altitudeLayer>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <rotatable>true</rotatable>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <socialPropernessMatters>true</socialPropernessMatters>
+    <fillPercent>0.40</fillPercent>
+    <thingCategories>
+      <li>BuildingsJoy</li>
+    </thingCategories>
+    <statBases>
+      <WorkToBuild>10000</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>14</Mass>
+      <Flammability>0</Flammability>
+      <JoyGainFactor>1.6</JoyGainFactor>
+    </statBases>
+    <costList>
+      <Steel>80</Steel>
+    </costList>
+    <pathCost>42</pathCost>
+    <passability>PassThroughOnly</passability>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <joyKind>Television</joyKind>
+      <watchBuildingStandDistanceRange>1</watchBuildingStandDistanceRange>
+      <watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
+      <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
+      <effectWatching>WatchingTelevision</effectWatching>
+    </building>
+    <placeWorkers>
+      <li>PlaceWorker_WatchArea</li>
+    </placeWorkers>
+    <tradeTags>
+      <li>Television</li>
+    </tradeTags>
+    <constructEffect>ConstructMetal</constructEffect>
+    <designationCategory>Joy</designationCategory>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites><li>ComplexFurniture</li></researchPrerequisites>
+    <constructionSkillPrerequisite>7</constructionSkillPrerequisite>
+    <uiIconScale>0.9</uiIconScale>
+  </ThingDef>
+</Defs>
