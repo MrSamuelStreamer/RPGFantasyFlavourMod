@@ -12,9 +12,12 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public bool ShowCaravanLoot = true;
     public bool AddExtraRimQuests = true;
     public bool AllowExtraMedievalItems = true;
+    public float GlobalHungerFactor = -1f;
 
     private List<Action> _settingsUpdatedActions = new();
     public void RegisterSettingsUpdatedAction(Action action) => _settingsUpdatedActions.Add(action);
+
+    public float GetGlobalHungerFactor() => GlobalHungerFactor < 0 ? 1 : GlobalHungerFactor;
 
     /**
      * A special setting that if you've downloaded the configs off the workshop will already be true
@@ -113,6 +116,9 @@ public class RPGAdventureFlavourPackSettings : ModSettings
 
         _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_Core_ShowCaravanLoot".Translate(),
             ref ShowCaravanLoot);
+
+        if (GlobalHungerFactor < 0) GlobalHungerFactor = GetGlobalHungerFactor();
+        GlobalHungerFactor = _options.SliderLabeled("RPGAdventureFlavourPackSettings_Core_GlobalHungerFactor".Translate(GlobalHungerFactor.ToStringPercent()),GlobalHungerFactor, 0.0f, 5f);
     }
 
     private void DrawRimQuestSettings(Rect viewPort)
@@ -235,9 +241,11 @@ private void DrawRimMedievalSettings(Rect viewPort)
         Scribe_Values.Look(ref ShowCaravanLoot, "ShowCaravanLoot", true);
         Scribe_Values.Look(ref AddExtraRimQuests, "AddExtraRimQuests", true);
         Scribe_Values.Look(ref AllowExtraMedievalItems, "AllowExtraMedievalItems", true);
+        Scribe_Values.Look(ref GlobalHungerFactor, "GlobalHungerFactor", 1f);
         Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
         Scribe_Collections.Look(ref _extraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
         Scribe_Collections.Look(ref _extraMedievalItems, "ExtraMedievalItems", LookMode.Value);
+        GlobalHungerFactor = GetGlobalHungerFactor();
 
         if (Scribe.mode == LoadSaveMode.Saving)
             NotifySettingsUpdate();

@@ -66,6 +66,7 @@
         <Compile Include="GenStep_SlayerEncounter.cs" />
         <Compile Include="HarmonyPatches\ConfigChecker.cs" />
         <Compile Include="HarmonyPatches\GenStep_AncientAlterPatch.cs" />
+        <Compile Include="HarmonyPatches\GlobalHungerFactorPatch.cs" />
         <Compile Include="Hediff_Relics.cs" />
         <Compile Include="Hediff_Relics_Destroyed.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
