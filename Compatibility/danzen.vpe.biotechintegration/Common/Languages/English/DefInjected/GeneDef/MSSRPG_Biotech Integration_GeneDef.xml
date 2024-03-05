@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <Gene_Archon.label>Commander</Gene_Archon.label>
+    <Gene_Archon.description>Carriers of this gene are able to learn the Commander magical path. Highmates, Archons, and Bruxas have this natural bloodline.</Gene_Archon.description>
+
+    
+    <Gene_Archotechist.label>Legate</Gene_Archotechist.label>
+    <Gene_Archotechist.description>Carriers of this gene are able to learn the Legate magical path. Vampires and Archons have this natural endobloodlinegene.</Gene_Archotechist.description>
+
+    <Gene_Chronopath.label>Chronomancer</Gene_Chronopath.label>
+    <Gene_Chronopath.description>Carriers of this gene are able to learn the Chronomancer magical path. Genies, Vampires, and Archons have this natural bloodline.</Gene_Chronopath.description>
+
+    <Gene_Conflagrator.label>Pyromancer</Gene_Conflagrator.label>
+    <Gene_Conflagrator.description>Carriers of this gene are able to learn the Pyromancer magical path. Impids have this natural bloodline.</Gene_Conflagrator.description>
+
+    <Gene_Empath.label>Bard</Gene_Empath.label>
+    <Gene_Empath.description>Carriers of this gene are able to learn the Bard magical path. Highmates and Lowmates have this natural bloodline.</Gene_Empath.description>
+
+    <Gene_Frostshaper.label>Cryomancer</Gene_Frostshaper.label>
+    <Gene_Frostshaper.description>Carriers of this gene are able to learn the Cryomancer magical path. Yttakins and Neanderthals have this natural bloodline.</Gene_Frostshaper.description>
+
+    <Gene_Harmonist.label>Psion</Gene_Harmonist.label>
+    <Gene_Harmonist.description>Carriers of this gene are able to learn the Psion magical path. Genies and Strigoi have this natural bloodline.</Gene_Harmonist.description>
+
+    <Gene_Necropath.label>Necromancer</Gene_Necropath.label>
+    <Gene_Necropath.description>Carriers of this gene are able to learn the Necromancer magical path. Wasters and Ekkimians have this natural bloodline.</Gene_Necropath.description>
+
+    <Gene_Nightstalker.label>Rogue</Gene_Nightstalker.label>
+    <Gene_Nightstalker.description>Carriers of this gene are able to learn the Rogue magical path. Dirtmoles and Ekkimians have this natural bloodline.</Gene_Nightstalker.description>
+
+    <Gene_Protector.label>Paladin</Gene_Protector.label>
+    <Gene_Protector.description>Carriers of this gene are able to learn the Paladin magical path. Neanderthals, Wasters, and Pigskins have this natural bloodline.</Gene_Protector.description>
+
+    <Gene_Skipmaster.label>Conjurer</Gene_Skipmaster.label>
+    <Gene_Skipmaster.description>Carriers of this gene are able to learn the Conjurer magical path. Hussars and Saurids have this natural bloodline.</Gene_Skipmaster.description>
+
+    <Gene_Staticlord.label>Electromancer</Gene_Staticlord.label>
+    <Gene_Staticlord.description>Carriers of this gene are able to learn the Electromancer magical path. Impids and Saurids have this natural bloodline.</Gene_Staticlord.description>
+
+    <Gene_Technomancer.label>Artificer</Gene_Technomancer.label>
+    <Gene_Technomancer.description>Carriers of this gene are able to learn the Artificer magical path. Genies and Dirtmoles have this natural bloodline.</Gene_Technomancer.description>
+
+    <Gene_Warlord.label>Barbarian</Gene_Warlord.label>
+    <Gene_Warlord.description>Carriers of this gene are able to learn the Barbarian magical path. Uhlans, Hussars, Yttakins, and Strigoi have this natural bloodline.</Gene_Warlord.description>
+
+    <Gene_Wildspeaker.label>Druid</Gene_Wildspeaker.label>
+    <Gene_Wildspeaker.description>Carriers of this gene are able to learn the Druid magical path. Yttakins, Pigskin, and Phytokin have this natural bloodline.</Gene_Wildspeaker.description>
+
+    <Gene_Hemosage.label>Vampire</Gene_Hemosage.label>
+    <Gene_Hemosage.description>Carriers of this gene are able to learn the Vampire magical path. All vampires have this natural bloodline.</Gene_Hemosage.description>
+
+    <Gene_Puppeteer.label>Puppeteer</Gene_Puppeteer.label>
+    <Gene_Puppeteer.description>Carriers of this gene are able to learn the Puppeteer magical path. Highmate, Fungoid, and Bruxa have this natural bloodline.</Gene_Puppeteer.description>
+
+</LanguageData>
