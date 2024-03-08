@@ -14,27 +14,26 @@
     </PropertyGroup>
     <ItemGroup>
         <ReleaseFiles Include="..\..\1.*\**" Exclude="..\..\1.*\Source\**;..\..\1.*\Assemblies\*.pdb" />
-        <AboutFiles Include="..\..\About\**" Exclude="..\..\About\About.xml;..\..\About\About-*.xml" />
+        <AboutFiles Include="..\..\About\**" />
         <CommonFiles Include="..\..\Common\**" />
         <CompatibilityFiles Include="..\..\Compatibility\**" />
         <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md" />
-        <None Include="..\..\.gitattributes;..\..\.gitignore;..\..\CONTRIBUTING.md;..\..\About\About.xml;..\..\About\About-*.xml" />
+        <None Include="..\..\.gitattributes;..\..\.gitignore;..\..\CONTRIBUTING.md;..\..\About\About.xml" />
     </ItemGroup>
     <Target Name="Clean">
-        <RemoveDir Directories="..\..\..\RPGAdventureFlavourPack-Release" />
+        <RemoveDir Directories="..\..\Release" />
         <Delete Files="..\..\RPGAdventureFlavourPack.zip;..\Assemblies\*.pdb" />
     </Target>
     <Target Name="Build" />
     <Target Name="PostBuild" AfterTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
-        <RemoveDir Directories="..\..\..\RPGAdventureFlavourPack-Release" />
+        <RemoveDir Directories="..\..\Release" />
         <Delete Files="..\..\RPGAdventureFlavourPack.zip;..\Assemblies\*.pdb" />
-        <Copy SourceFiles="@(AboutFiles)" DestinationFiles="@(AboutFiles->'..\..\..\RPGAdventureFlavourPack-Release\About\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="..\..\About\About-$(Configuration).xml" DestinationFiles="..\..\..\RPGAdventureFlavourPack-Release\About\About.xml" />
-        <Copy SourceFiles="@(CommonFiles)" DestinationFiles="@(CommonFiles->'..\..\..\RPGAdventureFlavourPack-Release\Common\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(CompatibilityFiles)" DestinationFiles="@(CompatibilityFiles->'..\..\..\RPGAdventureFlavourPack-Release\Compatibility\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
-        <Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'..\..\..\RPGAdventureFlavourPack-Release\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" />
-        <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="..\..\..\RPGAdventureFlavourPack-Release\" SkipUnchangedFiles="false" />
-        <ZipDirectory DestinationFile="..\..\RPGAdventureFlavourPack.zip" SourceDirectory="..\..\..\RPGAdventureFlavourPack-Release" />
+        <Copy SourceFiles="@(AboutFiles)" DestinationFiles="@(AboutFiles->'..\..\Release\About\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CommonFiles)" DestinationFiles="@(CommonFiles->'..\..\Release\Common\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(CompatibilityFiles)" DestinationFiles="@(CompatibilityFiles->'..\..\Release\Compatibility\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+        <Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'..\..\Release\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" />
+        <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="..\..\Release\" SkipUnchangedFiles="false" />
+        <ZipDirectory DestinationFile="..\..\RPGAdventureFlavourPack.zip" SourceDirectory="..\..\Release" />
         <RemoveDir Directories="obj;bin" />
     </Target>
 </Project>

@@ -17,17 +17,17 @@
             <li Class="StockGenerator_Category">
                 <categoryDef>NeurotrainersPsycast</categoryDef>
                 <thingDefCountRange>2~2</thingDefCountRange>
-                <countRange>1~2</countRange> <!-- doesnt' work -->
+                <countRange>1~2</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>PsychicApparel</tradeTag>
                 <thingDefCountRange>4~6</thingDefCountRange>
-                <countRange>4~6</countRange> <!-- doesnt' work -->
+                <countRange>4~6</countRange>
             </li>
             <li Class="StockGenerator_Tag">
                 <tradeTag>PsychicWeapon</tradeTag>
                 <thingDefCountRange>3~6</thingDefCountRange>
-                <countRange>3~6</countRange> <!-- doesnt' work -->
+                <countRange>3~6</countRange>
             </li>
             <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Eltex</thingDef>
@@ -35,24 +35,24 @@
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Apparel_PsyfocusRobe</thingDef>
-                <countRange>2~4</countRange>   <!-- doesnt' work -->
+                <countRange>2~4</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Apparel_PsyfocusShirt</thingDef>
-                <countRange>2~4</countRange>   <!-- doesnt' work -->
+                <countRange>2~4</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Apparel_PsyfocusVest</thingDef>
-                <countRange>2~4</countRange>   <!-- doesnt' work -->
+                <countRange>2~4</countRange>
             </li>
             <li Class="StockGenerator_SingleDef">
                 <thingDef>Apparel_PsyfocusHelmet</thingDef>
-                <countRange>2~4</countRange>   <!-- doesnt' work -->
+                <countRange>2~4</countRange>
             </li>
             <!-- Fallback, just in case they're not defined in trade tags -->
             <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_MeleeWeapon_EltexDagger</thingDef>
-                <countRange>2~4</countRange>   <!-- doesnt' work -->
+                <countRange>2~4</countRange>
             </li>
             <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_MeleeWeapon_EltexMace</thingDef>
@@ -68,11 +68,11 @@
             </li>
             <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Apparel_EltexCape</thingDef>
-                <countRange>1~2</countRange>   <!-- doesnt' work -->
+                <countRange>1~2</countRange>
             </li>
             <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
                 <thingDef>VPE_Apparel_EltexMask</thingDef>
-                <countRange>2~4</countRange>   <!-- doesnt' work -->
+                <countRange>2~4</countRange>
             </li>
             <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
                 <thingDef>PsychicAmplifier</thingDef>

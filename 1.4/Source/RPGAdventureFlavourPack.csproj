@@ -63,6 +63,7 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="CreatureSelectionExtension.cs" />
+        <Compile Include="DebugTools.cs" />
         <Compile Include="GenStep_SlayerEncounter.cs" />
         <Compile Include="HarmonyPatches\ConfigChecker.cs" />
         <Compile Include="HarmonyPatches\GenStep_AncientAlterPatch.cs" />
