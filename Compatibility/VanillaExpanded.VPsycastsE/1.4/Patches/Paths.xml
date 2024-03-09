@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Patch>
-    <Operation Class="PatchOperationReplace">
-      <xpath>Defs/VanillaPsycastsExpanded.PsycasterPathDef[tab="Psycasts"]/tab</xpath>
-      <value>
-        <tab>Spells</tab>
-      </value>
-    </Operation>
-</Patch>
