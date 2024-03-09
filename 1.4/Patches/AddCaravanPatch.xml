@@ -69,4 +69,21 @@
             </operations>
         </match>
     </Operation>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Medieval Overhaul: Arcane Archaeologists</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/FactionDef[@Name="Ogam_MagicalAcademy"]/caravanTraderKinds</xpath>
+                    <value>
+                        <li>Caravan_ArcaneTrader</li>
+                        <li>Caravan_AlchemistTrader</li>
+                        <li>Caravan_LibrarianTrader</li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
 </Patch>
