@@ -76,7 +76,7 @@
         <match Class="PatchOperationSequence">
             <operations>
                 <li Class="PatchOperationAdd">
-                    <xpath>/Defs/FactionDef[@Name="Ogam_MagicalAcademy"]/caravanTraderKinds</xpath>
+                    <xpath>/Defs/FactionDef[@defName="Ogam_MagicalAcademy"]/caravanTraderKinds</xpath>
                     <value>
                         <li>Caravan_ArcaneTrader</li>
                         <li>Caravan_AlchemistTrader</li>
