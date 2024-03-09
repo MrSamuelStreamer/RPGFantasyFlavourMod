@@ -15,11 +15,12 @@
     <li IfModActive="SaucyPigeon.PawnBadge">Compatibility/SaucyPigeon.PawnBadge/1.4</li>
     <li IfModActive="ogam.rimedieval">Compatibility/ogam.rimedieval/1.4</li>
     <li IfModActive="jdalt.levelthis">Compatibility/jdalt.levelthis</li>
-	  <li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul/1.4</li>
+    <li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul/1.4</li>
     <li IfModActive="com.yayo.lostTechCore.2">Compatibility/com.yayo.lostTechCore.2/1.4</li>
     <li IfModActive="turnovus.biotech.integratedgenes">Compatibility/turnovus.biotech.integratedgenes/Common</li>
     <li IfModActive="redmattis.bigsmall.core">Compatibility/redmattis.bigsmall.core/Common</li>
     <li IfModActive="vanillaracesexpanded.archon">Compatibility/vanillaracesexpanded.archon/Common</li>
     <li IfModActive="danzen.vpe.biotechintegration">Compatibility/danzen.vpe.biotechintegration/Common</li>
+    <li IfModActive="vanillaexpanded.outposts">Compatibility/vanillaexpanded.outposts/Common</li>
   </v1.4>
 </loadFolders>
