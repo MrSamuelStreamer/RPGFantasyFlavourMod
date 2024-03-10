@@ -87,15 +87,15 @@ public class DebugTools
         try
         {
             xenotype.fileName = Path.GetFileNameWithoutExtension(absFilePath);
-            SafeSaver.Save(absFilePath, "savedXenotype", (Action)(() =>
+            SafeSaver.Save(absFilePath, "savedXenotype", () =>
             {
                 ScribeMetaHeaderUtility.WriteMetaHeader();
-                Scribe_Deep.Look<CustomXenotype>(ref xenotype, nameof(xenotype));
-            }));
+                Scribe_Deep.Look(ref xenotype, nameof(xenotype));
+            });
         }
         catch (Exception ex)
         {
-            Log.Error("Exception while saving xenotype: " + ex.ToString());
+            Log.Error("Exception while saving xenotype: " + ex);
         }
     }
 }
