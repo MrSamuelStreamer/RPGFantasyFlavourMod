@@ -60,6 +60,11 @@
             <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
             <Private>False</Private>
         </Reference>
+        <Reference Include="UnityEngine.IMGUIModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null">
+            <HintPath Condition="!Exists('..\..\..\..\RimWorldWin64_Data')">..\..\packages\Krafs.Rimworld.Ref.1.4.3580\ref\net48\UnityEngine.IMGUIModule.dll</HintPath>
+            <HintPath Condition="Exists('..\..\..\..\RimWorldWin64_Data')">..\..\..\..\RimWorldWin64_Data\Managed\UnityEngine.IMGUIModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <Compile Include="CreatureSelectionExtension.cs" />
