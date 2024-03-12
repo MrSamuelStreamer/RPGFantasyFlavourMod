@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<LanguageData>
+    <Outpost_Farming.label>Farming Settlement</Outpost_Farming.label>
+    <Outpost_Artillery.label>Trebuchet Emplacement</Outpost_Artillery.label>
+    <Outpost_Defensive.label>Vanguard Posting</Outpost_Defensive.label>
+    <Outpost_Drilling.label>Oil Stills</Outpost_Drilling.label>
+    <Outpost_Encampment.label>Caravanserai</Outpost_Encampment.label>
+    <Outpost_Hunting.label>Hunting Camp</Outpost_Hunting.label>
+    <Outpost_Logging.label>Lumber Farms</Outpost_Logging.label>
+    <Outpost_Mining.label>Mining Caves</Outpost_Mining.label>
+    <Outpost_Production.label>Artificer's Lair</Outpost_Production.label>
+    <Outpost_Scavenging.label>Treasure Hunt</Outpost_Scavenging.label>
+    <Outpost_Science.label>Inventor's Hall</Outpost_Science.label>
+    <Outpost_Town.label>Village</Outpost_Town.label>
+    <Outpost_Trading.label>Market</Outpost_Trading.label>
+    <Outpost_Farming.description>A small hamlet that can grow a variety of crops for delivery to the faction's primary settlement after a successful harvest. Cannot be placed on deserts.</Outpost_Farming.description>
+    <Outpost_Artillery.description>A clearing of land where long-range siege weaponry will be contructed and manned to provide strikes when requested. One day will be needed between barrages to maintain the weaponry and prepare ammo.</Outpost_Artillery.description>
+    <Outpost_Defensive.description>A site for brave soliders to be garrisoned and tasked with being the first defenders of the main settlement. They will intercept the enemy forces and, if victorious, will diminish the eventual assault on the main settlement. Additionally, the vanguard can be summoned to the main settlment for rapid defence.</Outpost_Defensive.description>
+    <Outpost_Drilling.description>A smog laden site of huge copper stills for rendering oil from plants, animals fats, and natural oil wells. When sufficient quantities are prepared, a delivery will be made to the main settlement.</Outpost_Drilling.description>
+    <Outpost_Encampment.description>A resting spot for caravans, travellers, and other wanders. Staying at the Caravanserai will ensure guests are fed, rested, and healed.</Outpost_Encampment.description>
+    <Outpost_Hunting.description>A large camp for hunters to flush out and hunt local game, and eventually preparing it for delivery to the main settlement when enough meat and hides are collected.</Outpost_Hunting.description>
+    <Outpost_Logging.description>A small hamlet of foresters and their families who gather lumber for processing along with being tasked to defend and replenish the local forests. Once an ample amount is collected a delivery will be made to the main settlement. Cannot be placed in deserts.</Outpost_Logging.description>
+    <Outpost_Mining.description>Found only on hills and mountains, the settlers of these sprawling mining camps and intricate cave systems can gather all manner of rare minerals, ores, and gemstones for eventual delivery to the main settlement.</Outpost_Mining.description>
+    <Outpost_Production.description>A fortified guild of artificers who focus their efforts on the creation of intricate components and machinery. A delivery will be made to the main settlement when enough have been crafted.</Outpost_Production.description>
+    <Outpost_Scavenging.description>A site for burgeoning collectors, scheming rogues, and arcane archaeologists to explore the surrounding landscape and recover whatever treasures, or junk, they can get their hands on. Part of this will be taken as a tithe and delivered to the main settlment.</Outpost_Scavenging.description>
+    <Outpost_Science.description>A place for all manner of intellectuals to gather, discuss new ideas, and host heated debates. Research gathered will be shared with the rest of the faction.</Outpost_Science.description>
+    <Outpost_Town.description>A bustling village of families, traders, and employment, attracting many eager settlers from far and wide. New colonists will occasionally be recruited by the town, but three pre-exisiting settlements need to be near for it to be constructed.</Outpost_Town.description>
+    <Outpost_Trading.description>A neutral market hub for traders across the lands to visit and peddle their wares. Silver will be collected and delivered to the main settlement.</Outpost_Trading.description>
+</LanguageData>
