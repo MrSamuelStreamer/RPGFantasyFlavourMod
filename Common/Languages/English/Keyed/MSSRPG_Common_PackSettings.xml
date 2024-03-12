@@ -3,6 +3,10 @@
     <RPGAdventureFlavourPackSettings_Name>RPG Adventure Flavour</RPGAdventureFlavourPackSettings_Name>
     <RPGAdventureFlavourPackSettings_Core_ShowCaravanLoot>Show Approximate Caravan Loot Carried</RPGAdventureFlavourPackSettings_Core_ShowCaravanLoot>
     <RPGAdventureFlavourPackSettings_Core_GlobalHungerFactor>Global Hunger Factor ({0})</RPGAdventureFlavourPackSettings_Core_GlobalHungerFactor>
+    <RPGAdventureFlavourPackSettings_Core_ChronomancerAgeFactor>Multiplier on chronomancer aging by number of chronomancers on map</RPGAdventureFlavourPackSettings_Core_ChronomancerAgeFactor>
+    <RPGAdventureFlavourPackSettings_Generic_CurvePoint>Point {0}: ({1}, {2})</RPGAdventureFlavourPackSettings_Generic_CurvePoint>
+    <RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier>Chrono-field dilation factor</RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier>
+    <RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier_Desc>The very presence of a chronomancer puts strain on the time field. The micro-distortions caused by this effect can have a detrimental effect on any chronomancer in the vicinity, causing them to age more rapidly.\nThis effect increases relative to the number of chronomancers on the map, though it can take some time before their presence has an amplifying effect on the distortion.\n\n    Chronomancers in area: {0}\n    Factor: {1}</RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier_Desc>
     <RPGAdventureFlavourPackSettings_RimQuest_AddExtraRimQuests>Add additional RimQuests</RPGAdventureFlavourPackSettings_RimQuest_AddExtraRimQuests>
     <RPGAdventureFlavourPackSettings_RimQuest_AddExtraQuestGiver>Add QuestGiver DefName for selected extra quests</RPGAdventureFlavourPackSettings_RimQuest_AddExtraQuestGiver>
     <RPGAdventureFlavourPackSettings_RimQuest_AddExtraQuestsMatching>Add Quests with DefName like this</RPGAdventureFlavourPackSettings_RimQuest_AddExtraQuestsMatching>

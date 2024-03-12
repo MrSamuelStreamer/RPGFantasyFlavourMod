@@ -6,7 +6,7 @@ using HarmonyLib;
 using VanillaPsycastsExpanded;
 using Verse;
 
-namespace VPE_Ranger
+namespace MSSRPG_VPE.HarmonyPatches
 {
     [HarmonyPatch(typeof(PawnGen_Patch), "Postfix")]
     [HarmonyBefore("OskarPotocki.VanillaPsycastsExpanded")]

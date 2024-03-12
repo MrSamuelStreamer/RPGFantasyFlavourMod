@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using UnityEngine;
 using Verse;
@@ -13,11 +14,14 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public bool AddExtraRimQuests = true;
     public bool AllowExtraMedievalItems = true;
     public float GlobalHungerFactor = -1f;
+    public SimpleCurve ChronoFieldAgeCurve = new(DefaultChronoAgeCurve.Points);
 
-    private List<Action> _settingsUpdatedActions = new();
+    private Vector2 _chronoFieldAgeCurveScrollPosition;
+    private List<Action> _settingsUpdatedActions = [];
     public void RegisterSettingsUpdatedAction(Action action) => _settingsUpdatedActions.Add(action);
 
     public float GetGlobalHungerFactor() => GlobalHungerFactor < 0 ? 1 : GlobalHungerFactor;
+    public SimpleCurve GetChronoFieldAgeCurve() => ChronoFieldAgeCurve ?? DefaultChronoAgeCurve;
 
     /**
      * A special setting that if you've downloaded the configs off the workshop will already be true
@@ -40,7 +44,8 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     private static Vector2 _scrollPosition;
     private readonly Listing_Standard _options = new();
 
-    public HashSet<string> ExtraRimQuestGivers() {
+    public HashSet<string> ExtraRimQuestGivers()
+    {
         if (!AddExtraRimQuests || (_extraRimQuestGivers?.Count ?? 0) != 0) return _extraRimQuestGivers;
         Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but no quest-givers chosen, defaulting");
         _extraRimQuestGivers = new HashSet<string>(DefaultExtraRimQuestGivers);
@@ -56,6 +61,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         NotifySettingsUpdate(true);
         return _extraRimQuestsMatching;
     }
+
     public HashSet<string> ExtraMedievalDefs()
     {
         if (!AllowExtraMedievalItems || (_extraMedievalItems?.Count ?? 0) != 0) return _extraMedievalItems;
@@ -71,6 +77,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         {
             action();
         }
+
         if (forceWrite) Write();
     }
 
@@ -118,7 +125,20 @@ public class RPGAdventureFlavourPackSettings : ModSettings
             ref ShowCaravanLoot);
 
         if (GlobalHungerFactor < 0) GlobalHungerFactor = GetGlobalHungerFactor();
-        GlobalHungerFactor = _options.SliderLabeled("RPGAdventureFlavourPackSettings_Core_GlobalHungerFactor".Translate(GlobalHungerFactor.ToStringPercent()),GlobalHungerFactor, 0.0f, 5f);
+        GlobalHungerFactor = _options.SliderLabeled("RPGAdventureFlavourPackSettings_Core_GlobalHungerFactor".Translate(GlobalHungerFactor.ToStringPercent()), GlobalHungerFactor,
+            0.0f, 5f);
+
+        if (ModsConfig.IsActive("vanillaexpanded.vpsycastse"))
+        {
+            ChronoFieldAgeCurve ??= DefaultChronoAgeCurve;
+            _options.Label("RPGAdventureFlavourPackSettings_Core_ChronomancerAgeFactor".Translate());
+            DrawCurve(_options, ref ChronoFieldAgeCurve, ref _chronoFieldAgeCurveScrollPosition);
+            if (ChronoFieldAgeCurve.Points.Count == 0)
+            {
+                ChronoFieldAgeCurve.SetPoints([new CurvePoint(0, 1)]);
+                Log.Error("Set points to 0");
+            }
+        }
     }
 
     private void DrawRimQuestSettings(Rect viewPort)
@@ -136,10 +156,10 @@ public class RPGAdventureFlavourPackSettings : ModSettings
             _extraRimQuestsMatching.Add(_rimQuestTextEntry);
         }
 
-        Listing_Standard scrollableListing = MakeScrollableSubListing(viewPort);
+        Listing_Standard scrollableListing = MakeScrollableSubListing(viewPort, ref _scrollPosition, _options.CurHeight);
         scrollableListing.Label("RPGAdventureFlavourPackSettings_RimQuest_ExtraQuestGivers".Translate());
         scrollableListing.Indent(Indent);
-        foreach (var rimQuestExtraQuestGiver in _extraRimQuestGivers.Where(rimQuestExtraQuestGiver =>
+        foreach (string rimQuestExtraQuestGiver in _extraRimQuestGivers.Where(rimQuestExtraQuestGiver =>
                      scrollableListing.ButtonTextLabeled(rimQuestExtraQuestGiver,
                          "RPGAdventureFlavourPackSettings_Remove".Translate())))
         {
@@ -150,7 +170,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         scrollableListing.GapLine();
         scrollableListing.Label("RPGAdventureFlavourPackSettings_RimQuest_ExtraQuestsMatching".Translate());
         scrollableListing.Indent(Indent);
-        foreach (var rimQuestMatcher in _extraRimQuestsMatching.Where(rimQuestMatcher =>
+        foreach (string rimQuestMatcher in _extraRimQuestsMatching.Where(rimQuestMatcher =>
                      scrollableListing.ButtonTextLabeled(rimQuestMatcher,
                          "RPGAdventureFlavourPackSettings_Remove".Translate())))
         {
@@ -160,7 +180,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         EndScrollableSubListing(scrollableListing);
     }
 
-private void DrawRimMedievalSettings(Rect viewPort)
+    private void DrawRimMedievalSettings(Rect viewPort)
     {
         _options.CheckboxLabeled("RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItems".Translate(),
             ref AllowExtraMedievalItems);
@@ -170,7 +190,7 @@ private void DrawRimMedievalSettings(Rect viewPort)
             _extraMedievalItems.Add(_rimMedievalTextEntry);
         }
 
-        Listing_Standard scrollableListing = MakeScrollableSubListing(viewPort);
+        Listing_Standard scrollableListing = MakeScrollableSubListing(viewPort, ref _scrollPosition, _options.CurHeight);
         scrollableListing.Label("RPGAdventureFlavourPackSettings_RimMedieval_AllowedExtraMedievalItems".Translate());
         scrollableListing.Indent(Indent);
         foreach (var extraMedievalItem in _extraMedievalItems.Where(extraMedievalItem =>
@@ -223,18 +243,54 @@ private void DrawRimMedievalSettings(Rect viewPort)
         Widgets.EndScrollView();
     }
 
-    private Listing_Standard MakeScrollableSubListing(Rect viewPort)
+    private Listing_Standard MakeScrollableSubListing(Rect viewPort, ref Vector2 scrollPosition, float topOffset)
     {
-        Rect scrollRect = viewPort.BottomPartPixels(viewPort.yMax - _options.CurHeight - RowHeight);
+        Rect scrollRect = viewPort.BottomPartPixels(viewPort.yMax - topOffset - RowHeight);
         Rect dataRect = scrollRect.ContractedBy(30, 10);
-        Widgets.BeginScrollView(dataRect, ref _scrollPosition, scrollRect);
+        Widgets.BeginScrollView(dataRect, ref scrollPosition, scrollRect);
         Listing_Standard scrollableListing = new();
         scrollableListing.Begin(dataRect);
         return scrollableListing;
     }
 
+    public void DrawCurve(Listing_Standard listing, ref SimpleCurve curve, ref Vector2 scrollPosition)
+    {
+        for (int i = 0; i < curve.PointsCount; i++)
+        {
+            CurvePoint point = curve[i];
+
+            Rect pointRect = listing.GetRect(Text.LineHeight + 3).ContractedBy(listing.ColumnWidth / 5f, 0f);
+
+            Widgets.Label(pointRect.LeftHalf().LeftHalf(), "RPGAdventureFlavourPackSettings_Generic_CurvePoint".Translate(i + 1, point.x, point.y));
+
+            string xBuffer = point.x.ToString(CultureInfo.InvariantCulture);
+            float x = point.x;
+            Widgets.TextFieldNumeric(pointRect.LeftHalf().RightHalf(), ref x, ref xBuffer);
+
+            string yBuffer = point.y.ToString(CultureInfo.InvariantCulture);
+            float y = point.y;
+            Widgets.TextFieldNumeric(pointRect.RightHalf().LeftHalf(), ref y, ref yBuffer);
+            curve[i] = new CurvePoint(x, y);
+
+            if (Widgets.ButtonText(pointRect.RightHalf().RightHalf(), "Remove".Translate()))
+            {
+                curve.Points.Remove(point);
+            }
+
+            listing.GapLine();
+        }
+
+        if (listing.ButtonText("Add".Translate()))
+        {
+            CurvePoint p = curve.MaxBy(e => e.x);
+            Log.Message($"Adding point {p.x + 1}, {p.y + 1}");
+            curve.Add(p.x + 1, p.y + 1);
+        }
+    }
+
     public override void ExposeData()
     {
+        if (Scribe.mode == LoadSaveMode.Saving) ChronoFieldAgeCurve ??= DefaultChronoAgeCurve;
         base.ExposeData();
         Scribe_Values.Look(ref DragonsInRelicSites, "ExtraFunRelics", true);
         Scribe_Values.Look(ref ConfigsApplied, "ConfigsApplied", false);
@@ -245,18 +301,49 @@ private void DrawRimMedievalSettings(Rect viewPort)
         Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
         Scribe_Collections.Look(ref _extraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
         Scribe_Collections.Look(ref _extraMedievalItems, "ExtraMedievalItems", LookMode.Value);
+
+        List<CurvePoint> curvePoints = null;
+
+        if (Scribe.mode == LoadSaveMode.Saving && ChronoFieldAgeCurve != null)
+        {
+            curvePoints = ChronoFieldAgeCurve.Points;
+        }
+
+        Scribe_Collections.Look(ref curvePoints, "ChronoFieldAgeCurve", LookMode.Value);
+
+        if ((Scribe.mode == LoadSaveMode.LoadingVars || Scribe.mode == LoadSaveMode.PostLoadInit) && curvePoints != null)
+        {
+            ChronoFieldAgeCurve = new SimpleCurve(curvePoints);
+        }
+
         GlobalHungerFactor = GetGlobalHungerFactor();
 
-        if (Scribe.mode == LoadSaveMode.Saving)
-            NotifySettingsUpdate();
+        switch (Scribe.mode)
+        {
+            case LoadSaveMode.PostLoadInit:
+                ChronoFieldAgeCurve ??= DefaultChronoAgeCurve;
+                break;
+            case LoadSaveMode.Saving:
+                NotifySettingsUpdate();
+                break;
+        }
     }
 
+    private static SimpleCurve DefaultChronoAgeCurve = new(new[]
+    {
+        new CurvePoint(0f, 1f),
+        new CurvePoint(1f, 1.5f),
+        new CurvePoint(2f, 4f),
+        new CurvePoint(4f, 8f),
+        new CurvePoint(8f, 10f),
+    });
+
     private static readonly HashSet<string> DefaultExtraMedievalItems =
-        new() { "Genepack" };
+        ["Genepack"];
 
     private static readonly HashSet<string> DefaultExtraRimQuestGivers =
-        new() { "RQ_MedievalQuestGiver", "RQ_TribalQuestGiver" };
+        ["RQ_MedievalQuestGiver", "RQ_TribalQuestGiver"];
 
     private static readonly HashSet<string> DefaultExtraRimQuestsMatching =
-        new() { "VPE_EltexMeteor", "_MonsterEncounterQuest", "Hunt" };
+        ["VPE_EltexMeteor", "_MonsterEncounterQuest", "Hunt"];
 }
