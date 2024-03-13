@@ -39,7 +39,7 @@ public class DebugTools
         DebugActionsUtility.DustPuffFrom(p);
     }
 
-    [DebugAction("Pawns", "Print All Xenotypes", false, false, true, 0, false, actionType = DebugActionType.ToolMapForPawns, allowedGameStates = AllowedGameStates.PlayingOnMap)]
+    [DebugAction("Pawns", "Print All Xenotypes", false, false, true, 0, false, actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     private static void PrintXenotypes()
     {
         string blob = $"""
