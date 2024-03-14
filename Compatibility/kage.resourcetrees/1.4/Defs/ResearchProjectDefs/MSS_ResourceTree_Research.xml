@@ -2,7 +2,7 @@
 <Defs>
 	<ResearchProjectDef>
 		<defName>MSS_Resource_tree_original</defName>
-		<label>Resource Trees (Original)</label>
+		<label>Classic Resource Trees</label>
 		<description>Discover how to sew trees capable of producing a variety of resources.</description>
 		<baseCost>1000</baseCost>
 		<techLevel>Neolithic</techLevel>
