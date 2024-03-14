@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
@@ -42,7 +42,7 @@ public static class ChronopathHarmonyPatch
         map = pawn.MapHeld;
         NextChronopathUpdateTick += 30000;
         LastChronopathUpdateTick = Find.TickManager.TicksGame;
-        ChronopathsOnMap = map.mapPawns.AllPawns.Count(IsChronoPath);
+        ChronopathsOnMap = map?.mapPawns?.AllPawns?.Count(IsChronoPath) ?? 1;
     }
 
     public static bool IsChronoPath(Pawn pawn) =>
