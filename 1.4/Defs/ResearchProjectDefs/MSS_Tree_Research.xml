@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>MSS_Resource_tree</defName>
+		<label>Enchanted Material Trees</label>
+		<description>Learn how to sew the saplings of delicate enchanted resouce-yielding trees.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.65</researchViewY>
+		<prerequisites>
+			<li>TreeSowing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>
