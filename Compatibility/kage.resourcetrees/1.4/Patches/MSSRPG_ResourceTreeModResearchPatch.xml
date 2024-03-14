@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Resource Trees</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneSteel"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneJade"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneGold"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZonePlasteel"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+             <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneSilver"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneUranium"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneComponent"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneBeer"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/Plants[defName="PlantZoneBeer"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>
