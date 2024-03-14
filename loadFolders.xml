@@ -22,5 +22,6 @@
     <li IfModActive="vanillaracesexpanded.archon">Compatibility/vanillaracesexpanded.archon/Common</li>
     <li IfModActive="danzen.vpe.biotechintegration">Compatibility/danzen.vpe.biotechintegration/Common</li>
     <li IfModActive="vanillaexpanded.outposts">Compatibility/vanillaexpanded.outposts/Common</li>
+    <li IfModActive="kage.resourcetrees">Compatibility/kage.resourcetrees/1.4</li>
   </v1.4>
 </loadFolders>
