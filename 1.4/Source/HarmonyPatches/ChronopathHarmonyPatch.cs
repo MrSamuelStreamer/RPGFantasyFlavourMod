@@ -26,7 +26,7 @@ public static class ChronopathHarmonyPatch
             GetNextTickForPawnWithCount(___pawn) is not { } lastTickForPawnWithCount ||
             !IsChronoPath(___pawn)) return;
 
-        __result *= ChronopathAgeMultiplierForCount(lastTickForPawnWithCount.Item2);
+        __result *= lastTickForPawnWithCount.Item3;
     }
 
     private static int NextTickOffset()
