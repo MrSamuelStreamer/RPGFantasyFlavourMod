@@ -1,10 +1,11 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using HarmonyLib;
 using MrSamuelStreamer.RPGAdventureFlavourPack;
 using MSSRPG_VPE.HarmonyPatches;
 using RimWorld;
+using RimWorld.Planet;
 using VanillaPsycastsExpanded;
 using Verse;
 
@@ -14,9 +15,8 @@ namespace MSSRPG_VPE.HarmonyPatches;
 [HarmonyBefore("OskarPotocki.VanillaPsycastsExpanded")]
 public static class ChronopathHarmonyPatch
 {
-    public static Map map = null;
-    public static int ChronopathsOnMap = 0;
-    public static int NextChronopathUpdateTick = 0;
+    public static Dictionary<int, Pair<int, int>?> ChronopathsByMap = new(100);
+    public static Dictionary<int, Pair<int, int>?> ChronopathsByCaravan = new(30);
     public static int LastChronopathUpdateTick = 0;
 
     private static Lazy<PsycasterPathDef> ChronopathDef = new(() => DefDatabase<PsycasterPathDef>.GetNamedSilentFail("VPE_Chronopath"));
@@ -25,24 +25,42 @@ public static class ChronopathHarmonyPatch
     public static void Postfix(ref float __result, Pawn ___pawn)
     {
         if (ChronopathDef.Value == null ||
-            (___pawn.MapHeld == map && Find.TickManager.TicksGame < NextChronopathUpdateTick && ChronopathsOnMap == 0) ||
+            GetNextTickForPawnWithCount(___pawn) is not { } lastTickForPawnWithCount ||
             !IsChronoPath(___pawn)) return;
 
-        if (___pawn.MapHeld != null && (___pawn.MapHeld != map || Find.TickManager.TicksGame > NextChronopathUpdateTick))
-        {
-            UpdateChronopaths(___pawn);
-        }
-
-        if (ChronopathsOnMap == 0) return;
-        __result *= ChronopathAgeMultiplier(___pawn);
+        __result *= ChronopathAgeMultiplierForCount(lastTickForPawnWithCount.Second);
     }
 
-    private static void UpdateChronopaths(Pawn pawn)
+    private static int NextTickOffset()
     {
-        map = pawn.MapHeld;
-        NextChronopathUpdateTick += 30000;
-        LastChronopathUpdateTick = Find.TickManager.TicksGame;
-        ChronopathsOnMap = map?.mapPawns?.AllPawns?.Count(IsChronoPath) ?? 1;
+        return 25000 + Rand.Range(500, 10000);
+    }
+
+    private static Pair<int, int>? GetNextTickForPawnWithCount(Pawn pawn, bool forceUpdate = false)
+    {
+        Pair<int, int>? tickToCountPair = null;
+        if (pawn.MapHeld is {} map)
+        {
+            ChronopathsByMap.TryGetValue(map.uniqueID, out tickToCountPair);
+            if (forceUpdate || (tickToCountPair?.First ?? 0) < Find.TickManager.TicksGame)
+            {
+                LastChronopathUpdateTick = Find.TickManager.TicksGame;
+                tickToCountPair = new Pair<int, int>(LastChronopathUpdateTick + NextTickOffset(), map.mapPawns?.AllPawns?.Count(IsChronoPath) ?? 0);
+                ChronopathsByMap.SetOrAdd(map.uniqueID, tickToCountPair);
+            }
+        }
+        else if (pawn.GetCaravan() is { } caravan)
+        {
+            ChronopathsByCaravan.TryGetValue(caravan.ID, out tickToCountPair);
+            if (forceUpdate || (tickToCountPair?.First ?? 0) < Find.TickManager.TicksGame)
+            {
+                LastChronopathUpdateTick = Find.TickManager.TicksGame;
+                tickToCountPair = new Pair<int, int>(LastChronopathUpdateTick + NextTickOffset(), pawn.GetCaravan()?.pawns.InnerListForReading.Count(IsChronoPath) ?? 0);
+                ChronopathsByCaravan.SetOrAdd(caravan.ID, tickToCountPair);
+            }
+        }
+
+        return tickToCountPair;
     }
 
     public static bool IsChronoPath(Pawn pawn) =>
@@ -50,10 +68,16 @@ public static class ChronopathHarmonyPatch
         pawn.health.hediffSet.GetFirstHediffOfDef(VPE_DefOf.VPE_PsycastAbilityImplant) is Hediff_PsycastAbilities psycastAbilities &&
         psycastAbilities.unlockedPaths.Contains(ChronopathDef.Value);
 
-    public static float ChronopathAgeMultiplier(Pawn pawn, bool fastUpdate = false)
+    public static float ChronopathAgeMultiplierForCount(int chronopathsOnMap)
     {
-        if (pawn.MapHeld != map || (fastUpdate && Find.TickManager.TicksGame - LastChronopathUpdateTick > 600)) UpdateChronopaths(pawn);
-        return RPGAdventureFlavourPack.Settings.GetChronoFieldAgeCurve().Evaluate(ChronopathsOnMap);
+        return RPGAdventureFlavourPack.Settings.GetChronoFieldAgeCurve().Evaluate(chronopathsOnMap);
+    }
+
+    public static float ChronopathAgeMultiplier(Pawn pawn, out int chronopathCount, bool fastUpdate = false)
+    {
+        Pair<int,int>? nextTickForPawnWithCount = GetNextTickForPawnWithCount(pawn, fastUpdate && Find.TickManager.TicksGame - LastChronopathUpdateTick > 600);
+        chronopathCount = Math.Max(nextTickForPawnWithCount?.Second ?? 1, 1);
+        return ChronopathAgeMultiplierForCount(chronopathCount);
     }
 }
 
@@ -67,8 +91,8 @@ public static class ChronopathHarmonyPatchStats
         foreach (StatDrawEntry entry in __result) yield return entry;
         if (!ChronopathHarmonyPatch.IsChronoPath(__instance)) yield break;
 
-        float ageMult = ChronopathHarmonyPatch.ChronopathAgeMultiplier(__instance, true);
+        float ageMult = ChronopathHarmonyPatch.ChronopathAgeMultiplier(__instance, out int chronopathCount, true);
         yield return new StatDrawEntry(StatCategoryDefOf.BasicsPawn, "RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier".Translate(),
-            ageMult.ToStringPercent(), "RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier_Desc".Translate(ChronopathHarmonyPatch.ChronopathsOnMap, ageMult), 4196);
+            ageMult.ToStringPercent(), "RPGAdventureFlavourPackSettings_StatsReport_ChronoRateMultiplier_Desc".Translate(chronopathCount, ageMult), 4196);
     }
 }
