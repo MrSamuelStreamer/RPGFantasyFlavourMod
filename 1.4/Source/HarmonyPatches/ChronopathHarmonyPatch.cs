@@ -55,7 +55,7 @@ public static class ChronopathHarmonyPatch
             if (forceUpdate || (tickToCountPair?.First ?? 0) < Find.TickManager.TicksGame)
             {
                 LastChronopathUpdateTick = Find.TickManager.TicksGame;
-                tickToCountPair = new Pair<int, int>(LastChronopathUpdateTick + NextTickOffset(), pawn.GetCaravan()?.pawns.InnerListForReading.Count(IsChronoPath) ?? 0);
+                tickToCountPair = new Pair<int, int>(LastChronopathUpdateTick + NextTickOffset(), caravan.pawns?.InnerListForReading?.Count(IsChronoPath) ?? 0);
                 ChronopathsByCaravan.SetOrAdd(caravan.ID, tickToCountPair);
             }
         }
@@ -65,6 +65,7 @@ public static class ChronopathHarmonyPatch
 
     public static bool IsChronoPath(Pawn pawn) =>
         !pawn.health.Dead &&
+        pawn.RaceProps.Humanlike &&
         pawn.health.hediffSet.GetFirstHediffOfDef(VPE_DefOf.VPE_PsycastAbilityImplant) is Hediff_PsycastAbilities psycastAbilities &&
         psycastAbilities.unlockedPaths.Contains(ChronopathDef.Value);
 
