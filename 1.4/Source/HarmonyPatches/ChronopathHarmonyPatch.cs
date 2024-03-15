@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using HarmonyLib;
 using MrSamuelStreamer.RPGAdventureFlavourPack;
-using MSSRPG_VPE.HarmonyPatches;
 using RimWorld;
 using RimWorld.Planet;
 using VanillaPsycastsExpanded;
@@ -15,8 +13,8 @@ namespace MSSRPG_VPE.HarmonyPatches;
 [HarmonyBefore("OskarPotocki.VanillaPsycastsExpanded")]
 public static class ChronopathHarmonyPatch
 {
-    public static Dictionary<int, Pair<int, int>?> ChronopathsByMap = new(100);
-    public static Dictionary<int, Pair<int, int>?> ChronopathsByCaravan = new(30);
+    public static Dictionary<int, Tuple<int, int, float>> ChronopathsByMap = new(100);
+    public static Dictionary<int, Tuple<int, int, float>> ChronopathsByCaravan = new(30);
     public static int LastChronopathUpdateTick = 0;
 
     private static Lazy<PsycasterPathDef> ChronopathDef = new(() => DefDatabase<PsycasterPathDef>.GetNamedSilentFail("VPE_Chronopath"));
@@ -28,7 +26,7 @@ public static class ChronopathHarmonyPatch
             GetNextTickForPawnWithCount(___pawn) is not { } lastTickForPawnWithCount ||
             !IsChronoPath(___pawn)) return;
 
-        __result *= ChronopathAgeMultiplierForCount(lastTickForPawnWithCount.Second);
+        __result *= ChronopathAgeMultiplierForCount(lastTickForPawnWithCount.Item2);
     }
 
     private static int NextTickOffset()
@@ -36,26 +34,28 @@ public static class ChronopathHarmonyPatch
         return 25000 + Rand.Range(500, 10000);
     }
 
-    private static Pair<int, int>? GetNextTickForPawnWithCount(Pawn pawn, bool forceUpdate = false)
+    private static Tuple<int, int, float> GetNextTickForPawnWithCount(Pawn pawn, bool forceUpdate = false)
     {
-        Pair<int, int>? tickToCountPair = null;
-        if (pawn.MapHeld is {} map)
+        Tuple<int, int, float> tickToCountPair = null;
+        if (pawn.MapHeld is { } map)
         {
             ChronopathsByMap.TryGetValue(map.uniqueID, out tickToCountPair);
-            if (forceUpdate || (tickToCountPair?.First ?? 0) < Find.TickManager.TicksGame)
+            if (forceUpdate || (tickToCountPair?.Item1 ?? 0) < Find.TickManager.TicksGame)
             {
                 LastChronopathUpdateTick = Find.TickManager.TicksGame;
-                tickToCountPair = new Pair<int, int>(LastChronopathUpdateTick + NextTickOffset(), map.mapPawns?.AllPawns?.Count(IsChronoPath) ?? 0);
+                int count = map.mapPawns?.AllPawns?.Count(IsChronoPath) ?? 0;
+                tickToCountPair = new Tuple<int, int, float>(LastChronopathUpdateTick + NextTickOffset(), count, ChronopathAgeMultiplierForCount(count));
                 ChronopathsByMap.SetOrAdd(map.uniqueID, tickToCountPair);
             }
         }
         else if (pawn.GetCaravan() is { } caravan)
         {
             ChronopathsByCaravan.TryGetValue(caravan.ID, out tickToCountPair);
-            if (forceUpdate || (tickToCountPair?.First ?? 0) < Find.TickManager.TicksGame)
+            if (forceUpdate || (tickToCountPair?.Item1 ?? 0) < Find.TickManager.TicksGame)
             {
                 LastChronopathUpdateTick = Find.TickManager.TicksGame;
-                tickToCountPair = new Pair<int, int>(LastChronopathUpdateTick + NextTickOffset(), caravan.pawns?.InnerListForReading?.Count(IsChronoPath) ?? 0);
+                int count = caravan.pawns?.InnerListForReading?.Count(IsChronoPath) ?? 0;
+                tickToCountPair = new Tuple<int, int, float>(LastChronopathUpdateTick + NextTickOffset(), count, ChronopathAgeMultiplierForCount(count));
                 ChronopathsByCaravan.SetOrAdd(caravan.ID, tickToCountPair);
             }
         }
@@ -76,8 +76,8 @@ public static class ChronopathHarmonyPatch
 
     public static float ChronopathAgeMultiplier(Pawn pawn, out int chronopathCount, bool fastUpdate = false)
     {
-        Pair<int,int>? nextTickForPawnWithCount = GetNextTickForPawnWithCount(pawn, fastUpdate && Find.TickManager.TicksGame - LastChronopathUpdateTick > 600);
-        chronopathCount = Math.Max(nextTickForPawnWithCount?.Second ?? 1, 1);
+        Tuple<int, int, float> nextTickForPawnWithCount = GetNextTickForPawnWithCount(pawn, fastUpdate && Find.TickManager.TicksGame - LastChronopathUpdateTick > 600);
+        chronopathCount = Math.Max(nextTickForPawnWithCount?.Item2 ?? 1, 1);
         return ChronopathAgeMultiplierForCount(chronopathCount);
     }
 }
