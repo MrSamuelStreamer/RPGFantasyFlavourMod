@@ -21,7 +21,7 @@
             <harvestYield>15</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.75~1.5</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_GoldTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -48,7 +48,7 @@
             <harvestYield>10</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.5~1.5</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_JadeTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -75,7 +75,7 @@
             <harvestYield>10</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>1.0~2.5</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_PlasteelTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -102,7 +102,7 @@
             <harvestYield>25</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.75~2.0</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_SilverTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -129,7 +129,7 @@
             <harvestYield>15</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.75~1.5</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_SteelTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -156,7 +156,7 @@
             <harvestYield>25</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.75~1.5</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_UraniumTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -183,7 +183,7 @@
             <harvestYield>2</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.5~1.0</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_ArcaniumTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>
@@ -210,7 +210,7 @@
             <harvestYield>10</harvestYield>
 			<choppedThingDef>ChoppedStump</choppedThingDef>
 			<smashedThingDef>SmashedStump</smashedThingDef>
-            <visualSizeRange>0.5~1.0</visualSizeRange>
+            <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_AmberTreeImm</immatureGraphicPath>
 			<mustBeWildToSow>false</mustBeWildToSow>
         </plant>

@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Vanilla Outposts Expanded</li>
+        </mods>
+        <match Class="PatchOperationReplace">
+			<xpath>/Defs/WorldObjectDef[defName="Outpost_Town"]/expandingIconTexture</xpath>
+			<value>
+                <expandingIconTexture>World/WorldObjects/Expanding/EmpireOverhaul</expandingIconTexture>
+			</value>
+		</match>
+    </Operation>
+</Patch>

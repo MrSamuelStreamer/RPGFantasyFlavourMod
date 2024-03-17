@@ -1,0 +1,192 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSSRPG_Adult Mage Pool - You Shouldn't See This</defName>
+    <label>Adult Mage Pool - You Shouldn't See This</label>
+    <description>If you see this, you've done something horribly wrong during installation. This xenotype is secret, and contains all the genes that the adults can spawn in with to give cool mutations.</description>
+    <descriptionShort>If you're seeing this you've installed things incorrectly.</descriptionShort>
+    <iconPath>Xenotypes/BS_Dvergr</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Ageless</li>
+      <li>Turn_Gene_ArchotechAttunement</li>
+      <li>DiseaseFree</li>
+      <li>PerfectImmunity</li>
+      <li>BS_Fast_TotalHealing</li>
+      <li>TotalHealing</li>
+      <li>AG_Regeneration</li>
+      <li>VRE_Transcendent</li>
+      <li>VRE_InnatePsylink</li>
+      <li>BS_Very_Passioned_Learning_Gene</li>
+      <li>AG_Invisibility</li>
+      <li>AG_TableResistance</li>
+      <li>AG_InnatePsylink</li>
+      <li>GBS_Meditator_Archotech</li>
+      <li>GBS_Meditator_Artistic</li>
+      <li>GBS_Meditator_Dignified</li>
+      <li>GBS_Meditator_Flame</li>
+      <li>AG_PsychicRemapping</li>
+      <li>GBS_Meditator_Minimal</li>
+      <li>GBS_Meditator_Morbid</li>
+      <li>GBS_Meditator_Natural</li>
+      <li>GBS_Meditator_Science</li>
+      <li>GBS_Meditator_Wealth</li>
+      <li>BS_PsychicWarrior</li>
+      <li>AG_PsychicInsanity</li>
+      <li>AG_PsychicSight</li>
+      <li>PsychicBonding</li>
+      <li>VRE_ExtremeMeditation</li>
+      <li>VRE_ExtremeEntropyCapacity</li>
+      <li>Turn_Gene_VeryFastNeuralHeat</li>
+      <li>Turn_Gene_MeditationNeed</li>
+      <li>VRE_PsychicAbility_MoreExtreme</li>
+      <li>GEG_Eyes_GlowingArchotech</li>
+      <li>AG_ThirdEye</li>
+      <li>Learning_Fast</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Baby Mage Pool - You Shouldn't See This</defName>
+    <label>Baby Mage Pool - You Shouldn't See This</label>
+    <description>If you see this, you've done something horribly wrong during installation. This xenotype is secret, and contains all the genes that the babies can spawn in with to ensure they're psycasters.</description>
+    <descriptionShort>If you're seeing this you've installed things incorrectly.</descriptionShort>
+    <iconPath>Xenotypes/BS_Nisse</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>Gene_Archon</li>
+      <li>Gene_Archotechist</li>
+      <li>Gene_Chronopath</li>
+      <li>Gene_Conflagrator</li>
+      <li>Gene_Empath</li>
+      <li>Gene_Frostshaper</li>
+      <li>Gene_Harmonist</li>
+      <li>Gene_Necropath</li>
+      <li>Gene_Nightstalker</li>
+      <li>Gene_Protector</li>
+      <li>Gene_Skipmaster</li>
+      <li>Gene_Staticlord</li>
+      <li>Gene_Technomancer</li>
+      <li>Gene_Warlord</li>
+      <li>Gene_Wildspeaker</li>
+      <li>Gene_Hemosage</li>
+      <li>Gene_Puppeteer</li>
+      <li>Gene_HeraldOfTheBlackHive</li>
+      <li>Gene_Oculist</li>
+      <li>Gene_Xenoseer</li>
+      <li>Gene_Ravager</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Druid</defName>
+    <label>Druid</label>
+    <description>A bloodline that favours the natural aspects of magical manipulation and allows for connection to the planets natural anima forces.</description>
+    <descriptionShort>A magical bloodline with a strong connection to anima.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon63</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>AG_InnatePsylink</li>
+      <li>GBS_Meditator_Minimal</li>
+      <li>GBS_Meditator_Natural</li>
+      <li>BS_NaturalPsychic</li>
+      <li>VRE_SlowMeditation</li>
+      <li>Gene_Wildspeaker</li>
+      <li>Gene_Ravager</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Eltexian</defName>
+    <label>Eltexian</label>
+    <description>A unique bloodline crafted by many generations of marriages to fill the melee gaps in a magical army. Powerful in close quarters combat but no less magically gifted than any other mage.</description>
+    <descriptionShort>A deadly melee mage variant.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon43</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>AG_InnatePsylink</li>
+      <li>GBS_Meditator_Science</li>
+      <li>BS_EltexPsychic</li>
+      <li>BS_PsychicWarrior</li>
+      <li>VRE_HighEntropyCapacity</li>
+      <li>Turn_Gene_SlowNeuralHeat</li>
+      <li>Gene_Protector</li>
+      <li>Gene_Warlord</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Mage</defName>
+    <label>Mage</label>
+    <description>A burgeoning bloodline of magical potential that lack the raw power of other bloodlines but makes for a fantastic foundation for magical dynasties.</description>
+    <descriptionShort>A normal mage with a decent natural aptitude for magical prowess.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>AG_InnatePsylink</li>
+      <li>GBS_Meditator_Dignified</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>VRE_SwiftMeditation</li>
+      <li>Turn_Gene_FastNeuralHeat</li>
+      <li>Gene_Conflagrator</li>
+      <li>Gene_Frostshaper</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Magister</defName>
+    <label>Magister</label>
+    <description>A powerful curated bloodline crafted from generations of arranged marriages and childbirth to produce powerful mages.</description>
+    <descriptionShort>A powerful mage created through generations of arranged marriage to enforce inborn magical prowess.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon11</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>AG_InnatePsylink</li>
+      <li>GBS_Meditator_Archotech</li>
+      <li>GBS_Meditator_Dignified</li>
+      <li>GBS_Meditator_Science</li>
+      <li>GBS_Meditator_Wealth</li>
+      <li>AG_PsychicAbility_Masterful</li>
+      <li>VRE_SwiftMeditation</li>
+      <li>VRE_HighEntropyCapacity</li>
+      <li>Turn_Gene_FastNeuralHeat</li>
+      <li>Turn_Gene_MeditationNeed</li>
+      <li>Gene_Archon</li>
+      <li>Gene_Archotechist</li>
+      <li>Gene_Chronopath</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Nullkind</defName>
+    <label>Nullkind</label>
+    <description>A nullkind is someone with no inate magical connection, and a total lack of ability to form a magical connection, except in extremely rare cases where mutations restore the magical aptitute.</description>
+    <descriptionShort>A bloodline totally devoid of any magical connection.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_RemixedCustom4</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>PsychicAbility_Deaf</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Warlock</defName>
+    <label>Warlock</label>
+    <description>A bloodline created by one of its progenitors forming pacts and making bargains with Eldritch beings. Now highly sought after for marriage so offspring can gain access to darker powers with none of the associated demonic risks.</description>
+    <descriptionShort>A dark and powerful bloodline forged by an ancestral pact with a demon.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon31</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>AG_InnatePsylink</li>
+      <li>GBS_Meditator_Dignified</li>
+      <li>PsychicAbility_Enhanced</li>
+      <li>AG_PsychicInsanity</li>
+      <li>AG_PsychicSight</li>
+      <li>VRE_SlowMeditation</li>
+      <li>Gene_Necropath</li>
+      <li>Gene_Nightstalker</li>
+      <li>Gene_Puppeteer</li>
+      <li>Gene_Oculist</li>
+    </genes>
+  </XenotypeDef>
+</Defs>
