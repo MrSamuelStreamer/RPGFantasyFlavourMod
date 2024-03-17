@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+		<VPEH_Bloodfocus.description>By forcibly manipulating the body’s stores of hemogen, the caster can enter a state of rapid meditation, regaining magical focus at the cost of hemogen.</VPEH_Bloodfocus.description>
+		<VPEH_BloodRite.description>Creates a mote of hemogen that follows the caster, acting as an amplifier for magical aptitute based on the caster’s current hemogen level.</VPEH_BloodRite.description>
+		<VPEH_Bloodstorm.description>Creates a downpour of blood, inflicting non-hemogenic individuals with bloodmist, causing intense vomiting. Vampires instead regenerate hemogen, and don’t gain magical load when casting any magic under the effects of bloodstorm.</VPEH_Bloodstorm.description>
+</LanguageData>
