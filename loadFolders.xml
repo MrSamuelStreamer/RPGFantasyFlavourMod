@@ -23,5 +23,9 @@
     <li IfModActive="danzen.vpe.biotechintegration">Compatibility/danzen.vpe.biotechintegration/Common</li>
     <li IfModActive="vanillaexpanded.outposts">Compatibility/vanillaexpanded.outposts/Common</li>
     <li IfModActive="kage.resourcetrees">Compatibility/kage.resourcetrees/1.4</li>
+    <li IfModActive="Accurex.MedievalEmpireOverhaul">Compatibility/Accurex.MedievalEmpireOverhaul/1.4</li>
+    <li IfModActive="ogam.medievaloverhaul.arcanearchaeologists">Compatibility/ogam.medievaloverhaul.arcanearchaeologists/1.4</li>
+    <li IfModActive="arr624.geneticdrift">Compatibility/arr624.geneticdrift/1.4</li>
+    <li IfModActive="vanillaexpanded.vpe.hemosage">Compatibility/vanillaexpanded.vpe.hemosage/Common</li>
   </v1.4>
 </loadFolders>
