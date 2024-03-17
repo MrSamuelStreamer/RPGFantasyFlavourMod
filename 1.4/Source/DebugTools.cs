@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -27,7 +28,10 @@ public class DebugTools
                                <iconPath>{p.genes.Xenotype.iconPath}</iconPath>
                                <inheritable>{p.genes.CustomXenotype?.inheritable ?? p.genes.Xenotype.inheritable}</inheritable>
                                <genes>
+                               <!-- Xenogenes -->
                                {p.genes.Xenogenes.Select(g => geneLine(g.def)).ToLineList()}
+                               <!-- Endogenes -->
+                               {p.genes.Endogenes.Select(g => geneLine(g.def)).ToLineList()}
                                </genes>
                            </XenotypeDef>
 
@@ -42,11 +46,29 @@ public class DebugTools
     [DebugAction("Pawns", "Print All Xenotypes", false, false, true, 0, false, actionType = DebugActionType.Action, allowedGameStates = AllowedGameStates.PlayingOnMap)]
     private static void PrintXenotypes()
     {
+        HashSet<CustomXenotype> allXenotypes = [];
+        HashSet<string> allXenotypeFiles = [];
+        allXenotypes.AddRange(Current.Game?.customXenotypeDatabase?.customXenotypes ?? []);
+        allXenotypeFiles.AddRange(Current.Game?.customXenotypeDatabase?.customXenotypes?.Select(x => x.fileName) ?? []);
+
+        HashSet<string> extraXenosToLoad = CharacterCardUtility.CustomXenotypesForReading?.Select(x => x.fileName).Where(cx => !allXenotypeFiles.Contains(cx)).ToHashSet() ?? [];
+        allXenotypes.AddRange(CharacterCardUtility.CustomXenotypesForReading?.Where(x => extraXenosToLoad.Contains(x.fileName)) ?? []);
+        allXenotypeFiles.AddRange(extraXenosToLoad);
+
+        foreach (FileInfo fileInfo in GenFilePaths.AllCustomXenotypeFiles.OrderBy(f => f.LastWriteTime))
+        {
+            string filePath = GenFilePaths.AbsFilePathForXenotype(Path.GetFileNameWithoutExtension(fileInfo.Name));
+            CustomXenotype xenotype;
+            if (allXenotypeFiles.Contains(filePath) || !GameDataSaveLoader.TryLoadXenotype(filePath, out xenotype)) continue;
+            allXenotypes.Add(xenotype);
+            allXenotypeFiles.Add(filePath);
+        }
+
         string blob = $"""
                        <?xml version="1.0" encoding="utf-8" ?>
                        <Defs>
 
-                       {Current.Game.customXenotypeDatabase.customXenotypes.Select(XenotypeBlob).ToLineList()}
+                       {allXenotypes.Select(XenotypeBlob).ToLineList()}
 
                        </Defs>
                        """;
