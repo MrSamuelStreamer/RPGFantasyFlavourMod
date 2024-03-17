@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using HarmonyLib;
 using MrSamuelStreamer.RPGAdventureFlavourPack;
 using RimWorld;
@@ -16,17 +18,54 @@ public static class ChronopathHarmonyPatch
     public static Dictionary<int, Tuple<int, int, float>> ChronopathsByMap = new(100);
     public static Dictionary<int, Tuple<int, int, float>> ChronopathsByCaravan = new(30);
     public static int LastChronopathUpdateTick = 0;
+    public static int NextChronopathUpdateTick = 0;
 
     private static Lazy<PsycasterPathDef> ChronopathDef = new(() => DefDatabase<PsycasterPathDef>.GetNamedSilentFail("VPE_Chronopath"));
 
     [HarmonyPostfix]
     public static void Postfix(ref float __result, Pawn ___pawn)
     {
+        if (Find.TickManager.TicksGame > NextChronopathUpdateTick)
+        {
+            NextChronopathUpdateTick = Find.TickManager.TicksGame + 35000;
+            Task.Run(UpdateChronopathData);
+        }
+
         if (ChronopathDef.Value == null ||
             GetNextTickForPawnWithCount(___pawn) is not { } lastTickForPawnWithCount ||
             !IsChronoPath(___pawn)) return;
 
-        __result *= ChronopathAgeMultiplierForCount(lastTickForPawnWithCount.Item2);
+        __result *= lastTickForPawnWithCount.Item3;
+    }
+
+    private static void UpdateChronopathData()
+    {
+        LastChronopathUpdateTick = Find.TickManager.TicksGame;
+
+        try
+        {
+            ChronopathsByMap = Find.Maps.Select(m =>
+            {
+                List<Pawn> pawns = m.mapPawns?.AllPawns?.Where(IsChronoPath).ToList() ?? [];
+                return new
+                {
+                    MapId = m.uniqueID, Value = new Tuple<int, int, float>(LastChronopathUpdateTick + 60000, pawns.Count, ChronopathAgeMultiplierForCount(pawns.Count))
+                };
+            }).ToDictionary(pair => pair.MapId, pair => pair.Value);
+
+            ChronopathsByCaravan = Find.WorldObjects.Caravans.Select(c =>
+            {
+                List<Pawn> pawns = c.pawns?.InnerListForReading?.Where(IsChronoPath).ToList() ?? [];
+                return new
+                {
+                    CaravanId = c.ID, Value = new Tuple<int, int, float>(LastChronopathUpdateTick + 60000, pawns.Count, ChronopathAgeMultiplierForCount(pawns.Count))
+                };
+            }).ToDictionary(pair => pair.CaravanId, pair => pair.Value);
+        } catch (Exception e)
+        {
+            Log.Warning($"Error updating Chronopath data in RPGAdventureFlavourPack, won't try again for one game day, error was:\n{e}");
+            NextChronopathUpdateTick = Find.TickManager.TicksGame + 60000;
+        }
     }
 
     private static int NextTickOffset()
@@ -40,7 +79,7 @@ public static class ChronopathHarmonyPatch
         if (pawn.MapHeld is { } map)
         {
             ChronopathsByMap.TryGetValue(map.uniqueID, out tickToCountPair);
-            if (forceUpdate || (tickToCountPair?.Item1 ?? 0) < Find.TickManager.TicksGame)
+            if (forceUpdate || (tickToCountPair?.Item1 ?? int.MaxValue) < Find.TickManager.TicksGame)
             {
                 LastChronopathUpdateTick = Find.TickManager.TicksGame;
                 int count = map.mapPawns?.AllPawns?.Count(IsChronoPath) ?? 0;
@@ -51,7 +90,7 @@ public static class ChronopathHarmonyPatch
         else if (pawn.GetCaravan() is { } caravan)
         {
             ChronopathsByCaravan.TryGetValue(caravan.ID, out tickToCountPair);
-            if (forceUpdate || (tickToCountPair?.Item1 ?? 0) < Find.TickManager.TicksGame)
+            if (forceUpdate || (tickToCountPair?.Item1 ?? int.MaxValue) < Find.TickManager.TicksGame)
             {
                 LastChronopathUpdateTick = Find.TickManager.TicksGame;
                 int count = caravan.pawns?.InnerListForReading?.Count(IsChronoPath) ?? 0;
