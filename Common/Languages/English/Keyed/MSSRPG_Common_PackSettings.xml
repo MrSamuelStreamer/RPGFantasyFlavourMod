@@ -20,4 +20,6 @@
     <RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItems>Add extra medieval items</RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItems>
     <RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItem>Allow Def</RPGAdventureFlavourPackSettings_RimMedieval_AllowExtraMedievalItem>
     <RPGAdventureFlavourPackSettings_RimMedieval_AllowedExtraMedievalItems>Allowed extra medieval items</RPGAdventureFlavourPackSettings_RimMedieval_AllowedExtraMedievalItems>
+    <RPGAdventureFlavourPackSettings_Core_ElderAgeThreshold>Elder Age Threshold</RPGAdventureFlavourPackSettings_Core_ElderAgeThreshold>
+    <RPGAdventureFlavourPackSettings_Core_ElderAgeMultiplier>Elder Extra Aging Multiplier</RPGAdventureFlavourPackSettings_Core_ElderAgeMultiplier>
 </LanguageData>

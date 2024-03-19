@@ -14,6 +14,8 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public bool AddExtraRimQuests = true;
     public bool AllowExtraMedievalItems = true;
     public float GlobalHungerFactor = -1f;
+    public int ElderAgeThreshold = 60;
+    public int ElderAgeMultiplier = 1;
     public SimpleCurve ChronoFieldAgeCurve = new(DefaultChronoAgeCurve.Points);
 
     private Vector2 _chronoFieldAgeCurveScrollPosition;
@@ -21,6 +23,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public void RegisterSettingsUpdatedAction(Action action) => _settingsUpdatedActions.Add(action);
 
     public float GetGlobalHungerFactor() => GlobalHungerFactor < 0 ? 1 : GlobalHungerFactor;
+
     public SimpleCurve GetChronoFieldAgeCurve() => ChronoFieldAgeCurve ?? DefaultChronoAgeCurve;
 
     /**
@@ -30,14 +33,16 @@ public class RPGAdventureFlavourPackSettings : ModSettings
      */
     public bool ConfigsApplied = false;
 
-    private HashSet<string> _extraRimQuestsMatching = new();
-    private HashSet<string> _extraRimQuestGivers = new();
-    private HashSet<string> _extraMedievalItems = new();
+    private HashSet<string> _extraRimQuestsMatching = [];
+    private HashSet<string> _extraRimQuestGivers = [];
+    private HashSet<string> _extraMedievalItems = [];
 
     private readonly bool _rimQuestActive = ModLister.GetActiveModWithIdentifier("mlie.rimquest", true) != null;
     private readonly bool _rimMedievalActive = ModLister.GetActiveModWithIdentifier("Ogam.Rimedieval", true) != null;
     private string _rimQuestTextEntry = "Some_RimQuestGiver or Filter";
     private string _rimMedievalTextEntry = "DefName of extra item to allow e.g. Genepack";
+    private string _elderAgeBuffer;
+    private string _elderAgeMultiplierBuffer;
 
     private const float RowHeight = 32f;
     private const float Indent = 9f;
@@ -48,7 +53,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     {
         if (!AddExtraRimQuests || (_extraRimQuestGivers?.Count ?? 0) != 0) return _extraRimQuestGivers;
         Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but no quest-givers chosen, defaulting");
-        _extraRimQuestGivers = new HashSet<string>(DefaultExtraRimQuestGivers);
+        _extraRimQuestGivers = [..DefaultExtraRimQuestGivers];
         NotifySettingsUpdate();
         return _extraRimQuestGivers;
     }
@@ -57,7 +62,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     {
         if (!AddExtraRimQuests || (_extraRimQuestsMatching?.Count ?? 0) != 0) return _extraRimQuestsMatching;
         Log.Message("RPGAdventureFlavourPack Extra RimQuests is enabled but inclusion list was empty, defaulting");
-        _extraRimQuestsMatching = new HashSet<string>(DefaultExtraRimQuestsMatching);
+        _extraRimQuestsMatching = [..DefaultExtraRimQuestsMatching];
         NotifySettingsUpdate(true);
         return _extraRimQuestsMatching;
     }
@@ -66,7 +71,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     {
         if (!AllowExtraMedievalItems || (_extraMedievalItems?.Count ?? 0) != 0) return _extraMedievalItems;
         Log.Message("RPGAdventureFlavourPack Extra Medieval Items is enabled but inclusion list was empty, defaulting");
-        _extraMedievalItems = new HashSet<string>(DefaultExtraMedievalItems);
+        _extraMedievalItems = [..DefaultExtraMedievalItems];
         NotifySettingsUpdate(true);
         return _extraMedievalItems;
     }
@@ -128,8 +133,18 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         GlobalHungerFactor = _options.SliderLabeled("RPGAdventureFlavourPackSettings_Core_GlobalHungerFactor".Translate(GlobalHungerFactor.ToStringPercent()), GlobalHungerFactor,
             0.0f, 5f);
 
+
+
         if (ModsConfig.IsActive("vanillaexpanded.vpsycastse"))
         {
+            // Technically doesn't require VPE but we're reusing the chronopath patch for efficiency
+            _elderAgeBuffer = ElderAgeThreshold.ToString();
+            _options.Label("RPGAdventureFlavourPackSettings_Core_ElderAgeThreshold".Translate());
+            _options.IntEntry(ref ElderAgeThreshold, ref _elderAgeBuffer);
+            _elderAgeMultiplierBuffer = ElderAgeMultiplier.ToString();
+            _options.Label("RPGAdventureFlavourPackSettings_Core_ElderAgeMultiplier".Translate());
+            _options.IntEntry(ref ElderAgeMultiplier, ref _elderAgeMultiplierBuffer);
+
             ChronoFieldAgeCurve ??= DefaultChronoAgeCurve;
             _options.Label("RPGAdventureFlavourPackSettings_Core_ChronomancerAgeFactor".Translate());
             DrawCurve(_options, ref ChronoFieldAgeCurve, ref _chronoFieldAgeCurveScrollPosition);
@@ -298,6 +313,8 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         Scribe_Values.Look(ref AddExtraRimQuests, "AddExtraRimQuests", true);
         Scribe_Values.Look(ref AllowExtraMedievalItems, "AllowExtraMedievalItems", true);
         Scribe_Values.Look(ref GlobalHungerFactor, "GlobalHungerFactor", 1f);
+        Scribe_Values.Look(ref ElderAgeThreshold, "ElderAgeThreshold", 60);
+        Scribe_Values.Look(ref ElderAgeMultiplier, "ElderAgeMultiplier", 1);
         Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
         Scribe_Collections.Look(ref _extraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
         Scribe_Collections.Look(ref _extraMedievalItems, "ExtraMedievalItems", LookMode.Value);

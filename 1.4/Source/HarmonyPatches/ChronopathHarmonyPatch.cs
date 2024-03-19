@@ -31,6 +31,9 @@ public static class ChronopathHarmonyPatch
             Task.Run(UpdateChronopathData);
         }
 
+        if (___pawn.RaceProps.Humanlike && ___pawn.ageTracker.AgeBiologicalYears >= RPGAdventureFlavourPack.Settings.ElderAgeThreshold)
+            __result *= RPGAdventureFlavourPack.Settings.ElderAgeMultiplier;
+
         if (ChronopathDef.Value == null ||
             GetNextTickForPawnWithCount(___pawn) is not { } lastTickForPawnWithCount ||
             !IsChronoPath(___pawn)) return;
@@ -61,7 +64,8 @@ public static class ChronopathHarmonyPatch
                     CaravanId = c.ID, Value = new Tuple<int, int, float>(LastChronopathUpdateTick + 60000, pawns.Count, ChronopathAgeMultiplierForCount(pawns.Count))
                 };
             }).ToDictionary(pair => pair.CaravanId, pair => pair.Value);
-        } catch (Exception e)
+        }
+        catch (Exception e)
         {
             Log.Warning($"Error updating Chronopath data in RPGAdventureFlavourPack, won't try again for one game day, error was:\n{e}");
             NextChronopathUpdateTick = Find.TickManager.TicksGame + 60000;
