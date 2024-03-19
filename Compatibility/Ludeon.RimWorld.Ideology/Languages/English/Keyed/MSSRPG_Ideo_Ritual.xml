@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+    <MSSRPG_MessageRitualRoleMustBeUninitiated>{0_labelShort} is already initiated into the deeper mysteries.</MSSRPG_MessageRitualRoleMustBeUninitiated>
+    <MSSRPG_MessageRitualRoleMustBeChild>{0_labelShort} must be a child.</MSSRPG_MessageRitualRoleMustBeChild>
+    <MSSRPG_MessageRitualRoleNoValidBackstories>{0_labelShort} does not have any valid circles to be initiated into.</MSSRPG_MessageRitualRoleNoValidBackstories>
+</LanguageData>

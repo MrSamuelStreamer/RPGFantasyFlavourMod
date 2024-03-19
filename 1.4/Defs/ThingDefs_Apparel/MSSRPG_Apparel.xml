@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Defs>
-	<ThingDef ParentName="ChildApparelMakeableBase">
+	<ThingDef ParentName="ChildApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
         <defName>MSSRPG_Apparel_KidRobes</defName>
         <label>kid arcanium robe</label>
         <description>A one-piece garment sized for kids, crafted using arcanium threads. It provides a modest boost to magical potential.</description>
@@ -10,8 +10,8 @@
           <drawSize>(0.5, 0.5)</drawSize>
         </graphicData>
         <costStuffCount>50</costStuffCount>
-        <costList MayRequire="vanillaexpanded.vpsycastse">
-            <VPE_Eltex>2</VPE_Eltex>
+        <costList>
+            <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
         </costList>
         <statBases>
           <MaxHitPoints>60</MaxHitPoints>
@@ -71,7 +71,7 @@
         </tradeTags>
     </ThingDef>
 
-    <ThingDef ParentName="ApparelMakeableBase">
+    <ThingDef ParentName="ApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
       <defName>MSSRPG_HoldingBag</defName>
       <label>bag of holding</label>
       <description>A magical sack that seemingly holds for more items that it should. Increases pawn carry capacity.</description>
@@ -82,8 +82,8 @@
       </graphicData>
       <techLevel>Medieval</techLevel>
       <costStuffCount>75</costStuffCount>
-      <costList MayRequire="vanillaexpanded.vpsycastse">
-        <VPE_Eltex>2</VPE_Eltex>
+      <costList>
+        <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
       </costList>
       <stuffCategories>
         <li>Fabric</li>
