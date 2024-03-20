@@ -13,9 +13,9 @@ public class RPGAdventureFlavourPackSettings : ModSettings
     public bool ShowCaravanLoot = true;
     public bool AddExtraRimQuests = true;
     public bool AllowExtraMedievalItems = true;
-    public float GlobalHungerFactor = -1f;
     public int ElderAgeThreshold = 60;
-    public int ElderAgeMultiplier = 1;
+    public float ElderAgeMultiplier = 1f;
+    public float GlobalHungerFactor = -1f;
     public SimpleCurve ChronoFieldAgeCurve = new(DefaultChronoAgeCurve.Points);
 
     private Vector2 _chronoFieldAgeCurveScrollPosition;
@@ -141,9 +141,8 @@ public class RPGAdventureFlavourPackSettings : ModSettings
             _elderAgeBuffer = ElderAgeThreshold.ToString();
             _options.Label("RPGAdventureFlavourPackSettings_Core_ElderAgeThreshold".Translate());
             _options.IntEntry(ref ElderAgeThreshold, ref _elderAgeBuffer);
-            _elderAgeMultiplierBuffer = ElderAgeMultiplier.ToString();
-            _options.Label("RPGAdventureFlavourPackSettings_Core_ElderAgeMultiplier".Translate());
-            _options.IntEntry(ref ElderAgeMultiplier, ref _elderAgeMultiplierBuffer);
+            _elderAgeMultiplierBuffer ??= ElderAgeMultiplier.ToString(CultureInfo.InvariantCulture);
+            _options.TextFieldNumericLabeled("RPGAdventureFlavourPackSettings_Core_ElderAgeMultiplier".Translate(), ref ElderAgeMultiplier, ref _elderAgeMultiplierBuffer);
 
             ChronoFieldAgeCurve ??= DefaultChronoAgeCurve;
             _options.Label("RPGAdventureFlavourPackSettings_Core_ChronomancerAgeFactor".Translate());
@@ -314,7 +313,7 @@ public class RPGAdventureFlavourPackSettings : ModSettings
         Scribe_Values.Look(ref AllowExtraMedievalItems, "AllowExtraMedievalItems", true);
         Scribe_Values.Look(ref GlobalHungerFactor, "GlobalHungerFactor", 1f);
         Scribe_Values.Look(ref ElderAgeThreshold, "ElderAgeThreshold", 60);
-        Scribe_Values.Look(ref ElderAgeMultiplier, "ElderAgeMultiplier", 1);
+        Scribe_Values.Look(ref ElderAgeMultiplier, "ElderAgeMultiplier", 1f);
         Scribe_Collections.Look(ref _extraRimQuestGivers, "ExtraRimQuestGivers", LookMode.Value);
         Scribe_Collections.Look(ref _extraRimQuestsMatching, "ExtraRimQuestsMatching", LookMode.Value);
         Scribe_Collections.Look(ref _extraMedievalItems, "ExtraMedievalItems", LookMode.Value);
