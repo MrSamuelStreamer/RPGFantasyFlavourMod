@@ -15,17 +15,13 @@
       <li>BS_Fast_TotalHealing</li>
       <li>TotalHealing</li>
       <li>AG_Regeneration</li>
-      <li>VRE_Transcendent</li>
-      <li>VRE_InnatePsylink</li>
       <li>BS_Very_Passioned_Learning_Gene</li>
       <li>AG_Invisibility</li>
-      <li>AG_TableResistance</li>
+      <li>BS_Glamour</li>
       <li>AG_InnatePsylink</li>
-      <li>GBS_Meditator_Archotech</li>
-      <li>GBS_Meditator_Artistic</li>
+      <li>AG_PsychicRemapping</li>
       <li>GBS_Meditator_Dignified</li>
       <li>GBS_Meditator_Flame</li>
-      <li>AG_PsychicRemapping</li>
       <li>GBS_Meditator_Minimal</li>
       <li>GBS_Meditator_Morbid</li>
       <li>GBS_Meditator_Natural</li>
@@ -37,12 +33,17 @@
       <li>PsychicBonding</li>
       <li>VRE_ExtremeMeditation</li>
       <li>VRE_ExtremeEntropyCapacity</li>
+      <li>VRE_Transcendent</li>
+      <li>VRE_InnatePsylink</li>
       <li>Turn_Gene_VeryFastNeuralHeat</li>
       <li>Turn_Gene_MeditationNeed</li>
       <li>VRE_PsychicAbility_MoreExtreme</li>
       <li>GEG_Eyes_GlowingArchotech</li>
       <li>AG_ThirdEye</li>
       <li>Learning_Fast</li>
+      <li>Gene_Chronopath</li>
+      <li>Gene_Necropath</li>
+      <li>Gene_Puppeteer</li>
     </genes>
   </XenotypeDef>
 
@@ -56,12 +57,10 @@
     <genes>
       <li>Gene_Archon</li>
       <li>Gene_Archotechist</li>
-      <li>Gene_Chronopath</li>
       <li>Gene_Conflagrator</li>
       <li>Gene_Empath</li>
       <li>Gene_Frostshaper</li>
       <li>Gene_Harmonist</li>
-      <li>Gene_Necropath</li>
       <li>Gene_Nightstalker</li>
       <li>Gene_Protector</li>
       <li>Gene_Skipmaster</li>
@@ -69,8 +68,6 @@
       <li>Gene_Technomancer</li>
       <li>Gene_Warlord</li>
       <li>Gene_Wildspeaker</li>
-      <li>Gene_Hemosage</li>
-      <li>Gene_Puppeteer</li>
       <li>Gene_HeraldOfTheBlackHive</li>
       <li>Gene_Oculist</li>
       <li>Gene_Xenoseer</li>
