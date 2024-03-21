@@ -41,6 +41,9 @@
       <li>GEG_Eyes_GlowingArchotech</li>
       <li>AG_ThirdEye</li>
       <li>Learning_Fast</li>
+      <li>Gene_Chronopath</li>
+      <li>Gene_Necropath</li>
+      <li>Gene_Puppeteer</li>
     </genes>
   </XenotypeDef>
 
@@ -54,12 +57,10 @@
     <genes>
       <li>Gene_Archon</li>
       <li>Gene_Archotechist</li>
-      <li>Gene_Chronopath</li>
       <li>Gene_Conflagrator</li>
       <li>Gene_Empath</li>
       <li>Gene_Frostshaper</li>
       <li>Gene_Harmonist</li>
-      <li>Gene_Necropath</li>
       <li>Gene_Nightstalker</li>
       <li>Gene_Protector</li>
       <li>Gene_Skipmaster</li>
@@ -67,7 +68,6 @@
       <li>Gene_Technomancer</li>
       <li>Gene_Warlord</li>
       <li>Gene_Wildspeaker</li>
-      <li>Gene_Puppeteer</li>
       <li>Gene_HeraldOfTheBlackHive</li>
       <li>Gene_Oculist</li>
       <li>Gene_Xenoseer</li>
