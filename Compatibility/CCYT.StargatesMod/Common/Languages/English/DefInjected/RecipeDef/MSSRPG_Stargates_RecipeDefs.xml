@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+
+    <StargateMod_MakeOrlinStargate.label>make a makeshift arcane portal</StargateMod_MakeOrlinStargate.label>
+    <StargateMod_MakeOrlinStargate.description>An portal able to connect to the ley-line network and use it to transport people or resources between nexus points. This arcane portal in particular was made using easily available resources, but is quite unstable and unreliable, and also requires an external energy source. It is both too weak and too small to have a protective arcane barrier attached. It has an integrated control crystal. Make sure to get out of the way before it finishes attuning...\n"You wouldn't believe the things that you can make from the common, simple items lying around your planet."</StargateMod_MakeOrlinStargate.description>
+    <StargateMod_MakeOrlinStargate.jobString>Making makeshift arcane portal.</StargateMod_MakeOrlinStargate.jobString>
+
+    <StargateMod_MakeAdvancedStargate.label>make an advanced arcane portal</StargateMod_MakeAdvancedStargate.label>
+    <StargateMod_MakeAdvancedStargate.description>A portal used to transport people or resources between planets. This arcane portal is identical in nearly every way to a normal arcane portal. It has an integrated control crystal. Make sure to get out of the way before it finishes attuning...</StargateMod_MakeAdvancedStargate.description>
+    <StargateMod_MakeAdvancedStargate.jobString>Making advanced arcane portal.</StargateMod_MakeAdvancedStargate.jobString>
+
+    <StargateMod_MakeIrisInstallKit.label>make arcane portal barrier</StargateMod_MakeIrisInstallKit.label>
+    <StargateMod_MakeIrisInstallKit.description>Make an arcane portal barrier.</StargateMod_MakeIrisInstallKit.description>
+    <StargateMod_MakeIrisInstallKit.jobString>Making arcane portal barrier.</StargateMod_MakeIrisInstallKit.jobString>
+
+</LanguageData>

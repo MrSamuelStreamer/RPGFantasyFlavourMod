@@ -53,5 +53,6 @@
         <li>vanillaracesexpanded.archon</li>
         <li>turnovus.biotech.integratedgenes</li>
         <li>gwibbo.morepsygenes</li>
+        <li>ccyt.stargatesmod</li>
     </loadAfter>
 </ModMetaData>

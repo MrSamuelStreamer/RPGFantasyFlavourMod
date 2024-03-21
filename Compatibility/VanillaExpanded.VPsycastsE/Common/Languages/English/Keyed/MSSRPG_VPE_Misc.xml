@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<LanguagData>
+<LanguageData>
     <VPE.PsySetNext>Next Spellbook</VPE.PsySetNext>
     <VPE.PsySetPrev>Previous Spellbook</VPE.PsySetPrev>
     <VPE.PsySetDesc>Move to the next Spellbook. Right click to choose a specific one.\nCurrent: {0}, Next: {1}</VPE.PsySetDesc>
@@ -13,4 +13,4 @@
     <VPE.MustHaveHeatAmount>Must have at least {0} magical capacity.</VPE.MustHaveHeatAmount>
     <VPE.MustBePsycaster>Must be a mage</VPE.MustBePsycaster>
     <VPE.MustEltex>Must target arcanium</VPE.MustEltex>
-</LanguagData>
+</LanguageData>
