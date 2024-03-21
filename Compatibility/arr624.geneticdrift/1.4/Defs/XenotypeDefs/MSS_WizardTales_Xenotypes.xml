@@ -15,17 +15,13 @@
       <li>BS_Fast_TotalHealing</li>
       <li>TotalHealing</li>
       <li>AG_Regeneration</li>
-      <li>VRE_Transcendent</li>
-      <li>VRE_InnatePsylink</li>
       <li>BS_Very_Passioned_Learning_Gene</li>
       <li>AG_Invisibility</li>
-      <li>AG_TableResistance</li>
+      <li>BS_Glamour<li>
       <li>AG_InnatePsylink</li>
-      <li>GBS_Meditator_Archotech</li>
-      <li>GBS_Meditator_Artistic</li>
+      <li>AG_PsychicRemapping</li>
       <li>GBS_Meditator_Dignified</li>
       <li>GBS_Meditator_Flame</li>
-      <li>AG_PsychicRemapping</li>
       <li>GBS_Meditator_Minimal</li>
       <li>GBS_Meditator_Morbid</li>
       <li>GBS_Meditator_Natural</li>
@@ -37,6 +33,8 @@
       <li>PsychicBonding</li>
       <li>VRE_ExtremeMeditation</li>
       <li>VRE_ExtremeEntropyCapacity</li>
+      <li>VRE_Transcendent</li>
+      <li>VRE_InnatePsylink</li>
       <li>Turn_Gene_VeryFastNeuralHeat</li>
       <li>Turn_Gene_MeditationNeed</li>
       <li>VRE_PsychicAbility_MoreExtreme</li>
