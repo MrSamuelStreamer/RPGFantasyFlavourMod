@@ -67,6 +67,9 @@
         </Reference>
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Building_EnragingWorkTable.cs" />
+        <Compile Include="CompCausesEnrage.cs" />
+        <Compile Include="CompProperties_CausesEnrage.cs" />
         <Compile Include="CreatureSelectionExtension.cs" />
         <Compile Include="DebugTools.cs" />
         <Compile Include="GenStep_SlayerEncounter.cs" />
@@ -75,6 +78,7 @@
         <Compile Include="HarmonyPatches\GlobalHungerFactorPatch.cs" />
         <Compile Include="Hediff_Relics.cs" />
         <Compile Include="Hediff_Relics_Destroyed.cs" />
+        <Compile Include="IncidentWorker_TriggerEnrage.cs" />
         <Compile Include="PreceptComp_Backstories.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
         <Compile Include="HarmonyPatches\CaravanPatches.cs" />
