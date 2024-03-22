@@ -17,7 +17,7 @@
         <AboutFiles Include="..\..\About\**" />
         <CommonFiles Include="..\..\Common\**" />
         <CompatibilityFiles Include="..\..\Compatibility\**" />
-        <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md" />
+        <ExtraFiles Include="..\..\LoadFolders.xml;..\..\LICENSE;..\..\README.md;..\..\release.bat" />
         <None Include="..\..\.gitattributes;..\..\.gitignore;..\..\CONTRIBUTING.md;..\..\About\About.xml" />
     </ItemGroup>
     <Target Name="Clean">
