@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <StargatesMod_StargateSiteScript.questNameRules.rulesStrings.0>questName->[ancient] ley-line [site]</StargatesMod_StargateSiteScript.questNameRules.rulesStrings.0>
+    <StargatesMod_StargateSiteScript.questNameRules.rulesStrings.5>site->nexus</StargatesMod_StargateSiteScript.questNameRules.rulesStrings.5>
+    <StargatesMod_StargateSiteScript.questNameRules.rulesStrings.6>site->convergence</StargatesMod_StargateSiteScript.questNameRules.rulesStrings.6>
+    <StargatesMod_StargateSiteScript.questNameRules.rulesStrings.7>site->site</StargatesMod_StargateSiteScript.questNameRules.rulesStrings.7>
+    <StargatesMod_StargateSiteScript.questNameRules.rulesStrings.8>site->nexus</StargatesMod_StargateSiteScript.questNameRules.rulesStrings.8>
+    <StargatesMod_StargateSiteScript.questNameRules.rulesStrings.9>site->convergence</StargatesMod_StargateSiteScript.questNameRules.rulesStrings.9>
+    <StargatesMod_StargateSiteScript.questDescriptionRules.rulesStrings.0>questDescription(askerIsNull==true)->We have found a site containing an arcane portal. It may contain treasure guarded by ancient enemies, or it may contain nothing. In either case, the arcane portal there will be extremely useful if we can retrieve it.</StargatesMod_StargateSiteScript.questDescriptionRules.rulesStrings.0>
+    <StargatesMod_StargateSiteScript.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>Scrying indicates the site has been looted, and the arcane portal is gone. The quest [resolvedQuestName] has expired.</StargatesMod_StargateSiteScript.root.nodes.WorldObjectTimeout.node.nodes.Letter.text.slateRef>
+</LanguageData>
