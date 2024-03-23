@@ -186,4 +186,71 @@
       <li>Gene_Oculist</li>
     </genes>
   </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Balrog</defName>
+    <label>Bulrog of Margoth</label>
+    <description>Believed only to be an Imperial fairytale to scare misbehaving children, the Bulrog is a towering creature of flame and darkness found deep underground, often remaining in slumber for thousands of years unknown to the surface dwellers until they delve too deeply...</description>
+    <descriptionShort>An enormous firey creature of legend.</descriptionShort>
+    <iconPath>Xenotypes/AG_CustomXenotypeIcon9</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li>BS_HeatGenerator</li>
+      <li>Deathless</li>
+      <li>DiseaseFree</li>
+      <li>BS_HexaHorns_Skin</li>
+      <li>JotunFrame</li>
+      <li>AG_Detonation</li>
+      <li>AG_GreaterFireSpew</li>
+      <li>AG_DeadlyRaidPresence</li>
+      <li>AG_ChemfuelVomit</li>
+      <li>AG_VolcanicAshMaker</li>
+      <li>AG_MetalEater</li>
+      <li>AG_MineralOverdrive</li>
+      <li>AG_MineralShock</li>
+      <li>AG_ReactiveArmour</li>
+      <li>Immunity_SuperStrong</li>
+      <li>WoundHealing_Slow</li>
+      <li>Superclotting</li>
+      <li>AG_Filthy</li>
+      <li>AG_FireObsession</li>
+      <li>MoveSpeed_Slow</li>
+      <li>AG_SpeedByTemperature</li>
+      <li>VRE_Maniac</li>
+      <li>MaxTemp_HugeNeed</li>
+      <li>AG_ColdSlowness</li>
+      <li>AG_HeatRadiating</li>
+      <li>AG_Sensitivity_Vicious</li>
+      <li>VRE_Aggression_ExtremelyAggressive</li>
+      <li>MeleeDamage_Strong</li>
+      <li>KillThirst</li>
+      <li>BS_GiantWeaponWielder</li>
+      <li>VRE_SlowMeleeHitter</li>
+      <li>Sleepy</li>
+      <li>BS_Concussive_Resistance</li>
+      <li>Pain_Reduced</li>
+      <li>VU_Libido_None</li>
+      <li>BS_NotFlirty</li>
+      <li>Sterile</li>
+      <li>AG_SingleWing</li>
+      <li>BS_DemonTail</li>
+      <li>AG_EldritchVisage</li>
+      <li>GEG_Eyes_GlowingOrange</li>
+      <li>BS_StonemaskHead</li>
+      <li>AG_RockSpurs</li>
+      <li>AG_RockyBody</li>
+      <li>AG_Digitigrade</li>
+      <li>Body_Hulk</li>
+      <li>Skin_DeepRed</li>
+      <li>Skin_SlateGray</li>
+      <li>AlphaGenes_ExoticOrganism</li>
+      <li>VRE_FacialSpots</li>
+      <li>Undergrounder</li>
+      <li>BS_Talons</li>
+      <li>BS_AncientDemonWings</li>
+      <li>BS_SimpleMind</li>
+      <li>AptitudeRemarkable_Melee</li>
+      <li>SZBodySize_30</li>
+    </genes>
+  </XenotypeDef>
 </Defs>
