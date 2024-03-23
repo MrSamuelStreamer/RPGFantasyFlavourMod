@@ -28,6 +28,6 @@
     <li IfModActive="ogam.medievaloverhaul.arcanearchaeologists">Compatibility/ogam.medievaloverhaul.arcanearchaeologists/1.4</li>
     <li IfModActive="arr624.geneticdrift">Compatibility/arr624.geneticdrift/1.4</li>
     <li IfModActive="vanillaexpanded.vpe.hemosage">Compatibility/vanillaexpanded.vpe.hemosage/Common</li>
-    <li IfModActive="ccyt.stargatesmod">Compatibility/CCYT.StargatesMod/Common</li>
+    <li IfModActive="ccyt.stargatesmod">Compatibility/CCYT.StargatesMod/1.4</li>
   </v1.4>
 </loadFolders>
