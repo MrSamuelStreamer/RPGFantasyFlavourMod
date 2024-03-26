@@ -70,73 +70,73 @@
     </tradeTags>
   </ThingDef>
 
-    <ThingDef ParentName="ApparelMakeableBase">
-      <defName>MSSRPG_WizardBoots</defName>
-      <label>Sorceror's gloves</label>
-      <description>A magical pair of gloves crafted with a small amount of arcanium threads giving them magical properties.</description>
-      <graphicData>
-        <texPath>Things/Handwear/Gloves</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-      </graphicData>
-      <techLevel>Industrial</techLevel>
-      <tradeability>Sellable</tradeability>
-          <generateCommonality>0.1</generateCommonality>
-      <stuffCategories>
-        <li>Fabric</li>
-        <li>Leathery</li>
-      </stuffCategories>
-      <costStuffCount>25</costStuffCount>
-      <costList>
-        <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
-      </costList>
-      <statBases>
-        <MaxHitPoints>100</MaxHitPoints>
-        <WorkToMake>1000</WorkToMake>
-        <Mass>0.15</Mass>
-        <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-        <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
-        <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
-        <EquipDelay>2.0</EquipDelay>
-      </statBases>
-      <equippedStatOffsets>
-        <ComfyTemperatureMin>-2</ComfyTemperatureMin> 
-         <MoveSpeed>0.1</MoveSpeed>
-        <PsychicSensitivityOffset>0.03</PsychicSensitivityOffset>
-        <PsychicEntropyMax>0.2</PsychicEntropyMax>
-      </equippedStatOffsets>
-      <thingCategories Inherit="False">
-        <li>VAE_BootsAndGloves</li>
-      </thingCategories>
-      <apparel>
-        <countsAsClothingForNudity>false</countsAsClothingForNudity>
-        <bodyPartGroups>
-          <li>Hands</li>
-        </bodyPartGroups>
-        <layers>
-          <li>Middle</li>
-        </layers>
-        <tags>
-          <li>Royal</li>
-          <li>RoyalTier2</li>
-          <li>RoyalTier3</li>
-          <li>RoyalTier4</li>
-          <li>RoyalTier5</li>
-          <li>RoyalTier6</li>
-          <li>RoyalTier7</li>
-        </tags>
-        <defaultOutfitTags>
-          <li>Worker</li>
-          <li>Soldier</li>
-        </defaultOutfitTags>
-      </apparel>
-      <recipeMaker>
-        <researchPrerequisite Inherit="False" IsNull="True" />
-        <recipeUsers Inherit="False">
-          <li>ElectricTailoringBench</li>
-          <li>HandTailoringBench</li>
-          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
-        </recipeUsers>
-      </recipeMaker>
-      <colorGenerator Class="ColorGenerator_StandardApparel" />
-      </ThingDef>
+  <ThingDef ParentName="ApparelMakeableBase">
+    <defName>MSSRPG_WizardGloves</defName>
+    <label>Sorceror's gloves</label>
+    <description>A magical pair of gloves crafted with a small amount of arcanium threads giving them magical properties.</description>
+    <graphicData>
+      <texPath>Things/Handwear/Gloves</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <techLevel>Industrial</techLevel>
+    <tradeability>Sellable</tradeability>
+        <generateCommonality>0.1</generateCommonality>
+    <stuffCategories>
+      <li>Fabric</li>
+      <li>Leathery</li>
+    </stuffCategories>
+    <costStuffCount>25</costStuffCount>
+    <costList>
+      <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
+    </costList>
+    <statBases>
+      <MaxHitPoints>100</MaxHitPoints>
+      <WorkToMake>1000</WorkToMake>
+      <Mass>0.15</Mass>
+      <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+      <StuffEffectMultiplierInsulation_Cold>0.4</StuffEffectMultiplierInsulation_Cold>
+      <StuffEffectMultiplierInsulation_Heat>0.08</StuffEffectMultiplierInsulation_Heat>
+      <EquipDelay>2.0</EquipDelay>
+    </statBases>
+    <equippedStatOffsets>
+      <ComfyTemperatureMin>-2</ComfyTemperatureMin> 
+        <MoveSpeed>0.1</MoveSpeed>
+      <PsychicSensitivityOffset>0.03</PsychicSensitivityOffset>
+      <PsychicEntropyMax>0.2</PsychicEntropyMax>
+    </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>VAE_BootsAndGloves</li>
+    </thingCategories>
+    <apparel>
+      <countsAsClothingForNudity>false</countsAsClothingForNudity>
+      <bodyPartGroups>
+        <li>Hands</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Middle</li>
+      </layers>
+      <tags>
+        <li>Royal</li>
+        <li>RoyalTier2</li>
+        <li>RoyalTier3</li>
+        <li>RoyalTier4</li>
+        <li>RoyalTier5</li>
+        <li>RoyalTier6</li>
+        <li>RoyalTier7</li>
+      </tags>
+      <defaultOutfitTags>
+        <li>Worker</li>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+    </apparel>
+    <recipeMaker>
+      <researchPrerequisite Inherit="False" IsNull="True" />
+      <recipeUsers Inherit="False">
+        <li>ElectricTailoringBench</li>
+        <li>HandTailoringBench</li>
+        <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
+      </recipeUsers>
+    </recipeMaker>
+    <colorGenerator Class="ColorGenerator_StandardApparel" />
+    </ThingDef>
 </Defs>
