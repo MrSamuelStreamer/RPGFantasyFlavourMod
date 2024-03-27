@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ORB -->
-  <ThingDef ParentName="BuildingBase">
+  <ThingDef ParentName="IdeoBuildingBase" mayRequire="rimworld.ideology">
     <defName>MSS_PonderingOrb</defName>
     <label>Pondering Orb</label>
     <description>An orb for magically inclined folk to ponder, an average source of joy for wizardfolk.</description>
@@ -36,11 +36,14 @@
     <passability>PassThroughOnly</passability>
     <defaultPlacingRot>South</defaultPlacingRot>
     <building>
-      <joyKind>Television</joyKind>
+      <joyKind>Te</joyKind>
       <watchBuildingStandDistanceRange>1</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
       <effectWatching>WatchingTelevision</effectWatching>
+      <buildingTags>
+        <li>RitualFocus</li>
+      </buildingTags>
     </building>
     <placeWorkers>
       <li>PlaceWorker_WatchArea</li>
