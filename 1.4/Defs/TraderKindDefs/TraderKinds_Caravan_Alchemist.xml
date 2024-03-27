@@ -31,4 +31,23 @@
             </li>
         </stockGenerators>
     </TraderKindDef>
+
+    <TraderKindDef MayRequire="feldoh.devilfruit">
+        <defName>MSSRPG_Caravan_FruitTrader</defName>
+        <label>Fruit Trader</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>5000~8000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>8~12</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
 </Defs>
