@@ -36,7 +36,7 @@
     <passability>PassThroughOnly</passability>
     <defaultPlacingRot>South</defaultPlacingRot>
     <building>
-      <joyKind>Te</joyKind>
+      <joyKind>Television</joyKind>
       <watchBuildingStandDistanceRange>1</watchBuildingStandDistanceRange>
       <watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
       <watchBuildingInSameRoom>true</watchBuildingInSameRoom>
