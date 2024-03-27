@@ -1,139 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
-	<ThingDef ParentName="ChildApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
-        <defName>MSSRPG_Apparel_KidRobes</defName>
-        <label>kid arcanium robe</label>
-        <description>A one-piece garment sized for kids, crafted using arcanium threads. It provides a modest boost to magical potential.</description>
+    <ThingDef ParentName="ApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
+        <defName>MSSRPG_HoldingBag</defName>
+        <label>bag of holding</label>
+        <description>A magical sack that seemingly holds for more items that it should. Increases pawn carry capacity.</description>
         <graphicData>
-          <texPath>Things/Pawn/Humanlike/Apparel/MSSRPG_KidRobe/MSSRPG_KidRobe</texPath>
-          <graphicClass>Graphic_Single</graphicClass>
-          <drawSize>(0.5, 0.5)</drawSize>
+            <texPath>Things/Pawn/Humanlike/Apparel/MSSRPG_HoldingBag/MSSRPG_HoldingBag</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
         </graphicData>
-        <costStuffCount>50</costStuffCount>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>75</costStuffCount>
         <costList>
             <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
         </costList>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
         <statBases>
-          <MaxHitPoints>60</MaxHitPoints>
-          <WorkToMake>1400</WorkToMake>
-          <Mass>0.5</Mass>
-          <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
-          <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
-          <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
-          <EquipDelay>1.5</EquipDelay>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToMake>3500</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
         </statBases>
         <equippedStatOffsets>
-          <PsychicSensitivityOffset>0.1</PsychicSensitivityOffset>
-          <PsychicEntropyRecoveryRate>0.02</PsychicEntropyRecoveryRate>
-        <PsychicEntropyMax>0.3</PsychicEntropyMax>
+            <CarryingCapacity>100</CarryingCapacity>
         </equippedStatOffsets>
-        <apparel>
-          <bodyPartGroups>
-            <li>Torso</li>
-            <li>Legs</li>
-          </bodyPartGroups>
-          <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MSSRPG_KidRobe/MSSRPG_KidRobe</wornGraphicPath>
-          <tags Inherit="False">
-            <li>Medieval</li>
-            <li>Royal</li>
-          </tags>
-          <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-          <developmentalStageFilter>Child</developmentalStageFilter>
-        </apparel>
-        <techLevel>Medieval</techLevel>
         <recipeMaker>
-          <researchPrerequisite Inherit="False" IsNull="True" />
-          <recipeUsers>
-            <li>ElectricTailoringBench</li>
-            <li>HandTailoringBench</li>
-            <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
-          </recipeUsers>
-          <displayPriority>290</displayPriority>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>255</displayPriority>
         </recipeMaker>
-        <colorGenerator Class="ColorGenerator_Options">
-          <options>
-            <li>
-              <weight>10</weight>
-              <only>(0.4,0.3,0.15)</only>
-            </li>
-            <li>
-              <weight>15</weight>
-              <only>(0.6,0.45,0.18)</only>
-            </li>
-            <li>
-              <weight>20</weight>
-              <only>(0.8,0.6,0.23)</only>
-            </li>
-          </options>
-        </colorGenerator>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MSSRPG_HoldingBag/MSSRPG_HoldingBag</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+                <li>Nudist</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
         <tradeTags>
-          <li>BasicClothing</li>
+            <li>Armor</li>
         </tradeTags>
     </ThingDef>
-
-    <ThingDef ParentName="ApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
-      <defName>MSSRPG_HoldingBag</defName>
-      <label>bag of holding</label>
-      <description>A magical sack that seemingly holds for more items that it should. Increases pawn carry capacity.</description>
-      <graphicData>
-        <texPath>Things/Pawn/Humanlike/Apparel/MSSRPG_HoldingBag/MSSRPG_HoldingBag</texPath>
-        <graphicClass>Graphic_Single</graphicClass>
-        <drawSize>0.8</drawSize>
-      </graphicData>
-      <techLevel>Medieval</techLevel>
-      <costStuffCount>75</costStuffCount>
-      <costList>
-        <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
-      </costList>
-      <stuffCategories>
-        <li>Fabric</li>
-        <li>Leathery</li>
-      </stuffCategories>
-      <statBases>
-        <MaxHitPoints>50</MaxHitPoints>
-        <WorkToMake>3500</WorkToMake>
-        <Mass>1.5</Mass>
-        <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
-        <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
-        <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
-        <EquipDelay>1.5</EquipDelay>
-      </statBases>
-      <equippedStatOffsets>
-        <CarryingCapacity>100</CarryingCapacity>
-      </equippedStatOffsets>
-      <recipeMaker>
-        <researchPrerequisite>ComplexClothing</researchPrerequisite>
-        <recipeUsers>
-          <li>ElectricTailoringBench</li>
-          <li>HandTailoringBench</li>
-          <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
-        </recipeUsers>
-        <skillRequirements>
-          <Crafting>8</Crafting>
-        </skillRequirements>
-        <displayPriority>255</displayPriority>
-      </recipeMaker>
-      <thingCategories>
-        <li>ApparelMisc</li>
-      </thingCategories>
-      <apparel>
-        <bodyPartGroups>
-          <li>Torso</li>
-        </bodyPartGroups>
-        <countsAsClothingForNudity>false</countsAsClothingForNudity>
-        <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MSSRPG_HoldingBag/MSSRPG_HoldingBag</wornGraphicPath>
-        <layers>
-          <li>Shell</li>
-        </layers>
-        <defaultOutfitTags>
-          <li>Worker</li>
-          <li>Soldier</li>
-          <li>Nudist</li>
-        </defaultOutfitTags>
-        <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
-      </apparel>
-      <tradeTags>
-        <li>Armor</li>
-      </tradeTags>
-  </ThingDef>
 </Defs>

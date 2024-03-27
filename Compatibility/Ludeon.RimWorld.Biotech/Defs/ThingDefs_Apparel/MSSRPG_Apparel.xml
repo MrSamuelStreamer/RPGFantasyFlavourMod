@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef ParentName="ChildApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
+        <defName>MSSRPG_Apparel_KidRobes</defName>
+        <label>kid arcanium robe</label>
+        <description>A one-piece garment sized for kids, crafted using arcanium threads. It provides a modest boost to magical potential.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/MSSRPG_KidRobe/MSSRPG_KidRobe</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>(0.5, 0.5)</drawSize>
+        </graphicData>
+        <costStuffCount>50</costStuffCount>
+        <costList>
+            <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
+        </costList>
+        <statBases>
+            <MaxHitPoints>60</MaxHitPoints>
+            <WorkToMake>1400</WorkToMake>
+            <Mass>0.5</Mass>
+            <StuffEffectMultiplierArmor>0.2</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.5</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.5</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <PsychicSensitivityOffset>0.1</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate>0.02</PsychicEntropyRecoveryRate>
+            <PsychicEntropyMax>0.3</PsychicEntropyMax>
+        </equippedStatOffsets>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+                <li>Legs</li>
+            </bodyPartGroups>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MSSRPG_KidRobe/MSSRPG_KidRobe</wornGraphicPath>
+            <tags Inherit="False">
+                <li>Medieval</li>
+                <li>Royal</li>
+            </tags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+            <developmentalStageFilter>Child</developmentalStageFilter>
+        </apparel>
+        <techLevel>Medieval</techLevel>
+        <recipeMaker>
+            <researchPrerequisite Inherit="False" IsNull="True" />
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
+            </recipeUsers>
+            <displayPriority>290</displayPriority>
+        </recipeMaker>
+        <colorGenerator Class="ColorGenerator_Options">
+            <options>
+                <li>
+                    <weight>10</weight>
+                    <only>(0.4,0.3,0.15)</only>
+                </li>
+                <li>
+                    <weight>15</weight>
+                    <only>(0.6,0.45,0.18)</only>
+                </li>
+                <li>
+                    <weight>20</weight>
+                    <only>(0.8,0.6,0.23)</only>
+                </li>
+            </options>
+        </colorGenerator>
+        <tradeTags>
+            <li>BasicClothing</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>

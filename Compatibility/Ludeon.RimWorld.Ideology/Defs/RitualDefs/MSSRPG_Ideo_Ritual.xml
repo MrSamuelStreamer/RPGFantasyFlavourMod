@@ -11,12 +11,17 @@
         </rulePack>
     </RulePackDef>
 
+    <RitualTargetFilterDef>
+        <defName>MSSRPG_Sorting_Ritual_SelectedOrb</defName>
+        <workerClass>RitualTargetFilter_SelectedThing</workerClass>
+    </RitualTargetFilterDef>
+
     <RitualPatternDef ParentName="SpeechPatternBase">
         <defName>MSSRPG_Sorting_Ritual_Pattern</defName>
         <nameMaker>MSSRPG_NamerRitualSorting</nameMaker>
         <ritualBehavior>MSSRPG_SortingBehaviour</ritualBehavior>
         <ritualObligationTargetFilter>MSSRPG_PonderingOrbRitualObligationTargetFilter</ritualObligationTargetFilter>
-        <ritualTargetFilter>SelectedThing</ritualTargetFilter>
+        <ritualTargetFilter>MSSRPG_Sorting_Ritual_SelectedOrb</ritualTargetFilter>
         <alwaysStartAnytime>true</alwaysStartAnytime>
         <ritualOnlyForIdeoMembers>false</ritualOnlyForIdeoMembers>
         <canMergeGizmosFromDifferentIdeos>false</canMergeGizmosFromDifferentIdeos>
@@ -66,7 +71,7 @@
 
     <RitualObligationTargetFilterDef>
         <defName>MSSRPG_PonderingOrbRitualObligationTargetFilter</defName>
-        <workerClass>RitualObligationTargetWorker_ConsumableBuilding</workerClass>
+        <workerClass>RitualObligationTargetWorker_ThingDef</workerClass>
         <thingDefs>
             <li>MSS_PonderingOrb</li>
         </thingDefs>

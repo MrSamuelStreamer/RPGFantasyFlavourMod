@@ -6,7 +6,7 @@
         <label>sorting</label>
         <nameMaker>MSSRPG_NamerRitualSorting</nameMaker>
         <description>The colony will gather to witness the sorting of a new soul into one of the magic circles.</description>
-        <iconPath>UI/Icons/Learning/Skydreaming</iconPath>
+        <iconPath>UI/Icons/Rituals/RitualFestival</iconPath>
         <useRepeatPenalty>false</useRepeatPenalty>
         <preceptClass>Precept_Ritual</preceptClass>
         <selectionWeight>1.0</selectionWeight>

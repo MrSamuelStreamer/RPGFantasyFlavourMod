@@ -33,19 +33,19 @@
                 <thingDef>VPE_Eltex</thingDef>
                 <countRange>2~6</countRange>
             </li>
-            <li Class="StockGenerator_SingleDef">
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
                 <thingDef>Apparel_PsyfocusRobe</thingDef>
                 <countRange>2~4</countRange>
             </li>
-            <li Class="StockGenerator_SingleDef">
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
                 <thingDef>Apparel_PsyfocusShirt</thingDef>
                 <countRange>2~4</countRange>
             </li>
-            <li Class="StockGenerator_SingleDef">
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
                 <thingDef>Apparel_PsyfocusVest</thingDef>
                 <countRange>2~4</countRange>
             </li>
-            <li Class="StockGenerator_SingleDef">
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
                 <thingDef>Apparel_PsyfocusHelmet</thingDef>
                 <countRange>2~4</countRange>
             </li>
