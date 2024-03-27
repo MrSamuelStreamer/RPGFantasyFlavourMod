@@ -25,6 +25,10 @@
                 <thingDef>Genepack</thingDef>
                 <countRange>2~6</countRange>
             </li>
+            <li MayRequire="feldoh.devilfruit" Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>4~10</countRange>
+            </li>
         </stockGenerators>
     </TraderKindDef>
 </Defs>
