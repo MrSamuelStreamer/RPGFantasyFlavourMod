@@ -2,7 +2,7 @@
 
 <Patch>
     <Operation Class="PatchOperationAdd">
-        <xpath>/Defs/BiomeDef[defName="TropicalRainforest" or defName="TropicalSwamp" or defName="BorealForest" or defName="TemperateForest" or defName="TemperateSwamp"]/wildAnimals</xpath>
+        <xpath>/Defs/BiomeDef[defName="TropicalRainforest" or defName="TropicalSwamp" or defName="BorealForest" or defName="TemperateForest" or defName="TemperateSwamp" or defName="AB_IdyllicMeadows"]/wildAnimals</xpath>
         <value>
             <MSSRPG_Broombug>0.4</MSSRPG_Broombug>
         </value>
