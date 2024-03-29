@@ -9,6 +9,7 @@
     <inheritable>true</inheritable>
     <factionlessGenerationWeight>0</factionlessGenerationWeight>
     <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <combatPowerFactor>99</combatPowerFactor>
     <genes>
       <li MayRequire="Ludeon.RimWorld.Biotech">Ageless</li>
       <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_ArchotechAttunement</li>
@@ -56,6 +57,9 @@
     <descriptionShort>If you're seeing this you've installed things incorrectly.</descriptionShort>
     <iconPath>Xenotypes/BS_Nisse</iconPath>
     <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <combatPowerFactor>99</combatPowerFactor>
     <genes>
       <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Archon</li>
       <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Archotechist</li>
