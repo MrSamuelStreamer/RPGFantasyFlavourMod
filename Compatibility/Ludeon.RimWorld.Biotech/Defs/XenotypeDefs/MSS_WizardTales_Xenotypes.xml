@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Defs>
+  <XenotypeDef>
+    <defName>MSSRPG_Adult_Mage_Pool</defName>
+    <label>Adult Mage Pool - You Shouldn't See This</label>
+    <description>If you see this, you've done something horribly wrong during installation. This xenotype is secret, and contains all the genes that the adults can spawn in with to give cool mutations.</description>
+    <descriptionShort>If you're seeing this you've installed things incorrectly.</descriptionShort>
+    <iconPath>Xenotypes/BS_Dvergr</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <combatPowerFactor>99</combatPowerFactor>
+    <genes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Ageless</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_ArchotechAttunement</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">DiseaseFree</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PerfectImmunity</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Fast_TotalHealing</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">TotalHealing</li>
+      <li MayRequire="sarg.alphagenes">AG_Regeneration</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Very_Passioned_Learning_Gene</li>
+      <li MayRequire="sarg.alphagenes">AG_Invisibility</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Glamour</li>
+      <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicRemapping</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Dignified</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Flame</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Minimal</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Morbid</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Natural</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Science</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Wealth</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_PsychicWarrior</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicInsanity</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicSight</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PsychicBonding</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_ExtremeMeditation</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_ExtremeEntropyCapacity</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_Transcendent</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_InnatePsylink</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_VeryFastNeuralHeat</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_MeditationNeed</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_PsychicAbility_MoreExtreme</li>
+      <li MayRequire="lts.GEG">GEG_Eyes_GlowingArchotech</li>
+      <li MayRequire="sarg.alphagenes">AG_ThirdEye</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Learning_Fast</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Chronopath</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Necropath</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Puppeteer</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Baby_Mage_Pool</defName>
+    <label>Baby Mage Pool - You Shouldn't See This</label>
+    <description>If you see this, you've done something horribly wrong during installation. This xenotype is secret, and contains all the genes that the babies can spawn in with to ensure they're psycasters.</description>
+    <descriptionShort>If you're seeing this you've installed things incorrectly.</descriptionShort>
+    <iconPath>Xenotypes/BS_Nisse</iconPath>
+    <inheritable>true</inheritable>
+    <factionlessGenerationWeight>0</factionlessGenerationWeight>
+    <canGenerateAsCombatant>false</canGenerateAsCombatant>
+    <combatPowerFactor>99</combatPowerFactor>
+    <genes>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Archon</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Archotechist</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Conflagrator</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Empath</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Frostshaper</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Harmonist</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Nightstalker</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Protector</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Skipmaster</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Staticlord</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Technomancer</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Warlord</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Wildspeaker</li>
+      <li MayRequire="Eclair155.VPEBiotechPatches">Gene_HeraldOfTheBlackHive</li>
+      <li MayRequire="Eclair155.VPEBiotechPatches">Gene_Oculist</li>
+      <li MayRequire="Eclair155.VPEBiotechPatches">Gene_Xenoseer</li>
+      <li MayRequire="Eclair155.VPEBiotechPatches">Gene_Ravager</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Druid</defName>
+    <label>Druid</label>
+    <description>A bloodline that favours the natural aspects of magical manipulation and allows for connection to the planets natural anima forces.</description>
+    <descriptionShort>A magical bloodline with a strong connection to anima.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon63</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Minimal</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Natural</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_NaturalPsychic</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SlowMeditation</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Wildspeaker</li>
+      <li MayRequire="Eclair155.VPEBiotechPatches">Gene_Ravager</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Eltexian</defName>
+    <label>Eltexian</label>
+    <description>A unique bloodline crafted by many generations of marriages to fill the melee gaps in a magical army. Powerful in close quarters combat but no less magically gifted than any other mage.</description>
+    <descriptionShort>A deadly melee mage variant.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon43</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Science</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_EltexPsychic</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_PsychicWarrior</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_HighEntropyCapacity</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_SlowNeuralHeat</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Protector</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Warlord</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Mage</defName>
+    <label>Mage</label>
+    <description>A burgeoning bloodline of magical potential that lack the raw power of other bloodlines but makes for a fantastic foundation for magical dynasties.</description>
+    <descriptionShort>A normal mage with a decent natural aptitude for magical prowess.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon4</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Dignified</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Enhanced</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SwiftMeditation</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_FastNeuralHeat</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Conflagrator</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Frostshaper</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Magister</defName>
+    <label>Magister</label>
+    <description>A powerful curated bloodline crafted from generations of arranged marriages and childbirth to produce powerful mages.</description>
+    <descriptionShort>A powerful mage created through generations of arranged marriage to enforce inborn magical prowess.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon11</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Archotech</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Dignified</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Science</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Wealth</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicAbility_Masterful</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SwiftMeditation</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_HighEntropyCapacity</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_FastNeuralHeat</li>
+      <li MayRequire="Turnovus.Biotech.IntegratedGenes">Turn_Gene_MeditationNeed</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Archon</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Archotechist</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Chronopath</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Nullkind</defName>
+    <label>Nullkind</label>
+    <description>A nullkind is someone with no inate magical connection, and a total lack of ability to form a magical connection, except in extremely rare cases where mutations restore the magical aptitute.</description>
+    <descriptionShort>A bloodline totally devoid of any magical connection.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_RemixedCustom4</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Deaf</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef>
+    <defName>MSSRPG_Warlock</defName>
+    <label>Warlock</label>
+    <description>A bloodline created by one of its progenitors forming pacts and making bargains with Eldritch beings. Now highly sought after for marriage so offspring can gain access to darker powers with none of the associated demonic risks.</description>
+    <descriptionShort>A dark and powerful bloodline forged by an ancestral pact with a demon.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/Custom/VBE_CustomXenotypeIcon31</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="sarg.alphagenes">AG_InnatePsylink</li>
+      <li MayRequire="GwenBlanketSpecter.MeditationFocus">GBS_Meditator_Dignified</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">PsychicAbility_Enhanced</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicInsanity</li>
+      <li MayRequire="sarg.alphagenes">AG_PsychicSight</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SlowMeditation</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Necropath</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Nightstalker</li>
+      <li MayRequire="Danzen.VPE.BiotechIntegration">Gene_Puppeteer</li>
+      <li MayRequire="Eclair155.VPEBiotechPatches">Gene_Oculist</li>
+    </genes>
+  </XenotypeDef>
+
+  <XenotypeDef MayRequire="sarg.alphagenes">
+    <defName>MSSRPG_Balrog</defName>
+    <label>Bulrog of Margoth</label>
+    <description>Believed only to be an Imperial fairytale to scare misbehaving children, the Bulrog is a towering creature of flame and darkness found deep underground, often remaining in slumber for thousands of years unknown to the surface dwellers until they delve too deeply...</description>
+    <descriptionShort>An enormous firey creature of legend.</descriptionShort>
+    <iconPath>UI/Icons/Xenotypes/AG_Efreet</iconPath>
+    <inheritable>true</inheritable>
+    <genes>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_HeatGenerator</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Deathless</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_HexaHorns_Skin</li>
+      <li MayRequire="RedMattis.BigSmall.Core">JotunFrame</li>
+      <li MayRequire="sarg.alphagenes">AG_GreaterFireSpew</li>
+      <li MayRequire="sarg.alphagenes">AG_VolcanicAshMaker</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Superclotting</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_Maniac</li>
+      <li MayRequire="RedMattis.BigSmall.Core">MaxTemp_HugeNeed</li>
+      <li MayRequire="sarg.alphagenes">AG_ColdSlowness</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_Aggression_ExtremelyAggressive</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">MeleeDamage_Strong</li>
+      <li MayRequire="vanillaracesexpanded.archon">VRE_SlowMeleeHitter</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_DemonTail</li>
+      <li MayRequire="sarg.alphagenes">AG_Beauty_VeryVeryUgly</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_StonemaskHead</li>
+      <li MayRequire="sarg.alphagenes">AG_Digitigrade</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Body_Hulk</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">Skin_DeepRed</li>
+      <li MayRequire="sarg.alphagenes">AlphaGenes_ExoticOrganism</li>
+      <li MayRequire="RedMattis.BigSmall.Core">Undergrounder</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_Talons</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_AncientDemonWings</li>
+      <li MayRequire="RedMattis.BigSmall.Core">BS_SatanHead</li>
+      <li MayRequire="Ludeon.RimWorld.Biotech">AptitudeRemarkable_Melee</li>
+      <li MayRequire="void.charactereditor">SZBodySize_30</li>
+      <li MayRequire="RedMattis.BetterPrerequisites">BS_FA_NoHead</li>
+    </genes>
+  </XenotypeDef>
+</Defs>

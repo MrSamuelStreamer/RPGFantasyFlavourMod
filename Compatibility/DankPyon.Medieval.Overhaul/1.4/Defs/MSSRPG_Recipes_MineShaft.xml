@@ -8,7 +8,7 @@
 		<effectWorking>CutStone</effectWorking>
 		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
 		<recipeUsers>
-			<li>MSSRPG_DankPyon_MineShaft</li>
+			<li MayRequire="vanillaexpanded.vpsycastse">MSSRPG_DankPyon_MineShaft</li>
 		</recipeUsers>
 	</RecipeDef>
 

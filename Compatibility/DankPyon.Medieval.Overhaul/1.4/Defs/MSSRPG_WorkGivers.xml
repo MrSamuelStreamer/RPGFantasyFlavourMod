@@ -7,7 +7,7 @@
 		<workType>Mining</workType>
 		<priorityInType>110</priorityInType>
 			<fixedBillGiverDefs>
-				<li>MSSRPG_DankPyon_MineShaft</li>
+				<li MayRequire="vanillaexpanded.vpsycastse">MSSRPG_DankPyon_MineShaft</li>
 			</fixedBillGiverDefs>
 		<verb>mine</verb>
 		<gerund>mining at</gerund>

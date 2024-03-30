@@ -163,7 +163,7 @@
                 <VU_WhiteRose MayRequire="Redmattis.Undead">0.1</VU_WhiteRose>
                 <VU_Lycantrope MayRequire="Redmattis.Undead">0.1</VU_Lycantrope>
 
-                <MSSRPG_Balrog>0.1</MSSRPG_Balrog>
+                <MSSRPG_Balrog MayRequire="sarg.alphagenes">0.1</MSSRPG_Balrog>
 
                 <Baseliner>0.01</Baseliner>
                 <Dirtmole>0.25</Dirtmole>
