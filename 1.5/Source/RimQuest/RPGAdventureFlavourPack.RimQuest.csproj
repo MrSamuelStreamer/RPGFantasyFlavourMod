@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+    <PropertyGroup>
+        <TargetFramework>net48</TargetFramework>
+        <OutputType>Library</OutputType>
+        <RootNamespace>MrSamuelStreamer.RPGAdventureFlavourPack.RimQuest</RootNamespace>
+        <AssemblyName>RPGAdventureFlavourPack.RimQuest</AssemblyName>
+        <AllowedReferenceRelatedFileExtensions>None</AllowedReferenceRelatedFileExtensions>
+        <LangVersion>preview</LangVersion>
+        <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+        <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+        <OutputPath>../../../Compatibility/mlie.rimquest/1.5/Assemblies</OutputPath>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+        <DebugType>portable</DebugType>
+        <DebugSymbols>true</DebugSymbols>
+        <Optimize>false</Optimize>
+        <DefineDebug>true</DefineDebug>
+        <DefineTrace>true</DefineTrace>
+    </PropertyGroup>
+    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+        <DebugType>none</DebugType>
+        <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    </PropertyGroup>
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <HintPath Condition="Exists('../../../../../RimWorldWin64Data')">../../../../../RimWorldWin64_Data/Managed/Assembly-CSharp.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <HintPath Condition="Exists('../../../../../RimWorldWin64Data')">../../../../../RimWorldWin64_Data/Managed/UnityEngine.CoreModule.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <PackageReference Include="Lib.Harmony" Version="2.*" ExcludeAssets="runtime"/>
+        <PackageReference Include="System.Data.DataSetExtensions" Version="4.5.0"/>
+    </ItemGroup>
+    <ItemGroup Condition="'@(Reference->WithMetadataValue('Identity', 'Assembly-CSharp')->Metadata('HintPath')->Exists())' == ''">
+        <PackageReference Include="Krafs.Rimworld.Ref" Version="1.5-*"/>
+    </ItemGroup>
+    <ItemGroup>
+        <Reference Include="RimQuest">
+            <HintPath>../../../../2263331727/1.5/Assemblies/RimQuest.dll</HintPath>
+            <Private>False</Private>
+        </Reference>
+    </ItemGroup>
+    <ItemGroup>
+        <ProjectReference Include="../Core/RPGAdventureFlavourPack.csproj" ReferenceOutputAssembly="True" Private="False" />
+    </ItemGroup>
+    <Target Name="PreBuild" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Release' ">
+        <Delete Files="../../../Compatibility/mlie.rimquest/1.5/Assemblies/RPGAdventureFlavourPack.RimQuest.pdb" />
+    </Target>
+</Project>

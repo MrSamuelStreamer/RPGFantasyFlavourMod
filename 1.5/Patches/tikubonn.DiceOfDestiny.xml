@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>DiceOfDestiny</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>Defs/ThingSetMakerDef[defName = "Reward_ItemsStandard"]/root/options/li/thingSetMaker/options</xpath>
+                    <value>
+                        <li>
+                            <weight>2</weight>
+                            <thingSetMaker Class="ThingSetMaker_MarketValue">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>DiceOfDestiny_DiceOfFortune</li>
+                                        </thingDefs>
+                                    </filter>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                        <li>
+                            <weight>3</weight>
+                            <thingSetMaker Class="ThingSetMaker_MarketValue">
+                                <fixedParams>
+                                    <filter>
+                                        <thingDefs>
+                                            <li>DiceOfDestiny_DiceOfChaos</li>
+                                        </thingDefs>
+                                    </filter>
+                                </fixedParams>
+                            </thingSetMaker>
+                        </li>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

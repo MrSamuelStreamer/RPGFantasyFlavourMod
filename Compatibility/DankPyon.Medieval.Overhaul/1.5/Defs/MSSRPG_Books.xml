@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef ParentName="DankPyon_LootBase" MayRequire="DankPyon.Medieval.Overhaul">
+        <defName>MSSRPG_Book_LustySauridMaid_First</defName>
+        <label>the Lusty Saurid Maid Vol 1</label>
+        <description>A well thumbed book on cheap paper chronicling the life and times of a saurid maid whose master notices them whilst carrying out their duties one dark and dreary eve.\n\nThe Lusty Saurid Maid\n\nVolume 1\n\nBy: Vulgario Von Voluptuouso\n\n\nAct II, Scene IV, continued\n\nGlitter Scale: M'lord, a man of your stature shouldn't be in here with the maid! Whatever would the mistress think!\n\nVulgariotto: My kneading skills are known throughout the land young maid, you must allow me to knead your baps if I am to enjoy them.\n\nGlitter Scale: It is not proper mi'lord, a gentleman such as you should not be so hands on. You must allow me to handle my own baps.\n\nVulgariotto: Oh very well, but I shall watch to ensure you do it right! Make sure to use that shapely tail to really press down. The texture of your scales will rough the surface making them all the more delectable.\n\nGlitter Scale: Please sit down and I shall come with something to warm your hands.\n\n\nEND OF ACT II, Scene IV</description>
+        <graphicData>
+            <texPath>Special/AncientCodex</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>60</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <Gold>4</Gold>
+        </costList>
+
+        <healthAffectsPrice>false</healthAffectsPrice>
+    </ThingDef>
+
+  <ThingDef ParentName="DankPyon_LootBase" MayRequire="DankPyon.Medieval.Overhaul">
+        <defName>MSSRPG_Book_LustySauridMaid_Second</defName>
+        <label>the Lusty Saurid Maid Vol 2</label>
+        <description>The second in a popular series. A well thumbed book on cheap paper chronicling the life and times of a saurid maid whose master notices them whilst carrying out their duties one dark and dreary eve.\n\nThe Lusty Saurid Maid\n\nVolume 2\n\nBy: Vulgario Von Voluptuouso\n\n\nAct V, Scene I, continued\n\n.Vulgariotto: Yes, my dear, work those well muscled arms, thrust forward with passion. It is the only way to finish before me.\n\nSome time later...\n\nGlitter Scale: Oh sir, you let me finish first I know it! I tried my best to be faster than you, but you were polishing your spearhead far quicker than I could possibly wax the shaft. My claws do get in the way so. I must take such care not to nick the shaft.\n\nVulgariotto: Worry not m'dear, that shaft has seen much worse than a simple scratch. You do so engage my interests.\n\nGlitter Scale: I am but a simple saurid maid sir, you should not be so familiar with me.\n\nVulgariotto: Worry not, I shall not get in trouble, and neither shall you.\n\n\nEND OF ACT V, Scene I</description>
+        <graphicData>
+            <texPath>Special/AncientCodex</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+        </graphicData>
+        <soundInteract>Metal_Drop</soundInteract>
+        <soundDrop>Standard_Drop</soundDrop>
+
+        <statBases>
+            <MaxHitPoints>100</MaxHitPoints>
+            <Beauty>60</Beauty>
+            <Mass>1</Mass>
+            <Flammability>0</Flammability>
+            <DeteriorationRate>1.0</DeteriorationRate>
+        </statBases>
+
+        <costList>
+            <Gold>7</Gold>
+        </costList>
+
+        <healthAffectsPrice>false</healthAffectsPrice>
+    </ThingDef>
+</Defs>

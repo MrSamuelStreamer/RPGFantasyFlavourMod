@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<IncidentDef>
+		<defName>MSSRPG_EnragedCreatureAttack</defName>
+		<label>triggered enraged attack</label>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+			<li>Map_Misc</li>
+		</targetTags>
+		<workerClass>MrSamuelStreamer.RPGAdventureFlavourPack.IncidentWorker_TriggerEnrage</workerClass>
+		<letterLabel>Enraged</letterLabel>
+		<letterText>Oh no! We dug too deeply and greediliy, something is coming to punish us for disturbing its slumber!</letterText>
+		<letterDef>ThreatBig</letterDef>
+		<baseChance>1</baseChance>
+		<category>DeepDrillInfestation</category>
+		<pointsScaleable>true</pointsScaleable>
+		<tale>Infestation</tale>
+	</IncidentDef>
+
+</Defs>

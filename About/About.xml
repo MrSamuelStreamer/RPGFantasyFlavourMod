@@ -5,6 +5,7 @@
     <author>MrSamuelStreamer, Feldoh, Skullywag, Sandwish</author>
     <supportedVersions>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
     <packageId>MrSamuelStreamer.RPGAdventureFlavour</packageId>
     <description>Patches, retextures, RimThemes, and thematic changes for the RPG Adventure Pack!</description>
@@ -21,38 +22,24 @@
         <li>Ludeon.RimWorld</li>
         <li>Ludeon.RimWorld.Ideology</li>
         <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Biotech</li>
+        <li>Ludeon.RimWorld.Anomaly</li>
         <li>VanillaExpanded.VPsycastsE</li>
-        <li>aRandomKiwi.RimThemes</li>
         <li>sarg.alphagenes</li>
         <li>sarg.alphaanimals</li>
-        <li>Edern.CombatPsycasts</li>
-        <li>oken.medievalquestrewards</li>
-        <li>sargoskar.witcherhunt</li>
         <li>mlie.rimquest</li>
         <li>VanillaExpanded.VFESecurity</li>
         <li>Neronix17.Outland.Core</li>
-        <li>ogam.rimedieval</li>
-        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li>
-        <li>DankPyon.Medieval.Overhaul</li>
-        <li>MrSamuelStreamer.MrSamuelStreamCustomFaction</li>
         <li>OskarPotocki.VFE.Classical</li>
         <li>jaxe.rimhud</li>
-        <li>orion.cashregister</li>
-        <li>orion.hospitality</li>
-        <li>syrchalis.setupcamp</li>
         <li>VanillaExpanded.VTEXE</li>
         <li>tidal.morevanilla.textures</li>
-        <li>jdalt.levelthis</li>
-        <li>com.yayo.lostTechCore.2</li>
-        <li>OskarPotocki.VFE.Vikings</li>
-        <li>mooloh.dndmenagerie</li>
         <li>iforgotmysocks.CaravanAdventures</li>
         <li>marvinkosh.sometimesraidsgowrong</li>
         <li>Aoba.Tent</li>
         <li>redmattis.bigsmall.core</li>
         <li>vanillaracesexpanded.archon</li>
         <li>turnovus.biotech.integratedgenes</li>
-        <li>gwibbo.morepsygenes</li>
         <li>ccyt.stargatesmod</li>
         <li>RedMattis.LamiasAndOtherSnakes</li>
         <li>RedMattis.Yokai</li>
@@ -61,5 +48,26 @@
         <li>Redmattis.Undead</li>
         <li>det.stoneborn</li>
         <li>vanillaexpanded.vappe</li>
+
+        <li>ogam.rimedieval</li><!--TODO 1.5 Issues (Replace with: Remove industrial stuff - https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964) -->
+        <li>DankPyon.Medieval.Overhaul</li><!--TODO 1.5 Issues, replace with unofficial maybe - https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926&searchtext=medieval+overhaul -->
+
+        <li>MrSamuelStreamer.MrSamuelStreamCustomFaction</li><!--TODO 1.5 Issues-->
+        <li>danzen.vpe.biotechintegration</li><!--TODO 1.5 Issues-->
+        <li>com.yayo.lostTechCore.2</li><!--TODO 1.5 Issues-->
+        <li>aRandomKiwi.RimThemes</li><!--TODO 1.5 Issues-->
+        <li>Edern.CombatPsycasts</li><!--TODO 1.5 Issues-->
+        <li>mooloh.dndmenagerie</li><!--TODO 1.5 Issues-->
+        <li>gwibbo.morepsygenes</li><!--TODO 1.5 Issues-->
+        <li>syrchalis.setupcamp</li><!--TODO 1.5 Issues-->
+        <li>orion.cashregister</li><!--TODO 1.5 Issues-->
+        <li>orion.hospitality</li><!--TODO 1.5 Issues-->
+        <li>jdalt.levelthis</li><!--TODO 1.5 Issues-->
+
+        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li><!--TODO 1.5 Issues (Deprecated)-->
+        <li>OskarPotocki.VFE.Vikings</li><!--TODO 1.5 Issues (Deprecated)-->
+        <li>sargoskar.witcherhunt</li><!--TODO 1.5 Issues (Deprecated)-->
+
+        <li>oken.medievalquestrewards</li><!--TODO 1.5 Issues (Removed from workshop)-->
     </loadAfter>
 </ModMetaData>

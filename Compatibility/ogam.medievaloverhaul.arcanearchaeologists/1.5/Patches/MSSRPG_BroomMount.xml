@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationAddModExtension">
+        <xpath>/Defs/PawnKindDef[@Name="Ogam_MagicalAcademyPawnBase"]</xpath>
+        <value>
+            <li MayRequire="Owlchemist.GiddyUp" Class="GiddyUp.CustomMounts">
+                <mountChance>30</mountChance>
+                <possibleMounts>
+                    <li>
+                        <key>MSSRPG_Broombug</key>
+                        <value>90</value>
+                    </li>
+                    <li>
+                        <key>Horse</key>
+                        <value>10</value>
+                    </li>
+                </possibleMounts>
+            </li>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <PreceptDef ParentName="FestivalBase">
+        <defName>MSSRPG_Sorting_Ritual</defName>
+        <label>sorting</label>
+        <nameMaker>MSSRPG_NamerRitualSorting</nameMaker>
+        <description>The colony will gather to witness the sorting of a new soul into one of the magic circles.</description>
+        <iconPath>UI/Icons/Rituals/RitualFestival</iconPath>
+        <useRepeatPenalty>false</useRepeatPenalty>
+        <preceptClass>Precept_Ritual</preceptClass>
+        <selectionWeight>1.0</selectionWeight>
+        <ignoreNameUniqueness>true</ignoreNameUniqueness>
+        <countsTowardsPreceptLimit>false</countsTowardsPreceptLimit>
+        <ritualPatternBase>MSSRPG_Sorting_Ritual_Pattern</ritualPatternBase>
+        <visible>true</visible>
+        <mergeRitualGizmosFromAllIdeos>false</mergeRitualGizmosFromAllIdeos>
+        <comps>
+            <li Class="MrSamuelStreamer.RPGAdventureFlavourPack.PreceptComp_Backstories">
+                <backstories>
+                    <li>MSSRPG_Backstory_CircleOfTheMoon</li>
+                    <li>MSSRPG_Backstory_CircleOfTheSun</li>
+                    <li>MSSRPG_Backstory_CircleOfTheStars</li>
+                    <li>MSSRPG_Backstory_CircleOfTheVoid</li>
+                    <li>MSSRPG_Backstory_CircleOfTheEarth</li>
+                    <li>MSSRPG_Backstory_TrapeziumOfAnarchy</li>
+                </backstories>
+                <childOnly>true</childOnly>
+            </li>
+        </comps>
+    </PreceptDef>
+
+</Defs>

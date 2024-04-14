@@ -5,7 +5,8 @@
     <li>1.4</li>
     <li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
     <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
-    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology/Common</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology/1.4</li>
     <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE/1.4</li>
     <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE/Common</li>
     <li IfModActive="sarg.alphaanimals">Compatibility/sarg.alphaanimals</li>
@@ -30,4 +31,35 @@
     <li IfModActive="ccyt.stargatesmod">Compatibility/CCYT.StargatesMod/1.4</li>
     <li IfModActive="vanillaexpanded.vappe">Compatibility/vanillaexpanded.vappe/1.4</li>
   </v1.4>
+  <v1.5>
+    <li>Common</li>
+    <li>1.5</li>
+    <li IfModActive="Ludeon.RimWorld.Biotech">Compatibility/Ludeon.RimWorld.Biotech</li>
+    <li IfModActive="Ludeon.RimWorld.Royalty">Compatibility/Ludeon.RimWorld.Royalty</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology/Common</li>
+    <li IfModActive="Ludeon.RimWorld.Ideology">Compatibility/Ludeon.RimWorld.Ideology/1.5</li>
+    <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE/1.5</li>
+    <li IfModActive="VanillaExpanded.VPsycastsE">Compatibility/VanillaExpanded.VPsycastsE/Common</li>
+    <li IfModActive="sarg.alphaanimals">Compatibility/sarg.alphaanimals</li>
+    <li IfModActive="sarg.alphagenes">Compatibility/sarg.alphagenes</li>
+    <li IfModActive="Edern.CombatPsycasts">Compatibility/Edern.CombatPsycasts</li>
+    <li IfModActive="oken.medievalquestrewards">Compatibility/oken.medievalquestrewards</li>
+    <li IfModActive="mlie.rimquest">Compatibility/mlie.rimquest/1.5</li>
+    <li IfModActive="SaucyPigeon.PawnBadge">Compatibility/SaucyPigeon.PawnBadge/1.5</li>
+    <li IfModActive="ogam.rimedieval">Compatibility/ogam.rimedieval/1.5</li>
+    <li IfModActive="jdalt.levelthis">Compatibility/jdalt.levelthis</li>
+    <li IfModActive="DankPyon.Medieval.Overhaul">Compatibility/DankPyon.Medieval.Overhaul/1.5</li>
+    <li IfModActive="com.yayo.lostTechCore.2">Compatibility/com.yayo.lostTechCore.2/1.5</li>
+    <li IfModActive="turnovus.biotech.integratedgenes">Compatibility/turnovus.biotech.integratedgenes/Common</li>
+    <li IfModActive="redmattis.bigsmall.core">Compatibility/redmattis.bigsmall.core/Common</li>
+    <li IfModActive="vanillaracesexpanded.archon">Compatibility/vanillaracesexpanded.archon/Common</li>
+    <li IfModActive="danzen.vpe.biotechintegration">Compatibility/danzen.vpe.biotechintegration/Common</li>
+    <li IfModActive="vanillaexpanded.outposts">Compatibility/vanillaexpanded.outposts/Common</li>
+    <li IfModActive="kage.resourcetrees">Compatibility/kage.resourcetrees/1.5</li>
+    <li IfModActive="Accurex.MedievalEmpireOverhaul">Compatibility/Accurex.MedievalEmpireOverhaul/1.5</li>
+    <li IfModActive="ogam.medievaloverhaul.arcanearchaeologists">Compatibility/ogam.medievaloverhaul.arcanearchaeologists/1.5</li>
+    <li IfModActive="vanillaexpanded.vpe.hemosage">Compatibility/vanillaexpanded.vpe.hemosage/Common</li>
+    <li IfModActive="ccyt.stargatesmod">Compatibility/CCYT.StargatesMod/1.5</li>
+    <li IfModActive="vanillaexpanded.vappe">Compatibility/vanillaexpanded.vappe/1.5</li>
+  </v1.5>
 </loadFolders>

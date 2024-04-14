@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <QuestScriptDef MayRequire="sargoskar.witcherhunt">
+        <defName>MSSRPG_DragonSlayingQuest</defName>
+        <rootSelectionWeight>0</rootSelectionWeight>
+        <rootMinPoints>0</rootMinPoints>
+        <autoAccept>true</autoAccept>
+        <isRootSpecial>true</isRootSpecial>
+        <epicParent>RelicHunt</epicParent>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <defaultChallengeRating>3</defaultChallengeRating>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->[asker_nameDef]'s dragon slaying [contract]</li>
+                <li>monster->monster</li>
+                <li>contract->quest</li>
+                <li>contract->epic quest</li>
+                <li>contract->plea</li>
+                <li>contract->undertaking</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->The [asker_faction_leaderTitle] of [asker_faction_name], is losing livestock on a daily basis to the insatiable hunger of one of the ancient dragons.\n\nRumour has it that the ancient ones can no longer breath fire like their younger bretheren, as they age their flame gland begins to produce a potent acid which while no longer flamable is just as deadly. They are extremely dangerous monsters not to be underestimated.\n\nMonster class traits: Dragons can move over difficult terrain with ease.\n\n\nIf we succeed, [allRewardsDescriptions] and [asker_nameFull] will share some information about a legendary artifact. Take up the quest quickly or lose it to another brave dragon slayer.</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GetMap" />
+
+                <li Class="QuestNode_GetPawn">
+                    <storeAs>asker</storeAs>
+                    <mustBeFactionLeader>true</mustBeFactionLeader>
+                    <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+                </li>
+
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>WMH_Wyvern_MonsterEncounterCore</tag>
+                        </li>
+                    </sitePartsTags>
+
+                </li>
+
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$faction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                    <parms>
+                        <!-- Use the actual threat points generated (some site parts define a minimum threshold) -->
+                        <points>$sitePoints</points>
+                    </parms>
+                </li>
+
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(2,4)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Quest expired: [resolvedQuestName]</label>
+                                <text>Another dragon slayer attempted to fight the beast. They were incinerated but damaged the dragon's lair. It has flown off in search of a new one. The quest [resolvedQuestName] has expired.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="QuestNode_GiveRewards">
+                        <parms>
+                            <allowGoodwill>true</allowGoodwill>
+                            <allowRoyalFavor>false</allowRoyalFavor>
+                        </parms>
+                        <customLetterLabel>Quest Complete</customLetterLabel>
+                        <customLetterText>Your epic quest has ended in success! You have defeated the dragon!\n\nA reward from the grateful [asker_faction_name] has arrived along with a sealed note perhaps containing the information you seek.</customLetterText>
+                    </node>
+                </li>
+                <li Class="QuestNode_Letter">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <label>Rumours of [relic_name]</label>
+                    <text>[asker_faction_name] was as good as their word, they have shared all they knew about [relic_name].\n\nSurely, soon it will be yours!</text>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+
+
+    <SitePartDef Name="MSSRPG_SlayerEncounterBase" Abstract="True">
+        <description>A monster is roaming around this area. Approach if you dare!</description>
+        <siteTexture>World/WorldObjects/Sites/GenericSite</siteTexture>
+        <approachOrderString>Assault {0}</approachOrderString>
+        <approachingReportString>Attempting to slay {0}</approachingReportString>
+        <arrivedLetter>There is a terrifying monster in this area.</arrivedLetter>
+        <arrivedLetterDef>NeutralEvent</arrivedLetterDef>
+        <wantsThreatPoints>true</wantsThreatPoints>
+        <tags>
+            <li>MSSRPG_SlayerSite</li>
+        </tags>
+    </SitePartDef>
+
+    <SitePartDef ParentName="MSSRPG_SlayerEncounterBase">
+        <defName>MSSRPG_SlayerEncounter_Dragon</defName>
+        <label>dragon lair</label>
+        <expandingIconTexture>World/WorldObjects/Expanding/Sites/Manhunters</expandingIconTexture>
+        <selectionWeight>1</selectionWeight>
+    </SitePartDef>
+
+    <GenStepDef>
+        <defName>MSSRPG_SlayerEncounterGen</defName>
+        <linkWithSite>MSSRPG_SlayerEncounter_Dragon</linkWithSite>
+        <order>805</order>
+        <genStep Class="MrSamuelStreamer.RPGAdventureFlavourPack.GenStep_SlayerEncounter" />
+        <modExtensions>
+            <li Class="MrSamuelStreamer.RPGAdventureFlavourPack.CreatureSelectionExtension">
+                <possiblePawnKinds>
+                    <li MayRequire="onyxae.dragonsdescent">True_Dragon</li>
+                    <li MayRequire="onyxae.dragonsdescent">Black_Dragon</li>
+                    <li MayRequire="onyxae.dragonsdescent">Red_Dragon</li>
+                </possiblePawnKinds>
+            </li>
+        </modExtensions>
+    </GenStepDef>
+
+    <QuestScriptDef MayRequire="onyxae.dragonsdescent">
+        <defName>MSSRPG_SlayerRelicQuest</defName>
+        <rootSelectionWeight>0</rootSelectionWeight>
+        <rootMinPoints>0</rootMinPoints>
+        <autoAccept>true</autoAccept>
+        <isRootSpecial>true</isRootSpecial>
+        <epicParent>RelicHunt</epicParent>
+        <canGiveRoyalFavor>false</canGiveRoyalFavor>
+        <defaultChallengeRating>3</defaultChallengeRating>
+        <questNameRules>
+            <rulesStrings>
+                <li>questName->[asker_nameDef]'s dragon slaying [contract]</li>
+                <li>questName->dragon slayer needed</li>
+                <li>monster->monster</li>
+                <li>contract->quest</li>
+                <li>contract->epic quest</li>
+                <li>contract->plea</li>
+                <li>contract->undertaking</li>
+            </rulesStrings>
+        </questNameRules>
+        <questDescriptionRules>
+            <rulesStrings>
+                <li>questDescription->The [asker_faction_leaderTitle] of [asker_faction_name], is making a plea for any brave dragon slayers to lend their aid. Their settlements are being terrorised nightly by an ancient dragon, once thought a mere myth.\n\nTerrified villagers have reported that they have seen it returning to its lair nearby, where a brave party might be able to face it down, and stop its reign of terror. This is a dangerous quest not to be accepted ligtly.\n\nDesperate to recruit anyone to aid, [asker_nameFull] has let it be known that any group to succeed will be granted [allRewardsDescriptions]. Whispers persist that they know of the [relic_name] and may be willing to share what they know with any slayer able to aid them in their time of need. Take up the quest quickly or lose it to another brave dragon slayer.\n\nThe monster is said to be a [monsterLabel]\n\n[monsterDescription]</li>
+            </rulesStrings>
+        </questDescriptionRules>
+        <root Class="QuestNode_Sequence">
+            <nodes>
+                <li Class="QuestNode_GetMap" />
+
+                <li Class="QuestNode_GetPawn">
+                    <storeAs>asker</storeAs>
+                    <mustBeFactionLeader>true</mustBeFactionLeader>
+                    <allowPermanentEnemyFaction>false</allowPermanentEnemyFaction>
+                </li>
+
+                <li Class="QuestNode_GetPawnKind">
+                    <storeAs>monsterPawnKind</storeAs>
+                    <options>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>True_Dragon</kindDef>
+                            <weight>0.8</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Jade_Dragon</kindDef>
+                            <weight>0.2</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Silver_Dragon</kindDef>
+                            <weight>0.3</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Gold_Dragon</kindDef>
+                            <weight>0.3</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Black_Dragon</kindDef>
+                            <weight>1</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>Red_Dragon</kindDef>
+                            <weight>1</weight>
+                        </li>
+                        <li MayRequire="onyxae.dragonsdescent">
+                            <kindDef>White_Dragon</kindDef>
+                            <weight>0.4</weight>
+                        </li>
+                    </options>
+                </li>
+
+                <li Class="QuestNode_GetSiteTile">
+                    <storeAs>siteTile</storeAs>
+                    <preferCloserTiles>true</preferCloserTiles>
+                </li>
+
+                <li Class="QuestNode_GetSitePartDefsByTagsAndFaction">
+                    <storeAs>sitePartDefs</storeAs>
+                    <storeFactionAs>siteFaction</storeFactionAs>
+                    <sitePartsTags>
+                        <li>
+                            <tag>MSSRPG_SlayerSite</tag>
+                        </li>
+                    </sitePartsTags>
+
+                </li>
+
+                <li Class="QuestNode_GetDefaultSitePartsParams">
+                    <tile>$siteTile</tile>
+                    <faction>$faction</faction>
+                    <sitePartDefs>$sitePartDefs</sitePartDefs>
+                    <storeSitePartsParamsAs>sitePartsParams</storeSitePartsParamsAs>
+                </li>
+
+                <li Class="QuestNode_GetSiteThreatPoints">
+                    <storeAs>sitePoints</storeAs>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GetDefaultRewardValueFromPoints</def>
+                    <parms>
+                        <!-- Use the actual threat points generated (some site parts define a minimum threshold) -->
+                        <points>$sitePoints</points>
+                    </parms>
+                </li>
+
+                <li Class="MrSamuelStreamer.RPGAdventureFlavourPack.QuestNode_SaveMonsterDetails">
+                    <monsterKind>$monsterPawnKind</monsterKind>
+                    <sitePartsParams>$sitePartsParams</sitePartsParams>
+                </li>
+
+                <li Class="QuestNode_SubScript">
+                    <def>Util_GenerateSite</def>
+                </li>
+
+                <li Class="QuestNode_SpawnWorldObjects">
+                    <worldObjects>$site</worldObjects>
+                </li>
+
+                <li Class="QuestNode_Letter">
+                    <inSignal>site.MapGenerated</inSignal>
+                    <label>An Epic Battle: [resolvedQuestName]</label>
+                    <text>A [monsterLabel] is coming for you with obvious malice.\n\n[monsterDescription]\n\nTo Arms!.</text>
+                </li>
+
+                <li Class="QuestNode_WorldObjectTimeout">
+                    <worldObject>$site</worldObject>
+                    <isQuestTimeout>true</isQuestTimeout>
+                    <delayTicks>$(randInt(2,4)*60000)</delayTicks>
+                    <inSignalDisable>site.MapGenerated</inSignalDisable>
+                    <node Class="QuestNode_Sequence">
+                        <nodes>
+                            <li Class="QuestNode_Letter">
+                                <label>Quest expired: [resolvedQuestName]</label>
+                                <text>A group of brave slayers attempted to fight the dragon. They were mercilessly exterminated but but succeeded in scaring off the beast. You may yet hear from it again. The quest [resolvedQuestName] has expired.</text>
+                            </li>
+                            <li Class="QuestNode_End">
+                                <outcome>Fail</outcome>
+                            </li>
+                        </nodes>
+                    </node>
+                </li>
+
+                <li Class="QuestNode_Signal">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <node Class="MrSamuelStreamer.RPGAdventureFlavourPack.QuestNode_GiveRelicInfoRewards">
+                        <parms>
+                            <allowGoodwill>true</allowGoodwill>
+                            <allowRoyalFavor>false</allowRoyalFavor>
+                        </parms>
+                        <customLetterLabel>Quest Complete</customLetterLabel>
+                        <customLetterText>Your epic quest has ended in success! You have defeated the dragon!\n\nA reward from the grateful [asker_faction_name] has arrived along with a sealed note perhaps containing information about the [relic_name].</customLetterText>
+                    </node>
+                </li>
+                <li Class="QuestNode_Letter">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <label>Rumours of [relic_name]</label>
+                    <text>[asker_faction_name] was as good as their word, they have shared all they knew about [relic_name].\n\nSurely, soon it will be yours!</text>
+                </li>
+                <li Class="QuestNode_End">
+                    <inSignal>site.AllEnemiesDefeated</inSignal>
+                    <outcome>Success</outcome>
+                </li>
+            </nodes>
+        </root>
+    </QuestScriptDef>
+</Defs>

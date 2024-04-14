@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <TraderKindDef>
+        <defName>Caravan_ArcaneTrader</defName>
+        <label>arcane trader</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>3000~5000</countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>FoodMeals</categoryDef>
+                <thingDefCountRange>0~2</thingDefCountRange>
+                <countRange>5~15</countRange>
+            </li>
+            <li Class="StockGenerator_Category">
+                <categoryDef>NeurotrainersPsycast</categoryDef>
+                <thingDefCountRange>2~2</thingDefCountRange>
+                <countRange>1~2</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>PsychicApparel</tradeTag>
+                <thingDefCountRange>4~6</thingDefCountRange>
+                <countRange>4~6</countRange>
+            </li>
+            <li Class="StockGenerator_Tag">
+                <tradeTag>PsychicWeapon</tradeTag>
+                <thingDefCountRange>3~6</thingDefCountRange>
+                <countRange>3~6</countRange>
+            </li>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_Eltex</thingDef>
+                <countRange>2~6</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
+                <thingDef>Apparel_PsyfocusRobe</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
+                <thingDef>Apparel_PsyfocusShirt</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
+                <thingDef>Apparel_PsyfocusVest</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="Ludeon.RimWorld.Royalty">
+                <thingDef>Apparel_PsyfocusHelmet</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <!-- Fallback, just in case they're not defined in trade tags -->
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_MeleeWeapon_EltexDagger</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_MeleeWeapon_EltexMace</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_MeleeWeapon_EltexSword</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_Apparel_PlateArmorPrestige</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_Apparel_EltexCape</thingDef>
+                <countRange>1~2</countRange>
+            </li>
+            <li MayRequire="VanillaExpanded.VPsycastsE" Class="StockGenerator_SingleDef">
+                <thingDef>VPE_Apparel_EltexMask</thingDef>
+                <countRange>2~4</countRange>
+            </li>
+            <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+                <thingDef>PsychicAmplifier</thingDef>
+                <countRange>1~3</countRange>
+            </li>
+            <!-- Buying -->
+            <li Class="StockGenerator_BuyExpensiveSimple" />
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>Artifact</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>PsylinkNeuroformer</tag>
+            </li>
+            <li Class="StockGenerator_BuyTradeTag">
+                <tag>ExoticMisc</tag>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+</Defs>

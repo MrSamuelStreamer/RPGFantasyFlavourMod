@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RR_PawnBadge.BadgeDef>
+		<defName>Berserker</defName>
+		<label>Berserker</label>
+		<description>Berserker</description>
+		<icon>Abilities/Warlord/BladeFocus</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Artificer</defName>
+		<label>Artificer</label>
+		<description>Artificer</description>
+		<icon>Abilities/Technomancer/Mend</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Paladin</defName>
+		<label>Paladin</label>
+		<description>Paladin</description>
+		<icon>Abilities/Protector/Overshield</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>ROGUE</defName>
+		<label>Rogue</label>
+		<description>Rogue</description>
+		<icon>Abilities/Nightstalker/Decoy</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Bard</defName>
+		<label>Bard</label>
+		<description>Bard</description>
+		<icon>Abilities/Empath/WordofLove</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Druid</defName>
+		<label>Druid</label>
+		<description>Druid</description>
+		<icon>Abilities/Wildspeaker/TreeSprout</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>CHRONOMANCER</defName>
+		<label>Chronomancer</label>
+		<description>Chronomancer</description>
+		<icon>Abilities/Chronopath/TimeSphere</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Electromancer</defName>
+		<label>Electromancer</label>
+		<description>Electromancer</description>
+		<icon>Abilities/Staticlord/StaticPulse</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Frostmancer</defName>
+		<label>Cryomancer</label>
+		<description>Cryomancer</description>
+		<icon>Abilities/Frostshaper/IceBreath</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Pyromancer</defName>
+		<label>Pyromancer</label>
+		<description>Pyromancer</description>
+		<icon>Abilities/Conflagrator/SelfExplosion</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Warlock</defName>
+		<label>Warlock</label>
+		<description>Warlock</description>
+		<icon>UI/Abilities/Oculist/AAVPE_EyeEruption</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Insectsummoner</defName>
+		<label>Insectsummoner</label>
+		<description>Insect Summoner</description>
+		<icon>UI/Abilities/Herald/AAVPE_SummonBlackSpelopede</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Necromancer</defName>
+		<label>Necromancer</label>
+		<description>Necromancer</description>
+		<icon>Abilities/Necropath/Enthrall</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Skinwalker</defName>
+		<label>Primal</label>
+		<description>Primal</description>
+		<icon>UI/Abilities/Ravager/AAVPE_ClawFrenzy</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Commander</defName>
+		<label>Commander</label>
+		<description>Commander</description>
+		<icon>Abilities/Archon/GroupLink</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Conjurer</defName>
+		<label>Conjurer</label>
+		<description>Conjurer</description>
+		<icon>Abilities/Skipmaster/MassChaosSkip</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Kinectomancer</defName>
+		<label>Telekinetic</label>
+		<description>Telekinetic</description>
+		<icon>Psycasts/CP_PsychicHeavySlug</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Legate</defName>
+		<label>Legate</label>
+		<description>Legate</description>
+		<icon>Abilities/Archotechist/NeuralHeatDetonation</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Psion</defName>
+		<label>Psion</label>
+		<description>Psion</description>
+		<icon>Abilities/Harmonist/SkillRoll</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef>
+		<defName>Shaman</defName>
+		<label>Shaman</label>
+		<description>Shaman</description>
+		<icon>UI/Abilities/Xenoseer/AAVPE_FungalSkin</icon>
+	</RR_PawnBadge.BadgeDef>
+</Defs>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <!-- Deeper Mine Shaft (for fantasy garbage) -->
+    <ThingDef ParentName="BuildingBase" MayRequire="vanillaexpanded.vpsycastse">
+        <defName>MSSRPG_DankPyon_MineShaft</defName>
+        <label>Deeper Darker mine shaft</label>
+        <description>A mineshaft delving more greedily and deeper than most conventional mines. Requires constant Arcanium to power the geomancy sustaining the unfathomably deep shaft.</description>
+        <thingClass>MrSamuelStreamer.RPGAdventureFlavourPack.Building_EnragingWorkTable</thingClass>
+        <graphicData>
+            <texPath>Production/MineShaft</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <shaderType>CutoutComplex</shaderType>
+            <drawSize>(3.8,3.8)</drawSize>
+            <damageData>
+                <cornerTL>Damage/Corner</cornerTL>
+                <cornerTR>Damage/Corner</cornerTR>
+                <cornerBL>Damage/Corner</cornerBL>
+                <cornerBR>Damage/Corner</cornerBR>
+            </damageData>
+        </graphicData>
+
+        <costList>
+            <Steel>75</Steel>
+            <DankPyon_ComponentBasic>25</DankPyon_ComponentBasic>
+            <VPE_Eltex>5</VPE_Eltex>
+        </costList>
+        <stuffCategories>
+            <li>Metallic</li>
+        </stuffCategories>
+        <costStuffCount>200</costStuffCount>
+        <designationCategory>Production</designationCategory>
+        <altitudeLayer>Building</altitudeLayer>
+        <fillPercent>0.5</fillPercent>
+        <useHitPoints>True</useHitPoints>
+        <statBases>
+            <WorkToBuild>8000</WorkToBuild>
+            <MaxHitPoints>500</MaxHitPoints>
+            <Flammability>1.0</Flammability>
+            <Cleanliness>-15</Cleanliness>
+        </statBases>
+
+        <rotatable>false</rotatable>
+        <size>(3,3)</size>
+
+        <comps>
+            <li Class="CompProperties_CreatesInfestations" />
+            <li Class="MrSamuelStreamer.RPGAdventureFlavourPack.CompProperties_CausesEnrage">
+                <spawnablePawnKinds>
+                    <li>Megaspider</li>
+                    <li>Megascarab</li>
+                    <li>Spelopede</li>
+                    <li MayRequire="onyxae.dragonsdescent">Black_Dragon</li>
+                    <li MayRequire="onyxae.dragonsdescent">Red_Dragon</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Golem</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_KikimoreQueen</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Wraith</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Basilisk</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Cyclops</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Djinn</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Ekimmara</li>
+                    <li MayRequire="sargoskar.witcherhunt">WMH_Leshy</li>
+                    <li MayRequire="sarg.magicalmenagerie">MM_Cerberus</li>
+                    <li MayRequire="sarg.magicalmenagerie">MM_LernaeanHydra</li>
+                    <li MayRequire="sarg.alphaanimals">AA_ChemfuelMyrmidon</li>
+                    <li MayRequire="Ludeon.RimWorld.Biotech">MSSRPG_UnderDweller</li>
+                </spawnablePawnKinds>
+            </li>
+            <li Class="CompProperties_Refuelable">
+                <fuelConsumptionRate>15.0</fuelConsumptionRate>
+                <fuelCapacity>5.0</fuelCapacity>
+                <fuelFilter>
+                    <thingDefs>
+                        <li>VPE_Eltex</li>
+                    </thingDefs>
+                </fuelFilter>
+                <consumeFuelOnlyWhenUsed>true</consumeFuelOnlyWhenUsed>
+                <showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+            </li>
+        </comps>
+
+        <passability>Standable</passability>
+        <pathCost>50</pathCost>
+        <hasInteractionCell>True</hasInteractionCell>
+        <interactionCellOffset>(0,0,0)</interactionCellOffset>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <surfaceType>Item</surfaceType>
+        <inspectorTabs>
+            <li>ITab_Bills</li>
+        </inspectorTabs>
+        <building>
+            <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+            <buildingTags>
+                <li>MSSRPG_CausesEnrage</li>
+            </buildingTags>
+        </building>
+
+        <designationHotKey>Misc3</designationHotKey>
+        <placeWorkers>
+            <!--li>PlaceWorker_ShowFacilitiesConnections</li-->
+            <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+        </placeWorkers>
+        <researchPrerequisites>
+            <li>DankPyon_Mining</li>
+        </researchPrerequisites>
+        <techLevel>Medieval</techLevel>
+    </ThingDef>
+
+    <PawnKindDef ParentName="BasePlayerPawnKind">
+        <defName>MSSRPG_UnderDweller</defName>
+        <label>under-dweller</label>
+        <defaultFactionType>AncientsHostile</defaultFactionType>
+        <chemicalAddictionChance>0.08</chemicalAddictionChance>
+        <weaponTags>
+            <li>MedievalMeleeBasic</li>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>AmberLongsword</li>
+            <li>AmberWarHammer</li>
+        </weaponTags>
+        <apparelAllowHeadgearChance>0.1</apparelAllowHeadgearChance>
+        <apparelTags>
+            <li>IndustrialBasic</li>
+            <li>MedievalMeleeBasic</li>
+            <li>MedievalMeleeDecent</li>
+            <li>MedievalMeleeAdvanced</li>
+            <li>NeolithicMeleeAdvanced</li>
+        </apparelTags>
+        <apparelMoney>350~900</apparelMoney>
+        <backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+        <techHediffsChance>0.03</techHediffsChance>
+        <techHediffsMoney>0~200</techHediffsMoney>
+        <techHediffsTags>
+            <li>Poor</li>
+            <li>Simple</li>
+        </techHediffsTags>
+        <initialResistanceRange>13~21</initialResistanceRange>
+        <xenotypeSet Inherit="False">
+            <xenotypeChances>
+                <Stoneborn MayRequire="det.stoneborn">1</Stoneborn>
+
+                <LoS_Lamia MayRequire="RedMattis.LamiasAndOtherSnakes">0.3</LoS_Lamia>
+                <Naga MayRequire="RedMattis.LamiasAndOtherSnakes">0.4</Naga>
+                <Nagaraj MayRequire="RedMattis.LamiasAndOtherSnakes">0.2</Nagaraj>
+
+                <BS_RedOni MayRequire="RedMattis.Yokai">0.6</BS_RedOni>
+                <BS_BlueOni MayRequire="RedMattis.Yokai">0.4</BS_BlueOni>
+                <BS_GreatRedOni MayRequire="RedMattis.Yokai">0.15</BS_GreatRedOni>
+                <BS_GreatBlueOni MayRequire="RedMattis.Yokai">0.15</BS_GreatBlueOni>
+
+                <BS_Weaver MayRequire="RedMattis.MoreXenos">0.6</BS_Weaver>
+                <BS_Devilspider MayRequire="RedMattis.MoreXenos">0.6</BS_Devilspider>
+
+                <BS_Svartalf MayRequire="RedMattis.BigSmall">0.5</BS_Svartalf>
+                <BS_Ymir MayRequire="RedMattis.BigSmall">0.5</BS_Ymir>
+                <BS_Surtr MayRequire="RedMattis.BigSmall">0.5</BS_Surtr>
+                <BS_FireJotun MayRequire="RedMattis.BigSmall">0.7</BS_FireJotun>
+                <BS_Jotun MayRequire="RedMattis.BigSmall">0.7</BS_Jotun>
+                <BS_Half_Jotun MayRequire="RedMattis.BigSmall">0.3</BS_Half_Jotun>
+                <BS_Dwarf MayRequire="RedMattis.BigSmall">0.8</BS_Dwarf>
+                <BS_Gnome MayRequire="RedMattis.BigSmall">0.8</BS_Gnome>
+
+                <VU_WhiteRose MayRequire="Redmattis.Undead">0.1</VU_WhiteRose>
+                <VU_Lycantrope MayRequire="Redmattis.Undead">0.1</VU_Lycantrope>
+
+                <MSSRPG_Balrog MayRequire="sarg.alphagenes">0.1</MSSRPG_Balrog>
+
+                <Baseliner>0.01</Baseliner>
+                <Dirtmole>0.25</Dirtmole>
+                <Impid>0.2</Impid>
+            </xenotypeChances>
+        </xenotypeSet>
+    </PawnKindDef>
+</Defs>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <ThingDef ParentName="ApparelMakeableBase" MayRequire="vanillaexpanded.vpsycastse">
+        <defName>MSSRPG_HoldingBag</defName>
+        <label>bag of holding</label>
+        <description>A magical sack that seemingly holds for more items that it should. Increases pawn carry capacity.</description>
+        <graphicData>
+            <texPath>Things/Pawn/Humanlike/Apparel/MSSRPG_HoldingBag/MSSRPG_HoldingBag</texPath>
+            <graphicClass>Graphic_Single</graphicClass>
+            <drawSize>0.8</drawSize>
+        </graphicData>
+        <techLevel>Medieval</techLevel>
+        <costStuffCount>75</costStuffCount>
+        <costList>
+            <VPE_Eltex MayRequire="vanillaexpanded.vpsycastse">2</VPE_Eltex>
+        </costList>
+        <stuffCategories>
+            <li>Fabric</li>
+            <li>Leathery</li>
+        </stuffCategories>
+        <statBases>
+            <MaxHitPoints>50</MaxHitPoints>
+            <WorkToMake>3500</WorkToMake>
+            <Mass>1.5</Mass>
+            <StuffEffectMultiplierArmor>0.1</StuffEffectMultiplierArmor>
+            <StuffEffectMultiplierInsulation_Cold>0.1</StuffEffectMultiplierInsulation_Cold>
+            <StuffEffectMultiplierInsulation_Heat>0.1</StuffEffectMultiplierInsulation_Heat>
+            <EquipDelay>1.5</EquipDelay>
+        </statBases>
+        <equippedStatOffsets>
+            <CarryingCapacity>100</CarryingCapacity>
+        </equippedStatOffsets>
+        <recipeMaker>
+            <researchPrerequisite>ComplexClothing</researchPrerequisite>
+            <recipeUsers>
+                <li>ElectricTailoringBench</li>
+                <li>HandTailoringBench</li>
+                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
+            </recipeUsers>
+            <skillRequirements>
+                <Crafting>8</Crafting>
+            </skillRequirements>
+            <displayPriority>255</displayPriority>
+        </recipeMaker>
+        <thingCategories>
+            <li>ApparelMisc</li>
+        </thingCategories>
+        <apparel>
+            <bodyPartGroups>
+                <li>Torso</li>
+            </bodyPartGroups>
+            <countsAsClothingForNudity>false</countsAsClothingForNudity>
+            <wornGraphicPath>Things/Pawn/Humanlike/Apparel/MSSRPG_HoldingBag/MSSRPG_HoldingBag</wornGraphicPath>
+            <layers>
+                <li>Shell</li>
+            </layers>
+            <defaultOutfitTags>
+                <li>Worker</li>
+                <li>Soldier</li>
+                <li>Nudist</li>
+            </defaultOutfitTags>
+            <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+        </apparel>
+        <tradeTags>
+            <li>Armor</li>
+        </tradeTags>
+    </ThingDef>
+</Defs>

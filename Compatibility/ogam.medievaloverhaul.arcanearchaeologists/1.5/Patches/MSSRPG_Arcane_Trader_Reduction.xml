@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/TraderKindDef[defName="EEG_Caravan_Medieval_ArcaneGoodsMerchant"]/commonality</xpath>
+        <value>
+            <commonality>0.5</commonality>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ResearchProjectDef>
+		<defName>MSS_Resource_tree_original</defName>
+		<label>Classic Resource Trees</label>
+		<description>Discover how to sew trees capable of producing a variety of resources.</description>
+		<baseCost>1000</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.65</researchViewY>
+		<prerequisites>
+			<li>TreeSowing</li>
+		</prerequisites>
+	</ResearchProjectDef>
+</Defs>
