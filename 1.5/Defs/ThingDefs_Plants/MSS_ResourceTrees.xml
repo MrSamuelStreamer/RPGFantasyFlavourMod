@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
+
 <Defs>
-	<ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="TreeBase">
         <defName>MSS_GoldTree</defName>
         <label>Gold Tree</label>
         <description>A large, majestic tree that can be eventually cultivated for a meagre amount of usable gold leaf.</description>
@@ -12,22 +13,22 @@
             <Beauty>4</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>15</sowMinSkill>
+            <sowMinSkill>15</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>25</growDays>
             <harvestedThingDef>Gold</harvestedThingDef>
             <harvestYield>15</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_GoldTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
-	<ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="TreeBase">
         <defName>MSS_JadeTree</defName>
         <label>Jade Bamboo</label>
         <description>A cluster of specially modified bamboo that accumulates jade deposits in the center of its stalks.</description>
@@ -39,22 +40,22 @@
             <Beauty>2</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>10</sowMinSkill>
+            <sowMinSkill>10</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>10</growDays>
             <harvestedThingDef>Jade</harvestedThingDef>
             <harvestYield>10</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_JadeTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
-	<ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="TreeBase">
         <defName>MSS_PlasteelTree</defName>
         <label>Plasteel Tree</label>
         <description>An extremely dense and tall tree that produces unique plasteel leaves which can be cultivated by particularly skilled farmers.</description>
@@ -66,22 +67,22 @@
             <Beauty>1</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>12</sowMinSkill>
+            <sowMinSkill>12</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>20</growDays>
             <harvestedThingDef>Plasteel</harvestedThingDef>
             <harvestYield>10</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_PlasteelTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
-	<ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="TreeBase">
         <defName>MSS_SilverTree</defName>
         <label>Silver Tree</label>
         <description>A beautiful birch-like tree found on a distant world capable of growing enormous silver blooms that can be harvested for usable silver.</description>
@@ -93,18 +94,18 @@
             <Beauty>3</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>14</sowMinSkill>
+            <sowMinSkill>14</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>20</growDays>
             <harvestedThingDef>Silver</harvestedThingDef>
             <harvestYield>25</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_SilverTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
@@ -120,22 +121,22 @@
             <Beauty>-1</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>8</sowMinSkill>
+            <sowMinSkill>8</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>15</growDays>
             <harvestedThingDef>Steel</harvestedThingDef>
             <harvestYield>15</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_SteelTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
-	 <ThingDef ParentName="TreeBase">
+    <ThingDef ParentName="TreeBase">
         <defName>MSS_UraniumTree</defName>
         <label>Uranium Tree</label>
         <description>An ominous, broad tree with an eerie grow that produces trace amounts of usable uranium in its bark.</description>
@@ -147,18 +148,18 @@
             <Beauty>-2</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>10</sowMinSkill>
+            <sowMinSkill>10</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>25</growDays>
             <harvestedThingDef>Uranium</harvestedThingDef>
             <harvestYield>25</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_UraniumTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
@@ -174,18 +175,18 @@
             <Beauty>4</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>10</sowMinSkill>
+            <sowMinSkill>10</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>30</growDays>
             <harvestedThingDef>VPE_Eltex</harvestedThingDef>
             <harvestYield>2</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_ArcaniumTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 
@@ -201,18 +202,18 @@
             <Beauty>2</Beauty>
         </statBases>
         <plant>
-			<sowMinSkill>13</sowMinSkill>
+            <sowMinSkill>13</sowMinSkill>
             <sowResearchPrerequisites>
                 <li>MSS_Resource_tree</li>
             </sowResearchPrerequisites>
             <growDays>15</growDays>
             <harvestedThingDef>DankPyon_Amber</harvestedThingDef>
             <harvestYield>10</harvestYield>
-			<choppedThingDef>ChoppedStump</choppedThingDef>
-			<smashedThingDef>SmashedStump</smashedThingDef>
+            <choppedThingDef>ChoppedStump</choppedThingDef>
+            <smashedThingDef>SmashedStump</smashedThingDef>
             <visualSizeRange>1.0~2.0</visualSizeRange>
             <immatureGraphicPath>Things/Plant/MSS_AmberTreeImm</immatureGraphicPath>
-			<mustBeWildToSow>false</mustBeWildToSow>
+            <mustBeWildToSow>false</mustBeWildToSow>
         </plant>
     </ThingDef>
 </Defs>
