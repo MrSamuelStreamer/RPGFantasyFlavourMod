@@ -43,8 +43,7 @@
 
     <ItemGroup>
         <Reference Include="Rimedieval">
-            <!--TODO: Rimedieval is stuck on 1.4, if it updates, update this-->
-            <HintPath>../../../../2516523040/1.4/Assemblies/Rimedieval.dll</HintPath>
+            <HintPath>../../../../2516523040/1.5/Assemblies/Rimedieval.dll</HintPath>
             <Private>False</Private>
         </Reference>
     </ItemGroup>

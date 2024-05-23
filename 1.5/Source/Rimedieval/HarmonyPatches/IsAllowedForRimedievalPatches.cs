@@ -1,4 +1,4 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using HarmonyLib;
 using Rimedieval;
 using Verse;
@@ -9,7 +9,7 @@ namespace MrSamuelStreamer.RPGAdventureFlavourPack.Rimedieval.HarmonyPatches
     [HarmonyPatch(typeof(DefCleaner), "IsAllowedForRimedieval")]
     public static class IsAllowedForRimedievalPatches
     {
-        private static HashSet<string> _defsToAllow = new();
+        private static HashSet<string> _defsToAllow = [];
         private static bool _disableRimMedievalBypass;
 
         static IsAllowedForRimedievalPatches()
