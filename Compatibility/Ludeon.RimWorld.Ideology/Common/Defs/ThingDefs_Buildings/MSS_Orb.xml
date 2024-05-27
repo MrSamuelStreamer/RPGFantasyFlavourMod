@@ -2,7 +2,7 @@
 <Defs>
 
   <!-- ORB -->
-  <ThingDef ParentName="IdeoBuildingBase" mayRequire="rimworld.ideology">
+  <ThingDef ParentName="IdeoBuildingBase" mayRequire="Ludeon.RimWorld.Ideology">
     <defName>MSS_PonderingOrb</defName>
     <label>Pondering Orb</label>
     <description>An orb for magically inclined folk to ponder, an average source of joy for wizardfolk.</description>

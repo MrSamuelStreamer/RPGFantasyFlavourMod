@@ -36,6 +36,5 @@
         <Copy SourceFiles="@(ReleaseFiles)" DestinationFiles="@(ReleaseFiles->'../../../Release/%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="false" />
         <Copy SourceFiles="@(ExtraFiles)" DestinationFolder="../../../Release/" SkipUnchangedFiles="false" />
         <ZipDirectory DestinationFile="../../../RPGAdventureFlavourPack.zip" SourceDirectory="../../../Release" />
-        <RemoveDir Directories="obj;bin" />
     </Target>
 </Project>
