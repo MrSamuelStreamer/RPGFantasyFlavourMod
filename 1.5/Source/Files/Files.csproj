@@ -18,8 +18,8 @@
         <AboutFiles Include="../../../About/**" />
         <CommonFiles Include="../../../Common/**" />
         <CompatibilityFiles Include="../../../Compatibility/**" />
-        <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md;../../../release.bat" />
-        <None Include="../../../.gitattributes;../../../.gitignore;../../../CONTRIBUTING.md;../../../About/About.xml" />
+        <ExtraFiles Include="../../../LoadFolders.xml;../../../LICENSE;../../../README.md" />
+        <None Include="../../../.gitattributes;../../../.gitignore;../../../CONTRIBUTING.md;../../../release.bat;../../../About/About.xml" />
     </ItemGroup>
     <Target Name="Clean">
         <RemoveDir Directories="../../../Release" />
