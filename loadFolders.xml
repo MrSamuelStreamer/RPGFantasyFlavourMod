@@ -59,7 +59,13 @@
     <li IfModActive="Accurex.MedievalEmpireOverhaul">Compatibility/Accurex.MedievalEmpireOverhaul/1.5</li>
     <li IfModActive="ogam.medievaloverhaul.arcanearchaeologists">Compatibility/ogam.medievaloverhaul.arcanearchaeologists/1.5</li>
     <li IfModActive="vanillaexpanded.vpe.hemosage">Compatibility/vanillaexpanded.vpe.hemosage/Common</li>
+    <li IfModActive="vanillaexpanded.vpe.hemosage">Compatibility/vanillaexpanded.vpe.hemosage/1.5</li>
     <li IfModActive="ccyt.stargatesmod">Compatibility/CCYT.StargatesMod/1.5</li>
     <li IfModActive="vanillaexpanded.vappe">Compatibility/vanillaexpanded.vappe/1.5</li>
+    <li IfModActive="vpe.fleshshaper.sentinel">Compatibility/vpe.fleshshaper.sentinel/1.5</li>
+    <li IfModActive="vanillaexpanded.vpe.puppeteer">Compatibility/vanillaexpanded.vpe.puppeteer/1.5</li>
+    <li IfModActive="vpe.horaxian.sentinel">Compatibility/vpe.horaxian.sentinel/1.5</li>
+    <li IfModActive="vpe.oripathy.sentinel">Compatibility/vpe.oripathy.sentinel/1.5</li>
+    <li IfModActive="vpe.voidweaver.sentinel">Compatibility/vpe.voidweaver.sentinel/1.5</li>
   </v1.5>
 </loadFolders>

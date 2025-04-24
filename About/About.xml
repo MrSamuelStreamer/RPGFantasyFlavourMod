@@ -69,5 +69,11 @@
         <li>sargoskar.witcherhunt</li><!--TODO 1.5 Issues (Deprecated)-->
 
         <li>oken.medievalquestrewards</li><!--TODO 1.5 Issues (Removed from workshop)-->
+
+        <li>vpe.fleshshaper.sentinel</li>
+        <li>vanillaexpanded.vpe.puppeteer</li>
+        <li>vpe.horaxian.sentinel</li>
+        <li>vpe.oripathy.sentinel</li>
+        <li>vpe.voidweaver.sentinel</li>
     </loadAfter>
 </ModMetaData>
