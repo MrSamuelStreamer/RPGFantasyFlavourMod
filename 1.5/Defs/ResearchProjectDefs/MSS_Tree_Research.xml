@@ -12,4 +12,16 @@
 			<li>TreeSowing</li>
 		</prerequisites>
 	</ResearchProjectDef>
+	<ResearchProjectDef>
+		<defName>MSS_Gunpowder</defName>
+		<label>Gunpowder</label>
+		<description>Learn how to craft and yield gunpowder to propel explosives and fuel firearms.</description>
+		<baseCost>1500</baseCost>
+		<techLevel>Medieval</techLevel>
+		<researchViewX>0.00</researchViewX>
+		<researchViewY>5.65</researchViewY>
+		<prerequisites>
+			<li>Smithing</li>
+		</prerequisites>
+	</ResearchProjectDef>
 </Defs>
