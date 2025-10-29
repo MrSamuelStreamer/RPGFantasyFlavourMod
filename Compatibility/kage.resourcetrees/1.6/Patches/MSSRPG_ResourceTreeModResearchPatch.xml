@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Resource Trees</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationAdd">
+                    <xpath>/Defs/ThingDef[defName="PlantZoneSteel" or defName="PlantZoneJade" or defName="PlantZoneGold" or defName="PlantZonePlasteel" or defName="PlantZoneSilver" or defName="PlantZoneUranium" or defName="PlantZoneComponent" or defName="PlantZoneBeer"]/plant</xpath>
+                    <value>
+                        <sowResearchPrerequisites>
+                            <li>MSS_Resource_tree_original</li>
+                        </sowResearchPrerequisites>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

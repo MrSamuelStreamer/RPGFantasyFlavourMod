@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RecipeDef Name="MSSRPG_DankPyon_MineShaft_BaseRecipe" Abstract="True">
+		<description>Mine even more deeply and greedily to obtain rock chunks.</description>
+		<workSpeedStat>MiningSpeed</workSpeedStat>
+		<workSkill>Mining</workSkill>
+		<workSkillLearnFactor>0.25</workSkillLearnFactor>
+		<effectWorking>CutStone</effectWorking>
+		<soundWorking>Recipe_MakeStoneBlocks</soundWorking>
+		<recipeUsers>
+			<li MayRequire="vanillaexpanded.vpsycastse">MSSRPG_DankPyon_MineShaft</li>
+		</recipeUsers>
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe"  MayRequire="zav.fantasymetals_forked">
+		<defName>MSSRPG_MineMythril</defName>
+		<description>Mine more deeply and greedily than before for mithril.</description>		
+		<workAmount>5000</workAmount>		
+		<label>Mine mithril x15</label>
+		<jobString>Mining 15 mithril.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<zavMithril>15</zavMithril>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe"  MayRequire="zav.fantasymetals_forked">
+		<defName>MSSRPG_MineOrichalcum</defName>
+		<description>Mine more deeply and greedily than before for Orichalcum.</description>		
+		<workAmount>5500</workAmount>		
+		<label>Mine Orichalcum x15</label>
+		<jobString>Mining 15 Orichalcum.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<zavOrichalcum>15</zavOrichalcum>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe"  MayRequire="zav.fantasymetals_forked">
+		<defName>MSSRPG_MineAdamantine</defName>
+		<description>Mine more deeply and greedily than before for Adamantine.</description>		
+		<workAmount>7500</workAmount>		
+		<label>Mine Adamantine x15</label>
+		<jobString>Mining 15 Adamantine.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<zavAdamantine>15</zavAdamantine>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe">
+		<defName>MSSRPG_MinePlasteel</defName>
+		<description>Mine more deeply and greedily than before for Plasteel.</description>		
+		<workAmount>8000</workAmount>		
+		<label>Mine Plasteel x15</label>
+		<jobString>Mining 15 Plasteel.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<Plasteel>15</Plasteel>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe">
+		<defName>MSSRPG_MineJade</defName>
+		<description>Mine more deeply and greedily than before for Jade.</description>		
+		<workAmount>5000</workAmount>		
+		<label>Mine Jade x15</label>
+		<jobString>Mining 15 Jade.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<Jade>15</Jade>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe">
+		<defName>MSSRPG_MineUranium</defName>
+		<description>Mine more deeply and greedily than before for Uranium.</description>		
+		<workAmount>7500</workAmount>		
+		<label>Mine Uranium x15</label>
+		<jobString>Mining 15 Uranium.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<Uranium>15</Uranium>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe" MayRequire="sarg.alphabiomes">
+		<defName>MSSRPG_MineAlcyonite</defName>
+		<description>Mine more deeply and greedily than before for Alcyonite.</description>		
+		<workAmount>4000</workAmount>		
+		<label>Mine Alcyonite x15</label>
+		<jobString>Mining 15 Alcyonite.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<AB_AlcyoniteChunk>15</AB_AlcyoniteChunk>
+		</products>	
+	</RecipeDef>
+
+	<RecipeDef ParentName="MSSRPG_DankPyon_MineShaft_BaseRecipe" MayRequire="aoba.deadmanswitch.core">
+		<defName>MSSRPG_MineTungsteel</defName>
+		<description>Mine more deeply and greedily than before for Tungsteel.</description>		
+		<workAmount>9000</workAmount>		
+		<label>Mine Tungsteel x15</label>
+		<jobString>Mining 15 Tungsteel.</jobString>
+		<targetCountAdjustment>15</targetCountAdjustment>
+		<products>
+			<Tungsteel>15</Tungsteel>
+		</products>	
+	</RecipeDef>
+</Defs>

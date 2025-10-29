@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_BerserkerBadge</defName>
+		<label>Berserker</label>
+		<description>Berserker</description>
+		<icon>Abilities/Warlord/BladeFocus</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_ArtificerBadge</defName>
+		<label>Artificer</label>
+		<description>Artificer</description>
+		<icon>Abilities/Technomancer/Mend</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_PaladinBadge</defName>
+		<label>Paladin</label>
+		<description>Paladin</description>
+		<icon>Abilities/Protector/Overshield</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_RogueBadge</defName>
+		<label>Rogue</label>
+		<description>Rogue</description>
+		<icon>Abilities/Nightstalker/Decoy</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_BardBadge</defName>
+		<label>Bard</label>
+		<description>Bard</description>
+		<icon>Abilities/Empath/WordofLove</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_DruidBadge</defName>
+		<label>Druid</label>
+		<description>Druid</description>
+		<icon>Abilities/Wildspeaker/TreeSprout</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_ChronomancerBadge</defName>
+		<label>Chronomancer</label>
+		<description>Chronomancer</description>
+		<icon>Abilities/Chronopath/TimeSphere</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_ElectromancerBadge</defName>
+		<label>Electromancer</label>
+		<description>Electromancer</description>
+		<icon>Abilities/Staticlord/StaticPulse</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_FrostmancerBadge</defName>
+		<label>Cryomancer</label>
+		<description>Cryomancer</description>
+		<icon>Abilities/Frostshaper/IceBreath</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_PyromancerBadge</defName>
+		<label>Pyromancer</label>
+		<description>Pyromancer</description>
+		<icon>Abilities/Conflagrator/SelfExplosion</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="sarg.alphaanimals">
+		<defName>MSSRPG_WarlockBadge</defName>
+		<label>Warlock</label>
+		<description>Warlock</description>
+		<icon>UI/Abilities/Oculist/AAVPE_EyeEruption</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="sarg.alphaanimals">
+		<defName>MSSRPG_InsectsummonerBadge</defName>
+		<label>Insectsummoner</label>
+		<description>Insect Summoner</description>
+		<icon>UI/Abilities/Herald/AAVPE_SummonBlackSpelopede</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_NecromancerBadge</defName>
+		<label>Necromancer</label>
+		<description>Necromancer</description>
+		<icon>Abilities/Necropath/Enthrall</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="sarg.alphaanimals">
+		<defName>MSSRPG_SkinwalkerBadge</defName>
+		<label>Primal</label>
+		<description>Primal</description>
+		<icon>UI/Abilities/Ravager/AAVPE_ClawFrenzy</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_CommanderBadge</defName>
+		<label>Commander</label>
+		<description>Commander</description>
+		<icon>Abilities/Archon/GroupLink</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_ConjurerBadge</defName>
+		<label>Conjurer</label>
+		<description>Conjurer</description>
+		<icon>Abilities/Skipmaster/MassChaosSkip</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="edern.combatpsycasts">
+		<defName>MSSRPG_KinectomancerBadge</defName>
+		<label>Telekinetic</label>
+		<description>Telekinetic</description>
+		<icon>Psycasts/CP_PsychicHeavySlug</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_LegateBadge</defName>
+		<label>Legate</label>
+		<description>Legate</description>
+		<icon>Abilities/Archotechist/NeuralHeatDetonation</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="vanillaexpanded.vpsycastse">
+		<defName>MSSRPG_PsionBadge</defName>
+		<label>Psion</label>
+		<description>Psion</description>
+		<icon>Abilities/Harmonist/SkillRoll</icon>
+	</RR_PawnBadge.BadgeDef>
+
+	<RR_PawnBadge.BadgeDef MayRequire="sarg.alphaanimals">
+		<defName>MSSRPG_ShamanBadge</defName>
+		<label>Shaman</label>
+		<description>Shaman</description>
+		<icon>UI/Abilities/Xenoseer/AAVPE_FungalSkin</icon>
+	</RR_PawnBadge.BadgeDef>
+</Defs>

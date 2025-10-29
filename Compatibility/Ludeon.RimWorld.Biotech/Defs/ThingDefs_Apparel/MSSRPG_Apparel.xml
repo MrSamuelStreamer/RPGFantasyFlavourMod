@@ -47,7 +47,6 @@
             <recipeUsers>
                 <li>ElectricTailoringBench</li>
                 <li>HandTailoringBench</li>
-                <li MayRequire="DankPyon.Medieval.Overhaul">DankPyon_TailorsBench</li>
             </recipeUsers>
             <displayPriority>290</displayPriority>
         </recipeMaker>

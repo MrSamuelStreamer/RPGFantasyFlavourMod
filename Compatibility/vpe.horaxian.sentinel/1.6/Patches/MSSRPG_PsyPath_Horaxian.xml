@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/VanillaPsycastsExpanded.PsycasterPathDef[defName="VPE_VOID"]/tab</xpath>
+        <value>
+            <tab>Arcane</tab>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationReplace">
+        <xpath>/Defs/VanillaPsycastsExpanded.PsycasterPathDef[defName="VPE_VOIDSMN"]/tab</xpath>
+        <value>
+            <tab>Arcane</tab>
+        </value>
+    </Operation>
+</Patch>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Entosomnia - Medieval Cryptosleep</li>
+        </mods>
+        <match Class="PatchOperationSequence">
+            <operations>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CryptosleepCasket"]/label</xpath>
+                    <value>
+                        <label>Time-Suspended Coffin</label>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CryptosleepCasket"]/description</xpath>
+                    <value>
+                        <description>An ancient coffin enchanted with a time bubble by a powerful chronomancer to perfectly suspend whoever is contained within until the casket is opened.</description>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CryptosleepCasket"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Building/Misc/EntosomnicCasket</texPath>
+                    </value>
+                </li>
+                <li Class="PatchOperationReplace">
+                    <xpath>/Defs/ThingDef[defName="CryptosleepCasket"]/comps/li[@Class="CompProperties_EmptyStateGraphic"]/graphicData/texPath</xpath>
+                    <value>
+                        <texPath>Things/Building/Misc/EntosomnicCasketOpenDoor</texPath>
+                    </value>
+                </li>
+            </operations>
+        </match>
+    </Operation>
+</Patch>

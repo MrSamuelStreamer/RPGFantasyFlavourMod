@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LanguageData>
+    <StargateMod_StargateEnterMode.textEnemy>A group of {0} from {1} are coming through your arcane portal!</StargateMod_StargateEnterMode.textEnemy>
+    <StargateMod_StargateEnterMode.textFriendly>A group of friendly {0} from {1} are coming through your arcane portal!</StargateMod_StargateEnterMode.textFriendly>
+    <StargateMod_StargateEnterMode.textWillArrive>{0_pawnsPluralDef} will come through your arcane portal.</StargateMod_StargateEnterMode.textWillArrive>
+</LanguageData>

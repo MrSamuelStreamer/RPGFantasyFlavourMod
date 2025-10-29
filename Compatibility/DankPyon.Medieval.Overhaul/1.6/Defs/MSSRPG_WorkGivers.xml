@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+	<WorkGiverDef>
+		<defName>MSS_DoBillsMineshaft</defName>
+		<label>mine magical materials</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Mining</workType>
+		<priorityInType>110</priorityInType>
+			<fixedBillGiverDefs>
+				<li MayRequire="vanillaexpanded.vpsycastse">MSSRPG_DankPyon_MineShaft</li>
+			</fixedBillGiverDefs>
+		<verb>mine</verb>
+		<gerund>mining at</gerund>
+		<requiredCapacities>
+				<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+</Defs>

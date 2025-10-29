@@ -6,6 +6,7 @@
     <supportedVersions>
         <li>1.4</li>
         <li>1.5</li>
+        <li>1.6</li>
     </supportedVersions>
     <packageId>MrSamuelStreamer.RPGAdventureFlavour</packageId>
     <description>Patches, retextures, RimThemes, and thematic changes for the RPG Adventure Pack!</description>
@@ -48,32 +49,29 @@
         <li>Redmattis.Undead</li>
         <li>det.stoneborn</li>
         <li>vanillaexpanded.vappe</li>
-
-        <li>ogam.rimedieval</li><!--TODO 1.5 Issues (Replace with: Remove industrial stuff - https://steamcommunity.com/sharedfiles/filedetails/?id=2294378964) -->
-        <li>DankPyon.Medieval.Overhaul</li><!--TODO 1.5 Issues, replace with unofficial maybe - https://steamcommunity.com/sharedfiles/filedetails/?id=3219596926&searchtext=medieval+overhaul -->
-
-        <li>MrSamuelStreamer.MrSamuelStreamCustomFaction</li><!--TODO 1.5 Issues-->
-        <li>danzen.vpe.biotechintegration</li><!--TODO 1.5 Issues-->
-        <li>com.yayo.lostTechCore.2</li><!--TODO 1.5 Issues-->
-        <li>aRandomKiwi.RimThemes</li><!--TODO 1.5 Issues-->
-        <li>Edern.CombatPsycasts</li><!--TODO 1.5 Issues-->
-        <li>mooloh.dndmenagerie</li><!--TODO 1.5 Issues-->
-        <li>gwibbo.morepsygenes</li><!--TODO 1.5 Issues-->
-        <li>syrchalis.setupcamp</li><!--TODO 1.5 Issues-->
-        <li>orion.cashregister</li><!--TODO 1.5 Issues-->
-        <li>orion.hospitality</li><!--TODO 1.5 Issues-->
-        <li>jdalt.levelthis</li><!--TODO 1.5 Issues-->
-
-        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li><!--TODO 1.5 Issues (Deprecated)-->
-        <li>OskarPotocki.VFE.Vikings</li><!--TODO 1.5 Issues (Deprecated)-->
-        <li>sargoskar.witcherhunt</li><!--TODO 1.5 Issues (Deprecated)-->
-
-        <li>oken.medievalquestrewards</li><!--TODO 1.5 Issues (Removed from workshop)-->
-
+        <li>ogam.rimedieval</li>
+        <li>DankPyon.Medieval.Overhaul</li>
+        <li>MSS.FlavourPack</li>
+        <li>danzen.vpe.biotechintegration</li>
+        <li>aRandomKiwi.RimThemes</li>
+        <li>Edern.CombatPsycasts</li>
+        <li>mooloh.dndmenagerie</li>
+        <li>orion.cashregister</li>
+        <li>orion.hospitality</li>
+        <li>jdalt.levelthis</li>
         <li>vpe.fleshshaper.sentinel</li>
         <li>vanillaexpanded.vpe.puppeteer</li>
         <li>vpe.horaxian.sentinel</li>
         <li>vpe.oripathy.sentinel</li>
         <li>vpe.voidweaver.sentinel</li>
+
+        <li>com.yayo.lostTechCore.2</li><!--TODO Dead-->
+        <li>gwibbo.morepsygenes</li><!--TODO 1.6 Missing-->
+        <li>syrchalis.setupcamp</li><!--TODO 1.6 Coming soon-->
+
+        <li>OskarPotocki.VanillaFactionsExpanded.MedievalModule</li><!--TODO 1.5 Issues (Deprecated)-->
+        <li>OskarPotocki.VFE.Vikings</li><!--TODO 1.5 Issues (Deprecated)-->
+        <li>sargoskar.witcherhunt</li><!--TODO 1.5 Issues (Deprecated)-->
+        <li>oken.medievalquestrewards</li><!--TODO (Removed from workshop)-->
     </loadAfter>
 </ModMetaData>
