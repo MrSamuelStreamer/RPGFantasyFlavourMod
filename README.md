@@ -6,9 +6,9 @@
 
 # RPG Adventure Flavour Pack
 
-![Mod Version](https://img.shields.io/badge/Mod_Version-1.0.1-blue.svg)
-![RimWorld Version](https://img.shields.io/badge/Built_for_RimWorld-1.4-blue.svg)
-![Harmony Version](https://img.shields.io/badge/Powered_by_Harmony-2.2-blue.svg)
+![Mod Version](https://img.shields.io/badge/Mod_Version-2.0.1-blue.svg)
+![RimWorld Version](https://img.shields.io/badge/Built_for_RimWorld-1.6-blue.svg)
+![Harmony Version](https://img.shields.io/badge/Powered_by_Harmony-2.4-blue.svg)
 ![Steam Downloads](https://img.shields.io/steam/downloads/2916348220?colorB=blue&label=Steam+Downloads)
 ![GitHub Downloads](https://img.shields.io/github/downloads/Roll1D2Games/RPGFantasyFlavourMod/total?colorB=blue&label=GitHub+Downloads)
 
