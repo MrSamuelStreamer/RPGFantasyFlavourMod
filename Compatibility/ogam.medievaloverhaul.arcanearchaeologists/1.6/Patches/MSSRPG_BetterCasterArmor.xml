@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="Ogam_CasterArmorBase"]/costList</xpath>
+        <value>
+            <VPE_Eltex MayRequire="VanillaExpanded.VPsycastsE">1</VPE_Eltex>
+        </value>
+    </Operation>
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThingDef[@Name="Ogam_CasterArmorBase"]/equippedStatOffsets</xpath>
+        <value>
+            <PsychicSensitivityOffset>0.1</PsychicSensitivityOffset>
+            <PsychicEntropyRecoveryRate MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.04</PsychicEntropyRecoveryRate>
+            <PsychicEntropyMax MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">0.5</PsychicEntropyMax>
+        </value>
+    </Operation>
+</Patch>

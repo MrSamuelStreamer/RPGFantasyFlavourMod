@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+
+    <BackstoryDef>
+        <defName>MSSRPG_Backstory_CircleOfTheMoon</defName>
+        <title>circle of the moon</title>
+        <titleShort>lunar initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up embraced by the circle of the moon, being inducted into its mysteries and learning to connect with the moon.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>MSSRPG_MagicCircleInitiate</li>
+            <li>Outsider</li>
+            <li>Outlander</li>
+            <li>Madman</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>1</Animals>
+            <Artistic>1</Artistic>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>MSSRPG_Backstory_CircleOfTheSun</defName>
+        <title>circle of the sun</title>
+        <titleShort>solar initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up welcomed into the circle of the sun, connecting with the sun and learning to harness its energies.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>MSSRPG_MagicCircleInitiate</li>
+            <li>Outsider</li>
+            <li>Outlander</li>
+            <li>Madman</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+        <skillGains>
+            <Cooking>1</Cooking>
+            <Plants>1</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>MSSRPG_Backstory_CircleOfTheStars</defName>
+        <title>circle of the stars</title>
+        <titleShort>stellar initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] was inducted into the circle of the stars, probing the inner mysteries and meditating on the vastness of the universe.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>MSSRPG_MagicCircleInitiate</li>
+            <li>Outsider</li>
+            <li>Outlander</li>
+            <li>Madman</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+        <skillGains>
+            <Medicine>1</Medicine>
+            <Social>1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>MSSRPG_Backstory_CircleOfTheVoid</defName>
+        <title>circle of the void</title>
+        <titleShort>void initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] was embraced by the void, with the masters of the circle of the void teaching serenity and the pursuit of void.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>MSSRPG_MagicCircleInitiate</li>
+            <li>Outsider</li>
+            <li>Outlander</li>
+            <li>Madman</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>1</Melee>
+            <Intellectual>2</Intellectual>
+            <Social>-1</Social>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>MSSRPG_Backstory_CircleOfTheEarth</defName>
+        <title>circle of the earth</title>
+        <titleShort>earth initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up in the jovial communion of the circle of the earth, communing with the earth and all of its creatures.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>MSSRPG_MagicCircleInitiate</li>
+            <li>Outsider</li>
+            <li>Outlander</li>
+            <li>Madman</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+        <skillGains>
+            <Animals>1</Animals>
+            <Plants>1</Plants>
+        </skillGains>
+    </BackstoryDef>
+
+    <BackstoryDef>
+        <defName>MSSRPG_Backstory_TrapeziumOfAnarchy</defName>
+        <title>trapezium of anarchy</title>
+        <titleShort>magical anarchist initiate</titleShort>
+        <baseDesc>[PAWN_nameDef] grew up embroiled in the circle of anarchy, being taught how the other circles try to impose order on the chaos of existence, and the need to rebel against this unnatural ordering.\n[PAWN_pronoun] learned these lessons well and a fire was lit within them.</baseDesc>
+        <slot>Childhood</slot>
+        <spawnCategories>
+            <li>MSSRPG_MagicCircleInitiate</li>
+            <li>Outsider</li>
+            <li>Outlander</li>
+            <li>Madman</li>
+            <li>ImperialCommon</li>
+            <li>ImperialFighter</li>
+        </spawnCategories>
+        <skillGains>
+            <Melee>2</Melee>
+            <Shooting>1</Shooting>
+            <Social>-2</Social>
+        </skillGains>
+    </BackstoryDef>
+
+</Defs>

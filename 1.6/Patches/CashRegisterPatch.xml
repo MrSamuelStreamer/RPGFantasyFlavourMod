@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Patch>
+    <Operation Class="PatchOperationFindMod">
+        <mods>
+            <li>Cash Register</li>
+        </mods>
+        <match Class="PatchOperationConditional">
+            <xpath>Defs/ThingDef[defName="CashRegister_CashRegister"]/techLevel</xpath>
+            <match Class="PatchOperationReplace">
+                    <xpath>Defs/ThingDef[defName="CashRegister_CashRegister"]/techLevel</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+            </match>
+            <nomatch Class="PatchOperationAdd">
+                    <xpath>Defs/ThingDef[defName="CashRegister_CashRegister"]</xpath>
+                    <value>
+                        <techLevel>Medieval</techLevel>
+                    </value>
+            </nomatch>
+        </match>
+    </Operation>
+</Patch>

@@ -206,7 +206,6 @@
       <li MayRequire="RedMattis.BigSmall.Core">BS_HexaHorns_Skin</li>
       <li MayRequire="RedMattis.BigSmall.Core">JotunFrame</li>
       <li MayRequire="sarg.alphagenes">AG_GreaterFireSpew</li>
-      <li MayRequire="sarg.alphagenes">AG_VolcanicAshMaker</li>
       <li MayRequire="Ludeon.RimWorld.Biotech">Superclotting</li>
       <li MayRequire="vanillaracesexpanded.archon">VRE_Maniac</li>
       <li MayRequire="RedMattis.BigSmall.Core">MaxTemp_HugeNeed</li>

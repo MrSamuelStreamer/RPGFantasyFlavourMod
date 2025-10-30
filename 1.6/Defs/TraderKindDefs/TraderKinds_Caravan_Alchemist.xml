@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Defs>
+    <TraderKindDef>
+        <defName>Caravan_AlchemistTrader</defName>
+        <label>alchemist trader</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>3000~5000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef" MayRequire="JoeDaly.MedMeds.MO">
+                <thingDef>MedicineLateMedievalMM</thingDef>
+                <countRange>3~8</countRange>
+            </li>
+            <li MayRequire="SirMashedPotato.ESCP.Trolls" Class="StockGenerator_SingleDef">
+                <thingDef>ESCP_TrollBlood</thingDef>
+                <countRange>4~6</countRange>
+            </li>
+            <li MayRequire="Ludeon.RimWorld.Biotech" Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>2~6</countRange>
+            </li>
+            <li MayRequire="feldoh.devilfruit" Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>4~10</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+
+    <TraderKindDef MayRequire="feldoh.devilfruit">
+        <defName>MSSRPG_Caravan_FruitTrader</defName>
+        <label>Fruit Trader</label>
+        <stockGenerators>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Silver</thingDef>
+                <countRange>5000~8000</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>MedicineHerbal</thingDef>
+                <countRange>15~25</countRange>
+            </li>
+            <li Class="StockGenerator_SingleDef">
+                <thingDef>Genepack</thingDef>
+                <countRange>8~12</countRange>
+            </li>
+        </stockGenerators>
+    </TraderKindDef>
+</Defs>
